@@ -3,29 +3,40 @@
 
 
 /* general rules that apply to all devices */
-html *{
+/* html *{
     box-sizing: border-box;
-}
+} */
 
-*::before, *::after{
+/* *::before, *::after{
     box-sizing: border-box;
-}
+} */
 
 body{
     font-size: 18px; /*1em or 1rem*/
 }
+.himg {
+    width: 250px;
+    height: 200px;
+    float: right;
+}
 h1 {
-    background-color: blue;
+    background-color: rgb(83, 59, 59);
+}
+footer {
+    background-color: rgb(83, 59, 59);
+}
+.copy_right {
+    text-align: center;
 }
 
 /* mobile rules next */
-#wrapper{
+/* #wrapper{
     width: 100%;
     background-color: yellow;
-}
+} */
 
 /* larger screen rules */
-@media screen and (min-width: 680px){
+/* @media screen and (min-width: 680px){
     #wrapper{
         width: 80;
         margin: 0 auto;
@@ -41,4 +52,4 @@ h1 {
         padding: 0;
         justify-content: space-evenly; 
     }
-}
+} */
