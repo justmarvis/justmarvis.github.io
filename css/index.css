@@ -21,6 +21,13 @@ body{
 }
 h1 {
     background-color: rgb(83, 59, 59);
+    padding-left: 0.7em;
+}
+h2 {
+    padding-left: 1em;
+}
+nav, li, a {
+    padding-left: 1em;
 }
 footer {
     background-color: rgb(83, 59, 59);
