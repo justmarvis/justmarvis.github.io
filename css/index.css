@@ -13,6 +13,33 @@
 
 body{
     font-size: 18px; /*1em or 1rem*/
+    background-color: whitesmoke;
+    /* padding-left: 2em; */
+}
+/* .main_nav, ul, li a {
+    text-decoration: none; removes underlining
+    list-style: none; removes the bullet
+    
+} */
+.main_nav ul {
+    margin : 0;
+    list-style: none; /* removes the bullets! */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+}
+.main_nav li a:hover {
+    color: #1b2a41;
+  /*   background-color: whitesmoke; */
+}
+.main_nav a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+.main_nav a {
+    color: #696969;
+    font-family: "Crimson Text";
+    font-size: 1.1em;
+    text-decoration: none;
 }
 .himg {
     width: 250px;
@@ -20,20 +47,25 @@ body{
     float: right;
 }
 h1 {
-    background-color: rgb(83, 59, 59);
+    background-color: whitesmoke;
     padding-left: 0.7em;
 }
-h2 {
+h2, h3, nav li a {
     padding-left: 1em;
 }
-nav, li, a {
-    padding-left: 1em;
+.sent {
+    padding-left: 2em;
 }
 footer {
-    background-color: rgb(83, 59, 59);
+    color: black;
 }
 .copy_right {
     text-align: center;
+}
+@media screen and (max-width: 550px) { 
+    /* beginning of media query */
+    .home-grid, nav ul, .banner-box {
+      display: block;
 }
 
 /* mobile rules next */
