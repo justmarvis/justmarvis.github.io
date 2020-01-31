@@ -12,8 +12,25 @@ body{
  font-family: Verdana, Geneva, Tahoma, sans-serif;
  font-size: 18px; 
 }
+#wrapper {
+    padding: 2vw;
+}
+
 
 /* Mobile First Styles */
+
+#pageHeader {
+    font-size:30px;
+    font-family: "uppercut angle", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+
+}
 
 
 

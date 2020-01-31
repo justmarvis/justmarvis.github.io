@@ -13,7 +13,7 @@
 
 body{
     font-size: 18px; /*1em or 1rem*/
-    background-color: whitesmoke;
+    background-color: rgb(rgb(255, 255, 255));
     /* padding-left: 2em; */
 }
 /* .main_nav, ul, li a {
@@ -48,6 +48,9 @@ body{
 }
 h1 {
     background-color: whitesmoke;
+    font-family: "uppercut angle", sans-serif;
+    font-style: normal;
+    font-weight: 400;
     padding-left: 0.7em;
 }
 h2, h3, nav li a {
