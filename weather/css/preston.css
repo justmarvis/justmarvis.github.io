@@ -23,7 +23,9 @@ body {
 /* nav {
     display: none;
 } */
-
+.top {
+    border: 1px solid black;
+}
 section {
     border: 1px solid black;
     height: 200px;
@@ -134,6 +136,8 @@ footer a:visited {
 #precipitation,
 #conditions {
     color: black;
+    width: 200px;
+    /* margin: auto; */
 }
 
 /* Desktop or Large View */
@@ -152,9 +156,12 @@ footer a:visited {
 section {
     margin: auto;
     height: 200px;
-    width: 50px;
+    width: 100px;
 }
-
+#feelslike {
+    width: 500px;
+    border-radius: 20px;
+}
     #feelslike {
         grid-column: 2;
         grid-row: 1;
@@ -173,6 +180,13 @@ section {
         margin-bottom: 10px;
         border-radius: 10px;
         text-align: center;
+    }
+    .temp.scale {
+        border: 1px solid black;
+        background-color: black;
+        width: 200px;
+        height: 200px;
+        z-index: 100;
     }
 
     /* #titlehigh {
