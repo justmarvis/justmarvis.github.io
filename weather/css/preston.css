@@ -121,8 +121,8 @@ nav a:hover {
 footer {
     display: block;
     text-align: center;
-    background-color: ghostwhite;
-    color: black;
+    background-color: black;
+    color: white;
     font-size: 13px;
     padding: 1px;
     border: 1.5px solid black;
@@ -154,9 +154,10 @@ footer a:visited {
 
     #sectionfix {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 230px 1fr;
         grid-template-rows: auto;
         justify-content: stretch;
+        grid-row-gap: .5em;
     }
 /* section {
     margin: auto;
@@ -164,8 +165,8 @@ footer a:visited {
     width: 100px;
 } */
 #feelslike {
-    height: 250px;
-    width: 720px;
+    height: 200px;
+    width: 630px;
     border-radius: 15px;
 }
 /* picture {
@@ -182,6 +183,7 @@ footer a:visited {
         grid-row: 2;
         justify-self: end;
         border-radius: 0px;
+        padding-top: 10em;
     }
     #precipitation {
         grid-column: 2;
@@ -200,7 +202,7 @@ footer a:visited {
         border: 1px solid black;
         height: 300px;
         width: 200px;
-        margin-bottom: 10px;
+        /* margin-bottom: 10px; */
         border-radius: 10px;
         text-align: center;
     }
