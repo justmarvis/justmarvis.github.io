@@ -34,7 +34,7 @@ body {
 section {
     border: 1px solid black;
     height: 200px;
-    width: 350px;
+    width: 380px;
     margin-bottom: 10px;
     border-radius: 10px;
     text-align: center;
@@ -142,7 +142,6 @@ footer a:visited {
 #precipitation,
 #conditions {
     color: black;
-    width: 200px;
     /* margin: auto; */
 }
 
@@ -159,52 +158,52 @@ footer a:visited {
         grid-template-rows: auto;
         justify-content: stretch;
     }
-section {
+/* section {
     margin: auto;
     height: 200px;
     width: 100px;
-}
+} */
 #feelslike {
-    width: 500px;
-    border-radius: 20px;
+    height: 250px;
+    width: 720px;
+    border-radius: 15px;
 }
 /* picture {
     padding-left: 20px;
 } */
     #feelslike {
-        grid-column: 2;
+        grid-column: 1/4;
         grid-row: 1;
+        justify-self: center;
     }
 
-    #temperature,
-    #precipitation,
-    #conditions {
+    #temperature {
+        grid-column: 1;
         grid-row: 2;
+        justify-self: end;
+        border-radius: 0px;
+    }
+    #precipitation {
+        grid-column: 2;
+        grid-row: 2;
+        justify-self: center;
+        border-radius: 0px;
+    }
+    #conditions {
+        grid-column: 3;
+        grid-row: 2;
+        justify-self: start;
+        border-radius: 0px;
     }
 
     section {
         border: 1px solid black;
-        height: 200px;
-        width: 300px;
+        height: 300px;
+        width: 200px;
         margin-bottom: 10px;
         border-radius: 10px;
         text-align: center;
     }
-    .temp.scale {
-        border: 1px solid black;
-        background-color: black;
-        width: 200px;
-        height: 200px;
-        z-index: 100;
-    }
-
-    /* #titlehigh {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        background-color: navy;
-        color: white;
-    } */
 
     
 
