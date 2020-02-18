@@ -1,0 +1,15 @@
+h1 {
+    text-align: center;
+}
+img {
+    width: 50%;
+    margin: 0 0 2% 25%;
+}
+/* picture img[data-src] {
+    filter: blur(2em);
+  }
+   */
+  /* picture img {
+    filter: blur(2em);
+    transition: filter 5s;
+  } */
