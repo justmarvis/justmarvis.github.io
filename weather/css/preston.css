@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
 
+/* General rules */
 html {
     box-sizing: border-box;
 }
@@ -13,11 +14,15 @@ html {
 body {
     font-size: 16px;
     font-family: 'Vollkorn', serif;
+    margin: 0;
 }
 
 #wrapper {
     display: block;
 
+}
+section h1 {
+    color: black;
 }
 
 /* nav {
@@ -106,7 +111,9 @@ nav a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: ghostwhite;
+    background-image: url("/weather/images/clear_large.jpg");
+    width: 100%;
+    height: 100%;
     padding: 10px 0px;
     border: 1.5px solid black;
 }
@@ -145,73 +152,144 @@ footer a:visited {
     /* margin: auto; */
 }
 
-/* Desktop or Large View */
-@media only screen and (min-width: 40em) {
-    body {
-        max-width: 960px;
-        margin: 0 auto;
+/* css properties for large screen  */
+@media only screen and (min-width: 60rem) {
+    #wrapper{
+        width: 90%;
+        margin: auto;
+    }
+    nav button{
+        display: none;
     }
 
-    #sectionfix {
+    nav ul.hide {
+        display: flex;
+        width: 100%;
+    }
+
+    nav ul li a{
+        padding: .6rem 1rem;
+        color: white;
+    }
+
+    nav li {
+        width: 100%;
+    }
+
+    ul a:hover{
+        color: blue;
+    }
+    #myLinks{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    #others{
+        width: 100%;
         display: grid;
-        grid-template-columns: 1fr 230px 1fr;
-        grid-template-rows: auto;
-        justify-content: stretch;
-        grid-row-gap: .5em;
-    }
-/* section {
-    margin: auto;
-    height: 200px;
-    width: 100px;
-} */
-#feelslike {
-    height: 200px;
-    width: 630px;
-    border-radius: 15px;
+        grid-template-columns: repeat(3, 1fr);
+        
+
+    /* ##################################################
+    css properties for feels like weather conditions
+    ################################################### */
 }
-/* picture {
-    padding-left: 20px;
-} */
-    #feelslike {
-        grid-column: 1/4;
-        grid-row: 1;
-        justify-self: center;
+#feelslike{
+    position: relative;
+
+}
+    
+    #feelhigh{
+        position: absolute;
+        left: 10%;
+        top: 10%;
+        font-size: 5vw;
+        color: red;
+    }
+    #feelmode{
+        position: absolute;
+        left: 45%;
+        top: 5px;
+        font-size: 8vw;
+    }
+    #feelow{
+        position: absolute;
+        right: 10%;
+        top: 10%;
+        font-size: 5vw;
+        color: blue;
+    }
+    #feelreal{
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 45%;
+        font-size: 2vw;
+    }
+    #feelwind{
+        position: absolute;
+        left: 15%;
+        bottom: 10%;
+        font-size: 3vw;
+    }
+    #feelgusts{
+        display: block;
+        position: absolute;
+        bottom: 10%;
+        right: 15%;
+        font-size: 3vw;
     }
 
+/* ########################################
+Parent to weather condition boxes 
+######################################### */
+    /* Background pictures for summary */
+
+    #feelslike, #others {
+        margin: auto;
+        width: 70%;
+        height: 250px;
+    }
+
+/* #######################################
+    individual Boxes and their properties 
+########################################### */
+    
+    .box {
+        width: 85%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 5em;
+
+    }
+    #conditions, #temperature, #precipitation {
+        width: 200px;
+        height: 300px;
+    }
     #temperature {
         grid-column: 1;
-        grid-row: 2;
-        justify-self: end;
-        border-radius: 0px;
-        padding-top: 10em;
+        justify-self: start;
     }
     #precipitation {
         grid-column: 2;
-        grid-row: 2;
         justify-self: center;
-        border-radius: 0px;
     }
     #conditions {
         grid-column: 3;
-        grid-row: 2;
-        justify-self: start;
-        border-radius: 0px;
+        justify-self: end;
     }
 
-    section {
-        border: 1px solid black;
-        height: 300px;
-        width: 200px;
-        /* margin-bottom: 10px; */
-        border-radius: 10px;
-        text-align: center;
+    #conditions, #temperature, #precipitation, #feelslike{
+        background-color: transparent;
+        box-shadow: 5px 5px 5px rgb(150, 136, 136);
+        margin-top: 1rem;
+        color: white;
     }
 
+    .imagine{
+        width: 150px; 
+        height: 147px;
+    }
     
-
-    /* ul {
-
-        list-style: none;
-        text-decoration: none;
-    } */
 }
