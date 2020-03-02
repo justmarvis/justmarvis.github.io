@@ -13,7 +13,7 @@
 
 body{
     font-size: 18px; /*1em or 1rem*/
-    background-color: rgb(rgb(255, 255, 255));
+    background-color: whitesmoke;
     /* padding-left: 2em; */
 }
 /* .main_nav, ul, li a {
@@ -46,6 +46,10 @@ body{
     height: 200px;
     float: right;
 }
+.image {
+    width: 300px;
+    margin-left: 4em;
+}
 h1 {
     background-color: whitesmoke;
     font-family: "uppercut angle", sans-serif;
@@ -64,6 +68,31 @@ footer {
 }
 .copy_right {
     text-align: center;
+}
+main {
+    padding: 5px;
+    padding-bottom: 5px;
+}
+.head2 {
+    text-align: center;
+}
+.hyperlink {
+    text-decoration: underline;
+    color: black;
+    margin-left: 8em;
+}
+.hyperlink:hover {
+    color: white;
+}
+section {
+    border: 1px solid black;
+    width: 450px;
+    padding-bottom: 5px;
+}
+p {
+    margin-left: 10px;
+    text-align: center;
+    
 }
 @media screen and (max-width: 550px) { 
     /* beginning of media query */
