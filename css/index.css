@@ -1,5 +1,6 @@
 /* imports always come first */
 @import url("/w20/css/normalize.css");
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text&display=swap');
 
 
 /* general rules that apply to all devices */
@@ -60,6 +61,11 @@ h1 {
 h2, h3, nav li a {
     padding-left: 1em;
 }
+h3 {
+    text-align: center;
+    font-size: 30px;
+    
+}
 .sent {
     padding-left: 2em;
 }
@@ -92,7 +98,12 @@ section {
 p {
     margin-left: 10px;
     text-align: center;
-    
+    font-family: "crimson text";
+    font-size: 21px;
+}
+.ff {
+    width: 200px;
+    padding-left: 45%;
 }
 @media screen and (max-width: 550px) { 
     /* beginning of media query */
