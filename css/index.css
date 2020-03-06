@@ -36,6 +36,9 @@ body{
     text-decoration: underline;
     font-weight: bold;
 }
+.main_nav li a:visited {
+    color: #1b2a41;
+}
 .main_nav a {
     color: #696969;
     font-family: "Crimson Text";
@@ -61,10 +64,17 @@ h1 {
 h2, h3, nav li a {
     padding-left: 1em;
 }
+.sch {
+    width: 50%;
+    margin-left: 25%;
+}
 h3 {
     text-align: center;
     font-size: 30px;
     
+}
+hr {
+    border: 5px solid black;
 }
 .sent {
     padding-left: 2em;
@@ -74,6 +84,12 @@ footer {
 }
 .copy_right {
     text-align: center;
+}
+.font {
+    margin-left: 5em;
+}
+.badimage {
+    margin-left: 5em;
 }
 main {
     padding: 5px;
@@ -97,14 +113,15 @@ section {
 }
 p {
     margin-left: 10px;
-    text-align: center;
+    /* text-align: center; */
     font-family: "crimson text";
-    font-size: 21px;
+    font-size: 28px;
 }
 .ff {
     width: 200px;
     padding-left: 45%;
 }
+
 @media screen and (max-width: 550px) { 
     /* beginning of media query */
     .home-grid, nav ul, .banner-box {
