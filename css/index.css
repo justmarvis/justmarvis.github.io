@@ -36,8 +36,9 @@ body{
     text-decoration: underline;
     font-weight: bold;
 }
-.main_nav li a:visited {
+.main_nav li a:active{
     color: #1b2a41;
+    text-decoration: underline;
 }
 .main_nav a {
     color: #696969;
