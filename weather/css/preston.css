@@ -38,8 +38,9 @@ section h1 {
 }
 section {
     border: 1px solid black;
-    height: 200px;
-    width: 380px;
+    /* background-color: black; */
+    height: 250px;
+    width: 500px;
     margin-bottom: 10px;
     border-radius: 10px;
     text-align: center;
@@ -54,6 +55,9 @@ section {
     color: black;
     border: 2px solid black;
     height: 120px
+}
+.temphead {
+    color: white;
 }
 picture {
     grid-column: 1;
@@ -111,11 +115,14 @@ nav a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("/weather/images/clear_large.jpg");
+    background-image: url("/images/clear_large.jpg");
     width: 100%;
     height: 100%;
     padding: 10px 0px;
     border: 1.5px solid black;
+}
+.night {
+    background-color: black;
 }
 /* .temp.scale {
     background-color: black;
@@ -143,13 +150,14 @@ footer a {
 footer a:visited {
     color: greenyellow;
 }
-
-#feelslike,
 #temperature,
 #precipitation,
 #conditions {
-    color: black;
-    /* margin: auto; */
+    color: white;
+}
+.component {
+    padding-left: 12.5em;
+    padding-bottom: 3em;
 }
 
 /* css properties for large screen  */
@@ -251,6 +259,9 @@ Parent to weather condition boxes
         width: 70%;
         height: 250px;
     }
+    #feelslike {
+        background-color: transparent;
+    }
 
 /* #######################################
     individual Boxes and their properties 
@@ -281,12 +292,10 @@ Parent to weather condition boxes
     }
 
     #conditions, #temperature, #precipitation, #feelslike{
-        background-color: transparent;
         box-shadow: 5px 5px 5px rgb(150, 136, 136);
         margin-top: 1rem;
         color: white;
     }
-
     .imagine{
         width: 150px; 
         height: 147px;

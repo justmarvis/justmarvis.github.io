@@ -5,7 +5,8 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <meta http-equiv="X-UA-Compatible" content="ie=edge">
  <title>Zone Weather | Preston Town</title>
- <link rel="stylesheet" href="/weather/css/preston.css">
+ <link rel="stylesheet" href="/css/preston.css">
+ <link rel="stylesheet" href="/css/practice.css">
 </head>
 <body>
     <div id="wrapper">
@@ -15,7 +16,7 @@
                 <h1 class="guru">Zone Weather</h1>
                 <p class="byline">always aware</p>
                 <picture>
-                    <img class="image1" src="/weather/images/Clock_time.png" alt="My Weather Logo">
+                    <img class="image1" src="/images/Clock_time.png" alt="My Weather Logo">
                 </picture>
             </div>
             <!-- <hr> -->
@@ -40,16 +41,58 @@
                     <p>Feels Like</p>
                 </section>
                 <div class="box">
-                    <section id="temperature">
-                        <h1>Temperature</h1>
+                    <section id="temperature" class="night">
+                        <h1 class="temphead">Temperature</h1>
+                        <div class="component">
+                            <!--outer numbers/pictures/icons-->
+                            <div class="o0 outer"><p>51</p></div>
+                            <div class="o1 outer"><p>53</p></div>
+                            <div class="o2 outer"><p>55</p></div>
+                            <div class="o3 outer"><p>57</p></div>
+                            <div class="o4 outer"><p>58</p></div>
+                            <div class="o5 outer"><p>57</p></div>
+                            <div class="o6 outer"><p>58</p></div>
+                            <div class="o7 outer"><p>58</p></div>
+                            <div class="o8 outer"><p>55</p></div>
+                            <div class="o9 outer"><p>53</p></div>
+                            <div class="o10 outer"><p>52</p></div>
+                            
+                            <!--inner cirlce-->
+                            <div class="inner"></div>
+                            
+                            <!--black dot that covers inner numbers-->
+                            <div class="slider i0"></div>
+                            
+                            <!--elements that make top left smooth-->
+                            <div class="edge1"></div>
+                            <div class="edge2"></div>
+                            
+                            <!--inner numbers-->
+                            <div class="i0 ib"><p>0</p></div>
+                            <div class="i1 ib"><p>1</p></div>
+                            <div class="i2 ib"><p>2</p></div>
+                            <div class="i3 ib"><p>3</p></div>
+                            <div class="i4 ib"><p>4</p></div>
+                            <div class="i5 ib"><p>5</p></div>
+                            <div class="i6 ib"><p>6</p></div>
+                            <div class="i7 ib"><p>7</p></div>
+                            <div class="i8 ib"><p>8</p></div>
+                            <div class="i9 ib"><p>9</p></div>
+                            <div class="i10 ib"><p>10</p></div>
+                            
+                            <!--center img/icon/letter-->
+                            <div class="center">&deg;F</div>
+                            
+                          </div>
+                        
                         <div class="temp.scale"></div>
                     </section>
-                    <section id="precipitation">
-                        <h1>Precipitation</h1>
+                    <section id="precipitation" class="night">
+                        <h1 class="temphead">Precipitation</h1>
                         <div class="preci.scale"></div>
                     </section>
-                    <section id="conditions">
-                        <h1>Conditions</h1>
+                    <section id="conditions" class="night">
+                        <h1 class="temphead">Conditions</h1>
                         <div class="cond.scale"></div>
                     </section>
                 </div>

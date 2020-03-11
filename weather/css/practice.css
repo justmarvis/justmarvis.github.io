@@ -1,0 +1,260 @@
+ * {
+  box-sizing: border-box;
+}
+
+body {
+background-color: var(--main-bg-color);
+}
+
+/* set the circles for the dial */
+
+.component{
+  width: var(--component-size);
+  height: var(--component-size);
+  position: relative;
+  margin-left: 3em;
+  margin-top: 5em;
+  display: flex;
+  border-radius: 50%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+      
+.inner {
+  width: calc(var(--component-size) * .75);
+  height: calc(var(--component-size) * .75);
+  background-color: var(--main-bg-color);
+  border-radius: 50%;
+  position: absolute;
+}
+
+/********************************
+* the black circle that sits on
+* top of inner numbers
+********************************/
+.slider {
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  height: var(--inside-width);
+  width: var(--inside-width);
+  background-color: var(--slider-color);
+  z-index: 89;
+}
+
+/********************************
+* the components that make the
+* top left invisible
+********************************/
+.component:before {
+background: var(--dial-color);
+height: var(--component-size);
+width: calc(var(--component-size) / 2);
+margin: 0;
+padding: 0;
+border-radius: var(--component-size) 0 0 var(--component-size);
+display: block;
+content: '';
+position: absolute;
+transform: rotate(175deg) translateX(calc(var(--component-size) * -.25));
+}
+
+.component:after {
+background: var(--dial-color);
+height: var(--component-size);
+width: calc(var(--component-size) / 2);
+margin: 0;
+padding: 0;
+border-radius: var(--component-size) 0 0 var(--component-size);
+display: block;
+content: '';
+position: absolute;
+transform: rotate(305deg) translateX(calc(var(--component-size) * -.25));
+z-index: -1;
+}
+
+.edge1 {
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  background-color: var(--dial-color);
+  height: var(--inside-width);
+  width: var(--inside-width);
+  transform: rotate(-5deg) translateY(var(--inside-position));
+}
+
+.edge2 {
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  background-color: var(--dial-color);
+  height: var(--inside-width);
+  width: var(--inside-width);
+  transform: rotate(305deg) translateY(var(--inside-position));
+}
+
+/********************************
+* css atribute that I want to
+* apply to all outer elements
+********************************/
+.outer {
+  position: absolute;
+  display: flex;
+  height: var(--outside-width);
+  width: var(--outside-width);
+  font-size: 1.6em;
+  align-items: center;
+  justify-content: center;
+}
+
+/********************************
+* the css attributes that I want
+* applied to all the inner boxes
+* that conatin numbers
+********************************/
+.ib {
+  position: absolute;
+  display: flex;
+  height: var(--inside-width);
+  width: var(--inside-width);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+:root {
+  /* border: 1px solid black; */
+  /* width: 420px; */
+  /* height: 400px; */
+  /* margin-top: 15em;
+  margin-left: 40em; */
+  background-color: white;
+  --main-bg-color: black;
+  --dial-color: grey;
+  --slider-color: whitesmoke;
+  --component-size: 100px;
+  --inside-width: calc(var(--component-size) * .125);
+  --outside-width: 2em;
+  --inside-position: calc((var(--component-size) * -.5) + 50%);
+  --outside-position: calc((var(--component-size) * -.5) - 50%);
+  }
+
+/********************************
+* css for middle number or picture
+********************************/
+.center {
+    position: absolute;
+    display: block;
+    font-size: 100%;
+}
+
+/********************************
+* set postitions for the inner numbers
+********************************/
+.i0 {
+  transform: translateY(var(--inside-position));
+}
+
+.i1 {
+  transform: rotate(30deg) translateY(var(--inside-position)) rotate(-30deg);
+}
+
+.i2 {
+  transform: rotate(60deg) translateY(var(--inside-position)) rotate(-60deg);
+}
+
+.i3 {
+  transform: rotate(90deg) translateY(var(--inside-position)) rotate(-90deg);
+}
+
+.i4 {
+  transform: rotate(120deg) translateY(var(--inside-position)) rotate(-120deg);
+}
+
+.i5 {
+  transform: rotate(150deg) translateY(var(--inside-position)) rotate(-150deg);
+}
+
+.i6 {
+  transform: rotate(180deg) translateY(var(--inside-position)) rotate(-180deg);
+}
+
+.i7 {
+  transform: rotate(210deg) translateY(var(--inside-position)) rotate(-210deg);
+}
+
+.i8 {
+  transform: rotate(240deg) translateY(var(--inside-position)) rotate(-240deg);
+}
+
+.i9 {
+  transform: rotate(270deg) translateY(var(--inside-position)) rotate(-270deg);
+}
+
+.i10 {
+  transform: rotate(300deg) translateY(var(--inside-position)) rotate(-300deg);
+}
+
+/********************************
+* set postitions for outer
+* numbers/pictures/icons
+********************************/
+
+.o0 {
+  transform: rotate(0deg) translateY(var(--outside-position)) rotate(-0deg);
+}
+
+.o1 {
+  transform: rotate(30deg) translateY(var(--outside-position)) rotate(-30deg);
+}
+
+.o2 {
+  transform: rotate(60deg) translateY(var(--outside-position)) rotate(-60deg);
+}
+
+.o3 {
+  transform: rotate(90deg) translateY(var(--outside-position)) rotate(-90deg);
+}
+
+.o4 {
+  transform: rotate(120deg) translateY(var(--outside-position)) rotate(-120deg);
+}
+
+.o5 {
+  transform: rotate(150deg) translateY(var(--outside-position)) rotate(-150deg);
+}
+
+.o6 {
+  transform: rotate(180deg) translateY(var(--outside-position)) rotate(-180deg);
+}
+
+.o7 {
+  transform: rotate(210deg) translateY(var(--outside-position)) rotate(-210deg);
+}
+
+.o8 {
+  transform: rotate(240deg) translateY(var(--outside-position)) rotate(-240deg);
+}
+
+.o9 {
+  transform: rotate(270deg) translateY(var(--outside-position)) rotate(-270deg);
+}
+
+.o10 {
+  transform: rotate(300deg) translateY(var(--outside-position)) rotate(-300deg);
+}
+
+/********************************
+* attributes for certain scenarios
+* not on this page
+********************************/
+.small-percent {
+  font-size: .5em;
+  margin-left: -.5em;
+}
+
+.moon {
+  position: absolute;
+  transform: translateY(-.2em);
+}
