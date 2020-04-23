@@ -1,0 +1,35 @@
+/* imports from "fonts.google.com" and "fonts.adobe.com" */
+@import url("/w20/css/normalize.css");
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+/* ************************************ */
+
+/* General view */
+body {
+    font-family: "libre baskerville", serif;
+}
+header {
+    color: red;
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 1em;
+}
+h1 {
+    font-family: "uppercut angle", sans-serif;
+}
+h2 {
+    text-align: center;
+}
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 1em;
+}
+/* ************************************ */
+
+/* Desktop view */
+body {
+    font-size: 21px;
+}
+/* ************************************ */
