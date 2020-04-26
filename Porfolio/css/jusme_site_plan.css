@@ -40,6 +40,15 @@ p {
 .fonts {
     margin: 10px;
 }
+.colorPalette {
+    width: 50%;
+    margin: 10px;
+}
+.site_logo {
+    width: 50px;
+    background-color: black;
+    margin-left: 50%;
+}
 /* ************************************ */
 
 /* Desktop view */
@@ -56,15 +65,6 @@ p {
 @media only screen and (max-width: 60rem) {
     .date {
         font-size: 13px;
-    }
-    .site_logo {
-        width: 50px;
-        background-color: black;
-        margin-left: 25%;
-    }
-    .colorPalette {
-        width: 500px;
-        margin: 10px;
     }
 }
 /* ************************************ */
