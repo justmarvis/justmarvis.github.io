@@ -1,0 +1,36 @@
+/* imports from "fonts.google.com" and "fonts.adobe.com" */
+@import url("/w20/css/normalize.css");
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+/* ************************************ */
+
+/* General view  */
+body {
+    font-family: "libre baskerville", serif;
+    width: 100%;
+}
+.site_logo {
+    background-color: black;
+}
+/* ***************** */
+
+/* Desktop view */
+@media only screen and (min-width: 60rem) {
+}
+/* ***************** */
+
+/* Small screen view */
+@media only screen and (max-width: 60rem) {
+    .site_logo {
+        width: 15px;
+    }
+    .icons {
+        width: 15px;
+    }
+    footer {
+        font-size: 10px;
+        text-align: center;
+    }
+}
+/* ***************** */

@@ -8,6 +8,7 @@
 /* General view */
 body {
     font-family: "libre baskerville", serif;
+    width: 100%;
 }
 header {
     text-align: center;
@@ -39,15 +40,19 @@ p {
 }
 .fonts {
     margin: 10px;
+    width: 50%;
 }
 .colorPalette {
-    width: 50%;
+    width: 70%;
     margin: 10px;
 }
 .site_logo {
-    width: 50px;
+    width: 30px;
     background-color: black;
-    margin-left: 50%;
+    margin-left: 48%;
+}
+.site_link {
+    color: #9ACD32;
 }
 /* ************************************ */
 
