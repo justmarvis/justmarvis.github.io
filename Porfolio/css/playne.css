@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 /* ************************************ */
 
 /* General view  */
@@ -13,10 +14,33 @@ body {
 .site_logo {
     background-color: black;
 }
+.quote_1 {
+    font-family: quicksand;
+}
 /* ***************** */
 
 /* Desktop view */
 @media only screen and (min-width: 60rem) {
+    body {
+        font-size: 40px;
+    }
+    .site_logo {
+        width: 50px;
+    }
+    .icons {
+        width: 50px;
+    }
+    main {
+        margin: 10px;
+        font-size: 40px;
+    }
+    .copy_right {
+        font-size: 30px;
+        text-align: center;
+    }
+    .quote_1 {
+        font-size: 60px;
+    }
 }
 /* ***************** */
 
@@ -29,7 +53,7 @@ body {
         width: 15px;
     }
     footer {
-        font-size: 10px;
+        font-size: 8px;
         text-align: center;
     }
 }
