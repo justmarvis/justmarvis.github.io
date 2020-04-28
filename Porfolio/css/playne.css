@@ -1,5 +1,5 @@
 /* imports from "fonts.google.com" and "fonts.adobe.com" */
-@import url("/w20/css/normalize.css");
+/* @import url("/w20/css/normalize.css"); */
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
@@ -7,6 +7,9 @@
 /* ************************************ */
 
 /* General view  */
+h1 {
+    font-family: pacifico;
+}
 body {
     font-family: "libre baskerville", serif;
     width: 100%;
@@ -17,29 +20,38 @@ body {
 .quote_1 {
     font-family: quicksand;
 }
+.main_nav {
+    text-decoration: none;
+    color:
+}
 /* ***************** */
 
 /* Desktop view */
 @media only screen and (min-width: 60rem) {
-    body {
-        font-size: 40px;
-    }
+    /* body {
+        font-size: 12px;
+    } */
     .site_logo {
         width: 50px;
     }
+    /* .h1 {
+        display: flex;
+    } */
     .icons {
         width: 50px;
     }
     main {
         margin: 10px;
-        font-size: 40px;
+    }
+    h2 {
+        font-size: 20px;
     }
     .copy_right {
-        font-size: 30px;
+        font-size: 10px;
         text-align: center;
     }
     .quote_1 {
-        font-size: 60px;
+        font-size: 16px;
     }
 }
 /* ***************** */
