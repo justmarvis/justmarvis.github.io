@@ -59,7 +59,7 @@ footer {
 /* ************************************ */
 /* Small view */
 @media only screen and (max-width: 60rem) {
-    body{
+    /* body{
         font-size: 16px;
     }
     header {
@@ -75,6 +75,9 @@ footer {
     }
     .date {
         font-size: 13px;
+    } */
+    body {
+        display: block;
     }
 }
 /* ************************************ */
