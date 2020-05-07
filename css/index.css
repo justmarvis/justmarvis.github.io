@@ -21,6 +21,42 @@ header {
     padding: 1em;
     text-align: center;
 }
+.main_nav a {
+    color: maroon;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.main_nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: whitesmoke;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+a:hover {
+    color: dimgrey;
+}
+.main_nav a:active {
+    color: dimgrey;
+}
+.nav li a {
+    color: maroon;
+    text-decoration: none;
+}
+.nav li a:hover {
+    color: dimgrey;
+}
+.nav {
+    background-color: whitesmoke;
+    padding-top: .5px;
+    padding-bottom: .5px;
+}
+/* .main_nav ul li a:active {
+    text-decoration: underline;
+} */
+/* .main_nav ul li a:visited {
+    text-decoration: underline;
+} */
 h2 {
     margin-left: 10px;
     text-decoration: underline;
@@ -71,6 +107,11 @@ footer {
     }
     .mainHr {
         border: 1px solid black;
+    }
+    .nav ul  {
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
     }
     .himg {
         width: 200px;
