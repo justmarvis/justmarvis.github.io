@@ -21,6 +21,9 @@ header {
     padding: 1em;
     text-align: center;
 }
+main {
+    margin: 10px;
+}
 .main_nav a {
     color: maroon;
     text-decoration: none;
@@ -100,13 +103,16 @@ footer {
 /* Desktop view */
 @media only screen and (min-width: 60rem) {
     body{
-        font-size: 25px;
+        font-size: 16px;
     }
     header {
         font-size: 20px;
     }
     .mainHr {
         border: 1px solid black;
+    }
+    .logo {
+        width: 100px;
     }
     .nav ul  {
         list-style: none;
@@ -167,6 +173,16 @@ footer {
     }
     .himg {
         width:200px;
+    }
+    .logo {
+        width: 50px;
+    }
+    .fontimage {
+        width: 80%;
+    }
+    .nav li {
+        list-style: none;
+        margin-left: 014em;
     }
     #d-container {
         margin-left: 2.5%;
