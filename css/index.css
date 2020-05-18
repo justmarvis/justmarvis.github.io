@@ -15,7 +15,7 @@ body {
     text-decoration: none;
     color: black;
 }
-header {
+#mainheader {
     background-color: black;
     color: white;
     padding: 1em;
@@ -94,6 +94,7 @@ footer {
     color: white;
     padding: 1em;
     text-align: center;
+    line-height: .5em;
 }
 .footerlink {
     color: yellowgreen;

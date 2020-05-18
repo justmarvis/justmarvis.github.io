@@ -1,304 +1,169 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
 
 /* General rules */
-html {
-    box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
 body {
     font-size: 16px;
-    font-family: 'Vollkorn', serif;
+    font-family: sans-serif;
     margin: 0;
 }
-
-#wrapper {
-    display: block;
-
-}
-section h1 {
-    color: black;
-}
-
-/* nav {
-    display: none;
-} */
-.image1 {
-    width: 100px;
-    height: 100px;
-    /* justify-self: start; */
-}
-.top {
-    border: 1px solid black;
-}
-section {
-    border: 1px solid black;
-    /* background-color: black; */
-    height: 250px;
-    width: 500px;
-    margin-bottom: 10px;
-    border-radius: 10px;
+.town {
     text-align: center;
-    /* margin: auto */
 }
-
-#head {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    background-color: ghostwhite;
-    color: black;
-    border: 2px solid black;
-    height: 120px
-}
-.temphead {
-    color: white;
-}
-picture {
-    grid-column: 1;
-    grid-row: 1;
-    align-self: center;
-    padding-left: 50px; 
-}
-.image1 {
-    width: 70px;
-    height: 70px;
-}
-.byline {
-    grid-row: 1 / 3;
-    grid-column: 1 / 3;
-    justify-self: center;
-    align-self: end;
-    padding-top: 2.3em;
-}
-
-.guru {
-    grid-row: 1;
-    grid-column: 1/3;
-    justify-self: center;
-}
+/* main */
 .mainnav{
-    /* margin : 0; */
-    list-style: none; /* removes the bullets! */
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
-    text-align: center;
-    margin-left: -3em;
+    list-style: none;
+    background-color: black;
+    margin-top: 0;
 }
 .mainnav li a{
     text-decoration: none;
-    color: #2A363B;
+    color: #fff;
+    line-height: 40px;
 }
-nav a:hover {
-    color: ghostwhite;
+.menu-toggle {
+    color: #fff;
+    line-height: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
 }
-
-.gps {
-    margin-top: -5px;
-}
-
-.town {
-    margin-bottom: -5px;
-}
-
-#titlelow {
-    padding-left: 10px;
-}
-
-#sectionfix {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url("/images/clear_large.jpg");
-    width: 100%;
-    height: 100%;
-    padding: 10px 0px;
-    border: 1.5px solid black;
-}
-.night {
-    background-color: black;
-}
-/* .temp.scale {
-    background-color: black;
-    height: 100px;
-    width: 200px;
-    z-index: 100;
-    border: 1px solid black;
-} */
-
-footer {
-    display: block;
-    text-align: center;
-    background-color: black;
-    color: white;
-    font-size: 13px;
-    padding: 1px;
-    border: 1.5px solid black;
-}
-
-footer a {
-    color: rgb(239, 243, 10);
-    text-decoration: none;
-}
-
-footer a:visited {
-    color: greenyellow;
-}
-#temperature,
-#precipitation,
-#conditions {
-    color: white;
-}
-.component {
-    padding-left: 12.5em;
-    padding-bottom: 3em;
-}
-
-/* css properties for large screen  */
+/************************/
+/************************/
+/* Desktop view  */
 @media only screen and (min-width: 60rem) {
-    #wrapper{
-        width: 90%;
-        margin: auto;
-    }
-    nav button{
-        display: none;
-    }
-
-    nav ul.hide {
-        display: flex;
-        width: 100%;
-    }
-
-    nav ul li a{
-        padding: .6rem 1rem;
-        color: white;
-    }
-
-    nav li {
-        width: 100%;
-    }
-
-    ul a:hover{
-        color: blue;
-    }
-    #myLinks{
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-    }
-
-    #others{
-        width: 100%;
+    #head {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        
-
-    /* ##################################################
-    css properties for feels like weather conditions
-    ################################################### */
-}
-#feelslike{
-    position: relative;
-
-}
-    
-    #feelhigh{
-        position: absolute;
-        left: 10%;
-        top: 10%;
-        font-size: 5vw;
-        color: red;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        background-color: ghostwhite;
+        color: black;
+        border: 2px solid black;
+        height: 120px
     }
-    #feelmode{
-        position: absolute;
-        left: 45%;
-        top: 5px;
-        font-size: 8vw;
-    }
-    #feelow{
-        position: absolute;
-        right: 10%;
-        top: 10%;
-        font-size: 5vw;
-        color: blue;
-    }
-    #feelreal{
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 45%;
-        font-size: 2vw;
-    }
-    #feelwind{
-        position: absolute;
-        left: 15%;
-        bottom: 10%;
-        font-size: 3vw;
-    }
-    #feelgusts{
-        display: block;
-        position: absolute;
-        bottom: 10%;
-        right: 15%;
-        font-size: 3vw;
-    }
-
-/* ########################################
-Parent to weather condition boxes 
-######################################### */
-    /* Background pictures for summary */
-
-    #feelslike, #others {
-        margin: auto;
-        width: 70%;
-        height: 250px;
-    }
-    #feelslike {
-        background-color: transparent;
-    }
-
-/* #######################################
-    individual Boxes and their properties 
-########################################### */
-    
-    .box {
-        width: 85%;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        padding: 5em;
-
-    }
-    #conditions, #temperature, #precipitation {
-        width: 200px;
-        height: 300px;
-    }
-    #temperature {
+    picture {
         grid-column: 1;
-        justify-self: start;
+        grid-row: 1;
+        align-self: center;
+        padding-left: 50px; 
     }
-    #precipitation {
-        grid-column: 2;
+    .image1 {
+        width: 70px;
+        height: 70px;
+    }
+    .byline {
+        grid-row: 1 / 3;
+        grid-column: 1 / 3;
+        justify-self: center;
+        align-self: end;
+        padding-top: 2.3em;
+    }
+    .guru {
+        grid-row: 1;
+        grid-column: 1/3;
         justify-self: center;
     }
-    #conditions {
-        grid-column: 3;
-        justify-self: end;
+    .mainnav {
+        display: flex;
+        justify-content: space-evenly;
+        line-height: 70px;
+        font-size: 28px;
+    }
+    footer {
+        display: block;
+        text-align: center;
+        background-color: black;
+        color: white;
+        font-size: 13px;
+        padding: 1px;
+        border: 1.5px solid black;
     }
 
-    #conditions, #temperature, #precipitation, #feelslike{
-        box-shadow: 5px 5px 5px rgb(150, 136, 136);
-        margin-top: 1rem;
-        color: white;
+    footer a {
+        color: rgb(239, 243, 10);
+        text-decoration: none;
     }
-    .imagine{
-        width: 150px; 
-        height: 147px;
+
+    footer a:visited {
+        color: greenyellow;
     }
-    
 }
+/*************************************/
+/* Small Screen */
+@media only screen and (max-width: 60rem) {
+    #head {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        background-color: ghostwhite;
+        color: black;
+        border: 2px solid black;
+        height: 120px
+    }
+    picture {
+        grid-column: 1;
+        grid-row: 1;
+        align-self: center;
+        padding-left: 50px; 
+    }
+    .image1 {
+        width: 50px;
+        height: 50px;
+    }
+    h1 {
+        align-self: end;
+    }
+    .byline {
+        grid-row: 1 / 3;
+        grid-column: 1 / 3;
+        justify-self: center;
+        align-self: start;
+        padding-top: 2.7em;
+    }
+    .guru {
+        grid-row: 1;
+        grid-column: 1/3;
+        justify-self: center;
+    }
+    /* main */
+    nav{
+        position: absolute;
+        width: 100%;
+        height: 20%;
+        top: 163.1px;
+        left: -100%;
+        transition: 0.5s;
+        background: #000;
+        text-align: center;
+    }
+    nav.active {
+        left: 0;
+    }
+    .mainnav li a {
+        border-bottom: 1px solid #fff;
+    }
+    .menu-toggle {
+        display: block;
+        padding-left: 50%;
+        background-color: #000;
+    }
+    /*******************/
+    footer {
+        display: block;
+        text-align: center;
+        background-color: black;
+        color: white;
+        font-size: 13px;
+        padding: 1px;
+        border: 1.5px solid black;
+    }
+
+    footer a {
+        color: rgb(239, 243, 10);
+        text-decoration: none;
+    }
+
+    footer a:visited {
+        color: greenyellow;
+    }
+}
+/*************************************/
