@@ -30,6 +30,13 @@ main {
     text-decoration: none;
     margin-left: 10px;
 }
+nav ul li a {
+    color: maroon;
+}
+nav ul li a:hover {
+    text-decoration: none;
+    color: yellowgreen;
+}
 .sch {
     width: 80%;
 }
@@ -77,8 +84,11 @@ h3 {
 }
 h6 a{
     font-style: italic;
-    text-decoration: none;
+    /* text-decoration: none; */
     color: maroon;
+}
+h6 a:hover {
+    color: yellowgreen;
 }
 .d-sec {
     background-color: whitesmoke;
