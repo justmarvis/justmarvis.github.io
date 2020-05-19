@@ -2,6 +2,7 @@
 @import url("/w20/css/normalize.css");
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+/* link font */@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
 /* ************************************ */
 
 /* General view */
@@ -52,6 +53,9 @@ a:hover {
 .nav li a:hover {
     color: dimgrey;
 }
+.main_nav a, .footerlink {
+    font-family: Pangolin;
+}
 .nav {
     background-color: whitesmoke;
     padding-top: .5px;
@@ -99,6 +103,9 @@ footer {
 .footerlink {
     color: yellowgreen;
     text-decoration: none;
+}
+.footerlink:hover {
+    color: whitesmoke;
 }
 .copy_right {
     text-align: center;
