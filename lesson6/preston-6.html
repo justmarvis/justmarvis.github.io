@@ -6,7 +6,7 @@
  <meta http-equiv="X-UA-Compatible" content="ie=edge">
  <title>Zone Weather | Preston Town</title>
  <link rel="stylesheet" href="/css/index.css">
- <link rel="stylesheet" href="/lesson5/css/preston.css">
+ <link rel="stylesheet" href="/lesson6/css/preston.css">
  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
@@ -16,9 +16,7 @@
             <div id="head">
                 <h1 class="h1">Zone Weather</h1>
                 <p class="byline">always aware</p>
-                <picture>
                     <img class="image1" src="/lesson5/images/Clock_time.png" alt="My Weather Logo">
-                </picture>
                 <p id="parkBanner">~~Saturday = Preston Pancakes in the Park!  9:00 a.m.~~</p>
             </div>
             <!-- <hr> -->
@@ -37,11 +35,19 @@
                 <h1 class="town">Preston Town</h1>
             </div>
             <div class="parentSection">
-                    <picture>
-                        <source srcset="/site_images/preston_large" media="(min-width:60rem)">
-                        <source srcset="/siteimages/preston_small" media="(max-width: 60rm)">
-                        <!-- <img src="/site_images/preston_large.jpg" alt=""> -->
+                <div>
+                    <div id="summary">
+                        <h4>Weather Summary</h4>
+                        <p>Currently: Rainy</p>
+                        <p>High: 54 &deg;F</p>
+                        <p>Wind Chill: 51 &deg;F</p>
+                        <p>Humidity: 95%</p>
+                        <p>Wind Speed: 12 mph</p>
+                    </div>
+                    <picture class="container">
+                        <img src="/site_images/preston_large.jpg" alt="Nature" class="responsive">
                     </picture>
+                </div>
                 <section class="sec">
                     <p>5 day forecast</p>
                 </section>

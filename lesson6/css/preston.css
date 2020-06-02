@@ -13,7 +13,7 @@ body {
     text-align: center;
 }
 /* main */
-.h1 {
+.h1, h4{
     font-family: "Squada One";
 }
 .byline {
@@ -38,6 +38,31 @@ section {
 .cion {
     margin-left: 0;
 }
+.responsive {
+    width: 100%;
+    height: auto;
+    display: grid;
+  }
+#summary {
+    border: 1px #003e8b;
+    background-color: #003e8b;
+    padding: 1em;
+    line-height: 1em;
+    /* opacity: 50%; */
+    position: absolute;
+    margin-top: 2em;
+    margin-left: 2em;
+    box-shadow: 1px 1px 20px 4px white;
+}
+#summary p{
+    margin-left: .5em;
+    color: whitesmoke;
+}
+#summary h4 {
+    margin-left: .2em;
+    color: whitesmoke;
+    text-decoration: underline;
+}
 /************************/
 /* Desktop view  */
 @media only screen and (min-width: 60rem) {
@@ -54,15 +79,13 @@ section {
         color: black;
         height: 200px;
     }
-    picture {
+    .image1 {
+        width: 70px;
+        height: 70px;
         grid-column: 1;
         grid-row: 1;
         align-self: center;
         padding-left: 50px; 
-    }
-    .image1 {
-        width: 70px;
-        height: 70px;
     }
     .byline {
         grid-row: 1 / 3;
@@ -118,6 +141,18 @@ section {
         border-radius: 8px;
         padding: 5px;
         background-color: red;
+    }
+    #summary h4 {
+        font-size: 40px;
+    }
+    #summary p {
+
+        font-size: 25px;
+        font-family: sans-serif;
+    }
+    #summary {
+        height: 300px;
+        width: 300px;
     }
     /************************/
     footer {
@@ -269,6 +304,10 @@ section {
     */
     .responsive li {
         display: block;
+    }
+    #summary {
+        height: 100px;
+        width: 100px;
     }
     /*******************/
     footer {
