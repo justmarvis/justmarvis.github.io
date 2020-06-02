@@ -14,4 +14,4 @@ let monthname = month_names[date.getMonth()];
 
 const dateoutput = document.querySelector('.currentdate');
 
-dateoutput.textContent = weekname + ", " + date.getDate() + " " + monthname + " " + date.getFullYear();
+dateoutput.textContent = "Last Updated: " + weekname + ", " + date.getDate() + " " + monthname + " " + date.getFullYear();
