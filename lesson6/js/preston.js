@@ -1,22 +1,17 @@
-
+// Responsive menu
   const hambutton = document.querySelector('.ham');
 const mainnav = document.querySelector('.navigation')
 
 hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
 
-  function park() {
-    var mydate = new Date();
+// footer
+  let week_names = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thurday', 'Friday', 'Saturday'];
+let month_names = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October',
+    'November', 'December'];
+let date = new Date();
+let weekname = week_names[date.getDay()];
+let monthname = month_names[date.getMonth()];
 
-    var day = mydate.getDay();
-    var month = mydate.getMonth();
-    var daym = mydate.getDate();
-    var dayarray = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+const dateoutput = document.querySelector('.currentdate');
 
-    var park = document.getElementById("parkBanner").value
-    
-      if (daym = "Saturday") {
-        var parkDisplay = print("park");
-      }
-
-      document.getElementById("parkBanner").innerHTMl = parkDisplay;
-  }
+dateoutput.textContent = weekname + ", " + date.getDate() + " " + monthname + " " + date.getFullYear();
