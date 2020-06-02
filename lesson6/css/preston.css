@@ -41,14 +41,14 @@ section {
 .responsive {
     width: 100%;
     height: auto;
-    display: grid;
+    padding-bottom: 5px;
   }
 #summary {
     border: 1px #003e8b;
     background-color: #003e8b;
     padding: 1em;
     line-height: 1em;
-    /* opacity: 50%; */
+    opacity: 85%;
     position: absolute;
     margin-top: 2em;
     margin-left: 2em;
@@ -57,11 +57,13 @@ section {
 #summary p{
     margin-left: .5em;
     color: whitesmoke;
+    opacity: 100%;
 }
 #summary h4 {
     margin-left: .2em;
     color: whitesmoke;
     text-decoration: underline;
+    opacity: 100%;
 }
 /************************/
 /* Desktop view  */
@@ -146,7 +148,6 @@ section {
         font-size: 40px;
     }
     #summary p {
-
         font-size: 25px;
         font-family: sans-serif;
     }
@@ -228,14 +229,12 @@ section {
         color: black;
         height: 130px;
     }
-    picture {
+    .image1 {
+        width: 55px;
         grid-column: 1;
         grid-row: 1;
         align-self: end;
         padding-left: 25px;
-    }
-    .image1 {
-        width: 55px;
     }
     h1 {
         font-size: 30px;
@@ -307,7 +306,14 @@ section {
     }
     #summary {
         height: 100px;
-        width: 100px;
+        width: 80px;
+        line-height: 5px;
+    }
+    #summary h4 {
+        font-size: 10px;
+    }
+    #summary p {
+        font-size: 8px;
     }
     /*******************/
     footer {
