@@ -3,3 +3,7 @@ picture img {
     margin: 0 auto;
     padding: 5px;
 }
+.holdimg {
+    width: 300px;
+    height: 400px;
+}
