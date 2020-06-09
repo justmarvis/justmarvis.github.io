@@ -10,7 +10,6 @@
         grid-gap: 1em;
         justify-content: center;
         margin: 0 auto;
-        border: 1px solid black;
         justify-content: center;
     }
 }
@@ -26,7 +25,6 @@
         grid-gap: 5em;
         max-width: 85%;
         margin: 0 auto;
-        border: 1px solid black;
         justify-content: center;
     }
 }
