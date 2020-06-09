@@ -68,6 +68,11 @@ a:hover {
     padding-top: .5px;
     padding-bottom: .5px;
 }
+.holdimg {
+    width: 300px;
+    height: 400px;
+    margin-left: 20px;
+}   
 /* .main_nav ul li a:active {
     text-decoration: underline;
 } */
@@ -167,6 +172,15 @@ footer {
     }
     footer {
         font-size: 16px;
+    }
+    .holdimg {
+        /* width: 500vm; */
+        height: 350px;
+    }   
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1em;
     }
 }
 /* ************************************ */
