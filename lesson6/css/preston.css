@@ -65,6 +65,11 @@ section {
     text-decoration: underline;
     opacity: 100%;
 }
+.storm {
+    text-align: left;
+    text-decoration: none;
+
+}
 /************************/
 /* Desktop view  */
 @media only screen and (min-width: 60rem) {
@@ -158,12 +163,9 @@ section {
     form {
         margin: 0 auto;
         border: 1px solid black;
-        width: 40%;
-        background-color: rgba(154,205,50,50%);
-    }
-    .storm {
-        text-align: center;
-    
+        width: 50%;
+        background-color: rgba(154,205,50,30%);
+        box-shadow: 4px 4px 3px yellowgreen;
     }
     form div {
         /* display: flex; */
@@ -354,7 +356,7 @@ section {
         margin: 0 auto;
         border: 1px solid black;
         width: 95%;
-        background-color: rgba(154,205,50,50%);
+        background-color: rgba(154,205,50,30%);
         box-shadow: 4px 4px 3px yellowgreen;
     }
     .storm {
