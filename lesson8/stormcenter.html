@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zone Weather | Preston Town</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/lesson6/css/preston.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+ </head>
+<body>
+    <div class="top">
+        <header>
+            <div id="head">
+                <h1 class="h1">Zone Weather</h1>
+                <p class="byline">always aware</p>
+                    <img class="image1" src="/lesson5/images/Clock_time.png" alt="My Weather Logo">
+                <p id="parkBanner">~~Saturday = Preston Pancakes in the Park!  9:00 a.m.~~</p>
+            </div>
+            <!-- <hr> -->
+        </header>
+        <nav>
+            <ul class="navigation">
+                <li><a class="ham"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
+                <li><a  href="#">Home</a></li>
+                <li><a  href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a  href="#">Fish Haven</a></li>
+                <li><a class="active" href="#">Storm Center</a></li>
+                <li><a href="#">The Gallery</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <form action="thanks.html" method="GET">
+            <h2 class="storm">Personal Information</h2>
+
+            <div>
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" pattern="[A-Za-z]{5,}" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" placeholder="user@email.com">
+            </div>
+            <div>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div>
+                <label for="zipCode">Zip Code:</label>
+                <input type="number" id="zipCode" name="zipCode" required>
+            </div>
+
+            <h2 class="storm">Storm Information</h2>
+
+            <div>
+                <label for="stormDate">Storm Date:</label>
+                <input type="date" id="stormDate" name="stormDate">
+            </div>
+            <div>
+                <label for="stormType">Storm Type:</label>
+                <input list="stormTypes">
+                <datalist id="stormTypes">
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                </datalist>
+            </div>
+            <div>
+                <label for="stormSeverity">Storm Severity:</label>
+                <input type="range" id="rating" name="stormSeverity" value="5" min="1" max="10" class="slider"  step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <span id="ratingvalue">5</span>
+            </div>
+
+            <div>
+
+            </div>
+            <div>
+                <label for="stormRegion" class="option">Storm Region:</label>
+                <select name="stormRegion" id="stormRegion">
+                    <option value="Select Region" selected disabled>Select Region</option>
+                    <option value="Fish Haven">Fish Haven</option>
+                    <option value="Preston">Preston</option>
+                    <option value="Sugar City">Sugar City</option>
+                </select>
+            </div>
+
+            <div class="answer">
+                <span class="label">Are you in danger?</span>
+                <div class="options">
+                    <div>
+                        <input type="radio" value="Yes" name="danger">
+                        <label for="yes">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" value="No" name="danger">
+                        <label for="no">No</label>
+                    </div>
+                    <div>
+                        <input type="radio" value="Maybe" name="danger">
+                        <label for="maybe">Maybe</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comet">
+                <label for="comments" class="cometbox">Comments:</label>
+                <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="buttons">
+                <input type="submit" value="Submit" class="submit">
+                <input type="reset" value="Reset" class="reset">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p class="copy_right">&copy; 2020 |
+            Marvis Igbineweka | Rexburg | <a href="https://www.byui.edu/online" target="_blank" class="footerlink">BYUI Online Learning</a></p> 
+            <div class="currentdate"></div>
+    </footer>
+    <script src="/lesson6/js/preston.js"></script>
+</div>
+</body>
+</html>
