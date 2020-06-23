@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@700&display=swap');
+/* imports from "fonts.google.com"*/
+@import url("/w20/css/normalize.css");
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+/* link font */@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+/* ************************************ */
+@media only screen and (min-width: 60rem){
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1em;
+        padding-right: 2em;
+        padding-left: 2em;
+        padding-top: 2em;
+    }
+    article {
+        background-color: #fff3cd;
+        height: 464px;
+    }
+    img {
+        padding-top: 2em;
+    }
+    .grid {
+        padding: 1em;
+        padding-bottom: 4em;
+    }
+    img {
+        height: auto;
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 60rem){
+    .grid {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 1em;
+    }
+    article {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #fff3cd;
+        margin-left: 0;
+        width: 100%;
+    }
+    img {
+        height: auto;
+        width: 150px;
+    }
+    .para {
+        text-align: center;
+        font-size: 12px;
+        line-height: .6em;
+    }
+}
