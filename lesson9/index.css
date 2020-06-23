@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 /* link font */@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
 /* ************************************ */
+
 @media only screen and (min-width: 60rem){
     .grid {
         display: grid;
@@ -28,6 +29,9 @@
     img {
         height: auto;
         width: 400px;
+    }
+    .para {
+        text-align: center;
     }
 }
 
