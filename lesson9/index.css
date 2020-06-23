@@ -11,24 +11,19 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 1em;
-        padding-right: 2em;
-        padding-left: 2em;
-        padding-top: 2em;
+        padding: 1em;
     }
     article {
         background-color: #fff3cd;
-        height: 464px;
+        height: 500px;
+        padding: 0;
     }
     img {
         padding-top: 2em;
     }
-    .grid {
-        padding: 1em;
-        padding-bottom: 4em;
-    }
     img {
         height: auto;
-        width: 400px;
+        width: 100%;
     }
     .para {
         text-align: center;
@@ -48,9 +43,21 @@
         margin-left: 0;
         width: 100%;
     }
+    .article2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .article2 div {
+        grid-column: 2;
+    }
+    .article2 p {
+        grid-column: 1;
+        grid-row: 1;
+    }
     img {
         height: auto;
         width: 150px;
+        padding: .5em;
     }
     .para {
         text-align: center;
