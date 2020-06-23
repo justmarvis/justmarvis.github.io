@@ -6,20 +6,27 @@
 /* link font */@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
 /* ************************************ */
 
-
+/* General */
 section {
     background-color:#C8C6D7;
     padding-bottom: 20px;
     border-style: groove;
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
+}
+h1 {
+    color: #4A5899;
+}
+h2, footer {
+    color: #4A5899;
+    font-family: Pangolin;
+    text-decoration: none;
 }
 
 h1, h2, footer {
-    color: #4A5899;
-    font-family: Pangolin;
+    text-align: center;
 }
-
-h1, h2, p, footer {
+p {
+    font-family: "libre Baskerville";
     text-align: center;
 }
 
@@ -31,7 +38,7 @@ img {
     display: block;
     max-width: 120px;
     margin: 0 auto;
-    box-shadow: 0 0 15px #333;
+    box-shadow: 2px 2px 15px #333;
 }
 
 footer {
@@ -47,7 +54,7 @@ footer {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(4, 1fr);
     
-        box-shadow: 0 0 15px #333;
+        box-shadow: 2px 2px 15px #333;
         padding: 15px;
     }
 
