@@ -411,6 +411,10 @@ section {
     #weather-summary p {
         font-size: 8px;
     }
+    .forecast-table {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
     form {
         margin: 0 auto;
         border: 1px solid black;
@@ -420,7 +424,15 @@ section {
     }
     .storm {
         text-align: center;
-    
+    }
+    .article-p {
+        width: 250px;
+        font-size: 16px;
+        text-align: center;
+    }
+    .article-img {
+        width: 200px;
+        /* float: right; */
     }
     form div {
         /* display: flex; */
@@ -471,6 +483,14 @@ section {
 
     footer a:visited {
         color: greenyellow;
+    }
+    .social-icons img {
+        width: 10px;
+        justify-content: space-evenly;
+    }
+    .map {
+        height: 100px;
+        width: 100px;
     }
 }
 /*************************************/
