@@ -9,7 +9,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Volkhov:wght@700&display=swap');
 /* ************************************ */
 
-/* General view  */
+/* Small view  */
 h1 {
     font-family: pacifico;
 }
@@ -18,144 +18,81 @@ body {
     width: 100%;
     margin: 0;
 }
-.site_logo {
-    background-color: black;
+header {
+    color: #000000;
+    background-color: whitesmoke;
+    height: 250px;
+    z-index: 0;
 }
-.quote_1 {
-    font-family: quicksand;
+.mainHead {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0,0,0, 30%);
+    margin-top: -20px;
+    height: 80px;
+    padding-top: 10px;
+    z-index: 10;
 }
-.main_nav {
-    text-decoration: none;
-    font-family: teko;
+.siteName {
+    font-size: 25px;
+    color: #000;
+    margin-left: .5em;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: .5px ;
 }
-.main_nav a{
-    color: #600011;
-    font-weight: bold;
+.par {
+    display: flex;
+}
+.icons {
+    width: 25px;
+}
+.iconic {
+    width: 20px;
+    flex: 1;
+    order: 2;
+}
+#intro {
+    order: 1;
+    flex: 15;
+    display: flex;
 }
 .helo {
     font-family: Volkhov;
+    font-size: 40px;
     font-weight: bold;
+    flex: 1;
+    order: 1;
+    align-self: center;
 }
 .intro {
     font-family: quicksand;
     font-weight: bold;
+    font-size: 10px;
+    flex: 3;
+    order: 2;
+}
+.mainDivider {
+    background-color: black;
+    height: 140px;
+    width: 2px;
+    order: 2;
+}
+.main_nav {
+    text-decoration: none;
+    font-family: teko;
+    padding: 2em;
+}
+.main_nav a{
+    color: #600011;
+    font-weight: bold;
+    padding: .3em;
+}
+.quote_1 {
+    font-family: quicksand;
 }
 /* ***************** */
 
 /* Desktop view */
 @media only screen and (min-width: 60rem) {
-    /* body {
-        font-size: 12px;
-    } */
-    header {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 25px 20px 20px 20px 20px 20em;
-        color: #ffffff;
-        background-color: #000000;
-        padding: 10px;
-        grid-gap: 5px;
-    }
-    .icons {
-        width: 16px;
-        grid-column: 4/5;
-        justify-self: end;
-    }
-    .main_divider {
-        height: 200px;
-        width: 2px;
-        border-radius: 5px;
-        background-color: #ffffff;
-        grid-column: 2/4;
-        grid-row: 6/7;
-        justify-self: center;
-        align-self: start;
-    }
-    .site_name {
-        grid-column: 1/2;
-        align-self: start;
-        justify-self: start;
-        margin-top: 0;
-    }
-    .main_nav {
-        grid-column: 4/5;
-        justify-self: end;
-    }
-    .site_logo {
-        width: 16px;
-        grid-column: 2/4;
-        justify-self: center;
-    }
-    .helo {
-        font-size: 100px;
-        font-weight: bold;
-        grid-column: 2/3;
-        grid-row: 6/7;
-        justify-self: end;
-        align-self: start;
-        margin-top: 30px;
-    }
-    .intro {
-        grid-column: 3/4;
-        grid-row: 6/7;
-        margin-left: 5px;
-        align-self: start;
-        margin-top: 0;
-    }
-    main {
-        margin: 10px;
-    }
-    .bod {
-        border: 1px solid #000000;
-        width: 400px;
-        height: 500px;
-        text-align: center;
-        border-radius: 10px;
-        box-shadow: #000000 2px 2px 5px 2px;
-    }
-    .main_nav a {
-        font-size: 21px;
-        padding-left: 10px;
-        text-decoration: none;
-    }
-    .intro {
-        font-size: 12px;
-    }
-    h1 {
-        font-size: 16px;
-    }
-    h2 {
-        font-size: 20px;
-    }
-    .copy_right {
-        font-size: 10px;
-        text-align: center;
-    }
-    .quote_1 {
-        font-size: 16px;
-    }
-    .containerh {
-        display: flex;
-        justify-content: space-between;
-        width: 700px;
-    }
-    .containerh div {
-        text-align: center;
-    }
-}
-/* ***************** */
-
-/* Small screen view */
-@media only screen and (max-width: 60rem) {
-    .site_logo {
-        width: 15px;
-    }
-    .icons {
-        width: 15px;
-    }
-    footer {
-        font-size: 8px;
-        text-align: center;
-    }
 }
 /* ***************** */
