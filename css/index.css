@@ -5,7 +5,7 @@
 /* link font */@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
 /* ************************************ */
 
-/* General view */
+/* Small view */
 body {
     /* background-color: whitesmoke; */
     margin: 0;
@@ -126,7 +126,7 @@ footer {
     text-align: center;
 }
 /* ************************************ */
-/* Desktop view */
+/* large view */
 @media only screen and (min-width: 60rem) {
     body{
         font-size: 16px;
@@ -181,63 +181,6 @@ footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 1em;
-    }
-}
-/* ************************************ */
-/* Small view */
-@media only screen and (max-width: 60rem) {
-    /* body{
-        font-size: 16px;
-    }
-    header {
-        font-size: 12px;
-    }
-    .mainHr {
-        border: 1px solid black;
-    }
-    .himg {
-        width: 150px;
-        float: right;
-        padding-right: .5em;
-    }
-    .date {
-        font-size: 13px;
-    } */
-    body {
-        display: block;
-    }
-    .himg {
-        width:200px;
-    }
-    .logo {
-        width: 50px;
-    }
-    .fontimage {
-        width: 80%;
-    }
-    .nav li {
-        list-style: none;
-        margin-left: 014em;
-    }
-    #d-container {
-        margin-left: 2.5%;
-        margin-bottom: 30px;
-    }
-    .d-sec {
-        margin-bottom: 20px;
-        width: 390px;
-    }
-    .d-para {
-        font-size: 12px;
-    }
-    .d-image {
-        width: 150px;
-    }
-    footer {
-        font-size: 12px;
-    }
-    .date {
-        font-size: 10px;
     }
 }
 /* ************************************ */
