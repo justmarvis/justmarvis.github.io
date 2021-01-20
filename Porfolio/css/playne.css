@@ -52,10 +52,10 @@ h1 {
 }
 .mainDivider {
     background-color: black;
-    height: 120px;
+    height: 180px;
     width: 3.5px;
     border-radius: 5px;
-    margin-left: 80px;
+    margin-left: 60px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -63,13 +63,15 @@ h1 {
     font-family: "Teko";
     font-size: 16px;
     line-height: 1.1em;
-    /* margin-top: 50px; */
+    margin-top: 20px;
     margin-left: 5px;
 }
 #intro {
     display: flex; 
     background-color: whitesmoke;
     margin-top: 25px;
+    height: 200px;
+    padding: 40px;
 }
 .quote1 {
     background-color: #F5F5F5;
@@ -104,12 +106,68 @@ h3 {
     font-family: "Yusei Magic";
     font-weight: 100;
 }
+.hml {
+    width: 10px;
+    height: 10px;
+    border: 0 solid #000;
+    border-radius: 10px;
+    color: white;
+    animation: html 5s infinite;
+}
+  
+@keyframes html {
+    from {background-color: red;}
+    to {background-color: purple;}
+    100% {width: 90%;}
+}
+.css {
+    width: 10px;
+    height: 10px;
+    border: 0 solid #000;
+    border-radius: 10px;
+    color: white;
+    animation: css 5s infinite;
+}
+  
+@keyframes css {
+    from {background-color: red;}
+    to {background-color: purple;}
+    100% {width: 80%;}
+}
+.js {
+    width: 10px;
+    height: 10px;
+    border: 0 solid #000;
+    border-radius: 10px;
+    color: white;
+    animation: js 5s infinite;
+}
+  
+@keyframes js {
+    from {background-color: red;}
+    to {background-color: grey;}
+    100% {width: 50%;}
+}
+.sql {
+    width: 10px;
+    height: 10px;
+    border: 0 solid #000;
+    border-radius: 10px;
+    color: white;
+    animation: sql 5s infinite;
+}
+  
+@keyframes sql {
+    from {background-color: red;}
+    to {background-color: maroon;}
+    100% {width: 25%;}
+}
 footer {
     text-align: center;
 }
 /* ***************** */
 
-/* Desktop view */
+/* Large view */
 @media only screen and (min-width: 60rem) {
 }
 /* ***************** */
