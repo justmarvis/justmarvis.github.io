@@ -157,7 +157,14 @@ h3 {
     color: white;
     animation: sql 5s infinite;
 }
-  
+.hml p, .css p , .js p, .sql p{
+    font-size: 10px;
+    margin-left: 5px;
+}
+.hml, .css, .js, .sql {
+    margin-top: -5px;
+    margin-bottom: 20px;
+}
 @keyframes sql {
     from {background-color: red;}
     to {background-color: maroon;}
