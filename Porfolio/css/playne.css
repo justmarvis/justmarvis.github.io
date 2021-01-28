@@ -158,7 +158,7 @@ h3 {
     animation: sql 5s infinite;
 }
 .hml p, .css p , .js p, .sql p{
-    font-size: 10px;
+    font-size: 10Ppx;
     margin-left: 5px;
 }
 .hml, .css, .js, .sql {
