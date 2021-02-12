@@ -184,7 +184,7 @@ h3 {
     animation-fill-mode: both;
 }
 .hml p, .css p , .js p, .sql p{
-    font-size: 10Ppx;
+    font-size: 10px;
     margin-left: 5px;
 }
 .hml, .css, .js, .sql {
@@ -322,7 +322,6 @@ footer {
         color: white;
         animation: html 5s ease-in-out;
         animation-fill-mode: both;
-
     }
       
     @keyframes html {
@@ -374,7 +373,7 @@ footer {
         100% {width: 25%;}
     }
     .hml p, .css p , .js p, .sql p{
-        font-size: 10Ppx;
+        font-size: 10px;
         margin-left: 5px;
     }
     .hml, .css, .js, .sql {
