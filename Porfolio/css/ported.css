@@ -90,10 +90,7 @@ h1 {
     width: 110px;
     border: none;
     border-radius: 15px;
-    /* float: right; */
-    margin-left: 280px;
-    /* margin-top: -50px; */
-    /* margin-top: 180px; */
+    margin-left: 60%;
     z-index: 20;
 }
 .quote1 {
@@ -264,6 +261,22 @@ footer {
         margin-top: 25px;
         height: 200px;
         padding: 40px;
+    }
+    .resume {
+        font-family: 'Rock Salt';
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        background-color: maroon;
+        height: 50px;
+        width: 110px;
+        border: none;
+        border-radius: 15px;
+        /* float: right; */
+        margin-left: 80%;
+        /* margin-top: -50px; */
+        /* margin-top: 180px; */
+        z-index: 20;
     }
     .quote1 {
         background-color: #b5ebff;
