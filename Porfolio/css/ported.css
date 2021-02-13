@@ -89,9 +89,13 @@ h1 {
     height: 50px;
     width: 110px;
     border: none;
-    border-radius: 15px;
+    border-radius: 50px;
     margin-left: 60%;
     z-index: 20;
+}
+.resume a {
+    color: #fff;
+    text-decoration: none;
 }
 .quote1 {
     background-color: #b5ebff;
