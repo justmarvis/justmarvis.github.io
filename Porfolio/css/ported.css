@@ -108,6 +108,25 @@ h1 {
 .mainMenu.open .menuBar::after {
     transform : rotate(-45deg);
 }
+.mainMenu.open {
+    margin-left: 75%;
+    position: fixed;
+    display: inline-block;
+    /* top: 50%; */
+    bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    box-sizing: border-box;
+    transition: all .15s ease-in-out;
+    border: 0px solid #000;
+    border-radius: 50px;
+    background-color: maroon;
+    box-shadow: 0px 1.5px 50px whitesmoke;
+    z-index: 99999;
+}
 .mainNav {
     display: none;
     position: absolute;
