@@ -11,6 +11,22 @@ mainMenu.addEventListener('click', () => {
     menuOpen = false;
   }
 });
+function myFunction() {
+  document.getElementById('dropDn').classList.toggle('mainNavShow');
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.menuBar')) {
+    var dropdowns = document.getElementById('mainNav');
+    var i;
+    for (i = 0; i < dropdowns.clientHeight; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('mainNavShow')) {
+        openDropdown.classList.remove('mainNavShow');
+      }
+    }
+  }
+}
+
 
 // footer
   let week_names = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thurday', 'Friday', 'Saturday'];

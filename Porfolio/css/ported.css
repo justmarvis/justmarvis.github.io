@@ -31,6 +31,9 @@ h1 {
     margin-top: 18px;
 }
 #mainHead {
+    position: fixed;
+    width: 100%;
+    top: 0px;
     display: flex;
     color: #fff;
     background-color: #101010;
@@ -44,43 +47,48 @@ h1 {
     margin-top: 28px;
     margin-left: 4px;
 }
+.profileImage {
+    margin-left: 40%;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    border-radius: 25px;
+    box-shadow: 0px 6px 10px -1px #3a3a3a;
+
+}
 .mainMenu {
     /* margin-top: 20%; */
     margin-left: 75%;
     position: fixed;
+    display: inline-block;
     /* top: 50%; */
     bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
     box-sizing: border-box;
     transition: all .15s ease-in-out;
     border: 0px solid #000;
     border-radius: 50px;
-    background-color: orange;
-    box-shadow: 0px 1.5px 10px #000;
+    background-color: maroon;
+    box-shadow: 0px 1.5px 50px whitesmoke;
     z-index: 99999;
 }
-.mainMenu::after {
-    transform: scaleY(20px);
-    transform: scaleX(20px);
-}
 .menuBar {
-    width: 30px;
+    width: 25px;
     height: 3px;
     border-radius: 50px;
-    background-color: #000;
+    background-color: #f5f5f5;
     transition: all .5s ease-in-out;
 }
 .menuBar::before, .menuBar::after {
     content: '';
     position: absolute;
-    width: 30px;
+    width: 25px;
     height: 3px;
     border-radius: 50px;
-    background-color: #000;
+    background-color: #f5f5f5;
     transition: all .5s ease-in-out;
 
 }
@@ -91,14 +99,14 @@ h1 {
     transform: translateY(10px);
 }
 .mainMenu.open .menuBar {
-    transform: translateX(-50px);
+    transform: translateX(0px);
     background: transparent;
 }
 .mainMenu.open .menuBar::before {
-    transform : rotate(45deg) translate(35px, -35px);
+    transform : rotate(45deg) ;
 }
 .mainMenu.open .menuBar::after {
-    transform : rotate(-45deg) translate(35px, 35px);
+    transform : rotate(-45deg);
 }
 .mainMenu.open::after {
     transform: scaleY(20deg);
@@ -106,6 +114,34 @@ h1 {
 }
 .mainNav {
     display: none;
+    position: absolute;
+    /* background-color: #800000; */
+    min-width: 160px;
+    box-shadow: 0px 1.5px 50px whitesmoke;
+    z-index: 99999;
+}
+.mainNav a {
+    font-family: Quicksand;
+    font-size: 16px;
+    color: #f5f5f5;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+    padding: 10px;
+    transition: all .5s ease-in-out;
+    background-color: #800000;
+    border-radius: 10px;
+}
+.aline {
+    border-bottom: 20px solid #fff;
+
+}
+.mainNavShow {
+    display: block;
+    margin-bottom: 300px;
+    margin-right: 90px;
+    /* transition: all .5s ease-in-out; */
 }
 .iconic {
     display: none;
@@ -186,6 +222,10 @@ h1 {
     padding: 10px;
     line-height: 1.2em;
 }
+.skills {
+    display: flex;
+    margin-right: 20px;
+}
 h3 {
     font-family: "Yusei Magic";
     font-weight: 100;
@@ -259,6 +299,7 @@ h3 {
 }
 footer {
     text-align: center;
+    margin-bottom: 30px;
 }
 /* ***************** */
 
