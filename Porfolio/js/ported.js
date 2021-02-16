@@ -11,6 +11,7 @@ mainMenu.addEventListener('click', () => {
     menuOpen = false;
   }
 });
+
 function myFunction() {
   document.getElementById('dropDn').classList.toggle('mainNavShow');
 }

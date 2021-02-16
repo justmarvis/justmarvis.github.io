@@ -108,10 +108,6 @@ h1 {
 .mainMenu.open .menuBar::after {
     transform : rotate(-45deg);
 }
-.mainMenu.open::after {
-    transform: scaleY(20deg);
-    transform: scaleX(20px);
-}
 .mainNav {
     display: none;
     position: absolute;
@@ -129,12 +125,13 @@ h1 {
     display: block;
     text-align: right;
     padding: 10px;
-    transition: all .5s ease-in-out;
+    /* transition: all .5s ease-in-out; */
     background-color: #800000;
     border-radius: 10px;
 }
 .aline {
     border-bottom: 20px solid #fff;
+    transition: all .5s ease-in-out;
 
 }
 .mainNavShow {
@@ -180,18 +177,19 @@ h1 {
     font-family: 'Rock Salt';
     font-size: 16px;
     font-weight: bold;
-    color: white;
+    color: #fff;
+    text-decoration: none;
     background-color: maroon;
     height: 50px;
     width: 110px;
     border: none;
     border-radius: 50px;
     margin-left: 60%;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 0px 1.5px 50px whitesmoke;
     z-index: 20;
-}
-.resume a {
-    color: #fff;
-    text-decoration: none;
 }
 .quote1 {
     background-color: #b5ebff;
