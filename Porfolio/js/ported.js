@@ -17,7 +17,7 @@ function myFunction() {
 }
 window.onclick = function(event) {
   if (!event.target.matches('.menuBar')) {
-    var dropdowns = document.getElementByClassName('mainNav');
+    var dropdowns = document.getElementsByClassName('mainNav');
     var i;
     for (i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];
