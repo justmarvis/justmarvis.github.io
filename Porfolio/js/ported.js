@@ -16,9 +16,9 @@ function myFunction() {
 }
 window.onclick = function(event) {
   if (!event.target.matches('.menuBar')) {
-    var dropdowns = document.getElementById('mainNav');
+    var dropdowns = document.getElementByClassName('mainNav');
     var i;
-    for (i = 0; i < dropdowns.clientHeight; i++) {
+    for (i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];
       if (openDropdown.classList.contains('mainNavShow')) {
         openDropdown.classList.remove('mainNavShow');
