@@ -49,11 +49,13 @@ h1 {
     margin-left: 75%;
     position: fixed;
     top: 50%;
+    bottom: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 60px;
     height: 60px;
+    box-sizing: border-box;
     transition: all .5s ease-in-out;
     border: 0px solid #000;
     border-radius: 50px;
