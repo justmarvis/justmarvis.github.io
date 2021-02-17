@@ -17,17 +17,26 @@
 body {
     background-image: url('/Porfolio/images/background-banner[mobile-view].jpg' );
     background-color: black;
-    background-size: 1200px;
+    background-size: 5000px;
     margin: 0;
     font-family: "libre baskerville", lato, Roboto, sans-serif;
     font-size: 11px;
 }
 p {
-    font-size: 14px;
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
 }
-.devP a {
+
+.devP a, .info a {
     text-decoration: none;
     color: #26A69A;
+}
+.devP strong {
+    text-decoration: underline;
+}
+.abME {
+    text-align: center;
+    margin-top: 30px;
 }
 hr {
     width: 50%;
@@ -35,7 +44,7 @@ hr {
     background-color: black;
 }
 h1 {
-    font-size: 30px;
+    font-size: 35px;
     font-family: Anton;
     margin-left: 15px;
     font-weight: 100;
@@ -55,7 +64,7 @@ h1 {
 .byline {
     font-family: Pacifico;
     color: dimgray;
-    margin-top: 38px;
+    margin-top: 35px;
     margin-left: 4px;
 }
 .profileImage {
@@ -67,6 +76,11 @@ h1 {
     border-radius: 25px;
     box-shadow: 0px 6px 10px -1px #3a3a3a;
 
+}
+.contactInfo p {
+    font-family: Quicksand;
+    font-weight: bold;
+    font-size: 14px;
 }
 .mainMenu {
     /* margin-top: 20%; */
@@ -121,60 +135,36 @@ h1 {
 .mainMenu.open .menuBar::after {
     transform : rotate(-45deg);
 }
-/* .mainMenu.open {
-    margin-left: 75%;
-    position: fixed;
-    display: inline-block;
-    top: 50%;
-    bottom: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 55px;
-    height: 55px;
-    box-sizing: border-box;
-    transition: all .15s ease-in-out;
-    border: 0px solid #000;
-    border-radius: 50px;
-    background-color: maroon;
-    box-shadow: 0px 1.5px 50px whitesmoke;
-    z-index: 99999;
-} */
 .mainNav {
     display: none;
     position: inherit;
-    /* background-color: #800000; */
     min-width: 160px;
-    /* width: 55px; */
     margin-bottom: 800px;
     margin-right: 100%;
     box-shadow: 0px 1.5px 50px whitesmoke;
-    /* z-index: 99999; */
 }
-.mainNav a {
+/* .mainNav a {
     font-family: Quicksand;
     font-size: 16px;
     color: #f5f5f5;
-    /* padding: 12px 16px; */
     text-decoration: none;
     display: block;
     text-align: right;
     padding: 10px;
-    /* transition: all .5s ease-in-out; */
     background-color: #800000;
     border-radius: 10px;
 }
 .aline {
     border-bottom: 20px solid #fff;
-    /* transition: all .5s ease-in-out; */
+
 
 }
 .mainNavShow {
     display: block;
     margin-bottom: 300px;
-    /* margin-right: 90px; */
-    /* transition: all .5s ease-in-out; */
-}
+    margin-right: 90px;
+
+} */
 .iconic {
     display: none;
 }
@@ -195,14 +185,15 @@ h1 {
     font-size: 16px;
     line-height: 1.1em;
     margin-top: 35px;
-    margin-left: 5px;
+    margin-left: 0px;
 }
 #intro {
     display: flex; 
     background-color: whitesmoke;
     margin-top: 25px;
-    height: 200px;
-    padding: 40px;
+    height: 350px;
+    padding-top: 40px;
+    margin-left: 5px;
     z-index: 10;
 }
 .par {
@@ -220,10 +211,10 @@ h1 {
     border: none;
     border-radius: 50px;
     margin-left: 60%;
-    padding: 5px;
-    padding-left: 10px;
+    /* padding: 0px; */
+    padding-left: 15px;
     padding-right: 10px;
-    box-shadow: 0px 1.5px 50px whitesmoke;
+    box-shadow: 0px 1.5px 12px #fff;
     z-index: 20;
 }
 .quote1 {
@@ -237,8 +228,8 @@ h1 {
     margin-top: -5px;
 }
 .info {
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 #mainContainer {
     margin-top: 10px;
@@ -258,6 +249,9 @@ h1 {
 .skills {
     display: flex;
     margin-right: 20px;
+}
+.skills ul {
+    font-size: 13px;
 }
 h3 {
     font-family: "Yusei Magic";
