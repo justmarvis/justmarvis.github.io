@@ -260,7 +260,7 @@ h3 {
     border-radius: 10px;
     color: white;
     animation: html 5s  infinite;
-    /* animation-fill-mode: both; */
+    animation-fill-mode: both;
 }
   
 @keyframes html {
@@ -275,7 +275,7 @@ h3 {
     border-radius: 10px;
     color: white;
     animation: css 5s  infinite;
-    /* animation-fill-mode: both; */
+    animation-fill-mode: both;
 }
   
 @keyframes css {
