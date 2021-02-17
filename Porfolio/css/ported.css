@@ -134,7 +134,7 @@ h1 {
     z-index: 99999;
 } */
 .mainNav {
-    /* display: none; */
+    display: none;
     position: inherit;
     /* background-color: #800000; */
     min-width: 160px;
