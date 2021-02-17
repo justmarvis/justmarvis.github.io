@@ -135,12 +135,12 @@ h1 {
 } */
 .mainNav {
     /* display: none; */
-    position: fixed;
+    position: inherit;
     /* background-color: #800000; */
     min-width: 160px;
     /* width: 55px; */
     margin-bottom: 800px;
-    margin-right: 25%;
+    margin-right: 100%;
     box-shadow: 0px 1.5px 50px whitesmoke;
     z-index: 99999;
 }
@@ -164,8 +164,8 @@ h1 {
 }
 .mainNavShow {
     display: block;
-    margin-bottom: 300px;
-    margin-right: 90px;
+    margin-bottom: 800px;
+    margin-right: 100%;
     /* transition: all .5s ease-in-out; */
 }
 .iconic {
