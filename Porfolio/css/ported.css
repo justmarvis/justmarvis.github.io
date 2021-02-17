@@ -259,7 +259,7 @@ h3 {
     border: 0 solid #000;
     border-radius: 10px;
     color: white;
-    animation: html 5s ease-in-out infinite;
+    animation: html 5s ase-in-out infinite;
     /* animation-fill-mode: both; */
 }
   
@@ -274,7 +274,7 @@ h3 {
     border: 0 solid #000;
     border-radius: 10px;
     color: white;
-    animation: css 5s ease-in-out infinite;
+    animation: css 5s  infinite;
     /* animation-fill-mode: both; */
 }
   
