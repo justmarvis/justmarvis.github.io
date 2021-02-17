@@ -81,6 +81,8 @@ h1 {
     font-family: Quicksand;
     font-weight: bold;
     font-size: 14px;
+    text-decoration: none;
+    color: #800000;
 }
 .mainMenu {
     /* margin-top: 20%; */
@@ -171,27 +173,18 @@ h1 {
 .icons {
     width: 50px;
 }
-.mainDivider {
-    background-color: black;
-    height: 180px;
-    width: 3.5px;
-    border-radius: 5px;
-    margin-left: 60px;
-    margin-top: 35px;
-    margin-bottom: 20px;
-}
 .intro {
     font-family: "Teko";
     font-size: 16px;
     line-height: 1.1em;
-    margin-top: 35px;
+    margin-top: 0px;
     margin-left: 0px;
 }
 #intro {
-    display: flex; 
-    background-color: whitesmoke;
+    /* display: flex; */
+    /* background-color: whitesmoke; */
     margin-top: 25px;
-    height: 350px;
+    height: 450px;
     padding-top: 40px;
     margin-left: 5px;
     z-index: 10;
@@ -199,21 +192,35 @@ h1 {
 .par {
     background-color: whitesmoke;
 }
+.pin {
+    margin-top: -50px;
+    text-align: right;
+    font-size: 20px;
+    text-shadow: -1px -5px 8px #000;
+}
+.word {
+    height: 200px;
+    margin-top: -50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+    /* padding-top: px; */
+    box-shadow: 0px 0px 10px #000;
+}
 .resume {
     font-family: 'Rock Salt';
     font-size: 16px;
     font-weight: bold;
-    color: #fff;
+    color: #800000;
     text-decoration: none;
-    background-color: maroon;
-    height: 50px;
-    width: 110px;
-    border: none;
-    border-radius: 50px;
-    margin-left: 60%;
-    /* padding: 0px; */
-    padding-left: 15px;
-    padding-right: 10px;
+    border: 2px solid #000;
+    margin-top: -50px;
+    /* margin-right: 40px; */
+    margin-bottom: 0px;
+    margin-left: 50%;
+    padding: 5px 20px 5px 25px;
     box-shadow: 0px 1.5px 12px #fff;
     z-index: 20;
 }
@@ -225,7 +232,7 @@ h1 {
     margin-left: 20px;
     margin-right: 20px;
     padding: 5px;
-    margin-top: -5px;
+    margin-top: -45px;
 }
 .info {
     margin-left: 10px;
@@ -253,10 +260,13 @@ h1 {
 .skills ul {
     font-size: 13px;
 }
-h3 {
+h3, h4 {
     font-family: "Yusei Magic";
     font-weight: 100;
-    color: #b5ebff;
+    color: #800000;
+}
+h4 {
+    font-size: 20px;
 }
 .hml {
     width: 10px;
@@ -326,19 +336,43 @@ h3 {
     100% {width: 25%;}
 }
 .call2action {
-    background-color: #fff;
-    width: 300px;
-    margin: 8%;
-    padding: 10px;
-    box-shadow: 0px 0px 10px #800000;
+    /* height: 200px; */
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 1px;
+    /* padding-left: 10px; */
+    box-shadow: 0px 0px 10px #000;
 }
-.email {
-    background-color: #808080;
+.call2action p {
+    color: #800000
+}
+.name, .email {
+    background-color: #f5f5f5;
     height: 25px;
-    width: 300px;
-    margin-top: 30px;
+    width: 90%;
     margin-bottom: 30px;
     border: 0px;
+    box-shadow: 0px 0px 10px #808080;
+    padding: 5px;
+    padding-left: 10px;
+    font-family: Quicksand;
+}
+.request {
+    background-color: #f5f5f5;
+    height: 200px;
+    width: 90%;
+    margin-bottom: 30px;
+    border: 0px;
+    box-shadow: 0px 0px 10px #808080;
+    padding: 5px;
+    padding-left: 10px;
+    padding-top: 0px;
+    font-family: Quicksand;
 }
 .call2button {
     color: #f5f5f5;
@@ -352,7 +386,11 @@ h3 {
     padding: 10px;
     /* margin-right: 25px; */
 }
+.copy_right {
+    font-size: 16px;
+}
 footer {
+    line-height: 1em;
     text-align: center;
     margin-bottom: 30px;
 }
