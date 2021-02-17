@@ -142,7 +142,7 @@ h1 {
     margin-bottom: 800px;
     margin-right: 100%;
     box-shadow: 0px 1.5px 50px whitesmoke;
-    z-index: 99999;
+    /* z-index: 99999; */
 }
 .mainNav a {
     font-family: Quicksand;
