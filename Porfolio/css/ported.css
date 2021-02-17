@@ -22,6 +22,13 @@ body {
     font-family: "libre baskerville", lato, Roboto, sans-serif;
     font-size: 11px;
 }
+p {
+    font-size: 14px;
+}
+.devP a {
+    text-decoration: none;
+    color: #26A69A;
+}
 hr {
     width: 50%;
     height: 1px;
@@ -220,7 +227,7 @@ h1 {
     z-index: 20;
 }
 .quote1 {
-    background-color: #b5ebff;
+    background-color: #26A69A;
     color: black;
     font-family: Quicksand;
     text-align: center;
@@ -327,24 +334,28 @@ h3 {
 .call2action {
     background-color: #fff;
     width: 300px;
-    margin: 40px;
+    margin: 8%;
+    padding: 10px;
     box-shadow: 0px 0px 10px #800000;
 }
 .email {
     background-color: #808080;
     height: 25px;
-    width: 220px;
-    margin: 30px;
+    width: 300px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     border: 0px;
 }
 .call2button {
-    color: #fff;
+    color: #f5f5f5;
+    font-size: 18px;
     background-color: #800000;
     border: 0px;
     border-radius: 10px;
     width: 100px;
     margin-bottom: 30px;
-    margin-left: 50%;
+    margin-left: 35%;
+    padding: 10px;
     /* margin-right: 25px; */
 }
 footer {
