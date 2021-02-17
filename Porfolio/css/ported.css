@@ -49,6 +49,7 @@ h1 {
     margin-left: 4px;
 }
 .profileImage {
+    width: 70px;
     margin-right: 60%;
     margin-left: 40%;
     margin-top: 20px;
