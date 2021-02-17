@@ -134,13 +134,13 @@ h1 {
     z-index: 99999;
 } */
 .mainNav {
-    display: none;
+    /* display: none; */
     position: fixed;
     /* background-color: #800000; */
     min-width: 160px;
     /* width: 55px; */
-    margin-bottom: 300px;
-    margin-right: 90px;
+    margin-bottom: 800px;
+    margin-right: 25%;
     box-shadow: 0px 1.5px 50px whitesmoke;
     z-index: 99999;
 }
@@ -148,7 +148,7 @@ h1 {
     font-family: Quicksand;
     font-size: 16px;
     color: #f5f5f5;
-    padding: 12px 16px;
+    /* padding: 12px 16px; */
     text-decoration: none;
     display: block;
     text-align: right;
