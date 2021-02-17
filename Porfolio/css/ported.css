@@ -86,7 +86,7 @@ h1 {
     height: 3px;
     border-radius: 50px;
     background-color: #f5f5f5;
-    transition: all .5s ease-in-out;
+    /* transition: all .5s ease-in-out; */
 }
 .menuBar::before, .menuBar::after {
     content: '';
@@ -159,13 +159,13 @@ h1 {
 }
 .aline {
     border-bottom: 20px solid #fff;
-    transition: all .5s ease-in-out;
+    /* transition: all .5s ease-in-out; */
 
 }
 .mainNavShow {
     display: block;
-    margin-bottom: 800px;
-    margin-right: 100%;
+    margin-bottom: 300px;
+    margin-right: 90px;
     /* transition: all .5s ease-in-out; */
 }
 .iconic {
