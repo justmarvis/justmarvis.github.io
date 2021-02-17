@@ -134,7 +134,7 @@ h1 {
     z-index: 99999;
 } */
 .mainNav {
-    /* display: none; */
+    display: none;
     position: inherit;
     /* background-color: #800000; */
     min-width: 160px;
@@ -255,6 +255,7 @@ h1 {
 h3 {
     font-family: "Yusei Magic";
     font-weight: 100;
+    color: #b5ebff;
 }
 .hml {
     width: 10px;
@@ -322,6 +323,29 @@ h3 {
     from {background-color: red;}
     to {background-color: grey;}
     100% {width: 25%;}
+}
+.call2action {
+    background-color: #fff;
+    width: 300px;
+    margin: 40px;
+    box-shadow: 0px 0px 10px #800000;
+}
+.email {
+    background-color: #808080;
+    height: 25px;
+    width: 220px;
+    margin: 30px;
+    border: 0px;
+}
+.call2button {
+    color: #fff;
+    background-color: #800000;
+    border: 0px;
+    border-radius: 10px;
+    width: 100px;
+    margin-bottom: 30px;
+    margin-left: 50%;
+    /* margin-right: 25px; */
 }
 footer {
     text-align: center;
