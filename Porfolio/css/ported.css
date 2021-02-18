@@ -352,7 +352,7 @@ h4 {
     color: #800000
 }
 .name, .email {
-    background-color: #f5f5f5;
+    background-color: #696969;
     height: 25px;
     width: 90%;
     margin-bottom: 30px;
@@ -361,9 +361,10 @@ h4 {
     padding: 5px;
     padding-left: 10px;
     font-family: Quicksand;
+    color: #f5f5f5;
 }
 .request {
-    background-color: #f5f5f5;
+    background-color: #696969;
     height: 200px;
     width: 90%;
     margin-bottom: 30px;
@@ -373,6 +374,7 @@ h4 {
     padding-left: 10px;
     padding-top: 0px;
     font-family: Quicksand;
+    color: #f5f5f5;
 }
 .call2button {
     color: #f5f5f5;
