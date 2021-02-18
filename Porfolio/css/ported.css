@@ -309,8 +309,8 @@ h4 {
 }
   
 @keyframes js {
-    from {background-color: red;}
-    to {background-color: maroon;}
+    from {background-color: #f00000;}
+    to {background-color: #800000;}
     100% {width: 50%;}
 }
 .sql {
@@ -323,11 +323,71 @@ h4 {
     animation-fill-mode: both;
 }
 @keyframes sql {
-    from {background-color: red;}
-    to {background-color: grey;}
+    from {background-color: #f00000;}
+    to {background-color: #808080;}
     100% {width: 25%;}
 }
-.hml p, .css p , .js p, .sql p{
+.fe {
+    width: 10px;
+    height: 10px;
+    border: 0 solid #000;
+    border-radius: 10px;
+    color: white;
+    animation: fe 5s ease-in-out;
+    animation-fill-mode: both;
+}
+  
+@keyframes fe {
+    from {background-color: #f00000;}
+    to {background-color: #800080;}
+    100% {width: 99%;}
+}
+.be {
+    width: 10px;
+    height: 10px;
+    border: 0 solid #000;
+    border-radius: 10px;
+    color: white;
+    animation: be 5s ease-in-out;
+    animation-fill-mode: both;
+}
+  
+@keyframes be {
+    from {background-color: #f00000;}
+    to {background-color: #808080;}
+    100% {width: 35%;}
+}
+.dpa {
+    width: 10px;
+    height: 10px;
+    border: 0 solid #000;
+    border-radius: 10px;
+    color: white;
+    animation: dpa 5s ease-in-out;
+    animation-fill-mode: both;
+}
+  
+@keyframes dpa {
+    from {background-color: #f00000;}
+    to {background-color: #800000;}
+    100% {width: 65%;}
+}
+.anime {
+    width: 10px;
+    height: 10px;
+    border: 0 solid #000;
+    border-radius: 10px;
+    color: white;
+    animation: anime 5s ease-in-out;
+    animation-fill-mode: both;
+}
+  
+@keyframes anime {
+    from {background-color: #f00000;}
+    to {background-color: #800000;}
+    100% {width: 68%;}
+}
+.hml p, .css p , .js p, .sql p, .fe p, .be p, .dpa p, .anime p{
     font-size: 10px;
     margin-left: 5px;
 }
