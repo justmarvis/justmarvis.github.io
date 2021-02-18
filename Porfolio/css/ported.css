@@ -275,8 +275,8 @@ h4 {
     border: 0 solid #000;
     border-radius: 10px;
     color: white;
-    animation: html 5s;
-    animation-fill-mode: both;
+    animation: html 5s infinite;
+    /* animation-fill-mode: both; */
 }
   
 @keyframes html {
@@ -526,65 +526,6 @@ footer {
     h3 {
         font-family: "Yusei Magic";
         font-weight: 100;
-    }
-    .hml {
-        padding-top: 380px;
-        width: 10px;
-        height: 10px;
-        border: 0 solid #000;
-        border-radius: 10px;
-        color: white;
-        animation: html 5s ease-in-out;
-        animation-fill-mode: both;
-    }
-      
-    @keyframes html {
-        0%  {background-color:red; top:200px;}
-        100% {background-color:purple; top:0px;}
-    }
-    .css {
-        padding-top: 380px;
-        width: 10px;
-        height: 10px;
-        border: 0 solid #000;
-        border-radius: 10px;
-        color: white;
-        animation: css 5s ease-in-out;
-        animation-fill-mode: both;
-    }
-      
-    @keyframes css {
-        0%  {background-color:red; top:180px;}
-        100% {background-color:purple; top:0px;}
-    }
-    .js {
-        padding-top: 380px;
-        width: 10px;
-        height: 10px;
-        border: 0 solid #000;
-        border-radius: 10px;
-        color: white;
-        animation: js 5s ease-in-out;
-    }
-      
-    @keyframes js {
-        from {background-color: red;}
-        to {background-color: maroon;}
-        100% {width: 50%;}
-    }
-    .sql {
-        padding-top: 380px;
-        width: 10px;
-        height: 10px;
-        border: 0 solid #000;
-        border-radius: 10px;
-        color: white;
-        animation: sql 5s ease-in-out;
-    }
-    @keyframes sql {
-        from {background-color: red;}
-        to {background-color: grey;}
-        100% {width: 25%;}
     }
     .hml p, .css p , .js p, .sql p{
         font-size: 10px;
