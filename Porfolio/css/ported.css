@@ -136,6 +136,8 @@ h1 {
 .mainNav {
     display: none;
     position: inherit;
+    margin-right: 50px;
+    margin-bottom: 300px;
 }
 .mainNav a {
     font-family: Quicksand;
@@ -156,7 +158,8 @@ h1 {
 .mainNavShow {
     display: block;
     margin-bottom: 300px;
-    margin-right: 90px;
+    margin-right: 50px;
+
 }
 .iconic {
     display: none;
