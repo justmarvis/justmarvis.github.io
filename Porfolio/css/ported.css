@@ -274,8 +274,8 @@ h4 {
     border: 0 solid #000;
     border-radius: 10px;
     color: white;
-    animation: html 5s infinite;
-    /* animation-fill-mode: both; */
+    animation: html 5s ease-in-out;
+    animation-fill-mode: both;
 }
   
 @keyframes html {
@@ -283,13 +283,13 @@ h4 {
     to {background-color: purple;}
     100% {width: 90%;}
 }
-/* .css {
+.css {
     width: 10px;
     height: 10px;
     border: 0 solid #000;
     border-radius: 10px;
     color: white;
-    animation: css 5s ;
+    animation: css 5s ease-in-out;
     animation-fill-mode: both;
 }
   
@@ -297,8 +297,8 @@ h4 {
     from {background-color: red;}
     to {background-color: purple;}
     100% {width: 80%;}
-} */
-/* .js {
+}
+.js {
     width: 10px;
     height: 10px;
     border: 0 solid #000;
@@ -312,8 +312,8 @@ h4 {
     from {background-color: red;}
     to {background-color: maroon;}
     100% {width: 50%;}
-} */
-/* .sql {
+}
+.sql {
     width: 10px;
     height: 10px;
     border: 0 solid #000;
@@ -326,7 +326,7 @@ h4 {
     from {background-color: red;}
     to {background-color: grey;}
     100% {width: 25%;}
-} */
+}
 .hml p, .css p , .js p, .sql p{
     font-size: 10px;
     margin-left: 5px;
