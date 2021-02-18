@@ -139,6 +139,7 @@ h1 {
 .mainNav a {
     font-family: Quicksand;
     font-size: 16px;
+    width: 130px;
     color: #f5f5f5;
     text-decoration: none;
     display: block;
@@ -155,7 +156,7 @@ h1 {
 .mainNavShow {
     display: block;
     margin-bottom: 300px;
-    margin-right: 50px;
+    margin-right: 90px;
 
 }
 .iconic {
