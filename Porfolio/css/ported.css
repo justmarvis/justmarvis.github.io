@@ -11,6 +11,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+
+/* @import "path/to/font-awesome/less/font-awesome.less";
+@FontAwesomePath:   "../font"; */
 /* ************************************ */
 
 /* Small view  */
@@ -44,12 +48,17 @@ hr {
     height: 1px;
     background-color: black;
 }
-h1 {
+.hr {
+    margin-top: 100px;
+}
+h1 a {
     font-size: 35px;
     font-family: Anton;
     margin-left: 15px;
     font-weight: 100;
     margin-top: 18px;
+    color: #fff;
+    text-decoration: none;
 }
 #mainHead {
     position: fixed;
@@ -77,7 +86,12 @@ h1 {
     margin-bottom: -20px;
     border-radius: 25px;
     box-shadow: 0px 6px 10px -1px #3a3a3a;
-
+}
+.aboutProfileImage {
+    width: 100px;
+    margin-top: -10em;
+    border-radius: 50px;
+    box-shadow: 0px 6px 10px -1px #3a3a3a;
 }
 .contactInfo p {
     font-family: Quicksand;
@@ -151,8 +165,9 @@ h1 {
 }
 .aline {
     border-bottom: 20px solid #fff;
-
-
+}
+.aline.active, #active {
+    background: #808080;
 }
 .mainNavShow {
     display: block;
@@ -227,6 +242,28 @@ h1 {
     padding: 5px;
     margin-top: -45px;
 }
+.about {
+    background-color: #f5f5f5;
+    width: 320px;
+    text-align: center;
+    border: 0px solid;
+    border-radius: 5px;
+    margin-top: 100px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 40px 10px 30px 10px;
+}
+.about p {
+    font-size: 15px;
+    text-align: left;
+}
+.introP {
+    padding: 5px 10px 5px 10px;
+    background: rgba(38, 166, 154, 20%);
+}
+.process {
+    padding: 5px 10px 5px 10px;
+}
 .info {
     margin-left: 10px;
     margin-right: 10px;
@@ -260,6 +297,9 @@ h3, h4 {
 h4 {
     font-size: 20px;
 }
+/* .fas {
+    width: 50px;
+} */
 .hml {
     width: 10px;
     height: 10px;
