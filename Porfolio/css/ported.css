@@ -63,9 +63,10 @@ h1 {
     box-shadow: 0px 6px 10px -1px #3a3a3a;
 }
 .byline {
+    font-size: 15px;
     font-family: Pacifico;
     color: dimgray;
-    margin-top: 35px;
+    margin-top: 38px;
     margin-left: 4px;
 }
 .profileImage {
@@ -114,7 +115,7 @@ h1 {
     height: 3px;
     border-radius: 50px;
     background-color: #f5f5f5;
-    transition: all .5s ease-in-out;
+    /* transition: all .5s ease-in-out; */
 
 }
 .menuBar::before {
@@ -128,16 +129,18 @@ h1 {
     background: transparent;
 }
 .mainMenu.open .menuBar::before {
-    transform : rotate(45deg) ;
+    transform : rotate(45deg);
 }
 .mainMenu.open .menuBar::after {
     transform : rotate(-45deg);
 }
 .mainNav {
     display: none;
+    position: inherit;
 }
 .mainNav a {
     font-family: Quicksand;
+    width: 130px;
     font-size: 16px;
     color: #f5f5f5;
     text-decoration: none;
@@ -149,8 +152,6 @@ h1 {
 }
 .aline {
     border-bottom: 20px solid #fff;
-
-
 }
 .mainNavShow {
     display: block;
