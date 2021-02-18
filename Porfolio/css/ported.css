@@ -135,9 +135,6 @@ h1 {
 }
 .mainNav {
     display: none;
-    position: inherit;
-    margin-right: 50px;
-    margin-bottom: 300px;
 }
 .mainNav a {
     font-family: Quicksand;
