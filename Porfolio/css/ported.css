@@ -86,19 +86,14 @@ h1 {
     color: #800000;
 }
 .mainMenu {
-    /* margin-top: 20%; */
     margin-left: 75%;
     position: fixed;
-    /* display: inline-block; */
-    /* top: 50%; */
     bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 55px;
     height: 55px;
-    /* box-sizing: border-box; */
-    /* transition: all .15s ease-in-out; */
     border: 0px solid #000;
     border-radius: 50px;
     background-color: maroon;
@@ -140,11 +135,6 @@ h1 {
 }
 .mainNav {
     display: none;
-    position: inherit;
-    min-width: 160px;
-    margin-bottom: 800px;
-    margin-right: 100%;
-    box-shadow: 0px 1.5px 50px whitesmoke;
 }
 .mainNav a {
     font-family: Quicksand;
@@ -166,7 +156,6 @@ h1 {
     display: block;
     margin-bottom: 300px;
     margin-right: 90px;
-
 }
 .iconic {
     display: none;
