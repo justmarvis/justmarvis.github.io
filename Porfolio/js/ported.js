@@ -28,6 +28,14 @@ window.onclick = function(event) {
   }
 }
 
+// testimonials
+
+function testimonials() {
+
+
+
+}
+
 
 // footer
   let week_names = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thurday', 'Friday', 'Saturday'];
