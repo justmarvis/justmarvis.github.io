@@ -651,7 +651,7 @@
         /* margin-left: 40%; */
         /* margin-left: 40%; */
         margin-top: 40px;
-        margin-left: 250px;
+        margin-left: 400px;
         margin-bottom: -50px;
         border-radius: 25px;
         box-shadow: 0px 6px 10px -1px #3a3a3a;
@@ -679,6 +679,9 @@
     .mainNav a:hover {
         text-decoration: 5px underline;
     }
+    .mainNav .alin:hover {
+        text-decoration: none;
+    }
     .aline.active, #active {
         text-decoration: 5px underline;
         font-weight: bold;
@@ -692,6 +695,16 @@
         /* background-color: rgba(240, 93, 35, 95%); */
         border-radius: 10px;
     }
+    .mainNav .alin {
+        font-family: Quicksand;
+        font-size: 14px;
+        width: 130px;
+        color: #337ab7;
+        text-decoration: none;
+        /* background-color: rgba(240, 93, 35, 95%); */
+        border-radius: 10px;
+        font-weight: bold;
+    }
     .iconic {
         position: fixed;
         margin-left: 80%;
@@ -701,7 +714,7 @@
         display: flex;
         justify-content: space-evenly;
     }
-    .icons {
+    .iyes {
         width: 15px;
         padding: 10px;
         padding-top: 0;
