@@ -580,7 +580,7 @@
 /* Large view */
 @media only screen and (min-width: 60rem) {
     body {
-        background-image: url('/Porfolio/images/background-banner[mobile-view].jpg' );
+        background-image: url('/portfolio/images/background-banner[mobile-view].jpg' );
         background-size: 5000px;
         margin: 0;
         font-family: "libre baskerville", lato, Roboto, sans-serif;
@@ -602,6 +602,11 @@
         text-decoration: underline;
         text-align: center;
         margin-top: 30px;
+    }
+    .abH {
+        margin-top: 80px;
+        text-align: center;
+        color: #f00000;
     }
     hr {
         width: 50%;
@@ -738,7 +743,10 @@
         z-index: 10;
     }
     .par {
-        background-color: rgba(0, 0, 0, 20%);
+        /* background-color: rgba(0, 0, 0, 20%); */
+        /* background-image: url('/portfolio/images/Kyle-Olson.png'); */
+        background-position: center;
+        background-color: whitesmoke;
         margin-top: -30px;
     }
     .par-page {
@@ -751,7 +759,8 @@
         text-shadow: -1px -5px 8px #000;
     }
     .word {
-        height: 200px;
+        height: 150px;
+        width: 40%;
         margin-top: -50px;
         margin-right: 50px;
         margin-bottom: 20px;
@@ -857,7 +866,7 @@
         margin-right: 5px;
     }
     .skillDev {
-        border: 5px dashed maroon;
+        border: 3px dashed maroon;
         width: 50%;
         padding: 15px;
     }
