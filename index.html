@@ -18,7 +18,7 @@
             <div class="mainMenu">
                 <a onclick="myFunction()" class="menuBar" href="#"></a>
                 <nav id="dropDn" class="mainNav">
-                    <a class="aline" href="/assets/html/assets.html">Portfolio</a>
+                    <a class="aline" href="/assets/html/portfolio.html">Portfolio</a>
                     <a class="aline" href="/assets/html/testimonials.html">Testimonials</a>
                     <a  class="aline" href="https://marvissblog.wordpress.com/" target="_blank">Blogs</a>
                     <a class="aline"  href="/assets/html/about.html">About me</a>
@@ -45,7 +45,22 @@
                     <div class="word">
                         <!-- <p class="pin">&#128204;</p> -->
                         <p>My name is Marvis Igbineweka.<br>I am studying web design and development in Brigham Young University-Idaho.<br>I am currently a senior and so i am in an intermediate<br>level in my major.</p>
-                    </div> <br>
+                    </div>
+                    <div class="portChat">
+                        <h2 id="pp">Portfolio Progress</h2>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="skill-item center-block">
+                                    <div class="chart-container">
+                                        <div class="chart" data-percent="45" data-bar-color="maroon">
+                                            <span class="percent" data-after="%">45</span>
+                                        </div>
+                                    </div>
+                                    <p>Development Progress</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -165,5 +180,16 @@
         <span id="currentdate"></span>
     </footer>
     <script src="/assets/js/ported.js"></script>
+    <script src="/assets/jquery/jquery.appear.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="/assets/easy-pie-chart-master/dist/jquery.easypiechart.js"></script>
+    <script>
+        $(function() {
+            $('.chart').easyPieChart({
+                //your options goes here
+            });
+        });
+    </script>
 </body>
 </html>

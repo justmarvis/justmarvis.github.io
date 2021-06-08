@@ -28,6 +28,13 @@ window.onclick = function(event) {
   }
 }
 
+/* ************************************************************pie chart*********************************************************************** */
+$(function () {
+  $('.chart').easyPieChart({
+    //rest of my statements goes here
+  });
+});
+
 // testimonials
 
 function testimonials() {
