@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+        <link rel="stylesheet" href="/css/all.min.css">
         <link rel="stylesheet" href="/css/ported.css">
         <title>Marvis | Official website</title>
     </head>
@@ -161,18 +162,18 @@
                 </div>
             </section>
         </div>
-            <!-- <form action="/action_page.php" class="call2action">
-                <h4>Review</h4>
-                <label for="Fullname" class="label">Full Name:</label><br>
-                <input type="text" placeholder="John Doe" name="name" class="name" required><br>
-                <label for="Email" class="label">Email:</label><br>
-                <input type="text" placeholder="johndoe@gmail.com" name="email" class="email"><br>
-                <label for="Comment" class="label">Comment:</label><br>
-                <textarea name="comment" id="comment" cols="30" rows="10" required></textarea><br>
-                <label for="Comment" class="label">date:</label><br>
-                <input type="date"  name="name" class="date" required><br>
-                <input type="submit" value="Submit" class="call2button">
-            </form> -->
+            <form action="/action_page.php" class="call2action">
+                <h4>Comment</h4>
+                <div class="NAME">
+                    <input type="text" placeholder="NAME" name="name" class="name" required><br>
+                </div>
+                <div class="act">
+                    <div class="comet">
+                        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Add Comment" required></textarea>
+                    </div>
+                        <i class="fas fa-paper-plane sendButton" type="submit"></i>
+                </div>
+            </form>
         <hr class="hr">
     </main>
     <footer>
@@ -180,7 +181,6 @@
         <span id="currentdate"></span>
     </footer>
     <script src="/assets/js/ported.js"></script>
-    <script src="/assets/jquery/jquery.appear.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script src="/assets/easy-pie-chart-master/dist/jquery.easypiechart.js"></script>
