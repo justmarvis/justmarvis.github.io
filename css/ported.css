@@ -670,17 +670,74 @@
         color: #000;
     }
     .sendButton {
+        /* display: block; */
         color: rgb(240, 93, 35);
         font-size: 30px;
         /* background-color: #800000; */
         border: 0px;
         /* border-radius: 50px; */
-        width: 100px;
-        /* margin-bottom: 30px; */
-        margin-left: 10px;
+        width: 50px;
+        margin-bottom: 30px;
+        margin-left: 40px;
         padding: 10px;
-        /* cursor: pointer; */
+        cursor: pointer;
         margin-top: 2%;
+    }
+    .sb-collider {
+        /* display: none; */
+        border: none;
+        background: transparent;
+        width: 100px;
+        height: 20px;
+        margin-bottom: 30px;
+        margin-left: -50px;
+        /* margin-right: 10px; */
+        padding: 10px;
+        cursor: pointer;
+        margin-top: 1%;
+    }
+    /* ************************************************************testimonials*********************************************************************** */
+    #testimonials {
+        /* margin: 10px; */
+        /* margin-left: 100px;
+        margin-right: 100px; */
+    }
+    .mainContainment {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .containment {
+        background-color: rgba(38, 166, 154, 50%);
+        box-shadow: 0px 0px 10px #808080;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        /* margin-right: 500px; */
+        /* height: 200px; */
+        width: 350px;
+        padding: 10px;
+    }
+    .test {
+        padding: 10px;
+    }
+    .testimony {
+        color: #808080;
+        font-size: 14px;
+        /* text-shadow: 0px 0px 10px #808080; */
+    }
+    .go-right{
+        text-align: right;
+        font-size: 10px;
+        text-shadow: none;
+        color: #808080;
+        margin-top: 30px;
+    }
+    .go-left {
+        margin-bottom: 10px;
+        text-align: left;
+        font-size: 10px;
+        text-shadow: none;
+        color: #808080;
     }
     .copy_right {
         font-size: 16px;
@@ -1311,6 +1368,7 @@
         color: #000;
     }
     .sendButton {
+        /* display: block; */
         color: rgb(240, 93, 35);
         font-size: 30px;
         /* background-color: #800000; */
@@ -1318,11 +1376,65 @@
         /* border-radius: 50px; */
         width: 100px;
         margin-bottom: 30px;
-        margin-left: 20px;
+        margin-left: -20px;
         padding: 10px;
         cursor: pointer;
         margin-top: 2%;
     }
+    .sb-collider {
+        /* display: none; */
+        border: none;
+        background: transparent;
+        width: 10px;
+        margin-bottom: 30px;
+        margin-left: -20px;
+        padding: 10px;
+        cursor: pointer;
+        margin-top: 1%;
+    }
+    /* ************************************************************testimonials*********************************************************************** */
+    #testimonials {
+        /* margin: 10px; */
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .mainContainment {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .containment {
+        background-color: rgba(38, 166, 154, 50%);
+        box-shadow: 0px 0px 10px #808080;
+        margin-bottom: 50px;
+        /* margin-right: 500px; */
+        /* height: 200px; */
+        width: 200px;
+        padding: 10px;
+    }
+    .test {
+        padding: 10px;
+    }
+    .testimony {
+        color: #808080;
+        font-size: 14px;
+        /* text-shadow: 0px 0px 10px #808080; */
+    }
+    .go-right{
+        text-align: right;
+        font-size: 10px;
+        text-shadow: none;
+        color: #808080;
+        margin-top: 30px;
+    }
+    .go-left {
+        margin-bottom: 10px;
+        text-align: left;
+        font-size: 10px;
+        text-shadow: none;
+        color: #808080;
+    }
+    /* ************************************************************footer section*********************************************************************** */
     .copy_right {
         font-size: 16px;
     }
