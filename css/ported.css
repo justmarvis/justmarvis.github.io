@@ -673,28 +673,15 @@
         /* display: block; */
         color: rgb(240, 93, 35);
         font-size: 30px;
-        /* background-color: #800000; */
+        background: transparent;
         border: 0px;
         /* border-radius: 50px; */
         width: 50px;
         margin-bottom: 30px;
-        margin-left: 40px;
+        margin-left: 2px;
         padding: 10px;
         cursor: pointer;
         margin-top: 2%;
-    }
-    .sb-collider {
-        /* display: none; */
-        border: none;
-        background: transparent;
-        width: 100px;
-        height: 20px;
-        margin-bottom: 30px;
-        margin-left: -50px;
-        /* margin-right: 10px; */
-        padding: 10px;
-        cursor: pointer;
-        margin-top: 1%;
     }
     /* ************************************************************testimonials*********************************************************************** */
     #testimonials {
@@ -1371,26 +1358,15 @@
         /* display: block; */
         color: rgb(240, 93, 35);
         font-size: 30px;
-        /* background-color: #800000; */
+        background: transparent;
         border: 0px;
         /* border-radius: 50px; */
-        width: 100px;
+        width: 50px;
         margin-bottom: 30px;
-        margin-left: -20px;
+        margin-left: 10px;
         padding: 10px;
         cursor: pointer;
         margin-top: 2%;
-    }
-    .sb-collider {
-        /* display: none; */
-        border: none;
-        background: transparent;
-        width: 10px;
-        margin-bottom: 30px;
-        margin-left: -20px;
-        padding: 10px;
-        cursor: pointer;
-        margin-top: 1%;
     }
     /* ************************************************************testimonials*********************************************************************** */
     #testimonials {
