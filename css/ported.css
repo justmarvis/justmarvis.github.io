@@ -1191,7 +1191,7 @@
     @keyframes js {
         from {background-color: #f00000;}
         to {background-color: #800000;}
-        100% {width: 50%;}
+        100% {width: 15%;}
     }
     .sql {
         width: 10px;
@@ -1220,7 +1220,7 @@
     @keyframes fe {
         from {background-color: #f00000;}
         to {background-color: #800080;}
-        100% {width: 99%;}
+        100% {width: 50%;}
     }
     .be {
         width: 10px;

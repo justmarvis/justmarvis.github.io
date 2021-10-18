@@ -116,7 +116,7 @@
                         </tr>
                         <tr>
                             <td class="know"><h3>JavaScript</h3></td>
-                            <td><h3>50%</h3></td>
+                            <td><h3>15%</h3></td>
                             <td class="bar"><div class="js"></div></td>
                         </tr>
                         <tr>
@@ -126,12 +126,12 @@
                         </tr>
                         <tr>
                             <td class="know"><h3>Java</h3></td>
-                            <td><h3>50%</h3></td>
+                            <td><h3>15%</h3></td>
                             <td class="bar"><div class="js"></div></td>
                         </tr>
                         <tr>
                             <td class="know"><h3>Front-End</h3></td>
-                            <td><h3>99%</h3></td>
+                            <td><h3>50%</h3></td>
                             <td class="bar"><div class="fe"></div></td>
                         </tr>
                         <tr>
@@ -163,18 +163,19 @@
                 </div>
             </section>
         </div>
-            <form action="/action_page.php" class="call2action">
+            <form action="/assets/html/testimonials.html" class="call2action">
                 <h4>Comment</h4>
                 <div class="NAME">
-                    <input type="text" placeholder="NAME" name="name" class="name" required><br>
+                    <input type="text" placeholder="NAME" name="name" id="name" class="name" required><br>
                 </div>
                 <div class="act">
                     <div class="comet">
-                        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Add Comment" required></textarea>
+                        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Add Your Comment" required></textarea>
                     </div>
-                    <button class="fas fa-paper-plane sendButton" id="sb-out">
+                    <button class="fas fa-paper-plane sendButton" id="sb-out" onclick="myComment()">
                     </button>
                 </div>
+                <div id="commentOut"></div>
             </form>
         <hr class="hr">
     </main>

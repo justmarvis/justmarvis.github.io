@@ -40,12 +40,37 @@ window.onclick = function(event) {
 function testimonials() {
 
 
+ 
+}
+
+//comment section
+
+function myComment() {
+
+  //declarations
+  let month_names = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October',
+    'November', 'December'];
+  let date = new Date();
+  let monthName = month_names[date.getMonth()];
+
+  // variable assignments for user input
+  var name = document.getElementById('name').value;
+  var comment = document.getElementById('comment').value;
+
+
+  // display testimonial
+  var Comment = "By "+name+" <br> "+comment+" <br> "+monthName+" "+date.getDate()+", "+date.getFullYear()+"";
+
+
+  document.getElementById('commentOut').innerHTML = Comment;
+  
+
 
 }
 
 
 // footer
-  let week_names = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thurday', 'Friday', 'Saturday'];
+  let week_names = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 let month_names = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October',
     'November', 'December'];
 let date = new Date();
