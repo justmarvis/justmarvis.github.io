@@ -840,7 +840,7 @@
         /* padding: 0 !important; */
         /* cursor: pointer; */
     }
-    h5 {
+    .h5 {
         text-decoration: underline;
         font-size: 12px;
         font-family: sans-serif;
@@ -1637,17 +1637,45 @@
         margin-top: -350px;
     }
     .shopDes {
-        margin-left: 90%;  
-        display: flex;
-        justify-content: end;
+        margin-left: 5%;  
+        /* display: flex; */
+        /* justify-content: end; */
         padding-right: 5px;
-        margin-bottom: 5px;
+        margin-bottom: 2px;
         margin-top: 5px;
         color: rgba(0, 0, 0, 30%);
         cursor: pointer;
     }
     .shopDes:hover {
         color: rgba(0, 0, 0, 30%);
+    }
+    .dropdown {
+    position: relative;
+    display: inline-block;
+    }
+
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f5f5f5;
+    min-width: 160px;
+    box-shadow: 0px 0px 10px #000;
+    /* padding: 12px 16px; */
+    padding: 20px;
+    z-index: 1;
+    }
+    .dropdown-content p {
+        border-left: 3px solid rgba(49, 19, 9, 0.9);
+        color: #000;
+        font-family: Quicksand;
+        font-weight: bold;
+    }
+    .shopP {
+        text-align: right;
+        border-right: 1px solid rgba(49, 19, 9, 0.9);
+    }
+    .dropdown:hover .dropdown-content {
+    display: block;
     }
     .shopItem {
         width: 150px;
@@ -1665,16 +1693,18 @@
         /* padding: 0 !important; */
         /* cursor: pointer; */
     }
-    h5 {
-        text-decoration: underline;
+    .h5 {
+        /* margin-top: -15px; */
         font-size: 12px;
-        font-family: sans-serif;
-        font-weight: 800;
-        padding-left: 5px;
+        /* font-family: sans-serif; */
+        border-bottom: 1.5px solid rgba(49, 19, 9, 0.9);
+        color: rgba(49, 19, 9, 0.9);
+        padding-right: 15px;
+        margin-bottom: 10px;
     }
     .shopItem p {
         font-size: 12px;
-        /* line-height: 0; */
+        /* line-height: 100px; */
         padding-left: 10px;
         padding-right: 10px;
         margin-top: -15px;
@@ -1687,8 +1717,9 @@
         display: flex;
         justify-content: center;
         justify-content: space-between;
-        margin-left: 5px;
-        margin-right: 5px;
+        border-top: 1px solid #808080;
+        padding: 5px;
+        width: 94%;
     }
     .shopItem i {
         cursor: pointer;
@@ -1698,7 +1729,7 @@
         color: red;
     } */
     .shop {
-        font-size: 12px;
+        font-size: 10px;
         background: transparent;
         border: none;
         /* padding: 10px; */
