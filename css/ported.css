@@ -740,23 +740,30 @@
     /* ************************************************************portfolio*********************************************************************** */
     .mainPort {
         margin: 10px;
+        margin-top: 150px;
     }
     .flexContainer {
+        /* width: 90%; */
         display: flex;
         flex-wrap: wrap;
-        /* justify-content: center; */
-        justify-content: space-evenly;
+        /* margin-bottom: 50px; */
+    }
+    .port-link {
+        text-decoration: none;
+    }
+    .port-link:hover {
+        background-color: rgba(0, 0, 0, 100%);
     }
     .boxOne {
-        width: 100px;
-        height: 100px;
+
+        width: 150px;
+        height: 150px;
         background-color: #fff;
         box-shadow: #000 0px 0px 10px;
-        margin-bottom: 100px;
     }
     .boxTwo {
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
         background-color: #fff;
         box-shadow: #000 0px 0px 10px;
         border-radius: 100px;
@@ -764,18 +771,34 @@
     .boxThree {
         width: 0;
 	    height: 0;
-	    border-top: 55px solid transparent;
-	    border-left: 100px solid #616421;
-	    border-bottom: 55px solid transparent;
+	    border-top: 75px solid transparent;
+	    border-left: 150px solid #616421;
+	    border-bottom: 75px solid transparent;
     }
     .whBox3 p, .whBox2 p, .whBox1 p {
-        color: #fff;
+        font-family: Quicksand;
+        font-weight: bold;
+        font-size: 14px;
+        text-decoration: none;
+        /* color: #800000; */
+        color: rgba(0, 0, 0, 50%);
         background-color: rgba(0, 0, 0, 20%);
-        border-radius: 10px;
+        border-radius: 25px;
         margin-top: -95px;
         margin-left: 10px;
+        margin-bottom: 110px;
         margin-right: 80px;
-        padding: 5px;
+        padding: 10px;
+        padding-top: 3px;
+        padding-bottom: 5px;
+    }
+    .whBox3 p:hover, .whBox2 p:hover, .whBox1 p:hover {
+        background-color: rgba(0, 0, 0, 100%);
+        color: #fff;
+    }
+    .whBox3 p:active, .whBox2 p:active, .whBox1 p:active {
+        box-shadow: #000 0px 0px 10px;
+        color: #fff;
     }
     /* ************************************************************gallery shop*********************************************************************** */
     #gallery-shop {
@@ -789,49 +812,51 @@
         margin-top: -350px;
     }
     .shopDes {
-        margin-left: 100%;  
+        margin-left: 90%;  
         display: flex;
         justify-content: end;
+        padding-right: 5px;
         margin-bottom: 5px;
-        color: #808080;
+        margin-top: 5px;
+        color: rgba(0, 0, 0, 30%);
+        cursor: pointer;
+    }
+    .shopDes:hover {
+        color: rgba(0, 0, 0, 30%);
     }
     .shopItem {
-        width: 125px;
-        padding: 10px;
-        padding-top: 2px;
-        margin-bottom: 25px;
-        line-height: .5px;
+        width: 150px;
+        height: 20px;
+        /* padding-top: -10px; */
+        padding: 3px;
+        margin-bottom: 320px;
         /* border: 1px solid #000; */
         box-shadow: 0px 0px 10px #000;
         /* height: 100px; */
     }
-    .item2 {
-        height: 200px;
-    }
-    .item3 {
-        height: 135px;
-    }
-    .item5 {
-        height: 223px;
-    }
     .shopItem img {
-        width: 100%;
+        width: 150px;
+        margin-top: 2.5px;
+        /* padding: 0 !important; */
         /* cursor: pointer; */
     }
     h5 {
         text-decoration: underline;
-        font-size: 10px;
+        font-size: 12px;
         font-family: sans-serif;
         font-weight: 800;
+        padding-left: 5px;
     }
     .shopItem p {
-        font-size: 10px;
+        font-size: 12px;
+        /* line-height: 0; */
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: -15px;
     }
     .shopHr {
-        /* background-color: #000; */
-        /* margin-top: 100px; */
+        background: transparent;
         width: 100%;
-        height: 0;
     }
     .shopBottom {
         display: flex;
@@ -841,16 +866,21 @@
         margin-right: 5px;
     }
     .shopItem i {
-        font-size: 10px;
         cursor: pointer;
-        height: 10px;
     }
+    /* .fa-star {
+        background: transparent;
+        color: red;
+    } */
     .shop {
-        font-size: 8px;
-        background-color: transparent;
+        font-size: 12px;
+        background: transparent;
         border: none;
-        padding: 0px;
+        /* padding: 10px; */
         cursor: pointer;
+    }
+    #pgLow {
+        margin-top: 500px;
     }
 }
 /* ************************************************************************************************************************************************** */
@@ -1489,11 +1519,19 @@
     /* ************************************************************portfolio*********************************************************************** */
     .mainPort {
         margin: 10px;
+        margin-top: 150px;
     }
     .flexContainer {
         display: flex;
         justify-content: center;
         justify-content: space-evenly;
+        margin-bottom: 80px;
+    }
+    .port-link {
+        text-decoration: none;
+    }
+    .port-link:hover {
+        background-color: rgba(0, 0, 0, 100%);
     }
     .boxOne {
 
@@ -1517,13 +1555,28 @@
 	    border-bottom: 75px solid transparent;
     }
     .whBox3 p, .whBox2 p, .whBox1 p {
-        color: #fff;
+        font-family: Quicksand;
+        font-weight: bold;
+        font-size: 14px;
+        text-decoration: none;
+        /* color: #800000; */
+        color: rgba(0, 0, 0, 50%);
         background-color: rgba(0, 0, 0, 20%);
-        border-radius: 10px;
+        border-radius: 25px;
         margin-top: -95px;
         margin-left: 10px;
         margin-right: 80px;
-        padding: 5px;
+        padding: 10px;
+        padding-top: 3px;
+        padding-bottom: 5px;
+    }
+    .whBox3 p:hover, .whBox2 p:hover, .whBox1 p:hover {
+        background-color: rgba(0, 0, 0, 100%);
+        color: #fff;
+    }
+    .whBox3 p:active, .whBox2 p:active, .whBox1 p:active {
+        box-shadow: #000 0px 0px 10px;
+        color: #fff;
     }
     /* ************************************************************testimonials*********************************************************************** */
     #testimonials {
@@ -1578,23 +1631,38 @@
     }
     /* ************************************************************gallery shop*********************************************************************** */
     #gallery-shop {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         margin: 50px;
         margin-top: -350px;
     }
+    .shopDes {
+        margin-left: 90%;  
+        display: flex;
+        justify-content: end;
+        padding-right: 5px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        color: rgba(0, 0, 0, 30%);
+        cursor: pointer;
+    }
+    .shopDes:hover {
+        color: rgba(0, 0, 0, 30%);
+    }
     .shopItem {
-        width: 200px;
-        height: auto;
-        padding: 10px;
-        margin-bottom: 50px;
+        width: 150px;
+        height: 20px;
+        /* padding-top: -10px; */
+        padding: 3px;
+        margin-bottom: 320px;
         /* border: 1px solid #000; */
         box-shadow: 0px 0px 10px #000;
         /* height: 100px; */
     }
     .shopItem img {
-        width: 200px;
+        width: 150px;
+        margin-top: 2.5px;
+        /* padding: 0 !important; */
         /* cursor: pointer; */
     }
     h5 {
@@ -1602,15 +1670,18 @@
         font-size: 12px;
         font-family: sans-serif;
         font-weight: 800;
+        padding-left: 5px;
     }
     .shopItem p {
         font-size: 12px;
+        /* line-height: 0; */
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: -15px;
     }
     .shopHr {
-        /* background-color: #000; */
-        /* margin-top: 100px; */
+        background: transparent;
         width: 100%;
-        height: 0;
     }
     .shopBottom {
         display: flex;
@@ -1620,15 +1691,21 @@
         margin-right: 5px;
     }
     .shopItem i {
-        font-size: 18px;
         cursor: pointer;
-        height: 10px;
     }
+    /* .fa-star {
+        background: transparent;
+        color: red;
+    } */
     .shop {
-        background-color: #87ceeb;
+        font-size: 12px;
+        background: transparent;
         border: none;
-        padding: 10px;
+        /* padding: 10px; */
         cursor: pointer;
+    }
+    #pgLow {
+        margin-top: 500px;
     }
 }
 /* ************************************************************************************************************************************************** */
