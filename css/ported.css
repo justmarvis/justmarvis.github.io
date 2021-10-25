@@ -74,7 +74,7 @@
         display: flex;
         justify-content: space-between;
         color: #fff;
-        background: linear-gradient(180deg, #000, rgba(240, 93, 35, 90%));
+        background: linear-gradient(180deg, #000, rgba(240, 93, 35, 100%));
         background-size: 900% 300%;
         height: 70px;
         box-shadow: 0px 6px 10px -1px #3a3a3a;
@@ -108,14 +108,12 @@
     }
     
     .contactInfo p {
+        /* display: none; */
         font-family: Quicksand;
         font-weight: bold;
         font-size: 14px;
         text-decoration: none;
         color: #800000;
-    }
-    .shopContact p {
-        position: fixed;
     }
     /* ************************************************************progress chart*********************************************************************** */
     .portChat {
@@ -216,15 +214,15 @@
         height: 55px;
         border: 0px solid #000;
         border-radius: 50px;
-        background-color: rgba(240, 93, 35, 90%);
-        box-shadow: 0px 1.5px 50px whitesmoke;
+        background: linear-gradient(45deg, #000, rgba(240, 93, 35, 50%));
+        box-shadow: 0px 1.5px 20px #fff;
         z-index: 99999;
     }
     .menuBar {
         width: 25px;
         height: 3px;
         border-radius: 50px;
-        background: linear-gradient(180deg, #000, rgba(240, 93, 35, 90%));
+        background-color: #fff;
         background-size: 900% 300%;
         /* transition: all .5s ease-in-out; */
     }
@@ -234,7 +232,7 @@
         width: 25px;
         height: 3px;
         border-radius: 50px;
-        background: linear-gradient(180deg, #000, rgba(240, 93, 35, 90%));
+        background-color: #fff;
         background-size: 900% 300%;
         transition: all .5s ease-in-out;
 
@@ -270,7 +268,7 @@
         display: block;
         text-align: right;
         padding: 10px;
-        background: linear-gradient(180deg, #000, rgba(240, 93, 35, 90%));
+        background: linear-gradient(180deg, #000, rgba(240, 93, 35, 50%));
         background-size: 900% 300%;
         border-radius: 10px;
     }
@@ -321,13 +319,13 @@
     }
     #intro {
         margin-top: 25px;
-        height: 450px;
+        height: 430px;
         padding-top: 40px;
         margin-left: 5px;
         z-index: 10;
     }
     .par {
-        background-color: #f5f5f5;
+        background-color: rgba(38, 166, 154, 20%);
     }
     .pin {
         margin-top: -50px;
@@ -337,7 +335,16 @@
     }
     .word {
         display: none;
-        height: 200px;
+        /* height: 200px; */
+        margin: 0 auto;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-top: 10px;
+        box-shadow: 0px 0px 10px #000;
+    }
+    .portWord {
+        /* display: none; */
+        /* height: 200px; */
         margin-top: -50px;
         margin-right: 50px;
         margin-bottom: 20px;
@@ -345,7 +352,16 @@
         padding-right: 20px;
         padding-left: 20px;
         padding-top: 10px;
-        box-shadow: 0px 0px 10px #000;
+        padding-bottom: 10px;
+        box-shadow: 0px 0px 10px #800000;
+    }
+    .portWord p {
+        font-family: "Teko";
+        font-size: 16px;
+    }
+    .hy {
+        font-size: 50px;
+        font-weight: bold;
     }
     .resume {
         font-family: 'Rock Salt';
@@ -379,7 +395,7 @@
         text-align: center;
         border: 0px solid;
         border-radius: 5px;
-        margin-top: -340px;
+        margin-top: -300px;
         padding: 40px 10px 30px 10px;
     }
     .about p {
@@ -737,6 +753,20 @@
         text-align: center;
         margin-bottom: 30px;
     }
+    /* ************************************************************footer*********************************************************************** */
+    .copy_right {
+        font-size: 8px;
+    }
+    footer {
+        font-size: 6px;
+        line-height: 10px;
+        text-align: center;
+        margin-bottom: 30px;
+        border-top: 1px solid #000;
+        padding: 5px;
+        width: 50%;
+        margin: 0 auto;
+    }
     /* ************************************************************portfolio*********************************************************************** */
     .mainPort {
         margin: 10px;
@@ -802,6 +832,7 @@
     }
     /* ************************************************************gallery shop*********************************************************************** */
     #gallery-shop {
+        margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         margin: 50px;
@@ -811,6 +842,7 @@
         margin-top: -350px;
     }
     .shopDes {
+        display: none;
         margin-left: 5%;  
         /* display: flex; */
         /* justify-content: end; */
@@ -824,19 +856,23 @@
         color: rgba(0, 0, 0, 30%);
     }
     .dropdown {
-    position: relative;
-    display: inline-block;
+        display: none;
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown i {
+        display: none;
     }
 
     .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f5f5f5;
-    min-width: 160px;
-    box-shadow: 0px 0px 10px #000;
-    /* padding: 12px 16px; */
-    padding: 20px;
-    z-index: 1;
+        display: none;
+        position: absolute;
+        background-color: #f5f5f5;
+        min-width: 160px;
+        box-shadow: 0px 0px 10px #000;
+        /* padding: 12px 16px; */
+        padding: 20px;
+        z-index: 1;
     }
     .dropdown-content p {
         border-left: 3px solid rgba(49, 19, 9, 0.9);
@@ -852,18 +888,20 @@
     display: block;
     }
     .shopItem {
+        background: linear-gradient(45deg, #000, rgba(240, 93, 35, 50%));
         width: 90px;
-        height: 20px;
+        height: 10px;
         /* padding-top: -10px; */
         padding: 3px;
         margin-bottom: 160px;
         /* border: 1px solid #000; */
         box-shadow: 0px 0px 10px #000;
+        /* border-radius: 25px; */
         /* height: 100px; */
     }
     .shopItem img {
         width: 90px;
-        margin-top: 1px;
+        margin-top: -2.5px;
         /* padding: 0 !important; */
         /* cursor: pointer; */
     }
@@ -894,12 +932,11 @@
     .shopItem i {
         cursor: pointer;
     }
-    /* .fa-star {
-        background: transparent;
-        color: red;
-    } */
+    .fa-star {
+        font-size: 8px;
+    }
     .shop {
-        font-size: 12px;
+        font-size: 8px;
         background: transparent;
         border: none;
         /* padding: 10px; */
@@ -940,8 +977,11 @@
         text-decoration: none;
         color: #26A69A;
     }
-    .devP strong {
+    .devP a:hover, .info a:hover {
         text-decoration: underline;
+    }
+    .devP strong {
+        text-decoration: none;
     }
     .abME {
         text-decoration: underline;
@@ -972,7 +1012,7 @@
         display: flex;
         justify-content: space-between;
         color: #fff;
-        background: linear-gradient(180deg, #000, rgba(240, 93, 35, 90%));
+        background: linear-gradient(180deg, #000, rgba(240, 93, 35, 100%));
         background-size: 900% 300%;
         height: 70px;
         box-shadow: 0px 6px 10px -1px #3a3a3a;
@@ -1073,7 +1113,7 @@
         /* background-color: rgba(0, 0, 0, 20%); */
         /* background-image: url('/assets/images/Kyle-Olson.png'); */
         background-position: center;
-        background-color: whitesmoke;
+        background-color: rgba(38, 166, 154, 20%);
         margin-top: -30px;
         margin-bottom: 60px;
         /* z-index: 10; */
@@ -1081,15 +1121,14 @@
     .intro {
         display: flex;
         justify-content: space-evenly;
-        font-family: "Teko";
         font-size: 16px;
-        line-height: 1.1em;
+        line-height: 1.3em;
         margin-top: 0px;
         margin-left: 0px;
     }
     /* ************************************************************introduction card*********************************************************************** */
-    .word {
-        height: 150px;
+    .word, .Word{
+        /* height: 150px; */
         width: 40%;
         margin-top: -50px;
         margin-right: 50px;
@@ -1098,7 +1137,15 @@
         padding-right: 20px;
         padding-left: 20px;
         padding-top: 10px;
-        box-shadow: 0px 0px 10px #000;
+        box-shadow: 0px 0px 10px #800000;
+    }
+    .word p, .Word p {
+        font-family: "Teko";
+        font-size: 18px;
+    }
+    .hy {
+        font-size: 50px;
+        font-weight: bold;
     }
     /* ************************************************************progress chart*********************************************************************** */
     .portChat {
@@ -1648,12 +1695,17 @@
     }
     /* ************************************************************footer section*********************************************************************** */
     .copy_right {
-        font-size: 16px;
+        font-size: 10px;
     }
     footer {
+        font-size: 10px;
         line-height: 1em;
         text-align: center;
         margin-bottom: 30px;
+        border-top: 1px solid #000;
+        padding: 10px;
+        width: 40%;
+        margin: 0 auto;
     }
     /* ************************************************************gallery shop*********************************************************************** */
     #gallery-shop {
@@ -1662,6 +1714,9 @@
         margin: 50px;
         margin-top: -350px;
     }
+    .shopContact {
+        position: fixed;
+    }
     .shopDes {
         margin-left: 5%;  
         /* display: flex; */
@@ -1669,11 +1724,11 @@
         padding-right: 5px;
         margin-bottom: 2px;
         margin-top: 5px;
-        color: rgba(0, 0, 0, 30%);
+        color: #fff;
         cursor: pointer;
     }
     .shopDes:hover {
-        color: rgba(0, 0, 0, 30%);
+        color: #fff;
     }
     .dropdown {
     position: relative;
@@ -1704,6 +1759,7 @@
     display: block;
     }
     .shopItem {
+        background: linear-gradient(45deg, #000, rgba(240, 93, 35, 50%));
         width: 150px;
         height: 20px;
         /* padding-top: -10px; */
