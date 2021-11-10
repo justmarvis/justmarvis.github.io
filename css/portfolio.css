@@ -58,6 +58,9 @@
         text-align: center;
         margin-top: 30px;
     }
+    .preferred {
+        text-decoration: underline;
+    }
     h1 a {
         font-size: 35px;
         font-family: Kalam;
@@ -1032,13 +1035,14 @@
     #profileImage {
         /* margin: 0 auto; */
         width: 80px;
+        height: 50px;
         /* margin-left: 40%; */
         /* margin-left: 40%; */
-        margin-top: 40px;
+        margin-top: 46px;
         margin-left: 320px;
         margin-bottom: -50px;
         border-radius: 10px;
-        box-shadow: 0px 6px 10px -1px #3a3a3a;
+        /* box-shadow: 0px 6px 10px -1px #3a3a3a; */
     }
     .aboutProfileImage {
         width: 100px;
