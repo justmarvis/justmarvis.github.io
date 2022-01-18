@@ -118,6 +118,9 @@
         text-decoration: none;
         color: #800000;
     }
+    .marvisImg {
+        display: none;
+    }
     /* ************************************************************progress chart*********************************************************************** */
     .portChat {
         position: relative;
@@ -1050,6 +1053,16 @@
         border-radius: 50px;
         box-shadow: 0px 6px 10px -1px #3a3a3a;
     }
+    .marvisImg {
+        width: 50px;
+        margin-top: -450px;
+        margin-left: 1170px;
+    }
+    .mainImg {
+        width: 300px;
+        /* opacity: 90%; */
+        /* background-blend-mode: hard-light; */
+    }
     /* ************************************************************contact information*********************************************************************** */
     .contactInfo p {
         font-family: Quicksand;
@@ -1124,6 +1137,7 @@
     }
     .intro {
         display: flex;
+        width: 80%;
         justify-content: space-evenly;
         font-size: 16px;
         line-height: 1.3em;
@@ -1133,11 +1147,11 @@
     /* ************************************************************introduction card*********************************************************************** */
     .word, .Word{
         /* height: 150px; */
-        width: 40%;
+        width: 50%;
         margin-top: -50px;
-        margin-right: 50px;
+        /* margin-right: 50px; */
         margin-bottom: 20px;
-        margin-left: -100px;
+        margin-left: -80px;
         padding-right: 20px;
         padding-left: 20px;
         padding-top: 10px;
@@ -1514,6 +1528,11 @@
     }
     td {
         height: 20px;
+    }
+    .know div {
+        background-color: #800000;
+        width: 200px;
+        height: 2px;
     }
     /* ************************************************************comment section*********************************************************************** */
     .call2action {
