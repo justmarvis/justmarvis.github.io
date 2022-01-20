@@ -1160,6 +1160,8 @@
     .word p, .Word p {
         font-family: "Teko";
         font-size: 18px;
+        border-left: 3.5px solid #000;
+        padding-left: 5px;
     }
     .hy {
         font-size: 50px;
@@ -1341,6 +1343,7 @@
     .skillDev {
         border: 3px dashed maroon;
         width: 50%;
+        height: auto;
         padding: 15px;
     }
     .skillLevel {
@@ -1522,6 +1525,9 @@
     .know {
         border-right: 1px solid #000;
         text-align: right;
+    }
+    .bk h3 {
+        font-weight: bold;
     }
     table, th, td {
         border-collapse: collapse;
@@ -1841,6 +1847,16 @@
     }
     #pgLow {
         margin-top: 500px;
+    }
+
+    :root {
+        --dark-body: #4d4c5a;
+        --dark-main: #141529;
+        --dark-second: #79788c;
+        --dark-hover: #323048;
+        --dark-text: #f8fbff;
+
+        --light-body: 
     }
 }
 /* ************************************************************************************************************************************************** */
