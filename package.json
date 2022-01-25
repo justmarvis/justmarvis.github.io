@@ -1,5 +1,23 @@
 {
   "dependencies": {
     "bootstrap": "^3.4.1"
-  }
+  },
+  "name": "Marvis Portfolio Website",
+  "version": "1.0.0",
+  "description": "Portfolio Website",
+  "main": "index.html",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justmarvis/justmarvis.github.io.git"
+  },
+  "author": "Marvis Igbineweka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justmarvis/justmarvis.github.io/issues"
+  },
+  "homepage": "https://github.com/justmarvis/justmarvis.github.io#readme"
 }
