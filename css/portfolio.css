@@ -784,12 +784,6 @@
         flex-wrap: wrap;
         /* margin-bottom: 50px; */
     }
-    .port-link {
-        text-decoration: none;
-    }
-    .port-link:hover {
-        background-color: rgba(0, 0, 0, 100%);
-    }
     .boxOne {
 
         width: 150px;
@@ -1336,6 +1330,7 @@
     #mainContainer {
         margin-top: 10px;
         display: flex;
+        margin-bottom: 120px;
     }
     .skillDev, .skillLevel {
         margin-left: 5px;
@@ -1620,7 +1615,7 @@
         margin-top: 2%;
     }
     /* ************************************************************portfolio*********************************************************************** */
-    .mainPort {
+    /* .mainPort {
         margin: 10px;
         margin-top: 150px;
     }
@@ -1629,12 +1624,6 @@
         justify-content: center;
         justify-content: space-evenly;
         margin-bottom: 80px;
-    }
-    .port-link {
-        text-decoration: none;
-    }
-    .port-link:hover {
-        background-color: rgba(0, 0, 0, 100%);
     }
     .boxOne {
 
@@ -1656,30 +1645,24 @@
 	    border-top: 75px solid transparent;
 	    border-left: 150px solid #616421;
 	    border-bottom: 75px solid transparent;
+    } */
+    .art, .NFT {
+        background-color: rgba(38, 166, 154, 10%);
+        padding: 20px;
     }
-    .whBox3 p, .whBox2 p, .whBox1 p {
-        font-family: Quicksand;
-        font-weight: bold;
-        font-size: 14px;
-        text-decoration: none;
-        /* color: #800000; */
-        color: rgba(0, 0, 0, 50%);
-        background-color: rgba(0, 0, 0, 20%);
-        border-radius: 25px;
-        margin-top: -95px;
-        margin-left: 10px;
-        margin-right: 80px;
-        padding: 10px;
-        padding-top: 3px;
-        padding-bottom: 5px;
+    .webD, .vid {
+        padding: 20px;
     }
-    .whBox3 p:hover, .whBox2 p:hover, .whBox1 p:hover {
-        background-color: rgba(0, 0, 0, 100%);
-        color: #fff;
+    .sec {
+        display: flex;
+        justify-content: space-around;
     }
-    .whBox3 p:active, .whBox2 p:active, .whBox1 p:active {
-        box-shadow: #000 0px 0px 10px;
-        color: #fff;
+    .shopp {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+    }
+    .port-link {
     }
     /* ************************************************************testimonials*********************************************************************** */
     #testimonials {
