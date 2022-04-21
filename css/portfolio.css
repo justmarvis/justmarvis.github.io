@@ -42,7 +42,7 @@
         text-align: center
     }
     p {
-        font-size: 16px;
+        font-size: 12px;
         font-family: "Open Sans", sans-serif;
     }
 
@@ -964,12 +964,15 @@
         width: 50%;
         height: .00001px;
     }
+    h5 {
+        font-weight: light;
+    }
     h6 {
         font-size: 100px;
         text-align: center;
     }
     p {
-        font-size: 16px;
+        font-size: 14px;
         font-family: "Open Sans", sans-serif;
     }
 
@@ -1360,6 +1363,21 @@
     }
     h4 {
         font-size: 20px;
+    }
+    .resumeSummary {
+        background-color: rgba(0, 0, 0, 10%);
+        padding: 10px;
+        margin: 0 auto;
+        width: 80%;
+        line-height: 5px;
+    }
+    .reSummary {
+        text-align: center;
+    }
+    .h5res {
+        text-align: center;
+        font-weight: 100;
+        padding-top: -10px;
     }
     /* ************************************************************Portfolio tiles*********************************************************************** */
     .port {
