@@ -1088,7 +1088,7 @@
         text-decoration: none;
     }
     h2 {
-        font-size: 30px;
+        font-size: 20px;
         font-family: "Rubik Glitch"
     }
     h3 {
@@ -1674,7 +1674,7 @@
         color: #800000
     }
     .act {
-        width: 25%;
+        width: 50%;
         display: grid;
         grid-template-columns: 90% 10%;
     }
@@ -1844,6 +1844,9 @@
         border-left: 2px solid #fff;
         font-size: 10px;
         text-align: right;
+    }
+    footer a {
+        color: #a72608;
     }
     /* ************************************************************gallery shop*********************************************************************** */
     #gallery-shop {
