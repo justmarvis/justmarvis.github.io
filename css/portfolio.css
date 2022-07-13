@@ -974,6 +974,10 @@
     #pgLow {
         margin-top: 500px;
     }
+    .web-D {
+        width: 200px;
+        /* transform: scale(6); */
+    }
     /* ************************************************************************animation*********************************************************** */
     .area{
         /* background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);   */
