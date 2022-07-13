@@ -1,16 +1,16 @@
 // mainMenu
-const mainMenu = document.querySelector('.mainMenu');
-let menuOpen = false;
-mainMenu.addEventListener('click', () => {
-  if(!menuOpen) {
-    mainMenu.classList.add('open');
-    menuOpen = true;
-  }
-  else {
-    mainMenu.classList.remove('open');
-    menuOpen = false;
-  }
-});
+// const mainMenu = document.querySelector('.mainMenu');
+// let menuOpen = false;
+// mainMenu.addEventListener('click', () => {
+//   if(!menuOpen) {
+//     mainMenu.classList.add('open');
+//     menuOpen = true;
+//   }
+//   else {
+//     mainMenu.classList.remove('open');
+//     menuOpen = false;
+//   }
+// });
 
 function myFunction() {
   document.getElementById('dropDn').classList.toggle('mainNavShow');

@@ -240,7 +240,7 @@
         height: 55px;
         border: 0px solid #000;
         border-radius: 50px;
-        background: linear-gradient(45deg, #000, rgba(240, 93, 35, 50%));
+        /* background: linear-gradient(45deg, #000, rgba(240, 93, 35, 50%)); */
         box-shadow: 0px 1.5px 20px #fff;
         z-index: 99999;
     }
@@ -248,7 +248,7 @@
         width: 25px;
         height: 3px;
         border-radius: 50px;
-        background-color: #fff;
+        background-color: #800000;
         background-size: 900% 300%;
         /* transition: all .5s ease-in-out; */
     }
@@ -258,7 +258,7 @@
         width: 25px;
         height: 3px;
         border-radius: 50px;
-        background-color: #fff;
+        background-color: #800000;
         background-size: 900% 300%;
         transition: all .5s ease-in-out;
 
@@ -1482,11 +1482,16 @@
         height: 800px;
         padding: 15px;
         line-height: 18px;
+        background: transparent;
+    }
+    .res {
+        width: 590px;
     }
     .skillLevel {
         padding: 10px;
         margin-left: 100px;
         width: 100%;
+        margin-bottom: 100px;
     }
     .skills {
         display: flex;
@@ -1983,6 +1988,10 @@
         --dark-text: #f8fbff;
 
         --light-body: 
+    }
+    .web-D {
+        width: 100px;
+        transform: scale(6);
     }
     /* ************************************************************************animation*********************************************************** */
     .area{
