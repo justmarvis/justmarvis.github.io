@@ -126,10 +126,11 @@
     }
     .contactInfo p {
         /* display: none; */
-        font-family: Quicksand;
+        /* font-family: 'Times New Roman', Times, serif; */
         font-size: 14px;
         text-decoration: none;
         color: #fff;
+        /* margin-top: -10px; */
         margin-left: 10px;
         font-weight: 100;
     }
@@ -970,6 +971,14 @@
     .web-D {
         width: 200px;
         /* transform: scale(6); */
+    }
+    .projimg {
+        width: 100px;
+        transform: scale(2);
+    }
+    .projimg1 {
+        width: 150px;
+        transform: scale(1);
     }
     /* ************************************************************************animation*********************************************************** */
     .area{
