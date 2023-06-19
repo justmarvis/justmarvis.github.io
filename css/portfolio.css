@@ -15,6 +15,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Rubik+Glitch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 /*  CSS Plan Chart
 
@@ -58,6 +59,7 @@
     }
     h2 {
         font-family: "Rubik Glitch";
+        font-weight: 100;
     }
     .hr {
         margin-top: 50px;
@@ -126,7 +128,7 @@
     }
     .contactInfo p {
         /* display: none; */
-        /* font-family: 'Times New Roman', Times, serif; */
+        font-family: 'Roboto', sans-serif;
         font-size: 14px;
         text-decoration: none;
         color: #fff;
@@ -368,9 +370,10 @@
         /* box-shadow: 0px 0px 10px #000; */
     }
     .word p {
-        font-family: Quicksand;
+        font-family: 'Roboto', sans-serif;
         font-size: 14px;
-        font-weight: bold;
+        line-height: 1.7;
+        /* font-weight: bold; */
     }
     .portWord {
         /* display: none; */
@@ -479,6 +482,9 @@
 
     }
     .info {
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        line-height: 1.7;
         margin-left: 10px;
         margin-right: 10px;
     }
@@ -511,147 +517,14 @@
     h4 {
         font-size: 20px;
     }
-    .hml {
-        width: 10px;
-        height: 7px;
-        border: 0 solid #000;
-        border-radius: 10px;
-        color: white;
-        animation: html 5s ease-in-out;
-        animation-fill-mode: both;
+    .projp {
+        width: 400px;
     }
-
-    @keyframes html {
-        from {background-color: red;}
-        to {background-color: purple;}
-        100% {width: 90%;}
-    }
-    .css {
-        width: 10px;
-        height: 7px;
-        border: 0 solid #000;
-        border-radius: 10px;
-        color: white;
-        animation: css 5s ease-in-out;
-        animation-fill-mode: both;
-    }
-
-    @keyframes css {
-        from {background-color: red;}
-        to {background-color: purple;}
-        100% {width: 80%;}
-    }
-    .js {
-        width: 10px;
-        height: 7px;
-        border: 0 solid #000;
-        border-radius: 10px;
-        color: white;
-        animation: js 5s ease-in-out;
-        animation-fill-mode: both;
-    }
-
-    @keyframes js {
-        from {background-color: #f00000;}
-        to {background-color: #800000;}
-        100% {width: 50%;}
-    }
-    .sql {
-        width: 10px;
-        height: 7px;
-        border: 0 solid #000;
-        border-radius: 10px;
-        color: white;
-        animation: sql 5s ease-in-out;
-        animation-fill-mode: both;
-    }
-    @keyframes sql {
-        from {background-color: #f00000;}
-        to {background-color: #808080;}
-        100% {width: 25%;}
-    }
-    .fe {
-        width: 10px;
-        height: 7px;
-        border: 0 solid #000;
-        border-radius: 10px;
-        color: white;
-        animation: fe 5s ease-in-out;
-        animation-fill-mode: both;
-    }
-
-    @keyframes fe {
-        from {background-color: #f00000;}
-        to {background-color: #800080;}
-        100% {width: 99%;}
-    }
-    .be {
-        width: 10px;
-        height: 7px;
-        border: 0 solid #000;
-        border-radius: 10px;
-        color: white;
-        animation: be 5s ease-in-out;
-        animation-fill-mode: both;
-    }
-
-    @keyframes be {
-        from {background-color: #f00000;}
-        to {background-color: #808080;}
-        100% {width: 35%;}
-    }
-    .dpa {
-        width: 10px;
-        height: 7px;
-        border: 0 solid #000;
-        border-radius: 10px;
-        color: white;
-        animation: dpa 5s ease-in-out;
-        animation-fill-mode: both;
-    }
-
-    @keyframes dpa {
-        from {background-color: #f00000;}
-        to {background-color: #800000;}
-        100% {width: 65%;}
-    }
-    .anime {
-        width: 10px;
-        height: 7px;
-        border: 0 solid #000;
-        border-radius: 10px;
-        color: white;
-        animation: anime 5s ease-in-out;
-        animation-fill-mode: both;
-    }
-
-    @keyframes anime {
-        from {background-color: #f00000;}
-        to {background-color: #800000;}
-        100% {width: 68%;}
-    }
-    .hml p, .css p , .js p, .sql p, .fe p, .be p, .dpa p, .anime p{
-        font-size: 7px;
-        margin-left: 5px;
-    }
-    .hml, .css, .js, .sql {
-        margin-left: 5px;
-    }
-    .bar {
-        width: 300px;
-        height: 10px;
-        align-content: center;
-        border-left: 1px solid #000;
-    }
-    .know {
-        border-right: 1px solid #000;
-        text-align: right;
-    }
-    table, th, td {
-        border-collapse: collapse;
-    }
-    td {
-        height: 20px;
+    p {
+        font-size: 14px;
+        font-family: Quicksand;
+        font-weight: 600;
+        margin-left: 10px;
     }
     /* ************************************************************comment section*********************************************************************** */
     .call2action {
@@ -853,118 +726,6 @@
         box-shadow: #000 0px 0px 10px;
         color: #fff;
     }
-    /* ************************************************************gallery shop*********************************************************************** */
-    #gallery-shop {
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        margin: 50px;
-        margin-top: -350px;
-        margin-left: 30px;
-        margin-right: 30px;
-        margin-top: -350px;
-    }
-    .shopDes {
-        display: none;
-        margin-left: 5%;  
-        /* display: flex; */
-        /* justify-content: end; */
-        padding-right: 5px;
-        margin-bottom: 2px;
-        margin-top: 5px;
-        color: rgba(0, 0, 0, 30%);
-        cursor: pointer;
-    }
-    .shopDes:hover {
-        color: rgba(0, 0, 0, 30%);
-    }
-    .dropdown {
-        display: none;
-        position: relative;
-        display: inline-block;
-    }
-    .dropdown i {
-        display: none;
-    }
-
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f5f5f5;
-        min-width: 160px;
-        box-shadow: 0px 0px 10px #000;
-        /* padding: 12px 16px; */
-        padding: 20px;
-        z-index: 1;
-    }
-    .dropdown-content p {
-        border-left: 3px solid rgba(49, 19, 9, 0.9);
-        color: #000;
-        font-family: Quicksand;
-        font-weight: bold;
-    }
-    .shopP {
-        text-align: right;
-        border-right: 1px solid rgba(49, 19, 9, 0.9);
-    }
-    .dropdown:hover .dropdown-content {
-    display: block;
-    }
-    .shopItem {
-        background: linear-gradient(45deg, #000, rgba(240, 93, 35, 50%));
-        width: 90px;
-        height: 10px;
-        /* padding-top: -10px; */
-        padding: 3px;
-        margin-bottom: 160px;
-        /* border: 1px solid #000; */
-        box-shadow: 0px 0px 10px #000;
-        /* border-radius: 25px; */
-        /* height: 100px; */
-    }
-    .shopItem img {
-        width: 90px;
-        margin-top: -2.5px;
-        /* padding: 0 !important; */
-        /* cursor: pointer; */
-    }
-    .h5 {
-        text-decoration: underline;
-        font-size: 12px;
-        font-family: sans-serif;
-        font-weight: 800;
-        padding-left: 5px;
-    }
-    .shopItem p {
-        font-size: 12px;
-        /* line-height: 0; */
-        padding-left: 10px;
-        padding-right: 10px;
-        margin-top: -15px;
-    }
-    .shopHr {
-        background: transparent;
-        width: 100%;
-    }
-    .shopBottom {
-        display: flex;
-        justify-content: center;
-        justify-content: space-between;
-        width: 100%;
-    }
-    .shopItem i {
-        cursor: pointer;
-    }
-    .fa-star {
-        font-size: 8px;
-    }
-    .shop {
-        font-size: 8px;
-        background: transparent;
-        border: none;
-        /* padding: 10px; */
-        cursor: pointer;
-    }
     #pgLow {
         margin-top: 500px;
     }
@@ -972,13 +733,26 @@
         width: 200px;
         /* transform: scale(6); */
     }
+    .webD, .art, .vid {
+        width: 80%;
+        /* margin: 0 auto; */
+        text-align: center;
+    }
     .projimg {
-        width: 100px;
-        transform: scale(2);
+        width: 200px;
     }
     .projimg1 {
         width: 150px;
-        transform: scale(1);
+    }
+    .proj {
+        text-align: center;
+    }
+    .big {
+        display: none;
+    }
+    .introvid {
+        width: 300px; 
+        height: 200px;
     }
     /* ************************************************************************animation*********************************************************** */
     .area{
