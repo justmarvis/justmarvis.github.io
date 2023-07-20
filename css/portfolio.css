@@ -474,6 +474,22 @@
     footer a {
         color: #a72608;
     }
+    .projectImg {
+        display: flex;
+        overflow: auto;
+    }
+    .projImg {
+        width: 300px;
+        margin-right: 50px;
+        transition: 500ms ease-in-out;
+    }
+    .projImg:hover {
+        margin-left: 10px;
+        box-shadow: -10px 10px 10px rgba(128, 0, 0, 0.2);
+    }
+    .majorProj {
+        margin-left: 20px;
+    }
 }
 /* ************************************************************************************************************************************************** */
 
@@ -1005,6 +1021,22 @@
     .portBox h2 {
         font-family: Quicksand;
         text-align: center;
+    }
+    .projectImg {
+        display: flex;
+        overflow: auto;
+    }
+    .projImg {
+        width: 500px;
+        margin-right: 50px;
+        transition: 500ms ease-in-out;
+    }
+    .projImg:hover {
+        margin-left: 10px;
+        box-shadow: -10px 10px 10px rgba(128, 0, 0, 0.2);
+    }
+    .majorProj {
+        margin-left: 50px;
     }
     /* ************************************************************comment section*********************************************************************** */
     .call2action {
