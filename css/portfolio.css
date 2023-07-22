@@ -172,6 +172,34 @@
     .mainImg {
         width: 200px;
     }
+    .about {
+        margin: 0 auto;
+        background-color: #f5f5f5;
+        width: 80%;
+        text-align: center;
+        border: 0px solid;
+        border-radius: 5px;
+        margin-top: 100px;
+        padding: 40px 10px 30px 10px;
+    }
+    .about p {
+        font-size: 15px;
+        text-align: left;
+    }
+    .introP {
+        padding: 5px 10px 5px 10px;
+        background: rgba(38, 166, 154, 0.2);
+    }
+    .process {
+        padding: 5px 10px 5px 10px;
+    }
+    .info {
+        line-height: 1.7;
+        font-size: 16px;
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
     /* ************************************************************contact information*********************************************************************** */
     .contactInfo p {
         display: none;
@@ -238,11 +266,70 @@
         padding: 10px;
         padding-top: 0;
         color: #800000;
+        cursor: default;
     }
     .social {
         display: flex;
         justify-content: space-between;
         margin-right: 10%;
+    }
+    .mainMenu2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        position: fixed;
+        bottom: 40px;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 15px;
+        z-index: 100;
+    }
+    .mainNav2 {
+        /* padding: 30px; */
+        /* margin-right: 20px; */
+    }
+    .mainNav2 a:not(:last-child) {
+        margin-right: 30px;
+    }
+    .mainNav2 a:not(:last-child):hover {
+        text-decoration: 2px underline;
+        transition: 1s ease-in;
+    }
+    .mainNav2 .alin:hover {
+        text-decoration: none;
+        background: #800000;
+        color: #fff;
+        padding: 10px;
+    }
+    .mainNav2 .alin:active {
+        background: #fff;
+        color: #800000
+    }
+    .aline.active, #active {
+        text-decoration: 2px underline;
+        font-weight: bold;
+    }
+    .mainNav2 a {
+        font-family: Quicksand;
+        /* font-size: 16px; */
+        font-weight: bold;
+        width: 130px;
+        color: #f5f5f5;
+        text-decoration: none;
+        text-align: center;
+        /* background-color: rgba(240, 93, 35, 95%); */
+        border-radius: 10px;
+    }
+    .mainNav2 .alin {
+        font-family: Quicksand;
+        width: 130px;
+        text-decoration: none;
+        background: rgba(128, 0, 0, 0.8);
+        color: #fff;
+        padding: 10px;
+        /* background-color: rgba(240, 93, 35, 95%); */
+        border-radius: 10px;
+        font-weight: bold;
     }
     /* ************************************************************introduction space*********************************************************************** */
     .par {
@@ -350,7 +437,7 @@
         margin-bottom: 50px;
     }
     .test {
-        padding: 10px;
+        padding: 30px;
     }
     .testimony {
         color: #808080;
@@ -482,13 +569,15 @@
         width: 300px;
         /* margin-right: 10px; */
         transition: 500ms ease-in-out;
+        transform: scale(0);
     }
     .projImg1 {
-        animation: wop 1s;
+        animation: wop 1s ease-in-out 1s forwards;
+        /* animation-delay: 5s; */
     }
     @keyframes wop {
         0% {
-            transform: scale(0.2);
+            transform: scale(0);
         }
         50% {
             transform: scale(1.05);
@@ -499,11 +588,11 @@
         
     }
     .projImg2 {
-        animation: wop2 1.5s;
+        animation: wop2 1.5s ease-in-out 1s forwards;
     }
     @keyframes wop2 {
         0% {
-            transform: scale(0.2);
+            transform: scale(0);
         }
         50% {
             transform: scale(1.05);
@@ -514,11 +603,11 @@
         
     }
     .projImg3 {
-        animation: wop3 2s;
+        animation: wop3 2s ease-in-out 1s forwards;
     }
     @keyframes wop3 {
         0% {
-            transform: scale(0.2);
+            transform: scale(0);
         }
         50% {
             transform: scale(1.05);
@@ -539,8 +628,8 @@
     }
     .projImg:hover {
         /* margin-left: 10px; */
-        transform: scale(1.05);
-        opacity: 50%;
+        /* transform: scale(1.05); */
+        /* opacity: 50%; */
     }
     .web_tag {
         text-align: center;
@@ -697,6 +786,9 @@
     .mainNav {
         /* padding: 30px; */
         margin-right: 20px;
+    }
+    .mainMenu2 {
+        display: none;
     }
     .mainNav a:not(:last-child) {
         margin-right: 30px;
@@ -1002,9 +1094,9 @@
         margin-bottom: 50px;
     }
     #mainContainer {
-        display: grid;
-        grid-template-columns: 70% 1fr;
-        width: 70%;
+        display: flex;
+        width: 60%;
+        justify-content: space-between;
         height: auto;
         margin: 0 auto;
     }
@@ -1012,6 +1104,7 @@
         font-size: 16px;
         padding: 15px;
         background: transparent;
+        /* width: 800px; */
     }
     .containment {
         background-color: rgba(38, 166, 154, 20%);
@@ -1040,43 +1133,19 @@
         color: #808080;
     }
     .skillLevel {
-        margin-left: 100px;
-        margin-bottom: 100px;
+        margin-right: 50px;
     }
     .level {
         text-align: center;
         background-color: #f5f5f5;
         padding: 20px;
         margin-bottom: 50px;
+        width: 200px;
     }
     .degree {
         font-size: 12px;
     }
     /* ************************************************************Portfolio tiles*********************************************************************** */
-    .port {
-        display: flex;
-        justify-content: space-evenly;
-        background-color: #fff;
-        margin-top: -80px;
-        padding: 20px;
-        z-index: 30;
-    }
-    .portBox {
-        border: 0px solid black;
-        margin-top: 20px;
-        margin-bottom: 50px;
-        padding-top: 0px;
-        padding-right: 10px;
-        padding-bottom: 50px;
-        padding-left: 10px;
-        width: 80px;
-        background-color: #add8e6;
-        box-shadow: black 5px 5px 10px 1px;
-    }
-    .portBox h2 {
-        font-family: Quicksand;
-        text-align: center;
-    }
     .projectImg {
         display: flex;
         overflow: auto;
