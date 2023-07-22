@@ -1085,6 +1085,8 @@
         width: 500px;
         transition: 500ms ease-in-out;
         z-index: 1;
+        transform: scale(0);
+        /* animation-delay: 5s; */
     }
     .projImg:hover {
         /* margin-left: 10px; */
@@ -1092,11 +1094,12 @@
         opacity: 50%;
     }
     .projImg1 {
-        animation: wop 1s;
+        animation: wop 1s ease-in-out 1s forwards;
+        /* animation-delay: 5s; */
     }
     @keyframes wop {
         0% {
-            transform: scale(0.2);
+            transform: scale(0);
         }
         50% {
             transform: scale(1.05);
@@ -1107,11 +1110,11 @@
         
     }
     .projImg2 {
-        animation: wop2 1.5s;
+        animation: wop2 1.5s ease-in-out 1s forwards;
     }
     @keyframes wop2 {
         0% {
-            transform: scale(0.2);
+            transform: scale(0);
         }
         50% {
             transform: scale(1.05);
@@ -1122,11 +1125,11 @@
         
     }
     .projImg3 {
-        animation: wop3 2s;
+        animation: wop3 2s ease-in-out 1s forwards;
     }
     @keyframes wop3 {
         0% {
-            transform: scale(0.2);
+            transform: scale(0);
         }
         50% {
             transform: scale(1.05);
