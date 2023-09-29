@@ -484,7 +484,7 @@
     .footer {
         margin-bottom: 100px;
     }
-    footer, footer p {
+    footer, footer p, .dte {
         background-color: #fff;
         line-height: 1em;
         color: #000;
