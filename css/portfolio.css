@@ -466,100 +466,34 @@
         padding: 20px;
         margin: 0 auto;
         margin-bottom: 50px;
-        width: 50%;
+        width: 200px;
     }
-    .degree {
-        font-size: 12px;
+    .simpli {
+        border: 15px solid #127fa8;
+    }
+    .byui {
+        border: 15px solid #000;
+    }
+    .aws {
+        border: 15px solid rgba(255, 153, 0, 0.8);
     }
     .call2action {
-        /* height: 200px; */
-        margin: 0 auto;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-bottom: 20px;
-        padding-top: 1px;
-        /* padding-left: 10px; */
-        /* box-shadow: 0px 0px 10px #000; */
+        margin-left: 10%;
+        margin-top: 50px;
     }
-    .call2action p {
-        color: #800000
+    .footer {
+        margin-bottom: 100px;
     }
-    .act {
-        width: 100%;
-        display: flex;
-        align-items: end;
-    }
-    .NAME {
-        height: 25px;
-        width: 60%;
-        margin-bottom: 30px;
-        border-radius: 10px;
-        box-shadow: 0px 0px 10px #808080;
-        padding: 5px;
-        padding-left: 25px;
-        font-family: Quicksand;
+    footer, footer p {
+        background-color: #fff;
+        line-height: 1em;
         color: #000;
-    }
-    .name {
-        width: 90%;
-        border: 0px;
-        border-left: dashed #696969 1px;
-        padding: 5px;
-        padding-left: 5px;
-        font-family: Quicksand;
-        color: #000;
-        outline: none;
-    }
-    .comet {
-        box-shadow: 0px 0px 10px #808080;
-        border-radius: 10px;
-        height: 150px;
-        width: 100%;
-        padding-top: 10px;
-        /* padding-right: 10px; */
-        padding-bottom: 10px;
-        padding-left: 25px;
-        overflow: hidden;
-    }
-    #comment {
-        height: 100%;
-        width: 100%;
-        border: 0px;
-        border-left: dashed #696969 1px;
-        padding-left: 5px;
-        /* box-shadow: 0px 0px 10px #808080; */
-        font-family: Quicksand;
-        color: #000;
-        outline: none;
-    }
-    .sendButton {
-        color: rgb(240, 93, 35);
-        font-size: 20px;
-        background: transparent;
-        border: 0px;
-        width: 50px;
-        padding: 10px;
-        margin-top: 2%;
+        font-size: 11px;
+        text-align: center;
     }
     footer {
-        background-color: #fff;
-        display: grid;
-        /* grid-template-columns: 1fr 1fr 1fr;x  */
-        color: #000;
-        font-size: 10px;
-        line-height: 1em;
-        margin-bottom: 30px;
-        padding: 50px;
-        margin: 0 auto;
-    }
-    .copy_right, span {
-        grid-column: 3/4;
-        border-left: 2px solid #fff;
-        font-size: 10px;
-        text-align: right;
-    }
-    footer a {
-        color: #a72608;
+        margin-top: 50px;
+        margin-bottom: 150px;
     }
     .projectImg {
         display: flex;
@@ -1142,8 +1076,14 @@
         margin-bottom: 50px;
         width: 200px;
     }
-    .degree {
-        font-size: 12px;
+    .simpli {
+        border: 20px solid #127fa8;
+    }
+    .byui {
+        border: 20px solid #000;
+    }
+    .aws {
+        border: 20px solid rgba(255, 153, 0, 0.8);
     }
     /* ************************************************************Portfolio tiles*********************************************************************** */
     .projectImg {
@@ -1217,67 +1157,7 @@
     /* ************************************************************comment section*********************************************************************** */
     .call2action {
         margin-left: 20%;
-    }
-    .act {
-        width: 50%;
-        display: grid;
-        grid-template-columns: 90% 10%;
-    }
-    .NAME {
-        height: 25px;
-        width: 300px;
-        margin-bottom: 30px;
-        border: 0px;
-        border-radius: 50px;
-        box-shadow: 0px 0px 10px #808080;
-        padding: 5px;
-        padding-left: 50px;
-        font-family: Quicksand;
-        font-weight: bold;
-        color: #000;
-    }
-    .name {
-        width: 90%;
-        border: 0px;
-        border-left: dashed #696969 1px;
-        padding: 5px;
-        padding-left: 5px;
-        font-family: Quicksand;
-        font-weight: bold;
-        color: #000;
-        outline: none;
-    }
-    .comet {
-        box-shadow: 0px 0px 10px #808080;
-        border-radius: 50px;
-        height: 50px;
-        /* width: 90%; */
-        padding-top: 10px;
-        /* padding-right: 10px; */
-        padding-bottom: 10px;
-        padding-left: 50px;
-    }
-    #comment {
-        height: 48px;
-        width: 95%;
-        border: 0px;
-        border-left: dashed #696969 1px;
-        padding-left: 5px;
-        /* box-shadow: 0px 0px 10px #808080; */
-        font-family: Quicksand;
-        font-weight: bold;
-        color: #000;
-        outline: none;
-    }
-    .sendButton {
-        color: rgb(240, 93, 35);
-        font-size: 30px;
-        background: transparent;
-        border: 0px;
-        width: 50px;
-        padding: 10px;
-        cursor: pointer;
-        margin-top: 2%;
+        margin-top: 50px;
     }
     /* ************************************************************portfolio*********************************************************************** */
     /* .mainPort {
@@ -1348,26 +1228,13 @@
 
     /* ************************************************************footer section*********************************************************************** */
     footer {
-        background-color: #fff;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        color: #000;
         font-size: 10px;
         line-height: 1em;
-        margin-bottom: 30px;
-        padding: 50px;
-        margin: 0 auto;
+        margin-top: 100px;
+        margin-bottom: 50px;
+        text-align: center;
     }
-    .copy_right, span {
-        grid-column: 3/4;
-        border-left: 2px solid #fff;
-        font-size: 10px;
-        text-align: right;
-    }
-    footer a {
-        color: #a72608;
-    }
-    #s404 {
-        height: 100vh;
+    .dte {
+        font-size: 12px;
     }
 }
