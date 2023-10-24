@@ -460,13 +460,14 @@
     .skillLevel {
         margin: 0 auto;
     }
-    .level {
+    .cert {
         text-align: center;
         background-color: #f5f5f5;
         padding: 20px;
         margin: 0 auto;
         margin-bottom: 50px;
         width: 200px;
+        transition: 2s;
     }
     .simpli {
         border: 15px solid #127fa8;
@@ -500,56 +501,27 @@
         overflow: auto;
     }
     .projImg {
-        width: 300px;
-        /* margin-right: 10px; */
+        width: 250px;
         transition: 500ms ease-in-out;
+        z-index: 1;
         transform: scale(0);
     }
-    .projImg1 {
-        animation: wop 1s ease-in-out 1s forwards;
-        /* animation-delay: 5s; */
+    .projImg:hover {
+        transform: scale(1.05);
+        opacity: 50%;
     }
-    @keyframes wop {
-        0% {
-            transform: scale(0);
-        }
-        50% {
-            transform: scale(1.05);
-        }
-        100% {
-            transform: scale(1);
-        }
-        
+    .hidden {
+        opacity: 0;
     }
-    .projImg2 {
-        animation: wop2 1.5s ease-in-out 1s forwards;
+    .cert {
+        opacity: 0;
+        transform: translate(-100%);
+        filter: blur(0);
     }
-    @keyframes wop2 {
-        0% {
-            transform: scale(0);
-        }
-        50% {
-            transform: scale(1.05);
-        }
-        100% {
-            transform: scale(1);
-        }
-        
-    }
-    .projImg3 {
-        animation: wop3 2s ease-in-out 1s forwards;
-    }
-    @keyframes wop3 {
-        0% {
-            transform: scale(0);
-        }
-        50% {
-            transform: scale(1.05);
-        }
-        100% {
-            transform: scale(1);
-        }
-        
+    .show {
+        opacity: 1;
+        transform: scale(1);
+        filter: blur(0);
     }
     .projImg:hover {
         transform: scale(1.05);
@@ -559,11 +531,6 @@
     }   
     .majorProj {
         margin-left: 10px;
-    }
-    .projImg:hover {
-        /* margin-left: 10px; */
-        /* transform: scale(1.05); */
-        /* opacity: 50%; */
     }
     .web_tag {
         text-align: center;
@@ -1069,12 +1036,13 @@
     .skillLevel {
         margin-right: 50px;
     }
-    .level {
+    .cert {
         text-align: center;
         background-color: #f5f5f5;
         padding: 20px;
         margin-bottom: 50px;
         width: 200px;
+        transition: 2s;
     }
     .simpli {
         border: 20px solid #127fa8;
@@ -1094,59 +1062,26 @@
         width: 500px;
         transition: 500ms ease-in-out;
         z-index: 1;
-        transform: scale(0);
-        /* animation-delay: 5s; */
+        animation: wop 1s ease-in-out 1s forwards;
     }
     .projImg:hover {
-        /* margin-left: 10px; */
         transform: scale(1.05);
-        opacity: 50%;
     }
-    .projImg1 {
-        animation: wop 1s ease-in-out 1s forwards;
-        /* animation-delay: 5s; */
+    .hidden {
+        opacity: 0;
     }
-    @keyframes wop {
-        0% {
-            transform: scale(0);
-        }
-        50% {
-            transform: scale(1.05);
-        }
-        100% {
-            transform: scale(1);
-        }
-        
+    .cert {
+        opacity: 0;
+        filter: blur(5px);
+        transform: translate(-100%);
     }
-    .projImg2 {
-        animation: wop2 1.5s ease-in-out 1s forwards;
+    .show {
+        opacity: 1;
+        transform: scale(1);
+        filter: blur(0);
     }
-    @keyframes wop2 {
-        0% {
-            transform: scale(0);
-        }
-        50% {
-            transform: scale(1.05);
-        }
-        100% {
-            transform: scale(1);
-        }
-        
-    }
-    .projImg3 {
-        animation: wop3 2s ease-in-out 1s forwards;
-    }
-    @keyframes wop3 {
-        0% {
-            transform: scale(0);
-        }
-        50% {
-            transform: scale(1.05);
-        }
-        100% {
-            transform: scale(1);
-        }
-        
+    .projImg:nth-child(2) {
+        transition-delay: 200ms;
     }
     .majorProj {
         margin-left: 50px;
@@ -1160,37 +1095,6 @@
         margin-top: 50px;
     }
     /* ************************************************************portfolio*********************************************************************** */
-    /* .mainPort {
-        margin: 10px;
-        margin-top: 150px;
-    }
-    .flexContainer {
-        display: flex;
-        justify-content: center;
-        justify-content: space-evenly;
-        margin-bottom: 80px;
-    }
-    .boxOne {
-
-        width: 150px;
-        height: 150px;
-        background-color: #fff;
-        box-shadow: #000 0px 0px 10px;
-    }
-    .boxTwo {
-        width: 150px;
-        height: 150px;
-        background-color: #fff;
-        box-shadow: #000 0px 0px 10px;
-        border-radius: 100px;
-    }
-    .boxThree {
-        width: 0;
-	    height: 0;
-	    border-top: 75px solid transparent;
-	    border-left: 150px solid #616421;
-	    border-bottom: 75px solid transparent;
-    } */
     .webD {
         background-color: #f5f5f5;
         padding: 50px 150px;
@@ -1219,7 +1123,7 @@
     }
     .projimg {
         width: 100px;
-        transform: scale(3);
+        /* transform: scale(3); */
     }
     .PI {
         transform: scale(0.8);
