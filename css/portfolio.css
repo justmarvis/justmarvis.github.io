@@ -502,9 +502,7 @@
     }
     .projImg {
         width: 250px;
-        transition: 500ms ease-in-out;
-        z-index: 1;
-        transform: scale(0);
+        transition: 1s ease-in-out;
     }
     .projImg:hover {
         transform: scale(1.05);
@@ -1060,7 +1058,7 @@
     }
     .projImg {
         width: 500px;
-        transition: 500ms ease-in-out;
+        transition: 1s ease-in-out;
         z-index: 1;
         animation: wop 1s ease-in-out 1s forwards;
     }
