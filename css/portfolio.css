@@ -88,12 +88,16 @@
         font-size: 16px;
         text-decoration: underline;
         margin-bottom: -5px;
+        margin-left: 20px;
+        color: #800000;
     }
     .h6 {
         font-size: 100px;
     }
     .projp {
         width: 400px;
+        color: #800000;
+        margin-left: 20px;
     }
     p {
         font-size: 14px;
@@ -160,11 +164,11 @@
         border-radius: 10px;
         /* box-shadow: 0px 6px 10px -1px #3a3a3a; */
     }
-    .aboutProfileImage {
-        width: 100px;
+    .aboutPhoto {
+        width: 200px;
         /* margin-top: -10em; */
-        border-radius: 50px;
-        box-shadow: 0px 6px 10px -1px #3a3a3a;
+        border-radius: 50%;
+        box-shadow: 0px 6px 10px -1px rgba(0, 0, 0, 0.2);
     }
     .marvisImg {
         /* display: none; */
@@ -181,6 +185,11 @@
         border-radius: 5px;
         margin-top: 100px;
         padding: 40px 10px 30px 10px;
+    }
+    .abouth2 {
+        text-align: center;
+        margin-left: 0;
+        margin-top: 50px;
     }
     .about p {
         font-size: 15px;
@@ -265,7 +274,7 @@
         font-size: 20px;
         padding: 10px;
         padding-top: 0;
-        color: #800000;
+        color: #26A69A;
         cursor: default;
     }
     .social {
@@ -280,7 +289,7 @@
         margin: 0 auto;
         position: fixed;
         bottom: 40px;
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(0, 0, 0, 1);
         padding: 15px;
         z-index: 100;
     }
@@ -353,13 +362,17 @@
         transform: rotate(-20deg);
     }
     #intro {
-        margin-top: 20px;
+        background: url("https://cdn.glitch.global/6a19564e-7f95-4bcb-afee-8473720639e4/banner.jpg?v=1699242283945");
+        background-position: center;
+        background-size: cover;
+        height: auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
     .intro {
         /* margin-right: -100px; */
-        justify-self: end;
+        display: flex;
+        justify-self: center;
         z-index: 10;
     }
     .intro-card {
@@ -412,19 +425,28 @@
         margin-bottom: 50px;
     }
     .pre {
-        background-color: #CCCCCC;
+        background-color: #f5f5f5;
         margin: 0 auto;
         width: 60%;
         /* font-size: 14px; */
         text-align: center;
-        padding-top: 10px;
-        padding-right: 50px;
-        padding-bottom: 50px;
-        padding-left: 50px;
+        padding-top: 20px;
+        padding-right: 25px;
+        padding-bottom: 10px;
+        padding-left: 25px;
         margin-top: -50px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border-bottom: 2px dashed #800000;
     }
-    .projectPage {
-        display: none;
+    .knowIcons {
+        font-size: 20px;
+        color: #800000;
+    }
+    .activities {
+        margin: 0 auto;
+        margin-bottom: 100px;
     }
     .test {
         font-size: 16px;
@@ -482,19 +504,14 @@
         margin-left: 10%;
         margin-top: 50px;
     }
-    .footer {
-        margin-bottom: 100px;
-    }
-    footer, footer p, .dte {
-        background-color: #fff;
-        line-height: 1em;
-        color: #000;
-        font-size: 11px;
-        text-align: center;
-    }
     footer {
-        margin-top: 50px;
+        color: #000;
+        text-align: center;
+        margin-top: 100px;
         margin-bottom: 150px;
+    }
+    .copy_right {
+        font-size: 11px;
     }
     .projectImg {
         display: flex;
@@ -584,12 +601,16 @@
         font-size: 16px;
         text-decoration: underline;
         margin-bottom: -5px;
+        color: #800000;
+        margin-left: 20px;
     }
     .h6 {
         font-size: 100px;
     }
     .projp {
         width: 400px;
+        color: #800000;
+        margin-left: 20px;
     }
     p {
         font-size: 14px;
@@ -742,10 +763,14 @@
         justify-content: space-evenly;
     }
     .iyes {
-        font-size: 25px;
-        padding: 10px;
+        font-size: 30px;
+        padding: 20px;
         padding-top: 0;
-        color: #800000;
+        color: #26A69A;
+        font-weight: 900;
+    }
+    .iyes:hover {
+        transform: scale(1.2);
     }
     .social {
         margin-top: 50px;
@@ -765,8 +790,8 @@
         /* z-index: 10; */
     }
     .intro {
-        /* margin-right: -100px; */
-        justify-self: end;
+        display: flex;
+        justify-self: center;
         z-index: 10;
     }
     .intro-card {
@@ -791,6 +816,13 @@
             opacity: 100%;
         } */
         
+      }
+      .card {
+        position: absolute;
+      }
+      .card-black {
+        position: absolute;
+        margin-left: 100px;
       }
     /* ************************************************************introduction card*********************************************************************** */
     .word, .Word{
@@ -869,17 +901,27 @@
     }
     /* ************************************************************quote*********************************************************************** */
     .pre {
-        background-color: #CCCCCC;
+        background-color: #f5f5f5;
         margin: 0 auto;
         width: 60%;
         /* font-size: 14px; */
         text-align: center;
-        padding-top: 10px;
+        padding-top: 20px;
         padding-right: 50px;
-        padding-bottom: 50px;
+        padding-bottom: 10px;
         padding-left: 50px;
         margin-top: -50px;
-        /* border-bottom: 2px dashed #000; */
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border-bottom: 2px dashed #800000;
+    }
+    .knowIcons {
+        font-size: 30px;
+        color: #800000;
+    }
+    .knowIcons:hover {
+        transform: translate(0,-5px);
     }
     .banner-pack {
         position: absolute;
@@ -898,11 +940,14 @@
         cursor: default;
     }
     #intro {
+        background: url("https://cdn.glitch.global/6a19564e-7f95-4bcb-afee-8473720639e4/banner.jpg?v=1699242283945");
+        background-position: center;
+        background-size:cover;
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin: 0 auto;
-        height: 500px;
-        width: 60%;
+        height: auto;
+        width: 100%;
         align-items: center;
         /* margin-left: 5px; */
         /* z-index: 10; */
@@ -1009,9 +1054,6 @@
         background-color: rgba(38, 166, 154, 20%);
         /* box-shadow: 0px 0px 10px #808080; */
         margin-bottom: 50px;
-    }
-    .test {
-        padding: 10px;
     }
     .testimony {
         color: #808080;
@@ -1130,13 +1172,9 @@
 
     /* ************************************************************footer section*********************************************************************** */
     footer {
-        font-size: 10px;
         line-height: 1em;
         margin-top: 100px;
         margin-bottom: 50px;
         text-align: center;
-    }
-    .dte {
-        font-size: 12px;
     }
 }
