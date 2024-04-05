@@ -211,4 +211,13 @@
         flex-direction: column-reverse;
         align-items: center;
     }
+    .top {
+        position: none;
+    }
+    .intro {
+        display: none;
+    }
+    .artist {
+        width: 80%;
+    }
 }
