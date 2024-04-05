@@ -122,6 +122,12 @@
 .enter {
     padding: 10px 10px;
     font-size: 25px;
+    margin-right: 10px;
+}
+.end {
+    width: 100%;
+    display: flex;
+    justify-content: end;
 }
 
 .bottom {
