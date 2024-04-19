@@ -18,6 +18,7 @@ body {
     /* font-style: normal; */
     /* font-variation-settings: "slnt" 0; */
     font-family: "Inter", sans-serif;
+    font-weight: 600;
     color: #fff;
 }
 
@@ -137,7 +138,7 @@ body {
     /* width: 90%; */
     white-space: pre-wrap; /* Allow text to wrap */
     overflow: hidden;
-    animation: typing 1s steps(40, end);
+    animation: typing 0.0001s;
 }
 
 @keyframes typing {
