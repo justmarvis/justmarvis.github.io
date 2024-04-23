@@ -312,10 +312,9 @@ body {
     width: 85%;
     height: 6px;
     background-color: #ff6347;
-    animation: css 2s;
 }
 .css.animated {
-    animation: html 2s;
+    animation: css 2s;
 }
 @keyframes css {
     0% {
@@ -329,10 +328,9 @@ body {
     width: 75%;
     height: 6px;
     background-color: #ff6347;
-    animation: js 2s;
 }
 .js.animated {
-    animation: html 2s;
+    animation: js 2s;
 }
 @keyframes js {
     0% {
@@ -346,10 +344,9 @@ body {
     width: 45%;
     height: 6px;
     background-color: #ff6347;
-    animation: php 2s;
 }
 .php.animated {
-    animation: html 2s;
+    animation: php 2s;
 }
 @keyframes php {
     0% {
@@ -363,10 +360,9 @@ body {
     width: 80%;
     height: 6px;
     background-color: #ff6347;
-    animation: rjs 2s;
 }
 .rjs.animated {
-    animation: html 2s;
+    animation: rjs 2s;
 }
 @keyframes rjs {
     0% {
@@ -380,10 +376,9 @@ body {
     width: 70%;
     height: 6px;
     background-color: #ff6347;
-    animation: ang 2s;
 }
 .ang.animated {
-    animation: html 2s;
+    animation: ang 2s;
 }
 @keyframes ang {
     0% {
@@ -397,10 +392,9 @@ body {
     width: 60%;
     height: 6px;
     background-color: #ff6347;
-    animation: ios 2s;
 }
 .ios.animated {
-    animation: html 2s;
+    animation: ios 2s;
 }
 @keyframes ios {
     0% {
@@ -414,10 +408,9 @@ body {
     width: 70%;
     height: 6px;
     background-color: #ff6347;
-    animation: and 2s;
 }
 .and.animated {
-    animation: html 2s;
+    animation: and 2s;
 }
 @keyframes and {
     0% {
@@ -431,10 +424,9 @@ body {
     width: 92%;
     height: 6px;
     background-color: #ff6347;
-    animation: ux 2s;
 }
 .ux.animated {
-    animation: html 2s;
+    animation: ux 2s;
 }
 @keyframes ux {
     0% {
