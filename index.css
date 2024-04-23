@@ -297,6 +297,10 @@ body {
     background-color: #ff6347;
     animation: html 2s;
 }
+ /* Animation class */
+ .load.animated {
+    animation: html 2s;
+}
 @keyframes html {
     0% {
         width: 0%;
