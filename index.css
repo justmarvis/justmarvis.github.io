@@ -120,7 +120,7 @@ body {
     background-color: #fff;
     padding: 5px 20px;
     letter-spacing: 2px;
-    animation: slideIn 1s 1s forwards;
+    animation: slideIn 1s 1s;
 }
 @keyframes slideIn {
     0% {
@@ -137,9 +137,8 @@ body {
     font-size: 14px;
     font-weight: 700;
     text-transform: capitalize;
-    margin-left: 25px;
-    position: absolute;
-    margin-top: 20px;
+    margin-left: 20px;
+    /* position: absolute; */
     animation: typing 2.5s;
 }
 .intro {
