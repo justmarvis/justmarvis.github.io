@@ -291,16 +291,13 @@ body {
     background-color: rgba(225, 225, 225, 1);
 }
 /* Initial CSS without animation */
-.load {
-    width: 0%;
+.html {
+    width: 95%;
     height: 6px;
     background-color: #ff6347;
+    animation: html 2s;
 }
-/* Animation class */
-.load.animated {
-    animation: load 2s;
-}
-@keyframes load {
+@keyframes html {
     0% {
         width: 0%;
     }
@@ -312,47 +309,114 @@ body {
     width: 85%;
     height: 6px;
     background-color: #ff6347;
+    animation: css 2s;
+}
+@keyframes css {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 85%;
+    }
 }
 .js {
     width: 75%;
     height: 6px;
     background-color: #ff6347;
+    animation: js 2s;
+}
+@keyframes js {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 75%;
+    }
 }
 .php {
     width: 45%;
     height: 6px;
     background-color: #ff6347;
+    animation: php 2s;
+}
+@keyframes php {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 45%;
+    }
 }
 .rjs {
     width: 80%;
     height: 6px;
     background-color: #ff6347;
+    animation: rjs 2s;
+}
+@keyframes rjs {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 80%;
+    }
 }
 .ang {
     width: 70%;
     height: 6px;
     background-color: #ff6347;
+    animation: ang 2s;
+}
+@keyframes ang {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 70%;
+    }
 }
 .ios {
     width: 60%;
     height: 6px;
     background-color: #ff6347;
+    animation: ios 2s;
+}
+@keyframes ios {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 60%;
+    }
 }
 .and {
     width: 70%;
     height: 6px;
     background-color: #ff6347;
+    animation: and 2s;
+}
+@keyframes and {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 70%;
+    }
 }
 .ux {
     width: 92%;
     height: 6px;
     background-color: #ff6347;
+    animation: ux 2s;
 }
-/* .oth {
-    width: 70%;
-    height: 6px;
-    background-color: #ff6347;
-} */
+@keyframes ux {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 92%;
+    }
+}
 
 .bottom {
     font-family: "Lexend", sans-serif;
