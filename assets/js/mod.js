@@ -1,6 +1,6 @@
-const introText = "I am a diligent graduate from Brigham Young University in the United States, who graduated and now building a career in Full-Stack Web Development. With a keen eye for detail and a passion for crafting seamless digital experiences, I learn top thrive in the ever-evolving landscape of technology.";
+const introText = "rating: 4.6";
 
-const introElement = document.getElementById('intro');
+const introElement = document.getElementById('rating');
 let charIndex = 0;
 
 function type() {
@@ -12,3 +12,31 @@ function type() {
 }
 
 type();
+
+
+// Function to check if an element is in the viewport
+function isInViewport(element) {
+  const rect = element.getBoundingClientRect();
+  return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+// Function to add animation class when element is in view
+function handleIntersection(entries, observer) {
+  entries.forEach(entry => {
+      if (entry.isIntersecting && !entry.target.classList.contains('animated')) {
+          entry.target.classList.add('animated');
+          observer.unobserve(entry.target); // Stop observing once animated
+      }
+  });
+}
+
+// Create Intersection Observer instance
+const observer = new IntersectionObserver(handleIntersection, { threshold: 0 });
+
+// Observe the target element
+observer.observe(document.getElementById('loadElement'));

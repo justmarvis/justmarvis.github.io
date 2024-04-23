@@ -106,6 +106,9 @@ body {
 .im {
     font-size: 20px;
 }
+#name {
+    text-decoration: none;
+}
 .name {
     font-family: "Lexend", sans-serif;
     font-optical-sizing: auto;
@@ -117,6 +120,17 @@ body {
     background-color: #fff;
     padding: 5px 20px;
     letter-spacing: 2px;
+    animation: slideIn 1s 1s forwards;
+}
+@keyframes slideIn {
+    0% {
+        /* transform: translateY(-100%); */
+    }
+    50% {
+        font-size: 40px;
+    }
+    100% {
+    }
 }
 .rating {
     color: #ff6347;
@@ -126,10 +140,11 @@ body {
     margin-left: 25px;
     position: absolute;
     margin-top: 20px;
+    animation: typing 2.5s;
 }
 .intro {
     font-size: 13px;
-    font-weight: 6updated00;
+    font-weight: 600;
     line-height: 18px;
     letter-spacing: 1px;
     margin-top: 10px;
@@ -138,7 +153,6 @@ body {
     /* width: 90%; */
     white-space: pre-wrap; /* Allow text to wrap */
     overflow: hidden;
-    animation: typing 0.0001s;
 }
 
 @keyframes typing {
@@ -165,7 +179,7 @@ body {
     margin-left: 20px;
 }
 .email, .phone, .location, .divide {
-    margin-right: 15px;
+    margin-right: 10px;
 }
 .contact {
     display: flex;
@@ -232,15 +246,67 @@ body {
     margin-bottom: 2px;
     letter-spacing: 2px;
 }
-.bar{
+.bio {
+    /* width: 80%; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+.bioPic {
+    width: 100px;
+    /* margin: 0 auto; */
+    margin-bottom: 20px;
+    margin-right: 20px;
+    align-self: end;
+}
+.bioDesc {
+    font-size: 13px;
+    font-weight: 300;
+    margin: 0 auto;
+    line-height: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.biotext {
+    background-color: #202328;
+    padding: 10px;
+    font-size: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.text {
+    display: flex;
+    text-transform: capitalize;
+}
+.bh {
+    margin-right: 10px;
+    color:#ff6347
+}
+.bar {
     width: 150px;
     height: 6px;
     background-color: rgba(225, 225, 225, 1);
 }
-.html {
-    width: 95%;
+/* Initial CSS without animation */
+.load {
+    width: 0%;
     height: 6px;
     background-color: #ff6347;
+}
+/* Animation class */
+.load.animated {
+    animation: load 2s;
+}
+@keyframes load {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 95%;
+    }
 }
 .css {
     width: 85%;
@@ -329,7 +395,7 @@ body {
     margin-bottom: 5px;
 }
 .desc {
-    font-size: 8px;
+    font-size: 12px;
     font-weight: 300;
     letter-spacing: 1px;
 }
