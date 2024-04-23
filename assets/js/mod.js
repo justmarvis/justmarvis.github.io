@@ -49,4 +49,4 @@ function handleIntersection(entries, observer) {
 const observer = new IntersectionObserver(handleIntersection, { threshold: 0 });
 
 // Observe the target element
-observer.observe(document.getElementById('loadElement'));
+observer.observe(document.getElementsByClassName('loadElement'));
