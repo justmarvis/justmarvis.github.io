@@ -7,7 +7,7 @@ function type() {
   if (charIndex < introText.length) {
     introElement.innerHTML += introText.charAt(charIndex);
     charIndex++;
-    setTimeout(type, 50);
+    setTimeout(type, 100);
   }
 }
 
