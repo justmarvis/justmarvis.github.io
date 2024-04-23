@@ -254,11 +254,10 @@ body {
     margin-bottom: 50px;
 }
 .bioPic {
-    width: 100px;
+    width: 150px;
     /* margin: 0 auto; */
     margin-bottom: 20px;
-    margin-right: 20px;
-    align-self: end;
+    align-self: center;
 }
 .bioDesc {
     font-size: 13px;
@@ -279,6 +278,7 @@ body {
 .text {
     display: flex;
     text-transform: capitalize;
+    margin-bottom: 10px;
 }
 .bh {
     margin-right: 10px;
