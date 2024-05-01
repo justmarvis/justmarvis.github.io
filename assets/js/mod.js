@@ -1,4 +1,4 @@
-const introText = "rating: 4.6";
+const introText = "Rating: 4.6";
 
 const introElement = document.getElementById('rating');
 let charIndex = 0;
