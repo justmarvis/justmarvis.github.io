@@ -556,11 +556,18 @@ body {
 .T {
     margin-bottom: 20px;
 }
-
-
-
-
-
+.slide {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+/* *******
+    ****** 
+    ******
+    ******
+    ****** */
 /* Desktop styles */
 @media screen and (min-width: 1024px) {
     .secLink {
@@ -1007,5 +1014,11 @@ body {
     }
     .T {
         margin-bottom: 20px;
+    }
+    .slide {
+        width: 600px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
     }
   }
