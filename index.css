@@ -305,6 +305,9 @@ body {
     padding: 10px;
     margin-bottom: 100px;
 }
+.gradBio {
+    display: none;
+}
 .bioPic {
     width: 150px;
     /* margin: 0 auto; */
@@ -516,6 +519,9 @@ body {
 }
 .section {
     padding: 10px;
+    /* width: 90%; */
+    margin: 0 auto;
+    margin-bottom: 50px;
 }
 .serviceSection {
     display: flex;
@@ -562,6 +568,66 @@ body {
     justify-content: center;
     margin: 0 auto;
     margin-bottom: 40px;
+}
+.box {
+    width: 20px;
+    height: 20px;
+    border: 1px solid grey;
+    margin-right: 10px;
+}
+.introduction {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.introduction .topic:not(:last-child) {
+    margin-right: 30px;
+}
+.green {
+    background-color: #9acd32;
+}
+.yellow {
+    background-color: #ffa720;
+}
+.brown {
+    background-color: #deb887;
+}
+.grey {
+    background-color: #808080;
+}
+.tools {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.tool {
+    background-color: #fff;
+    color: #202328;
+    font-weight: 800;
+    padding: 10px;
+}
+.tool {
+    margin-bottom: 20px;
+}
+.tool:not(:last-child) {
+    margin-right: 20px;
+}
+.tool a {
+    color: #202328;
+}
+.ide {
+    border-left: 5px solid #9acd32;
+}
+.tech {
+    border-left: 5px solid #ffa720;
+}
+.lib {
+    border-left: 5px solid #deb887;
+}
+.other {
+    border-left: 5px solid #808080;
 }
 /* *******
     ****** 
@@ -755,20 +821,26 @@ body {
         letter-spacing: 2px;
     }
     .bio {
+        display: none;
+    }
+    .gradBio {
         width: 80%;
         margin: 0 auto;
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
         padding: 10px;
         margin-bottom: 100px;
     }
     .bioPic {
-        width: 150px;
+        max-width: 150px;
         /* margin: 0 auto; */
         margin-bottom: 20px;
         align-self: center;
 
         display: none;
+    }
+    .gradPic {
+        width: 200px;
     }
     .bioDesc {
         font-size: 18px;
@@ -978,6 +1050,7 @@ body {
     .section {
         width: 80%;
         margin: 0 auto;
+        margin-bottom: 50px;
     }
     .serviceSection {
         display: flex;
@@ -1020,5 +1093,9 @@ body {
         display: flex;
         justify-content: center;
         margin-bottom: 50px;
+    }
+    .introduction {
+        width: 100%;
+        display: flex;
     }
   }
