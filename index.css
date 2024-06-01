@@ -570,8 +570,8 @@ body {
     margin-bottom: 40px;
 }
 .box {
-    width: 5px;
-    height: 5px;
+    width: 10px;
+    height: 10px;
     border: 1px solid grey;
     margin-right: 10px;
 }
@@ -655,10 +655,12 @@ body {
 .figDesc {
     text-align: center;
     background-color: #fff;
-    color: #202328;
     font-weight: 700;
     padding: 8px;
     font-size: 14px;
+}
+.figDesc a {
+    color: #202328;
 }
 /* *******
     ****** 
@@ -680,6 +682,9 @@ body {
     .secLink.active {
         /* text-decoration: underline; */
         border-bottom: 3px solid #fff;
+    }
+    .active {
+        text-decoration: underline;
     }
     .introCard {
         line-height: 50px;
