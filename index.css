@@ -629,6 +629,27 @@ body {
 .other {
     border-left: 5px solid #808080;
 }
+.figmas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.figCard {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.figCard:not(:last-child) {
+    margin-right: 20px;
+}
+.figDesc {
+    text-align: center;
+    background-color: #fff;
+    color: #202328;
+    font-weight: 700;
+    padding: 8px;
+}
 /* *******
     ****** 
     ******
