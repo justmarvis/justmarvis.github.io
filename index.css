@@ -1130,6 +1130,16 @@ body {
         /* width: 100%; */
         display: flex;
     }
+    .figDesc {
+        text-align: center;
+        background-color: #fff;
+        font-weight: 700;
+        padding: 8px;
+        font-size: 14px;
+    }
+    .figDesc a {
+        color: #202328;
+    }
     .figCard {
         width: 30%;
         margin-right: 50px;
