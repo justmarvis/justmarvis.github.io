@@ -538,18 +538,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
-}
-.web {
-    animation: web 2s linear;
-}
-@keyframes web {
-    0% {
-        transform: scale(0);
-    }
-    100% {
-        transform: scale(1)
-    }
 }
 .h4 {
     width: 50%;
@@ -1145,5 +1133,29 @@ body {
     .introduction {
         /* width: 100%; */
         display: flex;
+    }
+    .figmas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .figCard {
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .figCard:not(:last-child) {
+        margin-right: 20px;
+    }
+    .figDesc {
+        text-align: center;
+        background-color: #fff;
+        font-weight: 700;
+        padding: 8px;
+        font-size: 14px;
+    }
+    .figDesc a {
+        color: #202328;
     }
   }

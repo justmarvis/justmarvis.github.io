@@ -1,5 +1,5 @@
-// Typing effect for "Rating: 4.6"
 const introText = "Rating: 4.6";
+
 const introElement = document.getElementById('rating');
 let charIndex = 0;
 
@@ -13,8 +13,19 @@ function type() {
 
 type();
 
-// IntersectionObserver callback for animated elements
-function handleAnimatedIntersection(entries, observer) {
+// Function to check if an element is in the viewport
+function isElementInViewport(el) {
+  var rect = el.getBoundingClientRect();
+  return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+// Function to add animation class when element is in view
+function handleIntersection(entries, observer) {
   entries.forEach(entry => {
       if (entry.isIntersecting && !entry.target.classList.contains('animated')) {
           entry.target.classList.add('animated');
@@ -23,30 +34,16 @@ function handleAnimatedIntersection(entries, observer) {
   });
 }
 
-// IntersectionObserver callback for web animation elements
-function handleWebIntersection(entries, observer) {
-  entries.forEach(entry => {
-      if (entry.isIntersecting && !entry.target.classList.contains('web')) {
-          entry.target.classList.add('web');
-          observer.unobserve(entry.target); // Stop observing once animated
-      }
-  });
-}
+// Create Intersection Observer instance
+const observer = new IntersectionObserver(handleIntersection, { threshold: 0 });
 
-// Create IntersectionObserver instances
-const animatedObserver = new IntersectionObserver(handleAnimatedIntersection, { threshold: 0.1 });
-const webObserver = new IntersectionObserver(handleWebIntersection, { threshold: 0.1 });
-
-// Observe the animated elements
-animatedObserver.observe(document.getElementById('loadElement'));
-animatedObserver.observe(document.getElementById('loadElement1'));
-animatedObserver.observe(document.getElementById('loadElement2'));
-animatedObserver.observe(document.getElementById('loadElement3'));
-animatedObserver.observe(document.getElementById('loadElement4'));
-animatedObserver.observe(document.getElementById('loadElement5'));
-animatedObserver.observe(document.getElementById('loadElement6'));
-animatedObserver.observe(document.getElementById('loadElement7'));
-animatedObserver.observe(document.getElementById('loadElement8'));
-
-// Observe the web animation element
-webObserver.observe(document.getElementById('web'));
+// Observe the target element
+observer.observe(document.getElementById('loadElement'));
+observer.observe(document.getElementById('loadElement1'));
+observer.observe(document.getElementById('loadElement2'));
+observer.observe(document.getElementById('loadElement3'));
+observer.observe(document.getElementById('loadElement4'));
+observer.observe(document.getElementById('loadElement5'));
+observer.observe(document.getElementById('loadElement6'));
+observer.observe(document.getElementById('loadElement7'));
+observer.observe(document.getElementById('loadElement8'));
