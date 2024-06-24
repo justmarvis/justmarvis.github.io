@@ -47,3 +47,25 @@ observer.observe(document.getElementById('loadElement5'));
 observer.observe(document.getElementById('loadElement6'));
 observer.observe(document.getElementById('loadElement7'));
 observer.observe(document.getElementById('loadElement8'));
+
+document.addEventListener('DOMContentLoaded', () => {
+  const tooltip = document.createElement('div');
+  tooltip.className = 'tooltip';
+  document.body.appendChild(tooltip);
+
+  const span = document.querySelector('.name');
+  span.addEventListener('mouseenter', (e) => {
+    const tooltipText = span.getAttribute('data-tooltip');
+    tooltip.textContent = tooltipText;
+    tooltip.style.visibility = 'visible';
+    tooltip.style.opacity = '1';
+    const rect = span.getBoundingClientRect();
+    tooltip.style.left = `${rect.left + window.scrollX}px`;
+    tooltip.style.top = `${rect.bottom + window.scrollY + 5}px`; // Adjust tooltip position as needed
+  });
+
+  span.addEventListener('mouseleave', () => {
+    tooltip.style.visibility = 'hidden';
+    tooltip.style.opacity = '0';
+  });
+});
