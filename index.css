@@ -180,7 +180,7 @@ body {
 }
 .intro {
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 800;
     line-height: 30px;
     letter-spacing: 1px;
     margin-top: 10px;
@@ -241,7 +241,7 @@ body {
 }
 .byline {
     width: 80%;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 400;
     margin-bottom: 20px;
     z-index: 20;
@@ -742,6 +742,7 @@ body {
     }
     .byline {
         margin-bottom: 50px;
+        font-size: 18px;
     }
     /* Style for the tooltip */
 .tooltip {
