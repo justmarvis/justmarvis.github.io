@@ -42,9 +42,11 @@ body {
     display: flex;
     align-items: end;
     justify-content: space-between;
-    margin-top: 20px;
-    margin-left: 10px;
-    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    background-color: #1A1D23;
+    box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.06);
 }
 .navigation {
     display: flex;
@@ -184,7 +186,7 @@ body {
     line-height: 30px;
     letter-spacing: 1px;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
     width: 70%;
     white-space: pre-wrap; /* Allow text to wrap */
     overflow: hidden;
@@ -243,13 +245,13 @@ body {
     width: 80%;
     font-size: 14px;
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     z-index: 20;
 }
 .enterpreneur {
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
 }
 .freelancer {
     background-color: #131519;
@@ -377,6 +379,18 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+.reachMe {
+    margin-left: 30px;
+    font-weight: 400;
+}
+.em {
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: 800;
+}
+.em2 {
+    text-decoration: underline;
 }
 .catchPhrase {
     font-size: 32px;
@@ -722,6 +736,10 @@ body {
 @media screen and (min-width: 1024px) {
     .top {
         margin-left: 20px;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    }
+    .reachMe {
+        margin-left: 50px;
     }
     .secLink {
         font-size: 14px;
@@ -875,6 +893,7 @@ body {
     }
     .bd {
         color: rgba(225, 225, 225, 0.5);
+        color: #1A1D23;
     }
     .bannerPic {
         display: block;
@@ -953,6 +972,9 @@ body {
     }
     .gradPic {
         width: 200px;
+    }
+    .enterpreneur {
+        margin-bottom: 30px;
     }
     .bioDesc {
         font-size: 18px;
