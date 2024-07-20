@@ -155,11 +155,10 @@ body {
 .github {
     background-color: #131519;
     border: 3px solid #fff;
-    border-radius: 10px;
-    padding: 15px 20px;
+    padding: 8px 20px;
 }
 .git {
-    font-size: 18px;
+    font-size: 16px;
     color: #fff;
     font-weight: 600;
 }
