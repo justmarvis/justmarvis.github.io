@@ -381,11 +381,11 @@ body {
     justify-content: space-between;
 }
 .reachMe {
-    margin-left: 30px;
     font-weight: 400;
+    margin-top: 70px;
 }
 .em {
-    font-size: 30px;
+    font-size: 25px;
     text-transform: capitalize;
     font-weight: 800;
 }
@@ -426,6 +426,23 @@ body {
     width: 95%;
     height: 6px;
     background-color: #6AB3E8;
+}
+.poster {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.posterImg {
+    width: 90%;
+    pointer-events: none;
+    user-select: none;
+}
+.posterTitle {
+    position: absolute;
+    background-color: #1A1D23;
+    padding: 2px 20px;
+    margin-bottom: 10px;
 }
  /* Animation class */
 .html.animated {
@@ -738,9 +755,9 @@ body {
         margin-left: 20px;
         box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
     }
-    .reachMe {
+    /* .reachMe {
         margin-left: 50px;
-    }
+    } */
     .secLink {
         font-size: 14px;
         color: #fff;

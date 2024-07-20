@@ -69,3 +69,11 @@ document.addEventListener('DOMContentLoaded', () => {
     tooltip.style.opacity = '0';
   });
 });
+
+
+document.addEventListener('contextmenu', event => event.preventDefault());
+        document.addEventListener('keydown', event => {
+            if (event.ctrlKey && (event.key === 's' || event.key === 'p')) {
+                event.preventDefault();
+            }
+        });
