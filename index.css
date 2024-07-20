@@ -401,6 +401,15 @@ body {
     margin: 0 auto;
     margin-bottom: 100px;
 }
+.onsale {
+    font-size: 32px;
+    font-family: "Platypi", serif;
+  font-weight: 600;
+  font-style: normal;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
 .bh {
     font-size: 18px;
     margin-right: 10px;
