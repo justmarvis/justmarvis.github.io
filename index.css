@@ -144,7 +144,7 @@ body {
     }
 }
 .rating {
-    color: #6AB3E8;
+    color: #89023e;
     font-size: 14px;
     font-weight: 700;
     text-transform: capitalize;
@@ -183,7 +183,7 @@ body {
     font-style: italic;
 }
 .intro {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 800;
     line-height: 30px;
     letter-spacing: 1px;
@@ -194,7 +194,7 @@ body {
     overflow: hidden;
 }
 .target {
-    color: #6AB3E8;
+    color: #89023e;
     font-style: italic;
 }
 
@@ -228,7 +228,7 @@ body {
 }
 .icon {
     font-size: 24px;
-    color: #1A1D23;
+    color: #89023e;
 }
 .cardIcon {
     width: 36px;
@@ -242,6 +242,7 @@ body {
     line-height: 20px;
     letter-spacing: 1px;
     margin-bottom: 30px;
+    color: #89023e;
 }
 .byline {
     width: 80%;
@@ -269,6 +270,7 @@ body {
 .freelanceIcon {
     margin-left: 10px;
     font-size: 14px;
+    color: #89023e;
 }
 .queue {
     font-size: 16px;
@@ -307,6 +309,78 @@ body {
     height: 1vh;
     background-color: #fff;
     margin-bottom: 50px;
+}
+.mywork {
+    display: flex;
+    padding: 20px;
+}
+.tiktok {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    border-right: 8px solid red;
+    border-left: 8px solid blue;
+    border-radius: 20px 0px;
+    font-weight: 800;
+}
+.carousel-container {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.posterTitle {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.indicator {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+}
+
+.indicator span {
+    width: 10px;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.indicator span.active {
+    background-color: #333;
 }
 .subHead {
     font-family: "Lexend", sans-serif;
@@ -385,11 +459,15 @@ body {
 .reachMe {
     font-weight: 400;
     margin-top: 70px;
+    font-size: 12px;
 }
 .em {
     font-size: 25px;
     text-transform: capitalize;
     font-weight: 800;
+}
+.insta {
+    color: #89023e;
 }
 .em2 {
     text-decoration: underline;
@@ -445,7 +523,7 @@ body {
     align-items: end;
 }
 .posterImg {
-    width: 90%;
+    width: 50%;
     pointer-events: none;
     user-select: none;
 }
@@ -853,7 +931,7 @@ body {
         }
     }
     .rating {
-        color: #6AB3E8;
+        color: #89023e;
         font-size: 14px;
         font-weight: 700;
         text-transform: capitalize;
