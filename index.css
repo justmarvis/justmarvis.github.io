@@ -896,7 +896,7 @@ body {
     font-size: 10px;
 }
 .animate {
-    animation: pre 2s forwards 10s;
+    animation: pre 1s forwards 10s;
 }
 @keyframes pre {
     0% {
