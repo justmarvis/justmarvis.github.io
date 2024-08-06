@@ -1,5 +1,5 @@
+// Typing text effect
 const introText = "Rating: 4.6";
-
 const introElement = document.getElementById('rating');
 let charIndex = 0;
 
@@ -13,41 +13,30 @@ function type() {
 
 type();
 
-// Function to check if an element is in the viewport
-function isElementInViewport(el) {
-  var rect = el.getBoundingClientRect();
-  return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-  );
-}
-
-// Function to add animation class when element is in view
+// Intersection Observer to add animation class when elements are in view
 function handleIntersection(entries, observer) {
   entries.forEach(entry => {
-      if (entry.isIntersecting && !entry.target.classList.contains('animated')) {
-          entry.target.classList.add('animated');
-          observer.unobserve(entry.target); // Stop observing once animated
-      }
+    if (entry.isIntersecting && !entry.target.classList.contains('animated')) {
+      entry.target.classList.add('animated');
+      observer.unobserve(entry.target); // Stop observing once animated
+    }
   });
 }
 
-// Create Intersection Observer instance
 const observer = new IntersectionObserver(handleIntersection, { threshold: 0 });
 
-// Observe the target element
-observer.observe(document.getElementById('loadElement'));
-observer.observe(document.getElementById('loadElement1'));
-observer.observe(document.getElementById('loadElement2'));
-observer.observe(document.getElementById('loadElement3'));
-observer.observe(document.getElementById('loadElement4'));
-observer.observe(document.getElementById('loadElement5'));
-observer.observe(document.getElementById('loadElement6'));
-observer.observe(document.getElementById('loadElement7'));
-observer.observe(document.getElementById('loadElement8'));
+// Observe multiple elements
+const elementsToObserve = [
+  'loadElement', 'loadElement1', 'loadElement2', 'loadElement3', 
+  'loadElement4', 'loadElement5', 'loadElement6', 'loadElement7', 
+  'loadElement8'
+];
 
+elementsToObserve.forEach(id => {
+  observer.observe(document.getElementById(id));
+});
+
+// Tooltip display
 document.addEventListener('DOMContentLoaded', () => {
   const tooltip = document.createElement('div');
   tooltip.className = 'tooltip';
@@ -61,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
     tooltip.style.opacity = '1';
     const rect = span.getBoundingClientRect();
     tooltip.style.left = `${rect.left + window.scrollX}px`;
-    tooltip.style.top = `${rect.bottom + window.scrollY + 5}px`; // Adjust tooltip position as needed
+    tooltip.style.top = `${rect.bottom + window.scrollY + 5}px`;
   });
 
   span.addEventListener('mouseleave', () => {
@@ -70,10 +59,97 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-
+// Prevent context menu and specific key shortcuts
 document.addEventListener('contextmenu', event => event.preventDefault());
-        document.addEventListener('keydown', event => {
-            if (event.ctrlKey && (event.key === 's' || event.key === 'p')) {
-                event.preventDefault();
-            }
-        });
+document.addEventListener('keydown', event => {
+  if (event.ctrlKey && (event.key === 's' || event.key === 'p')) {
+    event.preventDefault();
+  }
+});
+
+// Carousel functionality with touch support
+const carousel = document.querySelector('.carousel');
+const items = document.querySelectorAll('.carousel-item');
+const indicators = document.querySelectorAll('.indicator span');
+let currentIndex = 0;
+
+function showItem(index) {
+  carousel.style.transform = `translateX(-${index * 100}%)`;
+  indicators.forEach((indicator, i) => {
+    if (i === index) {
+      indicator.classList.add('active');
+    } else {
+      indicator.classList.remove('active');
+    }
+  });
+}
+
+indicators.forEach((indicator, index) => {
+  indicator.addEventListener('click', () => {
+    currentIndex = index;
+    showItem(currentIndex);
+  });
+});
+
+// Add touch events for swipe functionality
+let startX;
+carousel.addEventListener('touchstart', (event) => {
+  startX = event.touches[0].clientX;
+});
+
+carousel.addEventListener('touchmove', (event) => {
+  if (!startX) return;
+  const currentX = event.touches[0].clientX;
+  const diffX = startX - currentX;
+
+  if (diffX > 50) {
+    // Swipe left
+    currentIndex = (currentIndex + 1) % items.length;
+    showItem(currentIndex);
+    startX = null;
+  } else if (diffX < -50) {
+    // Swipe right
+    currentIndex = (currentIndex - 1 + items.length) % items.length;
+    showItem(currentIndex);
+    startX = null;
+  }
+});
+
+
+// //intersection observer for project section animations
+// document.addEventListener('DOMContentLoaded', function() {
+//   const target = document.getElementById('animateMe');
+  
+//   const observer = new IntersectionObserver((entries) => {
+//       entries.forEach(entry => {
+//           if (entry.isIntersecting) {
+//               target.classList.remove('hidden'); // Remove hidden class
+//               target.classList.add('animate'); // Add animate class to trigger transition
+//               observer.unobserve(target); // Stop observing after the animation starts
+//           }
+//       });
+//   }, {
+//       threshold: 0.5 // Adjust this value as needed
+//   });
+
+//   observer.observe(target);
+// });a
+
+//repeat animation for project section animations
+document.addEventListener('DOMContentLoaded', () => {
+  const element = document.getElementById('animateMe');
+
+  function restartAnimation() {
+      // Remove the animation class to restart the animation
+      element.classList.remove('animate');
+      void element.offsetWidth; // Trigger reflow
+      element.classList.add('animate');
+  }
+
+  // Initial animation start
+  restartAnimation();
+
+  // Repeat animation every 5 seconds
+  setInterval(restartAnimation, 2000);
+});
+
