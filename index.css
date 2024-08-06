@@ -797,9 +797,9 @@ body {
     margin-bottom: 40px;
 }
 .box {
-    width: 10px;
+    width: 20px;
     height: 10px;
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
     margin-right: 10px;
 }
 .introduction {
