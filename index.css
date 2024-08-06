@@ -896,14 +896,14 @@ body {
     font-size: 10px;
 }
 .animate {
-    animation: pre 2s;
+    animation: pre 2s forwards 10s;
 }
 @keyframes pre {
     0% {
         font-size: 10px;
     }
     50% {
-        font-size: 14px;
+        font-size: 12px;
     }
     100% {
         font-size: 10px;
