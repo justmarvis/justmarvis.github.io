@@ -17,7 +17,7 @@
     padding: 0;
 }
 body {
-    background: linear-gradient(to top, #b15252, #1A1D23);
+    background: linear-gradient(to top, #9394d4, #1a2223);
     /* font-optical-sizing: auto; */
     /* font-style: normal; */
     /* font-variation-settings: "slnt" 0; */
@@ -33,7 +33,7 @@ body {
     bottom: 50px;
     font-size: 20px;
     background: rgba(0, 0, 0, 0.8);
-    color:rgba(255, 99, 71, 0.8);
+    color:#6AB3E8;
     transform: translateX(-50%);
     padding: 20px;
     border-radius: 50%;
@@ -253,8 +253,8 @@ body {
     color: #1A1D23;
 }
 .cardIcon {
-    width: 26px;
-    font-size: 24px;
+    width: 18px;
+    font-size: 16px;
     color:#6AB3E8;
     margin-bottom: 8px;
 }
@@ -268,6 +268,13 @@ body {
 }
 .byline {
     width: 80%;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    z-index: 20;
+}
+.testby {
+    width: 65%;
     font-size: 14px;
     font-weight: 400;
     margin-bottom: 20px;
