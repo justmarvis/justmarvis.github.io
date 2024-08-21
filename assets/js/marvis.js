@@ -153,3 +153,40 @@ document.addEventListener('DOMContentLoaded', () => {
   setInterval(restartAnimation, 2000);
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+  let startX;
+  const carousel = document.querySelector('.carousel-inner');
+  const radioButtons = document.querySelectorAll('.carousel-open');
+  const totalItems = radioButtons.length;
+
+  carousel.addEventListener('touchstart', function (e) {
+      startX = e.touches[0].clientX;
+  });
+
+  carousel.addEventListener('touchmove', function (e) {
+      if (!startX) return;
+
+      let moveX = e.touches[0].clientX;
+      let diffX = startX - moveX;
+
+      if (diffX > 50) {
+          nextSlide();
+          startX = null;
+      } else if (diffX < -50) {
+          prevSlide();
+          startX = null;
+      }
+  });
+
+  function nextSlide() {
+      let checkedIndex = Array.from(radioButtons).findIndex(rb => rb.checked);
+      radioButtons[(checkedIndex + 1) % totalItems].checked = true;
+  }
+
+  function prevSlide() {
+      let checkedIndex = Array.from(radioButtons).findIndex(rb => rb.checked);
+      radioButtons[(checkedIndex - 1 + totalItems) % totalItems].checked = true;
+  }
+});
+
+
