@@ -987,7 +987,7 @@ body {
 }
 
 .carousel-control {
-    background: rgba(0, 0, 0, 0.28);
+    /* background: rgba(0, 0, 0, 0.28); */
     border-radius: 50%;
     color: #fff;
     cursor: pointer;
@@ -1004,6 +1004,7 @@ body {
     text-align: center;
     width: 32px;
     z-index: 10;
+    margin-top: 50px;
 }
 
 .carousel-control.prev {
