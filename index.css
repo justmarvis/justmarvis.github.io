@@ -518,15 +518,36 @@ body {
 .em2 {
     text-decoration: underline;
 }
+.animatedDisplay {
+    display: flex;
+    align-items: center;
+    /* padding: 20px; */
+    margin: 50px 20px;
+}
+.animatedImg {
+    width: 70%;
+}
 .catchPhrase {
-    font-size: 32px;
+    font-size: 6vw;
+    font-family: "Platypi", serif;
+  font-weight: 600;
+  font-style: normal;
+    text-align: left;
+    /* width: 80%; */
+    /* margin: 0 auto; */
+    /* margin-bottom: 50px; */
+    margin-left: -80px;
+}
+.catchPhrase2 {
+    font-size: 35px;
     font-family: "Platypi", serif;
   font-weight: 600;
   font-style: normal;
     text-align: center;
-    width: 80%;
+    /* width: 100%; */
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    /* margin-left: -50px; */
 }
 .onsale {
     font-size: 32px;
@@ -760,10 +781,16 @@ body {
     margin: 0 auto;
     margin-bottom: 50px;
 }
+.how {
+    margin-bottom: 0px;
+}
 .serviceSection {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+.serviceMargin {
+    margin-bottom: 0px;
 }
 .artSection {
     display: flex;
@@ -950,7 +977,7 @@ body {
     position: relative;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
     margin-top: 26px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
   background-color: #202328;
   color: #fff;
   padding: 10px 0;
@@ -1343,11 +1370,9 @@ body {
         font-family: "Platypi", serif;
       font-weight: 600;
       font-style: normal;
-        text-align: center;
-        width: 80%;
-        margin: 0 auto;
-        margin-top: 50px;
-        margin-bottom: 150px;
+        text-align: left;
+        width: 50%;
+        margin-left: -200px;
     }
     .bh {
         font-size: 24px;
