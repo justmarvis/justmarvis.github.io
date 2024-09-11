@@ -145,7 +145,7 @@ body {
         /* transform: translateY(-100%); */
     }
     50% {
-        font-size: 40px;
+        font-size: 25px;
     }
     100% {
     }
@@ -252,6 +252,14 @@ body {
     font-size: 24px;
     color: #1A1D23;
 }
+.Close {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 10px;
+}
+.close {
+    font-size: 32px;
+}
 .cardIcon {
     width: 18px;
     font-size: 16px;
@@ -292,6 +300,17 @@ body {
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6);
     padding: 10px 15px;
     margin-right: 10px;
+}
+.paymnt {
+    background-color: #6AB3E8;
+    color: #fff;
+    border: none;
+    padding: 10px 10px;
+    font-weight: 800;
+}
+.paymnt a {
+    color: #fff;
+    text-decoration: none;
 }
 .freelance {
     font-size: 14px;
@@ -741,22 +760,6 @@ body {
         width: 70%;
     }
 }
-.ux {
-    width: 92%;
-    height: 6px;
-    background-color: #6AB3E8;
-}
-.ux.animated {
-    animation: ux 2s;
-}
-@keyframes ux {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 92%;
-    }
-}
 
 .bottom {
     font-family: "Lexend", sans-serif;
@@ -784,6 +787,40 @@ body {
 .how {
     margin-bottom: 0px;
 }
+.popup {
+    position: fixed;
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    box-shadow: 0px 0px 15px 1000px rgba(0, 0, 0, 0.3); 
+    opacity: 0; /* Start invisible */
+    visibility: hidden; /* Hidden at start */
+
+    /* Centering the popup */
+    /* top: 50%; */
+    left: 28%;
+    transform: translate(-50%, -50%);
+    
+    /* Animation */
+    animation: popup 0.5s ease forwards 3s; /* 2s delay, 2s duration */
+}
+
+@keyframes popup {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+    }
+}
+
+
+.popupDiscount {
+}
 .serviceSection {
     display: flex;
     flex-wrap: wrap;
@@ -808,6 +845,30 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+.ux {
+    animation: ux 1s 2s;
+}
+.web {
+    animation: web 1s 3s;
+}
+@keyframes ux {
+    0% {
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+    }
+}
+@keyframes web {
+    0% {
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+    }
 }
 .workCard {
     background-color: #202328;
@@ -935,6 +996,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: end;
 }
 .figCard {
     width: 80%;
@@ -944,6 +1006,9 @@ body {
 }
 .figCard:not(:last-child) {
     /* margin-right: 20px; */
+}
+.figDisplay {
+    width: 50px;
 }
 .figDesc {
     text-align: center;
@@ -974,7 +1039,6 @@ body {
     }
 }
 .carousel {
-    position: relative;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
     margin-top: 26px;
     /* margin-bottom: 30px; */
@@ -988,7 +1052,7 @@ body {
 }
 
 .carousel-inner {
-    position: relative;
+    /* position: relative; */
     overflow: hidden;
     /* width: 100%; */
     text-align: left;
@@ -1035,11 +1099,16 @@ body {
 }
 
 .carousel-control.prev {
+    position:inherit;
     left: 2%;
 }
 
 .carousel-control.next {
+    position:inherit;
     right: 2%;
+}
+.vious {
+    font-size: 25px;
 }
 
 .carousel-control:hover {
