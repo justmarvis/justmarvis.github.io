@@ -251,6 +251,7 @@ body {
 .icon {
     font-size: 24px;
     color: #1A1D23;
+    width: 24px;
 }
 .Close {
     display: flex;
@@ -1153,19 +1154,34 @@ body {
     margin: 0 auto;
     margin-bottom: 50px;
 }
-.pckName, .pckPrice {
+.pckName {
+    font-size: 18px;
+    color: #1A1D23;
+    font-weight: 900;
+}
+.pckPrice {
     font-size: 20px;
     font-weight: 600;
 }
-.pckPrice {
-    border-left: 3px solid #6AB3E8;
+.stcPrice {
+    border-left: 3px solid #00ffff;
     padding-left: 5px;
 }
-.contnt {
-    font-size: 16px;
+.dynPrice {
+    border-left: 3px solid #ff6347;
+    padding-left: 5px;
+}
+.stcContnt {
+    font-size: 14px;
     font-weight: 300;
     padding-left: 5px;
-    border-left: 3px solid #6AB3E8;
+    border-left: 3px solid #00ffff;
+}
+.dynContnt {
+    font-size: 14px;
+    font-weight: 300;
+    padding-left: 5px;
+    border-left: 3px solid #ff6347;
 }
 /* *******
     ****** 
