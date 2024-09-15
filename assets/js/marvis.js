@@ -189,4 +189,13 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
+<<<<<<< HEAD
+=======
+//close popup
+function closePopup() {
+  document.querySelector('.popup').style.display = 'none';
+}
+
+
+>>>>>>> e8ea876 (first commit)
 
