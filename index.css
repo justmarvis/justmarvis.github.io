@@ -597,6 +597,11 @@ body {
     height: 6px;
     background-color: rgba(225, 225, 225, 1);
 }
+.ux {
+    width: 95%;
+    height: 6px;
+    background-color: #6AB3E8;
+}
 /* Initial CSS without animation */
 .html {
     width: 95%;
