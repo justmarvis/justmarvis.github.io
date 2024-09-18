@@ -138,7 +138,7 @@ body {
     background-color: #1A1D23;
     padding: 5px 20px;
     letter-spacing: 2px;
-    animation: slideIn 1s 1s;
+    animation: slideIn 0.5s 1s;
 }
 @keyframes slideIn {
     0% {
@@ -251,7 +251,6 @@ body {
 .icon {
     font-size: 24px;
     color: #1A1D23;
-    width: 24px;
 }
 .Close {
     display: flex;
@@ -279,7 +278,7 @@ body {
     width: 80%;
     font-size: 14px;
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     z-index: 20;
 }
 .testby {
@@ -292,7 +291,7 @@ body {
 .enterpreneur {
     display: flex;
     align-items: center;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 .freelancer {
     background-color: #fff;
@@ -827,6 +826,9 @@ body {
 
 .popupDiscount {
 }
+.DSocials {
+    display: none;
+}
 .serviceSection {
     display: flex;
     flex-wrap: wrap;
@@ -1209,7 +1211,7 @@ body {
         font-size: 14px;
         color: #fff;
         text-decoration: none;
-        margin-right: 10px;
+        margin-right: 30px;
         font-weight: 300;
     }
     .bannerImg {
@@ -1217,14 +1219,14 @@ body {
         position: absolute;
         right: 10px;
         z-index: 0;
-        width: 600px;
+        width: 300px;
     }
     .bannerCard {
         padding: 20px;
     }
     .byline {
-        margin-bottom: 50px;
-        font-size: 18px;
+        margin-bottom: 10px;
+        font-size: 16px;
     }
     /* Style for the tooltip */
 .tooltip {
@@ -1251,15 +1253,14 @@ body {
     }
     .introCard {
         line-height: 50px;
-        margin-left: 5px;
         margin-top: 30px;
         color: rgba(0, 0, 0, 0.8);
     }
     .hi {
-        font-family: "Irish Grover", system-ui;
+        /* font-family: "Irish Grover", system-ui; */
         font-weight: 400;
         font-style: normal;
-        font-size: 100px;
+        font-size: 80px;
     }
     .im {
         font-size: 30px;
@@ -1277,7 +1278,7 @@ body {
         background-color: #1A1D23;
         padding: 5px 20px;
         letter-spacing: 2px;
-        animation: slideIn 1s 1s;
+        animation: slideIn 0.5s 1s;
     }
     @keyframes slideIn {
         0% {
@@ -1290,13 +1291,8 @@ body {
         }
     }
     .rating {
-        color: #89023e;
-        font-size: 14px;
-        font-weight: 700;
-        text-transform: capitalize;
-        margin-left: 20px;
-        /* position: absolute; */
-        animation: typing 2.5s;
+        font-size: 16px;
+        margin-bottom: 2px;
     }
     .intro {
         width: 70%;
@@ -1309,25 +1305,28 @@ body {
         white-space: pre-wrap;
         overflow: hidden;
     }
-    
-    @keyframes typing {
-      from {
-        width: 0;
-      }
-      to {
-        width: 90%;
-      }
-    }
-    
-    
     .socials {
-        margin-bottom: 15px;
+        display: none;
+    }
+    .DS {
+        display: flex;
+        /* width: 50%; */
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+    .DSocials {
         display: flex;
         align-items: center;
-        right: 50px;
+        background-color: #fff;
+        border-radius: 30px;
+        padding: 0 10px;
     }
+    /* .iconLink:not(:last-child) {
+        margin-right: 20px;
+    } */
     .icon {
-        font-size: 24px;
+        font-size: 20px;
         color: #1A1D23;
     }
     .count {
@@ -1441,8 +1440,19 @@ body {
     .enterpreneur {
         margin-bottom: 30px;
     }
+    .freelance {
+        font-size: 16px;
+    }
+    .freelancer {
+        margin-right: 20px;
+        padding: 14px 20px;
+    }
+    .paymnt {
+        padding: 12px;
+        font-size: 16px;
+    }
     .bioDesc {
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 300;
         margin: 0 auto;
         line-height: 30px;
@@ -1465,6 +1475,13 @@ body {
         text-align: left;
         width: 50%;
         margin-left: -200px;
+    }
+    .animatedDisplay {
+        margin: 50px 100px;
+        justify-content: center;
+    }
+    .animatedImg {
+        width: 50%;
     }
     .bh {
         font-size: 24px;
@@ -1644,11 +1661,13 @@ body {
         margin-bottom: 20px;
     }
     .section {
-        width: 80%;
+        /* width: 80%; */
         margin: 0 auto;
         margin-bottom: 50px;
     }
     .serviceSection {
+        width: 50%;
+        margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
