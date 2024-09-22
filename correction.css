@@ -23,7 +23,7 @@
     background-color: #202328;
     margin-bottom: 15px;
     opacity: 0; /* Initially hidden */
-    animation: start 0.5s 1s linear forwards;
+    animation: start 0.5s 2s linear forwards;
 }
 @keyframes start {
     0% {
@@ -46,7 +46,7 @@
     background-color: #202328;
     z-index: -1;
     opacity: 0; /* Initially hidden */
-    animation: line 5s 1.5s linear forwards;
+    animation: line 5s 2.5s linear forwards;
 }
 @keyframes line {
     0% {
@@ -164,6 +164,7 @@ a.r:hover .pdf {
 }
 .job {
     width: 100%;
+    margin-bottom: 5px;
 }
 .freelancer {
     background-color: #fff;
@@ -235,6 +236,8 @@ a.r:hover .pdf {
 .icon {
     color: #202328;
     font-size: 2.5vw;
+}
+.iconLink {
     margin-right: 25px;
 }
 .subHead {
@@ -273,6 +276,7 @@ a.r:hover .pdf {
     font-size: 2vw;
     text-transform: uppercase;
     font-weight: 900;
+    cursor: pointer;
 }
 .projectOne {
     background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/03%20Free%202021%20Imac%2024%20Inch%20Mockup.png?v=1726819815026');
@@ -540,10 +544,13 @@ a.r:hover .pdf {
     align-items: center;
     align-items: center;
 }
+.Rate a {
+    color: #202328;
+}
 .iconSmall {
     font-size: 12px;
 }
-.Contact {
+.Contacts {
     width: 90%;
     margin: 0 auto;
     margin-bottom: 100px;
@@ -556,15 +563,184 @@ a.r:hover .pdf {
     justify-content: space-between;
 }
 
+/* small screen */
+@media (max-width: 600px) {
+    .main {
+        width: 90%;
+    }
+    .introCard {
+        margin-bottom: 10px;
+    }
+    .hi {
+        font-size: 20px;
+    }
+    .im {
+        font-size: 12px;
+    }
+    .name {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .animatedDisplay {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .animatedImg {
+        width: 200px;
+        margin: 0 0 20px 15px;
+    }
+    .title {
+        font-size: 14px;
+    }
+    .byline {
+        font-size: 14px;
+        width: 90%;
+    }
+    .projects {
+        width: 100%;
+    }
+    .projectOne, .projectTwo, .projectThree {
+        width: 100px;
+    }
+    .projectThree {
+        font-size: 14px;
+    }
+    .icon {
+        font-size: 28px;
+        margin-right: 0;
+    }
+    .iconLink {
+        margin-bottom: 20px;
+    }
+    .iconLink:not(:last-child) {
+        margin-right: 10px;
+    }
+    .navigation {
+        position: absolute;
+        right: 20px;
+    }
+    .nav {
+        display: block;
+        text-align: right;
+    }
+    .nav li {
+        margin-right: 0;
+    }
+    .nav li:not(:last-child) {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    .navDes {
+        display: none;
+    }
+    .display {
+        margin-top: 150px;
+    }
+    .catchPhrase {
+        font-size: 20px;
+        width: 60%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .job {
+        width: 100%;
+    }
+    .work {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .services {
+        width: 100%;
+        justify-content: center;
+    }
+    .service {
+        margin-right: 0;
+        width: 150px;
+        padding: 50px 10px 10px 10px;
+    }
+    .skill {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .skillPre {
+        width: 80%;
+    }
+    .skil {
+        font-size: 20px;
+    }
+    .skilH {
+        font-size: 14px;
+    }
+    .toolsSection {
+        width: 80%;
+    }
+    .subHead {
+        font-size: 20px;
+    }
+    .reviewSection {
+        width: 80%;
+    }
+    .reviews {
+        flex-direction: column-reverse;
+    }
+    .bio {
+        width: 100%;
+    }
+    .Rate {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    @keyframes line {
+        0% {
+            height: 0px;
+            opacity: 0.8; /* Hidden at the start */
+        }
+        100% {
+            height: 3500px;
+            opacity: 1; /* Fully visible at the end */
+        }
+    }
+    .Contacts {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+    .contact {
+        flex-direction: column;
+        align-items: start;
+    }
+    .email {
+        margin-right: 0;
+        text-align: left;
+    }
+    .instagram, .linkedin, .email {
+        margin-bottom: 10px;
+    }
+    .testimony {
+        padding: 50px 10px 10px 10px;
+    }
+}
+
+/* medium screen */
 @media (min-width: 600px) {
     .projectOne, .projectTwo, .projectThree {
         max-width: 200px;
     }
+    .navMob {
+        display: none;
+    }
 }
 
+/* large screen */
 @media (min-width: 1024px) {
     .projectOne, .projectTwo, .projectThree {
         /* width: 30%; */
         max-width: 200px;
+    }
+    .navMob {
+        display: none;
     }
 }

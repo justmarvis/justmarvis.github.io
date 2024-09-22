@@ -1,8 +1,12 @@
-function openPage() {
+
+//open pages
+function about() {
   window.location.href = './assets/html/about.html';
 }
-
 function gallery() {
+  window.open('https://www.behance.net/marvisigbinew1', '_blank');
+}
+function proj3() {
   window.open('https://www.behance.net/marvisigbinew1', '_blank');
 }
 
