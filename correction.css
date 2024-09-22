@@ -700,7 +700,7 @@ a.r:hover .pdf {
             opacity: 0.8; /* Hidden at the start */
         }
         100% {
-            height: 3500px;
+            height: 3400px;
             opacity: 1; /* Fully visible at the end */
         }
     }
