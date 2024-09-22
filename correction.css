@@ -568,6 +568,9 @@ a.r:hover .pdf {
     .main {
         width: 90%;
     }
+    .marginStart {
+        margin-top: 50px;
+    }
     .introCard {
         margin-bottom: 10px;
     }
@@ -700,7 +703,7 @@ a.r:hover .pdf {
             opacity: 0.8; /* Hidden at the start */
         }
         100% {
-            height: 3400px;
+            height: 3350px;
             opacity: 1; /* Fully visible at the end */
         }
     }
