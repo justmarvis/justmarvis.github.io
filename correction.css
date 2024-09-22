@@ -1,0 +1,570 @@
+/* inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* inria serif */
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+/* general */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+.margin {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.marginStart {
+    width: 32px;
+    height: 32px;
+    background-color: #202328;
+    margin-bottom: 15px;
+    opacity: 0; /* Initially hidden */
+    animation: start 0.5s 1s linear forwards;
+}
+@keyframes start {
+    0% {
+        transform: scale(0);
+        opacity: 0; /* Hidden at the start */
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.5; /* Partially visible */
+    }
+    100% {
+       transform: scale(1);
+       opacity: 1; /* Fully visible at the end */
+    }
+}
+
+.marginLine {
+    width: 8px;
+    height: 2500px;
+    background-color: #202328;
+    z-index: -1;
+    opacity: 0; /* Initially hidden */
+    animation: line 5s 1.5s linear forwards;
+}
+@keyframes line {
+    0% {
+        height: 0px;
+        opacity: 0.8; /* Hidden at the start */
+    }
+    100% {
+        height: 2500px;
+        opacity: 1; /* Fully visible at the end */
+    }
+}
+
+.main {
+    width: 90%;
+    margin: 0 auto;
+}
+.bannerCard {
+    color: #000;
+    text-align: center;
+    /* margin: 0 auto; */
+}
+.resumeStyle {
+    display: flex;
+    /* margin-left: 50px; */
+    margin-top: 50px;
+    align-items: end;
+}
+
+.topBox {
+    width: 40px;
+    height: 40px;
+    background-color: #202328;
+    margin-right: 5px;
+}
+.pdf {
+    text-transform: lowercase;
+    color: #6AB3E8;
+    display: none;
+    font-size: 0.9vw;
+}
+.r {
+    font-size: 14px;
+    font-weight: 400;
+    list-style: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #202328;
+}
+
+a.r:hover .pdf {
+    display: inline;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.title {
+    color: #6AB3E8;
+    font-size: 1.5vw;
+    font-weight: 900;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+.name {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2vw;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #1A1D23;
+    padding: 5px 20px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+#name {
+    margin-bottom: 15px;
+}
+#name a {
+    text-decoration: none;
+}
+
+.hi {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2.5vw;
+}
+
+.introCard {
+    margin-bottom: 5px;
+}
+
+.im {
+    font-size: 1.3vw;
+}
+
+.byline {
+    font-size: 1.4vw;
+    font-weight: 400;
+    margin-bottom: 20px;
+    width: 50%;
+    margin: 0 auto;
+    color: #000;
+}
+.job {
+    width: 100%;
+}
+.freelancer {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6);
+    padding: 10px 15px;
+    margin-right: 10px;
+}
+.button {
+    background-color: #6AB3E8;
+    color: #fff;
+    border: none;
+    padding: 10px 10px;
+    font-weight: 800;
+    padding: 12px;
+        font-size: 16px;
+        list-style: none;
+}
+.button a {
+    color: #fff;
+    text-decoration: none;
+}
+.bio {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 15px; */
+}
+.bioDesc {
+    text-align: center;
+}
+.reviewSection {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+.reviews {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.client {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #1A1D23;
+    padding: 5px 20px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.review {
+    background-color: #202328;
+    width: 70%;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    padding: 20px;
+    text-align: center;
+}
+.rate {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #6AB3E8;
+}
+.icon {
+    color: #202328;
+    font-size: 2.5vw;
+    margin-right: 25px;
+}
+.subHead {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2vw;
+    text-transform: uppercase;
+    color: #202328;
+}
+.subLink {
+    text-decoration: none;
+}
+.projects {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+.projectOne, .projectTwo {
+    margin-right: 20px;
+}
+.projectOne, .projectTwo, .projectThree {
+    background-color: #202328;
+    width: 100%; /* Make the width 100% of the container */
+    max-width: 500px; /* Cap the width to a maximum of 200px */
+    height: auto; /* Let the height adjust automatically */
+    aspect-ratio: 1/1; /* Keep the square ratio */
+}
+.projectThree {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 900;
+    font-size: 2vw;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.projectOne {
+    background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/03%20Free%202021%20Imac%2024%20Inch%20Mockup.png?v=1726819815026');
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+.projectOne:hover {
+    background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/02%20Free%202021%20Imac%2024%20Inch%20Mockup.png?v=1726819810082');
+    transition: 1s;
+}
+.projectTwo {
+    background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/01%20Free%20Floating%20Macbook%20Pro%20Mockup.png?v=1726819804971');
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+.projectTwo:hover {
+    background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/03%20Free%20Floating%20Macbook%20Pro%20Mockup.png?v=1726819821181');
+    transition: 1s;
+}
+.project3 {
+    background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/03%20Free%202021%20Imac%2024%20Inch%20Mockup.png?v=1726819815026');
+    background-position: center;
+    background-size: cover;
+}
+
+.catchPhrase {
+    color: black;
+    font-family: "Inria Serif", system-ui;
+    font-size: 2.5vw;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.animatedDisplay {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-bottom: 50px;
+}
+.animatedImg {
+    width: 250px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.callAction {
+    display: flex;
+    flex-direction: column;
+}
+.subProjects {
+    display: flex;
+}
+.navigation {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.nav li {
+    color: #000;
+    list-style: none;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.nav li:active {
+    color:#6AB3E8;
+}
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.nav li:not(:last-child) {
+    margin-right: 15px;
+}
+.pageTop {
+    width: 90%;
+    margin-bottom: 30px;
+}
+.work {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+}
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 60%;
+}
+.service {
+    background-color: #202328;
+    padding: 80px 20px 20px 20px;
+    width: 150px;
+    height: 100px;
+    /* height: 150px; */
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.desc {
+    font-size: 12px;
+}
+.serviceTitle, .user {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+.user {
+    background-color: #1A1D23;
+    padding: 5px 20px;
+}
+.skill {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.profileImg {
+    width: 25%;
+    margin-bottom: 20px;
+}
+.skillPre {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.skil {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2vw;
+    color:#202328;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.skilH {
+    color: #000;
+    font-size: 1.6vw;
+    font-weight: 400;
+}
+.bar {
+    width: 80%;
+    height: 15px;
+    background-color: rgba(225, 225, 225, 1);
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-content: center;
+}
+.design {
+    width: 80%;
+    height: 15px;
+    background-color:#6AB3E8;
+}
+.front {
+    width: 70%;
+    height: 15px;
+    background-color:#6AB3E8;
+}
+.back {
+    width: 40%;
+    height: 15px;
+    background-color:#6AB3E8;
+}
+.react {
+    width: 65%;
+    height: 15px;
+    background-color:#6AB3E8;
+}
+.angular {
+    width: 50%;
+    height: 15px;
+    background-color:#6AB3E8;
+}
+.nav .active {
+    font-weight: 900;
+    color:#6AB3E8;
+}
+.toolsSection {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.tool a {
+    background-color: rgba(32, 35, 40, 0.8);
+    color: #fff;
+    font-weight: 800;
+    padding: 10px;
+    font-size: 12px;
+}
+.pfp {
+    width: 150px;
+}
+
+.testimony {
+    border: 5px solid #202328;
+    color: #000;
+        padding: 80px 20px 20px 20px;
+        display: flex;
+        /* flex-wrap: wrap; */
+        justify-content: space-between;
+}
+.quote1, .quote2 {
+    font-size: 60px;
+}
+.quote1 {
+    align-self: flex-start;
+}
+.quote2 {
+    align-self: flex-end;
+}
+.reT {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 10px;
+}
+.certify {
+    background-color: #fff;
+    padding: 20px 30px;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+.byu, .amazon, .simplilearn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.byui, .aws, .simpli {
+    width: 80px;
+    margin-bottom: 10px;
+}
+.certify p {
+    color: #000;
+    text-align: center;
+}
+.R {
+    color: #202328;
+    font-size: 25px;
+}
+.RN {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #202328;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+.Rr {
+    margin-bottom: 5px;
+}
+.Rate {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+}
+.iconSmall {
+    font-size: 12px;
+}
+.Contact {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+.contact {
+    color: #202328;
+    margin-top: 20px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (min-width: 600px) {
+    .projectOne, .projectTwo, .projectThree {
+        max-width: 200px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .projectOne, .projectTwo, .projectThree {
+        /* width: 30%; */
+        max-width: 200px;
+    }
+}
