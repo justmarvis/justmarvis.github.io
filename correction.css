@@ -110,9 +110,11 @@ a.r:hover .pdf {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 100px;
 }
-
+.abD {
+    margin-top: 20px;
+}
 .title {
     color: #6AB3E8;
     font-size: 1.5vw;
@@ -562,6 +564,29 @@ a.r:hover .pdf {
     display: flex;
     justify-content: space-between;
 }
+.pricing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 50px;
+}
+.static, .dynamic {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6);
+    padding: 20px 100px 20px 20px;
+    /* margin: 0 auto; */
+    margin-bottom: 50px;
+    height: auto;
+}
+.static {
+    margin-right: 50px;
+}
+.nav .invalid {
+    color: rgba(0, 0, 0, 0.5);
+}
 
 /* small screen */
 @media (max-width: 600px) {
@@ -573,6 +598,9 @@ a.r:hover .pdf {
     }
     .introCard {
         margin-bottom: 10px;
+    }
+    .abtN {
+        line-height: 37px;
     }
     .hi {
         font-size: 20px;
@@ -647,6 +675,9 @@ a.r:hover .pdf {
     }
     .display {
         margin-top: 150px;
+    }
+    .abD {
+        margin-top: 10px;
     }
     .catchPhrase {
         font-size: 20px;
@@ -731,6 +762,40 @@ a.r:hover .pdf {
     .testimony {
         padding: 50px 10px 10px 10px;
     }
+    .pfp {
+        width: 100px;
+        margin-top: 150px;
+        margin-bottom: 10px;
+    }
+    .display {
+        margin-top: 150px;
+    }
+    .abD {
+        margin-top: 10px;
+    }
+    .abtB {
+        width: 100%;
+    }
+    .pricing {
+        display: block;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 20px 100px 20px;
+    }
+    .static, .dynamic {
+        background-color: #fff;
+        color: #000;
+        border: none;
+        box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6);
+        padding: 20px;
+        /* margin: 0 auto; */
+        margin-bottom: 50px;
+        height: auto;
+    }
+    .static {
+        margin-right: 0;
+    }
 }
 
 /* medium screen */
@@ -742,6 +807,10 @@ a.r:hover .pdf {
     .navMob {
         display: none;
     }
+    .abtB {
+        width: 80%;
+    }
+    
 }
 
 /* large screen */
@@ -752,5 +821,8 @@ a.r:hover .pdf {
     }
     .navMob {
         display: none;
+    }
+    .abtB {
+        width: 80%;
     }
 }
