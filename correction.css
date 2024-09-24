@@ -279,23 +279,23 @@ a.r:hover .pdf {
     cursor: pointer;
 }
 .projectOne {
-    background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/03%20Free%202021%20Imac%2024%20Inch%20Mockup.png?v=1726819815026');
+    background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/03%20Free%202021%20Imac%2024%20Inch%20Mockup.png?v=1727195195583');
     background-position: center;
     background-size: cover;
     cursor: pointer;
 }
 .projectOne:hover {
-    background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/02%20Free%202021%20Imac%2024%20Inch%20Mockup.png?v=1726819810082');
+    background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/02%20Free%202021%20Imac%2024%20Inch%20Mockup.png?v=1727195190330');
     transition: 1s;
 }
 .projectTwo {
-    background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/01%20Free%20Floating%20Macbook%20Pro%20Mockup.png?v=1726819804971');
+    background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/01%20Free%20Floating%20Macbook%20Pro%20Mockup.png?v=1727195187708');
     background-position: center;
     background-size: cover;
     cursor: pointer;
 }
 .projectTwo:hover {
-    background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/03%20Free%20Floating%20Macbook%20Pro%20Mockup.png?v=1726819821181');
+    background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/03%20Free%20Floating%20Macbook%20Pro%20Mockup.png?v=1727195178094');
     transition: 1s;
 }
 .project3 {
