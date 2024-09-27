@@ -587,6 +587,9 @@ a.r:hover .pdf {
 .nav .invalid {
     color: rgba(0, 0, 0, 0.5);
 }
+.hits {
+    position: absolute;
+}
 
 /* small screen */
 @media (max-width: 600px) {
