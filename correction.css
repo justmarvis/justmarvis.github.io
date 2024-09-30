@@ -4,6 +4,9 @@
 /* inria serif */
 @import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
+/* Anton */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 /* general */
 * {
     margin: 0;
@@ -40,24 +43,6 @@
     }
 }
 
-.marginLine {
-    width: 8px;
-    height: 3000px;
-    background-color: #202328;
-    z-index: -1;
-    opacity: 0; /* Initially hidden */
-    animation: line 5s 2.5s linear forwards;
-}
-@keyframes line {
-    0% {
-        height: 0px;
-        opacity: 0.8; /* Hidden at the start */
-    }
-    100% {
-        height: 3000px;
-        opacity: 1; /* Fully visible at the end */
-    }
-}
 
 .main {
     width: 90%;
@@ -110,6 +95,7 @@ a.r:hover .pdf {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: start;
     margin-top: 100px;
 }
 .abD {
@@ -257,7 +243,7 @@ a.r:hover .pdf {
     margin: 0 auto;
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 .projectOne, .projectTwo {
     margin-right: 20px;
@@ -308,7 +294,7 @@ a.r:hover .pdf {
 
 .catchPhrase {
     color: black;
-    font-family: "Inria Serif", system-ui;
+    /* font-family: "Anton", sans-serif; */
     font-size: 2.5vw;
     text-align: center;
     font-weight: 400;
@@ -339,7 +325,7 @@ a.r:hover .pdf {
 .nav li {
     color: #000;
     list-style: none;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
     cursor: pointer;
@@ -400,14 +386,14 @@ a.r:hover .pdf {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
 }
 .profileImg {
     width: 25%;
     margin-bottom: 20px;
 }
 .skillPre {
-    text-align: center;
+    text-align: left;
     width: 100%;
     margin-bottom: 20px;
 }
@@ -425,7 +411,7 @@ a.r:hover .pdf {
     font-weight: 400;
 }
 .bar {
-    width: 80%;
+    width: 100%;
     height: 15px;
     background-color: rgba(225, 225, 225, 1);
     margin-bottom: 20px;
@@ -465,8 +451,8 @@ a.r:hover .pdf {
 .toolsSection {
     width: 70%;
     margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 .tool a {
     background-color: rgba(32, 35, 40, 0.8);
@@ -543,8 +529,7 @@ a.r:hover .pdf {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    align-items: center;
+    align-items: start;
 }
 .Rate a {
     color: #202328;
@@ -608,6 +593,24 @@ a.r:hover .pdf {
 
 /* small screen */
 @media (max-width: 600px) {
+    .marginLine {
+        width: 8px;
+        height: 50px;
+        background-color: #202328;
+        z-index: -1;
+        opacity: 0; /* Initially hidden */
+        animation: line 0.5s 2.5s linear forwards;
+    }
+    @keyframes line {
+        0% {
+            height: 0px;
+            opacity: 0.8; /* Hidden at the start */
+        }
+        100% {
+            height: 80px;
+            opacity: 1; /* Fully visible at the end */
+        }
+    }
     .main {
         width: 90%;
     }
@@ -621,13 +624,13 @@ a.r:hover .pdf {
         line-height: 37px;
     }
     .hi {
-        font-size: 20px;
+        font-size: 30px;
     }
     .im {
-        font-size: 12px;
+        font-size: 18px;
     }
     .name {
-        font-size: 20px;
+        font-size: 30px;
         margin-bottom: 10px;
     }
     .pageTop {
@@ -645,11 +648,14 @@ a.r:hover .pdf {
         margin: 0 0 20px 15px;
     }
     .title {
-        font-size: 14px;
+        font-size: 18px;
+        margin-bottom: 10px;
     }
     .byline {
-        font-size: 14px;
-        width: 90%;
+        font-size: 20px;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 10px;
     }
     .projects {
         width: 100%;
@@ -664,14 +670,14 @@ a.r:hover .pdf {
         font-size: 14px;
     }
     .icon {
-        font-size: 24px;
+        font-size: 32px;
         margin-right: 0;
     }
     .iconLink {
         margin-bottom: 20px;
     }
     .iconLink:not(:last-child) {
-        margin-right: 10px;
+        margin-right: 25px;
     }
     .navigation {
         position: absolute;
@@ -698,10 +704,16 @@ a.r:hover .pdf {
         margin-top: 10px;
     }
     .catchPhrase {
-        font-size: 20px;
-        width: 70%;
+        font-size: 40px;
+        width: 100%;
         margin: 0 auto;
-        margin-bottom: 20px;
+        text-align: left;
+        text-transform: capitalize;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .socials {
+        display: flex;
     }
     .job {
         width: 100%;
@@ -725,7 +737,8 @@ a.r:hover .pdf {
         margin-top: 20px;
     }
     .skillPre {
-        width: 80%;
+        width: 100%;
+        margin-bottom: 30px;
     }
     .skil {
         font-size: 20px;
@@ -734,13 +747,13 @@ a.r:hover .pdf {
         font-size: 14px;
     }
     .toolsSection {
-        width: 80%;
+        width: 100%;
     }
     .subHead {
         font-size: 20px;
     }
     .reviewSection {
-        width: 80%;
+        width: 100%;
     }
     .reviews {
         flex-direction: column-reverse;
@@ -752,18 +765,9 @@ a.r:hover .pdf {
         margin-bottom: 30px;
         width: 100%;
     }
-    @keyframes line {
-        0% {
-            height: 0px;
-            opacity: 0.8; /* Hidden at the start */
-        }
-        100% {
-            height: 3380px;
-            opacity: 1; /* Fully visible at the end */
-        }
-    }
+    
     .Contacts {
-        width: 80%;
+        width: 100%;
         margin-bottom: 30px;
     }
     .contact {
