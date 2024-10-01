@@ -9,14 +9,17 @@ function gallery() {
 function proj3() {
   window.open('https://www.behance.net/marvisigbinew1', '_blank');
 }
-function projOne() {
-  window.open('https://www.figma.com/design/78TK3YYOU1UfNZifO87bBr/MIG?node-id=0-1&t=0z3oBRiikQ9DoYc7-1', '_blank');
+function unix() {
+  window.open('https://www.figma.com/design/kOQlHbC1ZjGSESFuyjhahu/Unix?t=Ok6B0D8hSUlHbWEu-1', '_blank');
 }
-function projTwo() {
-  window.open('https://www.figma.com/design/RBo8ue2FiKveS3PViL6n42/ToneShow?node-id=0-1&t=yq8aVNIfY1T38qjQ-1', '_blank');
+function tne() {
+  window.open('https://www.figma.com/design/RBo8ue2FiKveS3PViL6n42/ToneShow?t=Ok6B0D8hSUlHbWEu-1', '_blank');
 }
-function projFour() {
-  window.open('https://www.figma.com/design/9fiHrekVI947dFeKUDNFeD/GameHub?node-id=0-1&t=o3GPHmwkTnAd2Xye-1', '_blank');
+function fas() {
+  window.open('https://www.figma.com/design/wC1W4hyzM8I1BHX5ASMpyX/fashion?t=Ok6B0D8hSUlHbWEu-1', '_blank');
+}
+function mig() {
+  window.open('https://www.figma.com/design/78TK3YYOU1UfNZifO87bBr/MIG?node-id=0-1&t=SuYg793DvfWtNZfO-1', '_blank');
 }
 
 //jump to section through links
