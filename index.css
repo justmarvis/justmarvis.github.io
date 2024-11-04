@@ -388,14 +388,14 @@
 }
 /* medium screen */
 @media (min-width: 600px) {
-    .mobile {
+    body {
         display: none;
     }
 }
 
 /* large screen */
 @media (min-width: 1024px) {
-    .mobile {
+    body {
         display: none;
     }
 }
