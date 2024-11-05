@@ -256,21 +256,24 @@
         background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/Rectangle%2025.png?v=1717120614009');
         background-position: center;
         background-size: cover;
+        box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
     }
     .certContain {
         width: 100%;
         height: 40vh;
         background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/UI_UX%20Design%20Expert%20Master%20Certificate.jpg?v=1728869615586');
         background-position: center;
-        background-size:cover
+        background-size:cover;
+        box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
     }
     .test {
-        border: 5px solid #000;
+        border: 2px solid rgba(0, 0, 0, 0.25);
         padding: 20px 10px;
     }
     .link {
         color:#6AB3E8;
         text-decoration: underline;
+        font-weight: 800;
     }
     .artwork {
         display: flex;
@@ -293,24 +296,28 @@
         width: 100px;
         height: 100px;
         margin-right: 10px;
+        box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
     }
+    
     .artFour, .artFive, .artSix, .artSeven, .artEight, .artNine {
         width: 150px;
         height: 110px;
         margin-right: 10px;
+        box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
     }
     .artOne {
-        background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/minimal_alien_design.jpg?v=1728878002108');
+        background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/IMG-20240328-WA0016.jpg?v=1730829911189');
         background-position: center;
         background-size: cover;
     }
     .artTwo {
-        background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/unsee.jpg?v=1712621557975');
+        background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/from_her_dreams_2.jpg?v=1728878063399');
         background-position: center;
         background-size: cover;
     }
     .artThree {
-        background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/from_her_dreams_2.jpg?v=1728878063399');
+        background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/unsee.jpg?v=1712621557975');
+        background-position: center;
         background-position: center;
         background-size: cover;
     }
