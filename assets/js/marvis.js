@@ -28,10 +28,10 @@ function msg() {
   window.open('https://www.linkedin.com/in/marvis-igbineweka?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app', '_blank');
 }
 function inst() {
-  window.open('https://www.instagram.com/marvis.ig?igsh=Y3hoZ2VreXNzN2Rm&utm_source=qr', '_blank');
+  window.open('https://www.instagram.com/marvis.ig?igsh=Y3hoZ2VreXNzN2Rm&utm_source=qr', '');
 }
 function pin() {
-  window.open('https://pin.it/6RZnjAZFm', '_blank');
+  window.open('https://pin.it/6RZnjAZFm', '');
 }
 function cert() {
   const certWindow = window.open('', '_blank', 'width=800,height=600');

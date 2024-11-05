@@ -74,11 +74,11 @@
     margin-bottom: 20px;
 }
 .icon {
-    width: 38px;
+    width: 32px;
 }
 .step {
     width: 100%;
-    height: 20vh;
+    height: 180px;
     background-color: #AB9B9B;
 }
 .iconLink:not(:last-child) {
@@ -120,9 +120,9 @@
     margin-bottom: 10px;
     cursor: pointer;
 }
-.pro:first-child {
+/* .pro:first-child {
     border: 1.5px solid #000;
-}
+} */
 .pro:not(:last-child) {
     /* margin-right: 20px; */
 }
@@ -178,11 +178,11 @@
     }
     .iconBtn {
         width: 28px;
-        box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+        /* box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25); */
     }
     .iconBtn2 {
         width: 20px;
-        box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+        /* box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25); */
     }
     .iconbody {
         color: #000;
@@ -216,14 +216,14 @@
         border-radius: 5px;
         margin: 0 auto;
         text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
         display: flex;
         justify-content: center;
         align-items: center;
     }
     .buttonText {
-        margin-right: 30px;
+        margin-left: 25px;
     }
     .buttonText2 {
         position: absolute;
@@ -232,11 +232,11 @@
         color: #3D3D3D;
         /* margin-bottom: 30px; */
         transform: rotateZ(90deg);
-        margin-top: 20px;
+        margin-top: 23px;
         text-align: center;
     }
     .res {
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
     .art, .degree, .cert, .review {
         display: flex;
@@ -282,7 +282,11 @@
         width: 100%;
         /* padding: 0; */
     }
+    .pin {
+        /* width: 100px; */
+    }
     .pinBtn {
+        width: 32px;
         box-shadow: none;
     }
     .artOne, .artTwo, .artThree {
@@ -351,7 +355,7 @@
     }
     .more {
         background-color: #AB9B9B;
-        padding: 10px;
+        padding: 5px;
         border-radius: 5px;
         display: flex;
         align-items: center;
@@ -359,6 +363,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-items: center;
     }
     .quote {
         /* position: inherit; */
@@ -366,10 +371,24 @@
         top: 0;
         float: right;
     }
-    .copyright {
+    .cRight {
+        display: flex;
         width: 90%;
         margin: 0 auto;
-        margin-bottom: 100px;
+        /* margin-left: 10px; */
+        padding-left: 20px;
+    }
+    .radio {
+        width: 14px;
+        height: 14px;
+        margin-top: 1px;
+        /* margin-left: 10px; */
+    }
+    .copyright {
+        font-size: 14px;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 50px;
     }
     .hits {
         margin-left: 20px;
@@ -384,6 +403,14 @@
     .projects .subHead, .projects .subtext {
         color: #fff;
         text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+    }
+    .band {
+        width: 15px;
+        height: 30px;
+        background-color: #fff;
+        /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15); */
+        position: absolute;
+        transform: translate(100px, -15px);
     }
 }
 /* medium screen */
