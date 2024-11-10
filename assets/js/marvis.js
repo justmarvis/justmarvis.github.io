@@ -22,7 +22,7 @@ function mig() {
   window.open('https://www.figma.com/design/78TK3YYOU1UfNZifO87bBr/MIG?node-id=0-1&t=SuYg793DvfWtNZfO-1', '_blank');
 }
 function res() {
-  window.open('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/Marvis%20Igbineweka%20Resume%20_%20CV%20(1).pdf?v=1728879424490', '_blank');
+  window.open('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/Marvis%20Igbineweka%20Resume.pdf?v=1731230431047', '_blank');
 }
 function msg() {
   window.open('https://www.linkedin.com/in/marvis-igbineweka?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app', '_blank');

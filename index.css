@@ -58,7 +58,7 @@
     font-size: 98px;
     line-height: 100px;
     letter-spacing: 1px;
-    color: #AB9B9B;
+    color: #fff;
 }
 .position {
     font-size: 22px;
@@ -79,7 +79,7 @@
 .step {
     width: 100%;
     height: 180px;
-    background-color: #AB9B9B;
+    background-color: #000;
 }
 .iconLink:not(:last-child) {
     margin-right: 15px;
@@ -100,6 +100,7 @@
 .subHeadL {
     display: flex;
     align-items: end;
+    /* margin-bottom: 100px; */
 }
 .subHead {
     margin-right: 10px;
@@ -137,6 +138,7 @@
         font-size: 40px;
         font-weight: 700;
         line-height: 40px;
+        margin-top: 50px;
         margin-bottom: 10px;
         text-align: center;
     }
@@ -160,10 +162,18 @@
     }
     .projH {
         width: 100%;
+        margin-bottom: 0px;
+    }
+    .projects .subtext {
+        font-size: 20px;
+        margin-bottom: 50px;
+        font-weight: 200;
     }
     .subHead {
-        font-size: 24px;
+        font-size: 32px;
         text-transform: capitalize;
+        font-weight: 800;
+        margin-bottom: 10px;
     }
     .projects {
         padding: 0;
@@ -177,7 +187,7 @@
         width: 32px;
     }
     .iconBtn {
-        width: 28px;
+        width: 38px;
         /* box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25); */
     }
     .iconBtn2 {
@@ -219,7 +229,7 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.2);
         color: white;
         border: none;
         font-size: 24px;
@@ -239,23 +249,21 @@
     }
     .act {
         width: 90%;
-        background-color: #AB9B9B;
-        color: #3D3D3D;
+        background-color: #000;
+        color: #fff;
         font-size: 13px;
         font-weight: 700;
+        text-transform: capitalize;
         /* text-transform: uppercase; */
-        padding: 15px 0;
-        border-radius: 5px;
+        padding: 20px 0;
+        border-radius: 20px;
         margin: 0 auto;
         text-align: center;
         margin-bottom: 10px;
         box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
         display: flex;
         justify-content: center;
-        align-items: center;
-    }
-    .buttonText {
-        margin-left: 25px;
+        align-items: end;
     }
     .buttonText2 {
         position: absolute;
@@ -270,17 +278,20 @@
     .res {
         margin-bottom: 10px;
     }
+    .resB {
+        /* width: 42px; */
+    }
     .art, .degree, .cert, .review {
         display: flex;
         flex-direction: column;
         width: 90%;
         margin: 0 auto;
-        margin-bottom: 50px;
+        margin-bottom: 100px;
     }
     .subtext {
         width: 90%;
-        font-size: 16px;
-        margin-bottom: 10px;
+        font-size: 20px;
+        margin-bottom: 20px;
     }
     .degreeContain {
         width: 100%;
@@ -288,7 +299,7 @@
         background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/Rectangle%2025.png?v=1717120614009');
         background-position: center;
         background-size: cover;
-        box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+        box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2);
     }
     .certContain {
         width: 100%;
@@ -296,7 +307,7 @@
         background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/UI_UX%20Design%20Expert%20Master%20Certificate.jpg?v=1728869615586');
         background-position: center;
         background-size:cover;
-        box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+        box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2);
     }
     .test {
         border: 2px solid rgba(0, 0, 0, 0.25);
@@ -309,19 +320,22 @@
     }
     .artwork {
         display: flex;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         justify-content: space-between;
         /* flex-wrap: wrap; */
     }
     .f {
         width: 100%;
+        font-size: 20px;
         /* padding: 0; */
     }
     .pin {
-        /* width: 100px; */
+        font-size: 20px;
+        width: 90%;
     }
     .pinBtn {
-        width: 32px;
+        width: 34px;
+        height: 34px;
         box-shadow: none;
     }
     .artOne, .artTwo, .artThree {
@@ -335,7 +349,7 @@
         width: 150px;
         height: 110px;
         margin-right: 10px;
-        box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+        box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2);
     }
     .artOne {
         background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/IMG-20240328-WA0016.jpg?v=1730829911189');
@@ -393,9 +407,9 @@
         font-weight: 800;
     }
     .more {
-        background-color: #AB9B9B;
+        background-color: #000;
         padding: 5px;
-        border-radius: 5px;
+        border-radius: 15px;
         display: flex;
         align-items: center;
         box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
@@ -427,7 +441,7 @@
         font-size: 14px;
         width: 90%;
         margin: 0 auto;
-        margin-bottom: 50px;
+        margin-bottom: 100px;
     }
     .hits {
         margin-left: 20px;
@@ -457,11 +471,11 @@
         animation: fadeIn 0.5s forwards;
     }
     
-    .char:nth-child(1) { animation-delay: 0.1s; }
-    .char:nth-child(2) { animation-delay: 0.2s; }
-    .char:nth-child(3) { animation-delay: 0.3s; }
-    .char:nth-child(4) { animation-delay: 0.4s; }
-    .char:nth-child(5) { animation-delay: 0.5s; }
+    .char:nth-child(1) { animation-delay: 0.5s; }
+    .char:nth-child(2) { animation-delay: 0.6s; }
+    .char:nth-child(3) { animation-delay: 0.7s; }
+    .char:nth-child(4) { animation-delay: 0.8s; }
+    .char:nth-child(5) { animation-delay: 0.9s; }
     
     /* Keyframes for fade-in animation */
     @keyframes fadeIn {
@@ -483,7 +497,7 @@
     }
     .band {
         width: 15px;
-        height: 30px;
+        height: 50px;
         background-color: #fff;
         /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15); */
         position: absolute;
