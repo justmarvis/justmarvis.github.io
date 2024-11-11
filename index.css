@@ -22,9 +22,6 @@
     display: flex;
     flex-direction: column;
     padding: 50px 200px;
-    background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/Mobile-App-Screen-Mockups.png?v=1727761496433');
-    background-size: cover;
-    background-position: center;
     z-index: 1;
 }
 
@@ -35,8 +32,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: -1; /* Behind the content */
+    background-color: rgba(0, 0, 0, 1);
+    z-index: -1;
 }
 
 .heading {
@@ -106,7 +103,7 @@
     /* margin-bottom: 100px; */
 }
 .subHead {
-    margin-right: 10px;
+    margin-right: 20px;
 }
 .subLine {
     margin-bottom: 5px;
@@ -169,14 +166,14 @@
     }
     .projects .subtext {
         font-size: 20px;
-        margin-bottom: 50px;
+        margin-bottom: 100px;
         font-weight: 200;
     }
     .subHead {
         font-size: 32px;
         text-transform: capitalize;
         font-weight: 900;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         line-height: 35px;
     }
     .tag {
@@ -517,6 +514,7 @@
     }
     .username {
         text-align: center;
+        margin-bottom: 100px;
     }
     .projects .subHead, .projects .subtext {
         color: #fff;
