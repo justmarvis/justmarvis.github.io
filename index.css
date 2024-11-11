@@ -179,6 +179,29 @@
         margin-bottom: 10px;
         line-height: 35px;
     }
+    .tag {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .studioTag {
+        width: 150px;
+        margin-bottom: 10px;
+    }
+    .Click {
+        /* width: 90%; */
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    .click {
+        font-size: 14px;
+        margin-left: 8px;
+        margin-bottom: 100px;
+    }
     .projects {
         padding: 0;
         margin-bottom: 50px;

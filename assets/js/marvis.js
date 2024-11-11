@@ -30,6 +30,9 @@ function msg() {
 function inst() {
   window.open('https://www.instagram.com/marvis.ig?igsh=Y3hoZ2VreXNzN2Rm&utm_source=qr', '');
 }
+function studio() {
+  window.open('https://www.instagram.com/uxstudiio/', '');
+}
 function pin() {
   window.open('https://pin.it/6RZnjAZFm', '');
 }
