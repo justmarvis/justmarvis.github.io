@@ -1,6 +1,9 @@
 /* inter */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+/* Urbanist */
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* inria serif */
 @import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
@@ -172,8 +175,9 @@
     .subHead {
         font-size: 32px;
         text-transform: capitalize;
-        font-weight: 800;
+        font-weight: 900;
         margin-bottom: 10px;
+        line-height: 35px;
     }
     .projects {
         padding: 0;
