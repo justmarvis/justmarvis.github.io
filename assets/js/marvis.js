@@ -1,37 +1,35 @@
 
-//open pages
+//pages
 function about() {
   window.location.href = './assets/html/about.html';
 }
-function gallery() {
+
+//socials
+function threads() {
+  window.open('https://www.threads.net/@uxstudiio', '_blank');
+}
+function behance() {
   window.open('https://www.behance.net/marvisigbinew1', '_blank');
 }
-function proj3() {
-  window.open('https://www.behance.net/marvisigbinew1', '_blank');
+function linkedin() {
+  window.open('https://www.linkedin.com/in/marvis-igbineweka/', '_blank');
 }
-function unix() {
-  window.open('https://www.figma.com/design/kOQlHbC1ZjGSESFuyjhahu/Unix?t=Ok6B0D8hSUlHbWEu-1', '_blank');
+function inst() {
+  window.open('https://www.instagram.com/marvis.ig/', '');
 }
+function studio() {
+  window.open('https://www.instagram.com/uxstudiio/', '');
+}
+
+//others
 function tne() {
   window.open('https://www.figma.com/design/RBo8ue2FiKveS3PViL6n42/ToneShow?t=Ok6B0D8hSUlHbWEu-1', '_blank');
-}
-function fas() {
-  window.open('https://www.figma.com/design/wC1W4hyzM8I1BHX5ASMpyX/fashion?t=Ok6B0D8hSUlHbWEu-1', '_blank');
 }
 function mig() {
   window.open('https://www.figma.com/design/78TK3YYOU1UfNZifO87bBr/MIG?node-id=0-1&t=SuYg793DvfWtNZfO-1', '_blank');
 }
 function res() {
   window.open('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/Marvis%20Igbineweka%20Resume.pdf?v=1731230431047', '_blank');
-}
-function msg() {
-  window.open('https://www.linkedin.com/in/marvis-igbineweka?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app', '_blank');
-}
-function inst() {
-  window.open('https://www.instagram.com/marvis.ig?igsh=Y3hoZ2VreXNzN2Rm&utm_source=qr', '');
-}
-function studio() {
-  window.open('https://www.instagram.com/uxstudiio/', '');
 }
 function pin() {
   window.open('https://pin.it/6RZnjAZFm', '');
@@ -70,15 +68,15 @@ function cert() {
 
 
 //jump to section through links
-function services() {
-  document.getElementById('serviceTarget').scrollIntoView({ behavior: 'smooth' });
-}
-function reviews() {
-  document.getElementById('reviewsTarget').scrollIntoView({ behavior: 'smooth' });
-}
-function projects() {
-  document.getElementById('projectTarget').scrollIntoView({ behavior: 'smooth' });
-}
+// function services() {
+//   document.getElementById('serviceTarget').scrollIntoView({ behavior: 'smooth' });
+// }
+// function reviews() {
+//   document.getElementById('reviewsTarget').scrollIntoView({ behavior: 'smooth' });
+// }
+// function projects() {
+//   document.getElementById('projectTarget').scrollIntoView({ behavior: 'smooth' });
+// }
 
 //close popup
 function closePopup() {
