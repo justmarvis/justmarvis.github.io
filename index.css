@@ -16,25 +16,6 @@
     padding: 0;
     font-family: "Inter", sans-serif;
 }
-.main {
-    position: relative;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    padding: 50px 200px;
-    z-index: 1;
-}
-
-.main::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #070707 ;
-    z-index: -1;
-}
 
 .heading {
     display: flex;
@@ -54,21 +35,10 @@
 .byline {
     font-size: 14px;
 }
-.fullName {
-    font-size: 98px;
-    line-height: 100px;
-    letter-spacing: 1px;
-    color: #fff;
-}
 .position {
     font-size: 22px;
     color: #6AB3E8;
     font-weight: 600;
-}
-.mission {
-    font-size: 22px;
-    width: 50%;
-    margin-bottom: 20px;
 }
 .socials {
     margin-bottom: 20px;
@@ -79,7 +49,7 @@
 .step {
     width: 100%;
     height: 180px;
-    background-color: #070707;
+    background-color: #111111;
 }
 .iconLink:not(:last-child) {
     margin-right: 15px;
@@ -130,29 +100,61 @@
 
 /* small screen */
 @media (max-width: 600px) {
+    .head {
+        background-color: #111111;
+    }
+    .logo {
+        background-color: #111111;
+    }
+    .studiio {
+        width: 35px;
+        margin-left: 20px;
+        margin-top: 20px;
+        background-color: #111111;
+    }
     .main {
-        padding: 50px 10px 25px 10px;
+        color: #fff;
+        margin: 0 auto;
+        text-align: center;
         /* margin-bottom: 30px; */
     }
+    .mainTop {
+        width: 50%;
+        margin: 0 auto;
+    }
     .fullName {
-        font-size: 40px;
+        font-size: 32px;
         font-weight: 700;
-        line-height: 40px;
+        /* line-height: 40px; */
         margin-top: 50px;
-        margin-bottom: 10px;
+        margin-bottom: 25px;
         text-align: center;
+        letter-spacing: 1px;
+    }
+    .headtxt {
+        font-size: 16px;
+        font-weight: 300;
     }
     .position {
-        text-align: center;
-        margin-bottom: 10px;
+        width: auto;
+        margin-bottom: 25px;
         font-size: 16px;
+        box-shadow: 0px 0px 5px rgba(225, 225, 225, 0.5);
+        padding: 15px 30px;
+        border-radius: 50px;
     }
     .mission {
         text-align: center;
-        width: 90%;
+        width: 100%;
         font-size: 16px;
+        font-weight: 300;
+        line-height: 30px;
         margin: 0 auto;
         margin-bottom: 20px;
+        letter-spacing: 1px;
+    }
+    .highlight {
+        font-size: 20px;
     }
     .socials {
         text-align: center;
@@ -164,18 +166,18 @@
         width: 100%;
         margin-bottom: 0px;
     }
-    .projects .subtext {
+    /* .projects .subtext {
         font-size: 20px;
         margin-bottom: 100px;
-        font-weight: 200;
-    }
+        font-weight: 400;
+    } */
     .subHead {
-        font-size: 32px;
+        font-size: 24px;
         text-transform: capitalize;
-        font-weight: 900;
-        margin-bottom: 20px;
-        line-height: 35px;
+        font-weight: 700;
+        margin-bottom: 10px;
         color: #070707;
+        letter-spacing: 1px;
     }
     .tag {
         width: 90%;
@@ -184,6 +186,24 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .socials {
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .threads, .behance, .linkedin {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1.5px solid rgba(0, 0, 0, 0.25);
+        border-radius: 50px;
+        color: rgba(0, 0, 0, 0.25);
+        padding: 3px 10px;
+    }
+    .social {
+        margin-right: 5px;
     }
     .studioTag {
         width: 150px;
@@ -202,7 +222,7 @@
     }
     .projects {
         padding: 0;
-        margin-bottom: 50px;
+        /* margin-bottom: 50px; */
         margin-top: -150px;
     }
     .subLine {
@@ -226,6 +246,9 @@
         width: 100%;
         margin: 0 auto;
         justify-content: space-between;
+    }
+    .pro {
+        border-radius: 10px;
     }
     .carousel {
         position: relative;
@@ -306,17 +329,19 @@
     .resB {
         /* width: 42px; */
     }
-    .art, .degree, .cert, .review {
+    .art, .degree, .cert {
         display: flex;
         flex-direction: column;
         width: 90%;
         margin: 0 auto;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
     }
     .subtext {
-        width: 90%;
-        font-size: 20px;
+        width: 100%;
+        font-size: 16px;
         margin-bottom: 20px;
+        font-weight: 300;
+        letter-spacing: 1px;
     }
     .degreeContain {
         width: 100%;
@@ -324,7 +349,8 @@
         background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/Rectangle%2025.png?v=1717120614009');
         background-position: center;
         background-size: cover;
-        box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2);
+        /* box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2); */
+        border-radius: 10px;
     }
     .certContain {
         width: 100%;
@@ -332,11 +358,57 @@
         background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/UI_UX%20Design%20Expert%20Master%20Certificate.jpg?v=1728869615586');
         background-position: center;
         background-size:cover;
-        box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2);
+        /* box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2); */
+        border-radius: 10px;
+    }
+    .review {
+        padding: 100px 50px;
+    }
+    .quote {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2px;
+        margin-left: 5px;
+    }
+    .mark, .ben, .sean {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .ben {
+        background-image: url('https://media-yyz1-1.cdn.whatsapp.net/v/t61.24694-24/418375438_1226294544995772_6988157081165844936_n.jpg?ccb=11-4&oh=01_Q5AaICxJBFZFWYHWms0rUeNd5ZB9wXGtoXD8ctSmpQ1Zx2ho&oe=67450AC6&_nc_sid=5e03e0&_nc_cat=108');
+        background-position: center;
+        background-size: cover;
+    }
+    .sean {
+        background-image: url('https://brightspotcdn.byui.edu/dims4/default/1447ad6/2147483647/strip/true/crop/640x640+0+0/resize/480x480!/format/webp/quality/90/?url=http%3A%2F%2Fbyu-idaho-brightspot-production-us-east-2.s3.us-east-2.amazonaws.com%2F8f%2Fff%2Ff6bd472e431eb6497b6e34872cca%2Fmurdock-sean-murdockse-456752930.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+    .mark {
+        font-size: 46px;
+        background-color: #f8f8f8;
+        color:rgba(17, 17, 17, 0.8);
+        /* line-height: 0px; */
+    }
+    .ben, .sean {
+        font-size: 16px;
+        /* background-color: #111111; */
+        color: #fff;
+        margin-left: -10px;
     }
     .test {
-        border: 2px solid rgba(0, 0, 0, 0.25);
-        padding: 20px 10px;
+        /* border: 2px solid rgba(0, 0, 0, 0.25); */
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        padding: 20px 20px;
+    }
+    .test p {
+        margin: 0;
+        font-size: 14px;
     }
     .link {
         color:#6AB3E8;
@@ -367,14 +439,8 @@
         width: 100px;
         height: 100px;
         margin-right: 10px;
-        box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
-    }
-    
-    .artFour, .artFive, .artSix, .artSeven, .artEight, .artNine {
-        width: 150px;
-        height: 110px;
-        margin-right: 10px;
-        box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        /* box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5); */
     }
     .artOne {
         background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/IMG-20240328-WA0016.jpg?v=1730829911189');
@@ -446,7 +512,7 @@
     .quote {
         /* position: inherit; */
         font-size: 64px;
-        top: 0;
+        /* top: 0; */
         float: right;
     }
     .cRight {
@@ -464,19 +530,22 @@
     }
     .copyright {
         font-size: 14px;
+        font-weight: 300;
         width: 90%;
         margin: 0 auto;
         margin-bottom: 100px;
+        letter-spacing: 0.5px;
     }
     .hits {
         margin-left: 20px;
     }
     .freelanceTag {
-        width: 65%;
+        width: 100%;
         margin: 0 auto;
         text-align: center;
         font-weight: 800;
-        letter-spacing: 15px;
+        font-size: 20px;
+        letter-spacing: 20px;
     }
     
     .freelanceTag .lastChar {
@@ -486,7 +555,7 @@
         font-size: 12px;
         font-weight: 200;
         margin-top: -5px;
-        letter-spacing: 12px;
+        letter-spacing: 15px;
         display: flex;
     justify-content: center;
     }
@@ -513,13 +582,12 @@
             transform: translateY(0);
         }
     }
-    .username {
+    /* .username {
         text-align: center;
         margin-bottom: 100px;
-    }
+    } */
     .projects .subHead, .projects .subtext {
         color: #fff;
-        text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
     }
     .band {
         width: 15px;
