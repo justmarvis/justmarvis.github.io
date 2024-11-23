@@ -78,6 +78,11 @@ function cert() {
 //   document.getElementById('projectTarget').scrollIntoView({ behavior: 'smooth' });
 // }
 
+//show popup
+function showPopup() {
+  document.querySelector('.popup').style.display = 'block';
+}
+
 //close popup
 function closePopup() {
   document.querySelector('.popup').style.display = 'none';
