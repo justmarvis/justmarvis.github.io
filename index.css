@@ -107,7 +107,7 @@
         background-color: #111111;
     }
     .studiio {
-        width: 35px;
+        width: 45px;
         margin-left: 20px;
         margin-top: 20px;
         background-color: #111111;
@@ -139,10 +139,25 @@
         width: auto;
         margin-bottom: 25px;
         font-size: 16px;
-        box-shadow: 0px 0px 5px rgba(225, 225, 225, 0.5);
-        padding: 15px 30px;
+        font-weight: 400;
+        padding: 20px 30px;
         border-radius: 50px;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), #666666);
+        mask-composite: exclude;
+        animation: textSwitch 20s infinite;
+        transition: opacity 2s ease-in-out;
+        opacity: 1;
+        position: absolute;
     }
+    @keyframes textSwitch {
+        0%, 50% {
+            content: "UX/UI DESIGNER";
+        }
+        51%, 100% {
+            content: "Front-END DEVELOPER";
+        }
+    }
+    
     .mission {
         text-align: center;
         width: 100%;
@@ -150,6 +165,7 @@
         font-weight: 300;
         line-height: 30px;
         margin: 0 auto;
+        margin-top: 110px;
         margin-bottom: 20px;
         letter-spacing: 1px;
     }
@@ -188,23 +204,27 @@
         align-items: center;
     }
     .socials {
-        margin-top: 100px;
+        /* margin-top: 90px; */
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
+        background-color: #111111;
+        padding: 20px 20px;
+        font-size: 20px;
+        /* border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px; */
     }
     .threads, .behance, .linkedin {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border: 2px solid rgba(0, 0, 0, 0.25);
         border-radius: 50px;
-        color: rgba(0, 0, 0, 0.25);
+        color: rgba(225, 225, 225, 1);
         padding: 3px 10px;
     }
     .social {
-        margin-right: 5px;
+        margin-right: 10px;
     }
     .studioTag {
         width: 150px;
@@ -223,8 +243,13 @@
     }
     .projects {
         padding: 0;
+        width: 100%;
         /* margin-bottom: 50px; */
-        margin-top: -150px;
+        padding-top: 50px;
+        background-color: #111111;
+    }
+    .projects .subHead, .projects .subtext {
+        margin-left: 15px;
     }
     .subLine {
         display: none;
@@ -244,12 +269,13 @@
         color: #000;
     }
     .proj {
-        width: 100%;
+        width: 90%;
         margin: 0 auto;
         justify-content: space-between;
     }
     .pro {
         border-radius: 10px;
+        margin-bottom: 50px;
     }
     .carousel {
         position: relative;

@@ -130,3 +130,21 @@ startAutoSlide();
 document.querySelector('.carousel').addEventListener('mouseover', stopAutoSlide);
 document.querySelector('.carousel').addEventListener('mouseleave', startAutoSlide);
 
+//Position title animation
+const textElement = document.getElementById('textSwitcher');
+    let toggle = true;
+
+    setInterval(() => {
+        // Start fade-out effect
+        textElement.style.opacity = '0';
+
+        setTimeout(() => {
+            // Switch text after fade-out
+            textElement.textContent = toggle ? "Front-END DEVELOPER" : "UX/UI DESIGNER";
+            toggle = !toggle;
+
+            // Start fade-in effect
+            textElement.style.opacity = '1';
+        }, 900); // Match the fade-out duration (0.9s)
+    }, 5000); // Switch every 5 seconds
+
