@@ -140,7 +140,7 @@ const textElement = document.getElementById('textSwitcher');
 
         setTimeout(() => {
             // Switch text after fade-out
-            textElement.textContent = toggle ? "Front-END DEVELOPER" : "UX/UI DESIGNER";
+            textElement.textContent = toggle ? "FRONT-END" : "UX/UI DESIGNER";
             toggle = !toggle;
 
             // Start fade-in effect

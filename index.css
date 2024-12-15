@@ -35,13 +35,13 @@
 .byline {
     font-size: 14px;
 }
-.position {
+/* .position {
     font-size: 22px;
     color: #6AB3E8;
     font-weight: 600;
-}
+} */
 .socials {
-    margin-bottom: 20px;
+    margin-bottom: 100px;
 }
 .icon {
     width: 32px;
@@ -105,11 +105,14 @@
     }
     .logo {
         background-color: #111111;
+        display: flex;
+        width: 100%;
+        justify-content: center;
     }
     .studiio {
-        width: 45px;
-        margin-left: 20px;
-        margin-top: 20px;
+        width: 60px;
+        /* margin-left: 20px; */
+        margin-top: 25px;
         background-color: #111111;
     }
     .main {
@@ -124,37 +127,43 @@
     }
     .fullName {
         font-size: 32px;
-        font-weight: 700;
+        font-weight: 600;
         /* line-height: 40px; */
-        margin-top: 50px;
+        margin-top: 25px;
         margin-bottom: 25px;
         text-align: center;
-        letter-spacing: 1px;
+        /* letter-spacing: 1px; */
     }
     .headtxt {
         font-size: 16px;
         font-weight: 300;
     }
     .position {
-        width: auto;
+        /* width: auto; */
         margin-bottom: 25px;
+        color: #6AB3E8;
         font-size: 16px;
-        font-weight: 400;
-        padding: 20px 30px;
-        border-radius: 50px;
-        background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), #666666);
-        mask-composite: exclude;
+        font-weight: 600;
+        padding: 20px 20px;
+        border-radius: 100px;
+        border: 2px solid transparent; /* Make the border itself transparent */
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), #666666); /* Gradient applied as background */
+  background-clip: padding-box; /* Ensures the gradient stays within the border */
+  -webkit-background-clip: padding-box; /* For Safari compatibility */
+        /* border: 2pz solid linear-gradient(90deg, rgba(0, 0, 0, 0.5), #666666); */
+        /* background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), #666666); */
+        /* mask-composite: exclude; */
         animation: textSwitch 20s infinite;
         transition: opacity 2s ease-in-out;
         opacity: 1;
-        position: absolute;
+        /* position: absolute; */
     }
     @keyframes textSwitch {
         0%, 50% {
             content: "UX/UI DESIGNER";
         }
         51%, 100% {
-            content: "Front-END DEVELOPER";
+            content: "FRONT-END";
         }
     }
     
@@ -165,9 +174,9 @@
         font-weight: 300;
         line-height: 30px;
         margin: 0 auto;
-        margin-top: 110px;
-        margin-bottom: 20px;
-        letter-spacing: 1px;
+        /* margin-top: 110px; */
+        margin-bottom: 60px;
+        /* letter-spacing: 1px; */
     }
     .highlight {
         font-size: 20px;
@@ -191,9 +200,9 @@
         font-size: 24px;
         text-transform: capitalize;
         font-weight: 700;
-        margin-bottom: 10px;
+        margin-bottom: 25px;
         color: #070707;
-        letter-spacing: 1px;
+        /* letter-spacing: 1px; */
     }
     .tag {
         width: 90%;
@@ -208,12 +217,15 @@
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        margin-bottom: 50px;
+        margin-bottom: 100px;
         background-color: #111111;
         padding: 20px 20px;
-        font-size: 20px;
-        /* border-bottom-right-radius: 15px;
-        border-bottom-left-radius: 15px; */
+        padding-top: 30px;
+        font-size: 16px;
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        /* border: 5px solid #fff; */
+        /* border-radius: 20px; */
     }
     .threads, .behance, .linkedin {
         display: flex;
@@ -224,7 +236,13 @@
         padding: 3px 10px;
     }
     .social {
-        margin-right: 10px;
+        margin-right: 3px;
+        font-size: 26px;
+    }
+    .one {
+        width: 90%;
+        margin: 0 auto;
+        border-radius: 25px;
     }
     .studioTag {
         width: 150px;
@@ -245,8 +263,9 @@
         padding: 0;
         width: 100%;
         /* margin-bottom: 50px; */
-        padding-top: 50px;
+        padding-top: 20px;
         background-color: #111111;
+        border-top: 1px solid #fff;
     }
     .projects .subHead, .projects .subtext {
         margin-left: 15px;
@@ -282,6 +301,7 @@
         overflow: hidden;
         touch-action: pan-y;
         margin: 0 auto;
+        border-radius: 25px;
     }
     
     .slides {
@@ -289,15 +309,19 @@
         transition: transform 0.3s ease-in-out;
     }
     
-    .slide {
+    .slide, .card {
         flex-shrink: 0;
         width: 100%; /* Each slide will take up full width of the carousel */
         height: auto;
     }
     
-    .slide img {
+    .slide img, .card img {
         width: 100%; /* Responsive images */
         height: auto;
+    }
+
+    .card {
+        margin-bottom: 100px;
     }
     
     .prev, .next {
@@ -307,9 +331,10 @@
         background-color: rgba(0, 0, 0, 0.2);
         color: white;
         border: none;
+        border-radius: 50px;
         font-size: 24px;
         cursor: pointer;
-        padding: 8px;
+        padding: 10px;
     }
     
     .prev { left: 10px; }
@@ -361,14 +386,14 @@
         flex-direction: column;
         width: 90%;
         margin: 0 auto;
-        margin-bottom: 50px;
+        margin-bottom: 100px;
     }
     .subtext {
-        width: 100%;
+        /* width: 100%; */
         font-size: 16px;
-        margin-bottom: 20px;
+        /* margin-bottom: 20px; */
         font-weight: 300;
-        letter-spacing: 1px;
+        /* letter-spacing: 1px; */
     }
     .degreeContain {
         width: 100%;
@@ -377,7 +402,8 @@
         background-position: center;
         background-size: cover;
         /* box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2); */
-        border-radius: 10px;
+        border-radius: 25px;
+        margin-top: 25px;
     }
     .certContain {
         width: 100%;
@@ -386,7 +412,8 @@
         background-position: center;
         background-size:cover;
         /* box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2); */
-        border-radius: 10px;
+        border-radius: 25px;
+        margin-top: 25px;
     }
     .review {
         padding: 100px 50px;
@@ -394,19 +421,20 @@
     .quote {
         display: flex;
         align-items: center;
-        margin-bottom: 2px;
+        margin-bottom: 1px;
         margin-left: 5px;
     }
     .mark, .ben, .sean {
         width: 50px;
         height: 50px;
         border-radius: 50%;
+        border: 3px solid #fff;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     .ben {
-        background-image: url('https://media-yyz1-1.cdn.whatsapp.net/v/t61.24694-24/418375438_1226294544995772_6988157081165844936_n.jpg?ccb=11-4&oh=01_Q5AaICxJBFZFWYHWms0rUeNd5ZB9wXGtoXD8ctSmpQ1Zx2ho&oe=67450AC6&_nc_sid=5e03e0&_nc_cat=108');
+        background-image: url('https://media-ord5-3.cdn.whatsapp.net/v/t61.24694-24/418375438_1226294544995772_6988157081165844936_n.jpg?stp=dst-jpg_tt6&ccb=11-4&oh=01_Q5AaIDtP_-26L39lC2s5ArnIIiGw07gKDaSpBpBNGgMVeEF6&oe=676B4646&_nc_sid=5e03e0&_nc_cat=108');
         background-position: center;
         background-size: cover;
     }
@@ -444,7 +472,8 @@
     }
     .artwork {
         display: flex;
-        margin-bottom: 20px;
+        margin-top: 25px;
+        /* margin-bottom: 100px; */
         justify-content: space-between;
         /* flex-wrap: wrap; */
     }
@@ -466,7 +495,7 @@
         width: 100px;
         height: 100px;
         margin-right: 10px;
-        border-radius: 10px;
+        border-radius: 25px;
         /* box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5); */
     }
     .artOne {
@@ -570,9 +599,9 @@
         width: 100%;
         margin: 0 auto;
         text-align: center;
-        font-weight: 800;
-        font-size: 20px;
-        letter-spacing: 20px;
+        font-weight: 600;
+        font-size: 24px;
+        letter-spacing: 25px;
     }
     
     .freelanceTag .lastChar {
@@ -632,10 +661,13 @@
     }
     .logo {
         background-color: #111111;
+        display: flex;
+        width: 100%;
+        justify-content: center;
     }
     .studiio {
         width: 50px;
-        margin-left: 20px;
+        /* margin-left: 20px; */
         margin-top: 20px;
         background-color: #111111;
     }
@@ -672,13 +704,13 @@
     }
     .mission {
         text-align: center;
-        width: 100%;
+        width: 90%;
         font-size: 20px;
         font-weight: 300;
         line-height: 35px;
         margin: 0 auto;
         margin-bottom: 60px;
-        letter-spacing: 2px;
+        /* letter-spacing: 2px; */
     }
     .highlight {
         font-size: 26px;
@@ -754,7 +786,7 @@
     .projects {
         padding: 0;
         /* margin-bottom: 50px; */
-        margin-top: -150px;
+        /* margin-top: -150px; */
     }
     .subLine {
         display: none;
@@ -976,7 +1008,7 @@
         width: 100px;
         height: 100px;
         margin-right: 10px;
-        border-radius: 10px;
+        border-radius: 25px;
         /* box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5); */
     }
     .artOne {
