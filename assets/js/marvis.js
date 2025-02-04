@@ -90,45 +90,45 @@ function closePopup() {
 
 
 //carousel
-const slidesContainer = document.querySelector('.slides');
-const slides = document.querySelectorAll('.slide');
-let currentPosition = 0;
-let autoSlideInterval;
+// const slidesContainer = document.querySelector('.slides');
+// const slides = document.querySelectorAll('.slide');
+// let currentPosition = 0;
+// let autoSlideInterval;
 
-function slideCarousel(direction) {
-  const slideWidth = slides[0].clientWidth;
+// function slideCarousel(direction) {
+//   const slideWidth = slides[0].clientWidth;
 
-  if (direction === 'next') {
-    currentPosition -= slideWidth;
-    if (currentPosition <= -slideWidth * slides.length) {
-      currentPosition = 0; // Loop back to the first slide
-    }
-  } else if (direction === 'prev') {
-    currentPosition += slideWidth;
-    if (currentPosition > 0) {
-      currentPosition = -slideWidth * (slides.length - 1); // Loop back to the last slide
-    }
-  }
+//   if (direction === 'next') {
+//     currentPosition -= slideWidth;
+//     if (currentPosition <= -slideWidth * slides.length) {
+//       currentPosition = 0; // Loop back to the first slide
+//     }
+//   } else if (direction === 'prev') {
+//     currentPosition += slideWidth;
+//     if (currentPosition > 0) {
+//       currentPosition = -slideWidth * (slides.length - 1); // Loop back to the last slide
+//     }
+//   }
 
-  slidesContainer.style.transform = `translateX(${currentPosition}px)`;
-}
+//   slidesContainer.style.transform = `translateX(${currentPosition}px)`;
+// }
 
-function startAutoSlide() {
-  autoSlideInterval = setInterval(() => {
-    slideCarousel('next');
-  }, 3000); // Change slide every 3 seconds
-}
+// function startAutoSlide() {
+//   autoSlideInterval = setInterval(() => {
+//     slideCarousel('next');
+//   }, 3000); // Change slide every 3 seconds
+// }
 
-function stopAutoSlide() {
-  clearInterval(autoSlideInterval);
-}
+// function stopAutoSlide() {
+//   clearInterval(autoSlideInterval);
+// }
 
-// Start the auto-slide when the page loads
-startAutoSlide();
+// // Start the auto-slide when the page loads
+// startAutoSlide();
 
-// Stop auto-slide on hover and resume on mouse leave
-document.querySelector('.carousel').addEventListener('mouseover', stopAutoSlide);
-document.querySelector('.carousel').addEventListener('mouseleave', startAutoSlide);
+// // Stop auto-slide on hover and resume on mouse leave
+// document.querySelector('.carousel').addEventListener('mouseover', stopAutoSlide);
+// document.querySelector('.carousel').addEventListener('mouseleave', startAutoSlide);
 
 //Position title animation
 const textElement = document.getElementById('textSwitcher');

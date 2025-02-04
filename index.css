@@ -10,11 +10,14 @@
 /* Anton */
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
+/* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* general */
 * {
     margin: 0;
     padding: 0;
-    font-family: "Inter", sans-serif;
+    font-family: "Roboto", serif;
 }
 
 .heading {
@@ -100,20 +103,31 @@
 
 /* small screen */
 @media (max-width: 600px) {
-    .head {
-        background-color: #111111;
+    .body_desktop {
+        display: none;
     }
+    .head {
+        /* height: 200px; */
+        background: linear-gradient(to bottom, #111111 50%, #282828 100%);
+        /* margin: 10px; */
+    }
+    
+    
     .logo {
-        background-color: #111111;
+        /* background-color: #111111; */
         display: flex;
         width: 100%;
         justify-content: center;
     }
     .studiio {
-        width: 60px;
+        width: 200px;
         /* margin-left: 20px; */
         margin-top: 25px;
-        background-color: #111111;
+        /* background-color: #111111; */
+    }
+    #cta {
+        margin-bottom: 25px;
+        /* border: none; */
     }
     .main {
         color: #fff;
@@ -122,14 +136,14 @@
         /* margin-bottom: 30px; */
     }
     .mainTop {
-        width: 50%;
+        /* width: 50%; */
         margin: 0 auto;
     }
     .fullName {
-        font-size: 32px;
-        font-weight: 600;
+        font-size: 18px;
+        font-weight: 400;
         /* line-height: 40px; */
-        margin-top: 25px;
+        margin-top: 50px;
         margin-bottom: 25px;
         text-align: center;
         /* letter-spacing: 1px; */
@@ -139,19 +153,12 @@
         font-weight: 300;
     }
     .position {
-        /* width: auto; */
+        width: 90%;
+        margin: 0 auto;
         margin-bottom: 25px;
-        color: #6AB3E8;
-        font-size: 16px;
-        font-weight: 600;
-        padding: 20px 20px;
-        border-radius: 100px;
-        border: 2px solid transparent; /* Make the border itself transparent */
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), #666666); /* Gradient applied as background */
-  background-clip: padding-box; /* Ensures the gradient stays within the border */
-  -webkit-background-clip: padding-box; /* For Safari compatibility */
-        /* border: 2pz solid linear-gradient(90deg, rgba(0, 0, 0, 0.5), #666666); */
-        /* background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), #666666); */
+        color:rgb(42, 132, 223);
+        font-size: 30px;
+        font-weight: 800;
         /* mask-composite: exclude; */
         animation: textSwitch 20s infinite;
         transition: opacity 2s ease-in-out;
@@ -174,15 +181,34 @@
         font-weight: 300;
         line-height: 30px;
         margin: 0 auto;
-        /* margin-top: 110px; */
-        margin-bottom: 60px;
+        margin-bottom: 100px;
         /* letter-spacing: 1px; */
     }
     .highlight {
-        font-size: 20px;
+        font-size: 18px;
+        font-style: italic;
     }
     .socials {
         text-align: center;
+    }
+    .project {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .projectHead {
+        /* width: 85%; */
+        background: rgba(0, 0, 0, 0.03);
+        padding: 20px;
+        /* border-top-left-radius: 20px;
+        border-top-right-radius: 20px; */
+        cursor: pointer;
+    }
+    .thumbnail {
+        /* width: 85%; */
     }
     .projects {
         width: 90%;
@@ -242,8 +268,43 @@
     .one {
         width: 90%;
         margin: 0 auto;
-        border-radius: 25px;
+        border-radius: 50px;
+        /* border: 2px solid rgba(0, 0, 0, 0.5); */
     }
+    .topic {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 64px;
+        line-height: 60px;
+        margin-bottom: 30px;
+    }
+    .topic2 {
+        margin-left: 25px;
+    }
+    .follow {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+    .libutton {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 3px;
+        text-align: center;
+        outline: none;
+        text-decoration: none !important;
+        color: #ffffff !important;
+        width: 180px;
+        height: 32px;
+        border-radius: 100px;
+        background-color: #0A66C2;
+        /* font-family: "SF Pro Text", Helvetica, sans-serif; */
+        font-size: 16px;
+        font-weight: 600;
+      }
     .studioTag {
         width: 150px;
         margin-bottom: 10px;
@@ -301,7 +362,14 @@
         overflow: hidden;
         touch-action: pan-y;
         margin: 0 auto;
-        border-radius: 25px;
+        border-radius: 50px;
+        overflow: hidden;
+        border: 3px solid rgba(0, 0, 0, 0.25);
+        border-radius: 30px;
+    }
+    .slide img {
+        /* border: 3px solid rgba(0, 0, 0, 0.25);
+        border-radius: 30px; */
     }
     
     .slides {
@@ -316,12 +384,13 @@
     }
     
     .slide img, .card img {
-        width: 100%; /* Responsive images */
+        width: 100%;
         height: auto;
     }
 
     .card {
-        margin-bottom: 100px;
+        border-radius: 50px;
+        overflow: hidden;
     }
     
     .prev, .next {
@@ -575,8 +644,9 @@
         display: flex;
         width: 90%;
         margin: 0 auto;
+        margin-top: 20px;
         /* margin-left: 10px; */
-        padding-left: 20px;
+        /* padding-left: 20px; */
     }
     .radio {
         width: 14px;
@@ -653,313 +723,144 @@
         position: absolute;
         transform: translate(100px, -15px);
     }
+
 }
 /* medium screen */
 @media (min-width: 600px) {
-    .head {
-        background-color: #111111;
-    }
-    .logo {
-        background-color: #111111;
-        display: flex;
-        width: 100%;
-        justify-content: center;
-    }
-    .studiio {
-        width: 50px;
-        /* margin-left: 20px; */
-        margin-top: 20px;
-        background-color: #111111;
-    }
-    .main {
-        color: #fff;
-        margin: 0 auto;
-        text-align: center;
-        /* margin-bottom: 30px; */
-    }
-    .mainTop {
-        width: 300px;
-        margin: 0 auto;
-    }
-    .fullName {
-        font-size: 40px;
-        font-weight: 700;
-        /* line-height: 40px; */
-        margin-top: 50px;
-        margin-bottom: 30px;
-        text-align: center;
-        letter-spacing: 2px;
-    }
-    .headtxt {
-        font-size: 20px;
-        font-weight: 300;
-    }
-    .position {
-        width: auto;
-        margin-bottom: 30px;
-        font-size: 30px;
-        box-shadow: 0px 0px 5px rgba(225, 225, 225, 0.5);
-        padding: 15px 30px;
-        border-radius: 50px;
-    }
-    .mission {
-        text-align: center;
-        width: 90%;
-        font-size: 20px;
-        font-weight: 300;
-        line-height: 35px;
-        margin: 0 auto;
-        margin-bottom: 60px;
-        /* letter-spacing: 2px; */
-    }
-    .highlight {
-        font-size: 26px;
-    }
-    .socials {
-        text-align: center;
-        margin-bottom: 50px;
-    }
-    .projects {
-        width: 90%;
-    }
-    .projH {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-    /* .projects .subtext {
-        font-size: 20px;
-        margin-bottom: 100px;
-        font-weight: 400;
-    } */
-    .subHead {
-        font-size: 40px;
-        text-transform: capitalize;
-        font-weight: 700;
-        margin-bottom: 10px;
-        color: #070707;
-        letter-spacing: 2px;
-    }
-    .tag {
-        width: 90%;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .socials {
-        margin-top: 100px;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    .threads, .behance, .linkedin {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border: 3px solid rgba(0, 0, 0, 0.25);
-        border-radius: 50px;
-        color: rgba(0, 0, 0, 0.25);
-        font-size: 20px;
-        padding: 5px 20px;
-        cursor: pointer;
-    }
-    .social {
-        margin-right: 5px;
-    }
-    .studioTag {
-        width: 150px;
-        margin-bottom: 10px;
-        cursor: pointer;
-    }
-    .Click {
-        /* width: 90%; */
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-    }
-    .click {
-        font-size: 14px;
-        margin-left: 8px;
-        margin-bottom: 150px;
-    }
-    .projects {
-        padding: 0;
-        /* margin-bottom: 50px; */
-        /* margin-top: -150px; */
-    }
-    .subLine {
+    .body_mobile {
         display: none;
     }
-    .icon {
-        width: 32px;
-    }
-    .iconBtn {
-        width: 38px;
-        /* box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25); */
-    }
-    .iconBtn2 {
-        width: 20px;
-        /* box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25); */
-    }
-    .iconbody {
-        color: #000;
-    }
-    .proj {
-        width: 100%;
-        margin: 0 auto;
-        justify-content: space-between;
-    }
-    .pro {
-        border-radius: 10px;
-        margin-bottom: 50px;
-    }
-    .carousel {
-        position: relative;
-        overflow: hidden;
-        touch-action: pan-y;
-        margin: 0 auto;
-    }
-    
-    .slides {
-        display: flex;
-        transition: transform 0.3s ease-in-out;
-        cursor: pointer;
-    }
-    
-    .slide {
-        flex-shrink: 0;
-        width: 100%; /* Each slide will take up full width of the carousel */
-        height: auto;
-    }
-    
-    .slide img {
-        width: 100%; /* Responsive images */
-        height: auto;
-    }
-    
-    .prev, .next {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: rgba(0, 0, 0, 0.2);
-        color: white;
-        border: none;
-        font-size: 60px;
-        cursor: pointer;
-        padding: 8px;
-    }
-    
-    .prev { left: 10px; }
-    .next { right: 10px; }
-    
-    .prob {
-        width: 100%;
-        /* margin: 0 auto; */
-    }
-    .mobile {
-        width: 100%;
-    }
-    .act {
-        width: 30%;
-        background-color: #070707;
+    .head {
+        background: linear-gradient(to bottom, #111111 50%, #282828 100%);
+        padding: 5px 25px;
         color: #fff;
-        font-size: 13px;
-        font-weight: 700;
-        text-transform: capitalize;
-        /* text-transform: uppercase; */
-        padding: 20px 0;
-        border-radius: 20px;
-        margin: 0 auto;
-        text-align: center;
-        margin-bottom: 10px;
-        box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
-        display: flex;
-        justify-content: center;
-        align-items: end;
-        cursor: pointer;
+        position: relative;
+        z-index: 1; /* Lower than .proof */
     }
-    .buttonText2 {
-        position: absolute;
-        font-size: 6px;
-        font-weight: 800;
-        color: #3D3D3D;
-        /* margin-bottom: 30px; */
-        transform: rotateZ(90deg);
-        margin-top: 23px;
-        text-align: center;
-    }
-    .res {
-        margin-bottom: 10px;
-    }
-    .resB {
-        /* width: 42px; */
-    }
-    .art, .degree, .cert {
+    .libutton {
         display: flex;
         flex-direction: column;
-        width: 50%;
+        justify-content: center;
+        padding: 3px;
         text-align: center;
-        margin: 0 auto;
-        margin-bottom: 200px;
+        outline: none;
+        text-decoration: none !important;
+        color: #ffffff !important;
+        width: 180px;
+        height: 32px;
+        border-radius: 100px;
+        background-color: #0A66C2;
+        /* font-family: "SF Pro Text", Helvetica, sans-serif; */
+        margin-left: 50px;
+        margin-bottom: 50px;
+        font-size: 16px;
+        font-weight: 500;
+        /* position: absolute; */
+        z-index: 10;
+
     }
-    .subtext {
-        width: 90%;
-        font-size: 20px;
-        margin-bottom: 20px;
+    .libutton:hover {
+        transform: scale(1.05);
+        transition: 0.2s;
+    }
+    .studiio {
+        width: 100px;
+        margin-left: 50px;
+        /* margin-top: 25px; */
+        /* background-color: #111111; */
+    }
+    .fullName {
+        font-size: 18px;
+        font-weight: 400;
+        /* line-height: 40px; */
+        margin-top: 60px;
+        margin-bottom: 10px;
+        margin-left: 50px;
+        /* text-align: center; */
+        /* letter-spacing: 1px; */
+    }
+    .position {
+        /* width: 90%; */
+        /* margin: 0 auto; */
+        margin-left: 50px;
+        margin-bottom: 10px;
+        /* color:rgb(42, 132, 223); */
+
+        font-size: 28px;
+        font-weight: 800;
+        /* mask-composite: exclude; */
+        animation: textSwitch 20s infinite;
+        transition: opacity 2s ease-in-out;
+        opacity: 1;
+        /* position: absolute; */
+    }
+    @keyframes textSwitch {
+        0%, 50% {
+            content: "UX/UI DESIGNER";
+        }
+        51%, 100% {
+            content: "FRONT-END";
+        }
+    }
+    
+    .mission {
+        /* text-align: center; */
+        /* width: 100%; */
+        font-size: 18px;
         font-weight: 300;
-        letter-spacing: 2px;
+        line-height: 30px;
+        margin-left: 50px;
+        margin-bottom: 35px;
+        /* letter-spacing: 1px; */
     }
-    .degreeContain {
+    .highlight {
+        font-size: 20px;
+        font-style: italic;
+    }
+    .proof {
+        position: absolute; /* Changed from relative to absolute */
         width: 100%;
-        height: 40vh;
-        background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/Rectangle%2025.png?v=1717120614009');
-        background-position: center;
-        background-size: cover;
-        /* box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2); */
-        border-radius: 10px;
+        display: flex;
+        justify-content: end;
+        margin-top: -80px;
+        z-index: 2; /* Ensures it is above .head */
     }
-    .certContain {
-        width: 100%;
-        height: 80vh;
-        background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/UI_UX%20Design%20Expert%20Master%20Certificate.jpg?v=1728869615586');
-        background-position: center;
-        background-size:cover;
-        /* box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2); */
-        border-radius: 10px;
-    }
+    
     .review {
-        padding: 100px 0px;
-        width: 30%;
-        margin: 0 auto;
+        width: 20%;
+        padding: 10px 10px;
+        /* z-index: 100; */
+    }
+    .review:last-child {
+        margin-right: 100px;
     }
     .quote {
         display: flex;
         align-items: center;
-        margin-bottom: 2px;
+        margin-bottom: 1px;
         margin-left: 5px;
+        float: right;
     }
-    .mark, .ben, .sean {
+    .ben, .sean {
         width: 50px;
         height: 50px;
         border-radius: 50%;
+        border: 3px solid #fff;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .ben {
-        background-image: url('https://media-yyz1-1.cdn.whatsapp.net/v/t61.24694-24/418375438_1226294544995772_6988157081165844936_n.jpg?ccb=11-4&oh=01_Q5AaICxJBFZFWYHWms0rUeNd5ZB9wXGtoXD8ctSmpQ1Zx2ho&oe=67450AC6&_nc_sid=5e03e0&_nc_cat=108');
-        background-position: center;
-        background-size: cover;
-    }
-    .sean {
-        background-image: url('https://brightspotcdn.byui.edu/dims4/default/1447ad6/2147483647/strip/true/crop/640x640+0+0/resize/480x480!/format/webp/quality/90/?url=http%3A%2F%2Fbyu-idaho-brightspot-production-us-east-2.s3.us-east-2.amazonaws.com%2F8f%2Fff%2Ff6bd472e431eb6497b6e34872cca%2Fmurdock-sean-murdockse-456752930.jpg');
-        background-position: center;
-        background-size: cover;
+    .subtext {
+        /* width: 100%; */
+        font-size: 16px;
+        /* margin-bottom: 20px; */
+        font-weight: 300;
+        /* letter-spacing: 1px; */
     }
     .mark {
+        width: 20px;
         font-size: 46px;
-        background-color: #f8f8f8;
+        /* background-color: #f8f8f8; */
         color:rgba(17, 17, 17, 0.8);
         /* line-height: 0px; */
     }
@@ -970,126 +871,68 @@
         margin-left: -10px;
     }
     .test {
-        /* border: 2px solid rgba(0, 0, 0, 0.25); */
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+        background-color: rgba(255, 255, 255, 0.5); /* Reduces opacity to 50% */
+        backdrop-filter: blur(40px); /* Applies background blur */
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
         border-radius: 20px;
         padding: 20px 20px;
     }
+    
     .test p {
         margin: 0;
         font-size: 14px;
     }
-    .link {
-        color:#6AB3E8;
-        text-decoration: underline;
-        font-weight: 800;
+    .ben {
+        background-image: url('https://media.licdn.com/dms/image/v2/C4D03AQEfKbrCZTsHAA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1619005242009?e=1744243200&v=beta&t=95o9Bft5aaTyZRjACnjJv4XWfJ74W_aKU_Ug1oC20eo');
+        background-position: center;
+        background-size: cover;
     }
-    .artwork {
-        display: flex;
-        margin-bottom: 20px;
-        justify-content: center;
-        /* flex-wrap: wrap; */
+    .sean {
+        background-image: url('https://brightspotcdn.byui.edu/dims4/default/1447ad6/2147483647/strip/true/crop/640x640+0+0/resize/480x480!/format/webp/quality/90/?url=http%3A%2F%2Fbyu-idaho-brightspot-production-us-east-2.s3.us-east-2.amazonaws.com%2F8f%2Fff%2Ff6bd472e431eb6497b6e34872cca%2Fmurdock-sean-murdockse-456752930.jpg');
+        background-position: center;
+        background-size: cover;
     }
-    .f {
-        width: 100%;
-        font-size: 20px;
-        /* padding: 0; */
-    }
-    .pin {
-        font-size: 20px;
+    .allProject {
         width: 90%;
-    }
-    .pinBtn {
-        width: 34px;
-        height: 34px;
-        box-shadow: none;
-    }
-    .artOne, .artTwo, .artThree {
-        width: 100px;
-        height: 100px;
-        margin-right: 10px;
-        border-radius: 25px;
-        /* box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5); */
-    }
-    .artOne {
-        background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/IMG-20240328-WA0016.jpg?v=1730829911189');
-        background-position: center;
-        background-size: cover;
-    }
-    .artTwo {
-        background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/from_her_dreams_2.jpg?v=1728878063399');
-        background-position: center;
-        background-size: cover;
-    }
-    .artThree {
-        background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/unsee.jpg?v=1712621557975');
-        background-position: center;
-        background-position: center;
-        background-size: cover;
-    }
-    .artFour {
-        background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/0_2.jpeg?v=1730709565415');
-        background-position: center;
-        background-size: cover;
-    }
-    .artFive {
-        background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/moreondemand_A_majestic_tiger_but_the_body_is_made_of_wrinkled__46c956e6-ff48-4341-b7c6-1116eb93f486.png?v=1730709521463');
-        background-position: center;
-        background-size: cover;
-    }
-    .artSix {
-        background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/moreondemand_httpss.mj.run30w-iL2PK_M_a_closeup_image_of_an_Afr_79cd49ad-b4b4-42cf-836a-e1f8ed262063.png?v=1730709505922');
-        background-position: center;
-        background-size: cover;
-        margin-right: 0;
-    }
-    .artSeven {
-        background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/0_2%20(6).jpeg?v=1730709515882');
-        background-position: center;
-        background-size: cover;
-    }
-    .artEight {
-        background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/0_2%20(2).jpeg?v=1730709573095');
-        background-position: center;
-        background-size: cover;
-    }
-    .artNine {
-        background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/moreondemand_a_professionally_rendered_juicy_big_fat_patty_hamb_18fac02a-7ddc-4ea9-962c-cc4e285fd29d.png?v=1730709547886');
-        background-position: center;
-        background-size: cover;
-        margin-right: 0;
-    }
-    .pinterest {
+        margin: 0 auto;
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: start;
+        margin-bottom: 100px;
     }
-    .em {
-        font-weight: 800;
-    }
-    .more {
-        background-color: #111111;
-        padding: 5px;
-        border-radius: 15px;
-        display: flex;
-        align-items: center;
-        box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+    .project {
+        /* width: 90%; */
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
+        /* justify-content: space-evenly; */
+        margin: 0 auto;
+        margin-top: 100px;
     }
-    .quote {
-        /* position: inherit; */
-        font-size: 64px;
-        /* top: 0; */
-        float: right;
+    .project:hover {
+        transform: scale(1.02);
+    }
+    /* .project:not(:last-child){
+        margin-right: 25px;
+    } */
+    .projectHead {
+        width: 280px;
+        background: rgba(0, 0, 0, 0.03);
+        padding: 20px;
+        /* border-top-left-radius: 20px;
+        border-top-right-radius: 20px; */
+        cursor: pointer;
+    }
+    .thumbnail {
+        width: 320px;
+        background: rgba(0, 0, 0, 0.15);
     }
     .cRight {
         display: flex;
-        width: 30%;
+        width: 90%;
         margin: 0 auto;
+        margin-top: 20px;
         /* margin-left: 10px; */
-        padding-left: 20px;
+        /* padding-left: 20px; */
     }
     .radio {
         width: 14px;
@@ -1102,75 +945,15 @@
         font-weight: 300;
         width: 90%;
         margin: 0 auto;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
         letter-spacing: 0.5px;
     }
-    .hits {
-        margin-left: 20px;
-    }
-    .freelanceTag {
-        width: 100%;
-        margin: 0 auto;
-        text-align: center;
-        font-weight: 800;
-        font-size: 24px;
-        letter-spacing: 25px;
-    }
-    
-    .freelanceTag .lastChar {
-        letter-spacing: 0;
-    }
-    .tagger {
-        font-size: 14px;
-        font-weight: 200;
-        margin-top: -5px;
-        letter-spacing: 20px;
-        display: flex;
-    justify-content: center;
-    }
-    .char {
-        display: inline-block;
-        opacity: 0;
-        animation: fadeIn 0.5s forwards;
-    }
-    
-    .char:nth-child(1) { animation-delay: 0.5s; }
-    .char:nth-child(2) { animation-delay: 0.6s; }
-    .char:nth-child(3) { animation-delay: 0.7s; }
-    .char:nth-child(4) { animation-delay: 0.8s; }
-    .char:nth-child(5) { animation-delay: 0.9s; }
-    
-    /* Keyframes for fade-in animation */
-    @keyframes fadeIn {
-        0% {
-            opacity: 0;
-            transform: translateY(10px);
-        }
-        100% {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-    /* .username {
-        text-align: center;
-        margin-bottom: 100px;
-    } */
-    .projects .subHead, .projects .subtext {
-        color: #fff;
-    }
-    .band {
-        width: 15px;
-        height: 50px;
-        background-color: #fff;
-        /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15); */
-        position: absolute;
-        transform: translate(100px, -15px);
-    }
+      
 }
 
 /* large screen */
-/* @media (min-width: 1024px) {
-    body {
+@media (min-width: 1024px) {
+    .body_mobile {
         display: none;
     }
-} */
+}
