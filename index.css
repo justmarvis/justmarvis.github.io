@@ -1015,13 +1015,31 @@
         margin-top: -80px;
         z-index: 2;
         /* Ensures it is above .head */
-        animation: slideIn 0.2;
     }
-    /* @keyframes slideIn {
+    .card1, .card2 {
+        opacity: 0; /* Make them invisible initially */
+    }
+    
+    .card1 {
+        animation: slideIn 2s ease-in-out 2.3s forwards;
+    }
+    
+    .card2 {
+        animation: slideIn 2s ease-in-out 2s forwards;
+    }
+    
+    @keyframes slideIn {
         0% {
-            transform: translateX(-100px);
+            transform: translateX(100px);
+            opacity: 0;
         }
-    } */
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+    
+    
     .review {
         width: 20%;
         padding: 10px 10px;
@@ -1076,7 +1094,7 @@
     }
 
     .test {
-        background-color: rgba(255, 255, 255, 0.8);
+        background-color: rgba(255, 255, 255, 1);
         /* Reduces opacity to 50% */
         backdrop-filter: blur(10px);
         /* Applies background blur */
