@@ -26,6 +26,7 @@
     margin-bottom: 100px;
     z-index: 10;
 }
+
 .resume {
     background-color: #FF0000;
     border: none;
@@ -35,33 +36,38 @@
     margin-right: 20px;
     margin-left: 5px;
 }
+
 .byline {
     font-size: 14px;
 }
+
 /* .position {
     font-size: 22px;
     color: #6AB3E8;
     font-weight: 600;
 } */
-.socials {
-    margin-bottom: 100px;
-}
+
+
 .icon {
     width: 32px;
 }
+
 .step {
     width: 100%;
     height: 180px;
     background-color: #111111;
 }
+
 .iconLink:not(:last-child) {
     margin-right: 15px;
 }
+
 .projects {
     /* width: 100%; */
     padding: 50px 100px;
     margin: 0 auto;
 }
+
 .projH {
     display: flex;
     justify-content: space-between;
@@ -70,30 +76,37 @@
     align-items: end;
     /* margin-bottom: 20px; */
 }
+
 .subHeadL {
     display: flex;
     align-items: end;
     /* margin-bottom: 100px; */
 }
+
 .subHead {
     margin-right: 20px;
 }
+
 .subLine {
     margin-bottom: 5px;
 }
+
 .subHeadR {
-    color:#6AB3E8;
+    color: #6AB3E8;
 }
+
 .proj {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
 .pro {
     width: 48%;
     margin-bottom: 10px;
     cursor: pointer;
 }
+
 /* .pro:first-child {
     border: 1.5px solid #000;
 } */
@@ -106,39 +119,45 @@
     .body_desktop {
         display: none;
     }
+
     .head {
         /* height: 200px; */
         background: linear-gradient(to bottom, #111111 50%, #282828 100%);
         /* margin: 10px; */
     }
-    
-    
+
+
     .logo {
         /* background-color: #111111; */
         display: flex;
         width: 100%;
         justify-content: center;
     }
+
     .studiio {
         width: 200px;
         /* margin-left: 20px; */
         margin-top: 25px;
         /* background-color: #111111; */
     }
+
     #cta {
         margin-bottom: 25px;
         /* border: none; */
     }
+
     .main {
         color: #fff;
         margin: 0 auto;
         text-align: center;
         /* margin-bottom: 30px; */
     }
+
     .mainTop {
         /* width: 50%; */
         margin: 0 auto;
     }
+
     .fullName {
         font-size: 18px;
         font-weight: 400;
@@ -148,15 +167,17 @@
         text-align: center;
         /* letter-spacing: 1px; */
     }
+
     .headtxt {
         font-size: 16px;
         font-weight: 300;
     }
+
     .position {
         width: 90%;
         margin: 0 auto;
         margin-bottom: 25px;
-        color:rgb(42, 132, 223);
+        color: rgb(42, 132, 223);
         font-size: 30px;
         font-weight: 800;
         /* mask-composite: exclude; */
@@ -165,15 +186,20 @@
         opacity: 1;
         /* position: absolute; */
     }
+
     @keyframes textSwitch {
-        0%, 50% {
+
+        0%,
+        50% {
             content: "UX/UI DESIGNER";
         }
-        51%, 100% {
+
+        51%,
+        100% {
             content: "FRONT-END";
         }
     }
-    
+
     .mission {
         text-align: center;
         width: 100%;
@@ -184,13 +210,16 @@
         margin-bottom: 100px;
         /* letter-spacing: 1px; */
     }
+
     .highlight {
         font-size: 18px;
         font-style: italic;
     }
+
     .socials {
         text-align: center;
     }
+
     .project {
         width: 90%;
         display: flex;
@@ -199,6 +228,7 @@
         margin: 0 auto;
         margin-top: 50px;
     }
+
     .projectHead {
         /* width: 85%; */
         background: rgba(0, 0, 0, 0.03);
@@ -207,16 +237,20 @@
         border-top-right-radius: 20px; */
         cursor: pointer;
     }
+
     .thumbnail {
         /* width: 85%; */
     }
+
     .projects {
         width: 90%;
     }
+
     .projH {
         width: 100%;
         margin-bottom: 0px;
     }
+
     /* .projects .subtext {
         font-size: 20px;
         margin-bottom: 100px;
@@ -230,6 +264,7 @@
         color: #070707;
         /* letter-spacing: 1px; */
     }
+
     .tag {
         width: 90%;
         margin: 0 auto;
@@ -238,6 +273,7 @@
         justify-content: center;
         align-items: center;
     }
+
     .socials {
         /* margin-top: 90px; */
         display: flex;
@@ -253,7 +289,10 @@
         /* border: 5px solid #fff; */
         /* border-radius: 20px; */
     }
-    .threads, .behance, .linkedin {
+
+    .threads,
+    .behance,
+    .linkedin {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -261,16 +300,19 @@
         color: rgba(225, 225, 225, 1);
         padding: 3px 10px;
     }
+
     .social {
         margin-right: 3px;
         font-size: 26px;
     }
+
     .one {
         width: 90%;
         margin: 0 auto;
         border-radius: 50px;
         /* border: 2px solid rgba(0, 0, 0, 0.5); */
     }
+
     .topic {
         width: 90%;
         margin: 0 auto;
@@ -278,9 +320,11 @@
         line-height: 60px;
         margin-bottom: 30px;
     }
+
     .topic2 {
         margin-left: 25px;
     }
+
     .follow {
         width: 90%;
         margin: 0 auto;
@@ -288,6 +332,7 @@
         justify-content: center;
         margin-bottom: 100px;
     }
+
     .libutton {
         display: flex;
         flex-direction: column;
@@ -304,22 +349,26 @@
         /* font-family: "SF Pro Text", Helvetica, sans-serif; */
         font-size: 16px;
         font-weight: 600;
-      }
+    }
+
     .studioTag {
         width: 150px;
         margin-bottom: 10px;
     }
+
     .Click {
         /* width: 90%; */
         margin: 0 auto;
         display: flex;
         justify-content: center;
     }
+
     .click {
         font-size: 14px;
         margin-left: 8px;
         margin-bottom: 100px;
     }
+
     .projects {
         padding: 0;
         width: 100%;
@@ -328,35 +377,45 @@
         background-color: #111111;
         border-top: 1px solid #fff;
     }
-    .projects .subHead, .projects .subtext {
+
+    .projects .subHead,
+    .projects .subtext {
         margin-left: 15px;
     }
+
     .subLine {
         display: none;
     }
+
     .icon {
         width: 32px;
     }
+
     .iconBtn {
         width: 38px;
         /* box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25); */
     }
+
     .iconBtn2 {
         width: 20px;
         /* box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25); */
     }
+
     .iconbody {
         color: #000;
     }
+
     .proj {
         width: 90%;
         margin: 0 auto;
         justify-content: space-between;
     }
+
     .pro {
         border-radius: 10px;
         margin-bottom: 50px;
     }
+
     .carousel {
         position: relative;
         overflow: hidden;
@@ -367,23 +426,27 @@
         border: 3px solid rgba(0, 0, 0, 0.25);
         border-radius: 30px;
     }
+
     .slide img {
         /* border: 3px solid rgba(0, 0, 0, 0.25);
         border-radius: 30px; */
     }
-    
+
     .slides {
         display: flex;
         transition: transform 0.3s ease-in-out;
     }
-    
-    .slide, .card {
+
+    .slide,
+    .card {
         flex-shrink: 0;
-        width: 100%; /* Each slide will take up full width of the carousel */
+        width: 100%;
+        /* Each slide will take up full width of the carousel */
         height: auto;
     }
-    
-    .slide img, .card img {
+
+    .slide img,
+    .card img {
         width: 100%;
         height: auto;
     }
@@ -392,8 +455,9 @@
         border-radius: 50px;
         overflow: hidden;
     }
-    
-    .prev, .next {
+
+    .prev,
+    .next {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -405,17 +469,24 @@
         cursor: pointer;
         padding: 10px;
     }
-    
-    .prev { left: 10px; }
-    .next { right: 10px; }
-    
+
+    .prev {
+        left: 10px;
+    }
+
+    .next {
+        right: 10px;
+    }
+
     .prob {
         width: 100%;
         /* margin: 0 auto; */
     }
+
     .mobile {
         width: 100%;
     }
+
     .act {
         width: 90%;
         background-color: #070707;
@@ -434,6 +505,7 @@
         justify-content: center;
         align-items: end;
     }
+
     .buttonText2 {
         position: absolute;
         font-size: 6px;
@@ -444,19 +516,25 @@
         margin-top: 23px;
         text-align: center;
     }
+
     .res {
         margin-bottom: 10px;
     }
+
     .resB {
         /* width: 42px; */
     }
-    .art, .degree, .cert {
+
+    .art,
+    .degree,
+    .cert {
         display: flex;
         flex-direction: column;
         width: 90%;
         margin: 0 auto;
         margin-bottom: 100px;
     }
+
     .subtext {
         /* width: 100%; */
         font-size: 16px;
@@ -464,6 +542,7 @@
         font-weight: 300;
         /* letter-spacing: 1px; */
     }
+
     .degreeContain {
         width: 100%;
         height: 20vh;
@@ -474,26 +553,32 @@
         border-radius: 25px;
         margin-top: 25px;
     }
+
     .certContain {
         width: 100%;
         height: 40vh;
         background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/UI_UX%20Design%20Expert%20Master%20Certificate.jpg?v=1728869615586');
         background-position: center;
-        background-size:cover;
+        background-size: cover;
         /* box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2); */
         border-radius: 25px;
         margin-top: 25px;
     }
+
     .review {
         padding: 100px 50px;
     }
+
     .quote {
         display: flex;
         align-items: center;
         margin-bottom: 1px;
         margin-left: 5px;
     }
-    .mark, .ben, .sean {
+
+    .mark,
+    .ben,
+    .sean {
         width: 50px;
         height: 50px;
         border-radius: 50%;
@@ -502,43 +587,52 @@
         justify-content: center;
         align-items: center;
     }
+
     .ben {
         background-image: url('https://media-ord5-3.cdn.whatsapp.net/v/t61.24694-24/418375438_1226294544995772_6988157081165844936_n.jpg?stp=dst-jpg_tt6&ccb=11-4&oh=01_Q5AaIDtP_-26L39lC2s5ArnIIiGw07gKDaSpBpBNGgMVeEF6&oe=676B4646&_nc_sid=5e03e0&_nc_cat=108');
         background-position: center;
         background-size: cover;
     }
+
     .sean {
         background-image: url('https://brightspotcdn.byui.edu/dims4/default/1447ad6/2147483647/strip/true/crop/640x640+0+0/resize/480x480!/format/webp/quality/90/?url=http%3A%2F%2Fbyu-idaho-brightspot-production-us-east-2.s3.us-east-2.amazonaws.com%2F8f%2Fff%2Ff6bd472e431eb6497b6e34872cca%2Fmurdock-sean-murdockse-456752930.jpg');
         background-position: center;
         background-size: cover;
     }
+
     .mark {
         font-size: 46px;
         background-color: #f8f8f8;
-        color:rgba(17, 17, 17, 0.8);
+        color: rgba(17, 17, 17, 0.8);
         /* line-height: 0px; */
     }
-    .ben, .sean {
+
+    .ben,
+    .sean {
         font-size: 16px;
         /* background-color: #111111; */
         color: #fff;
         margin-left: -10px;
     }
+
     .test {
         /* border: 2px solid rgba(0, 0, 0, 0.25); */
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
         border-radius: 20px;
         padding: 20px 20px;
     }
+
     .test p {
         margin: 0;
         font-size: 14px;
     }
+
     .link {
-        color:#6AB3E8;
+        color: #6AB3E8;
         text-decoration: underline;
         font-weight: 800;
     }
+
     .artwork {
         display: flex;
         margin-top: 25px;
@@ -546,82 +640,100 @@
         justify-content: space-between;
         /* flex-wrap: wrap; */
     }
+
     .f {
         width: 100%;
         font-size: 20px;
         /* padding: 0; */
     }
+
     .pin {
         font-size: 20px;
         width: 90%;
     }
+
     .pinBtn {
         width: 34px;
         height: 34px;
         box-shadow: none;
     }
-    .artOne, .artTwo, .artThree {
+
+    .artOne,
+    .artTwo,
+    .artThree {
         width: 100px;
         height: 100px;
         margin-right: 10px;
         border-radius: 25px;
         /* box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5); */
     }
+
     .artOne {
         background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/IMG-20240328-WA0016.jpg?v=1730829911189');
         background-position: center;
         background-size: cover;
     }
+
     .artTwo {
         background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/from_her_dreams_2.jpg?v=1728878063399');
         background-position: center;
         background-size: cover;
     }
+
     .artThree {
         background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/unsee.jpg?v=1712621557975');
         background-position: center;
         background-position: center;
         background-size: cover;
     }
+
     .artFour {
         background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/0_2.jpeg?v=1730709565415');
         background-position: center;
         background-size: cover;
     }
+
     .artFive {
         background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/moreondemand_A_majestic_tiger_but_the_body_is_made_of_wrinkled__46c956e6-ff48-4341-b7c6-1116eb93f486.png?v=1730709521463');
         background-position: center;
         background-size: cover;
     }
+
     .artSix {
         background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/moreondemand_httpss.mj.run30w-iL2PK_M_a_closeup_image_of_an_Afr_79cd49ad-b4b4-42cf-836a-e1f8ed262063.png?v=1730709505922');
         background-position: center;
         background-size: cover;
         margin-right: 0;
     }
+
     .artSeven {
         background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/0_2%20(6).jpeg?v=1730709515882');
         background-position: center;
         background-size: cover;
     }
+
     .artEight {
         background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/0_2%20(2).jpeg?v=1730709573095');
         background-position: center;
         background-size: cover;
     }
+
     .artNine {
         background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/moreondemand_a_professionally_rendered_juicy_big_fat_patty_hamb_18fac02a-7ddc-4ea9-962c-cc4e285fd29d.png?v=1730709547886');
         background-position: center;
         background-size: cover;
         margin-right: 0;
     }
+
     .pinterest {
         display: flex;
         justify-content: space-between;
     }
+
     .em {
         font-weight: 800;
     }
+
     .more {
         background-color: #111111;
         padding: 5px;
@@ -634,12 +746,14 @@
         justify-content: space-between;
         align-items: center;
     }
+
     .quote {
         /* position: inherit; */
         font-size: 64px;
         /* top: 0; */
         float: right;
     }
+
     .cRight {
         display: flex;
         width: 90%;
@@ -648,12 +762,14 @@
         /* margin-left: 10px; */
         /* padding-left: 20px; */
     }
+
     .radio {
         width: 14px;
         height: 14px;
         margin-top: 1px;
         /* margin-left: 10px; */
     }
+
     .copyright {
         font-size: 14px;
         font-weight: 300;
@@ -662,9 +778,11 @@
         margin-bottom: 100px;
         letter-spacing: 0.5px;
     }
+
     .hits {
         margin-left: 20px;
     }
+
     .freelanceTag {
         width: 100%;
         margin: 0 auto;
@@ -673,48 +791,68 @@
         font-size: 24px;
         letter-spacing: 25px;
     }
-    
+
     .freelanceTag .lastChar {
         letter-spacing: 0;
     }
+
     .tagger {
         font-size: 12px;
         font-weight: 200;
         margin-top: -5px;
         letter-spacing: 15px;
         display: flex;
-    justify-content: center;
+        justify-content: center;
     }
+
     .char {
         display: inline-block;
         opacity: 0;
         animation: fadeIn 0.5s forwards;
     }
-    
-    .char:nth-child(1) { animation-delay: 0.5s; }
-    .char:nth-child(2) { animation-delay: 0.6s; }
-    .char:nth-child(3) { animation-delay: 0.7s; }
-    .char:nth-child(4) { animation-delay: 0.8s; }
-    .char:nth-child(5) { animation-delay: 0.9s; }
-    
+
+    .char:nth-child(1) {
+        animation-delay: 0.5s;
+    }
+
+    .char:nth-child(2) {
+        animation-delay: 0.6s;
+    }
+
+    .char:nth-child(3) {
+        animation-delay: 0.7s;
+    }
+
+    .char:nth-child(4) {
+        animation-delay: 0.8s;
+    }
+
+    .char:nth-child(5) {
+        animation-delay: 0.9s;
+    }
+
     /* Keyframes for fade-in animation */
     @keyframes fadeIn {
         0% {
             opacity: 0;
             transform: translateY(10px);
         }
+
         100% {
             opacity: 1;
             transform: translateY(0);
         }
     }
+
     /* .username {
         text-align: center;
         margin-bottom: 100px;
     } */
-    .projects .subHead, .projects .subtext {
+    .projects .subHead,
+    .projects .subtext {
         color: #fff;
     }
+
     .band {
         width: 15px;
         height: 50px;
@@ -725,18 +863,37 @@
     }
 
 }
+
 /* medium screen */
 @media (min-width: 600px) {
     .body_mobile {
         display: none;
     }
+    .body_desktop {
+        cursor: default;
+    }
+
     .head {
-        background: linear-gradient(to bottom, #111111 50%, #282828 100%);
+        background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/moreondemand_a_cinematic_image_of_a_big_tech_builindg_made_of_g_5c42ce86-3493-4d89-8930-5e1c8eb0345c.png?v=1738971344753');
+        background-position: center;
+        background-size: cover;
         padding: 5px 25px;
         color: #fff;
         position: relative;
-        z-index: 1; /* Lower than .proof */
+        z-index: 1;
     }
+
+    .head::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.2);
+        z-index: -1;
+    }
+
     .libutton {
         display: flex;
         flex-direction: column;
@@ -751,24 +908,27 @@
         border-radius: 100px;
         background-color: #0A66C2;
         /* font-family: "SF Pro Text", Helvetica, sans-serif; */
-        margin-left: 50px;
-        margin-bottom: 50px;
+        margin-left: 30px;
+        /* margin-bottom: 50px; */
         font-size: 16px;
         font-weight: 500;
         /* position: absolute; */
         z-index: 10;
 
     }
+
     .libutton:hover {
         transform: scale(1.05);
         transition: 0.2s;
     }
+
     .studiio {
         width: 100px;
         margin-left: 50px;
         /* margin-top: 25px; */
         /* background-color: #111111; */
     }
+
     .fullName {
         font-size: 18px;
         font-weight: 400;
@@ -779,6 +939,7 @@
         /* text-align: center; */
         /* letter-spacing: 1px; */
     }
+
     .position {
         /* width: 90%; */
         /* margin: 0 auto; */
@@ -794,15 +955,20 @@
         opacity: 1;
         /* position: absolute; */
     }
+
     @keyframes textSwitch {
-        0%, 50% {
+
+        0%,
+        50% {
             content: "UX/UI DESIGNER";
         }
-        51%, 100% {
+
+        51%,
+        100% {
             content: "FRONT-END";
         }
     }
-    
+
     .mission {
         /* text-align: center; */
         /* width: 100%; */
@@ -813,27 +979,54 @@
         margin-bottom: 35px;
         /* letter-spacing: 1px; */
     }
+    .mission p {
+        line-height: 1.2em;
+    }
+
     .highlight {
         font-size: 20px;
         font-style: italic;
     }
+    .socials {
+        display: flex;
+        align-items: end;
+        flex-wrap: wrap;
+        margin-bottom: 80px;
+        margin-left: 50px;
+    }
+    .socials p {
+        font-weight: 500;
+    }
+    .socialIcon {
+        font-size: 24px;
+        margin-left: 30px;
+        cursor: pointer;
+    }
+    .socialIcon:hover {
+        opacity: 0.8;
+    }
+
     .proof {
-        position: absolute; /* Changed from relative to absolute */
+        position: absolute;
+        /* Changed from relative to absolute */
         width: 100%;
         display: flex;
         justify-content: end;
         margin-top: -80px;
-        z-index: 2; /* Ensures it is above .head */
+        z-index: 2;
+        /* Ensures it is above .head */
     }
-    
+
     .review {
         width: 20%;
         padding: 10px 10px;
         /* z-index: 100; */
     }
+
     .review:last-child {
         margin-right: 100px;
     }
+
     .quote {
         display: flex;
         align-items: center;
@@ -841,15 +1034,18 @@
         margin-left: 5px;
         float: right;
     }
-    .ben, .sean {
-        width: 50px;
-        height: 50px;
+
+    .ben,
+    .sean {
+        width: 32px;
+        height: 32px;
         border-radius: 50%;
         border: 3px solid #fff;
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     .subtext {
         /* width: 100%; */
         font-size: 16px;
@@ -857,74 +1053,102 @@
         font-weight: 300;
         /* letter-spacing: 1px; */
     }
+
     .mark {
         width: 20px;
         font-size: 46px;
         /* background-color: #f8f8f8; */
-        color:rgba(17, 17, 17, 0.8);
+        color: rgba(17, 17, 17, 0.8);
         /* line-height: 0px; */
     }
-    .ben, .sean {
+
+    .ben,
+    .sean {
         font-size: 16px;
         /* background-color: #111111; */
         color: #fff;
         margin-left: -10px;
     }
+
     .test {
-        background-color: rgba(255, 255, 255, 0.5); /* Reduces opacity to 50% */
-        backdrop-filter: blur(40px); /* Applies background blur */
+        background-color: rgba(255, 255, 255, 0.5);
+        /* Reduces opacity to 50% */
+        backdrop-filter: blur(40px);
+        /* Applies background blur */
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
         border-radius: 20px;
         padding: 20px 20px;
     }
-    
+
     .test p {
         margin: 0;
         font-size: 14px;
     }
+
     .ben {
         background-image: url('https://media.licdn.com/dms/image/v2/C4D03AQEfKbrCZTsHAA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1619005242009?e=1744243200&v=beta&t=95o9Bft5aaTyZRjACnjJv4XWfJ74W_aKU_Ug1oC20eo');
         background-position: center;
         background-size: cover;
     }
+
     .sean {
         background-image: url('https://brightspotcdn.byui.edu/dims4/default/1447ad6/2147483647/strip/true/crop/640x640+0+0/resize/480x480!/format/webp/quality/90/?url=http%3A%2F%2Fbyu-idaho-brightspot-production-us-east-2.s3.us-east-2.amazonaws.com%2F8f%2Fff%2Ff6bd472e431eb6497b6e34872cca%2Fmurdock-sean-murdockse-456752930.jpg');
         background-position: center;
         background-size: cover;
     }
-    .allProject {
+    .sectionOne {
+        display: flex;
         width: 90%;
         margin: 0 auto;
+        margin-top: 150px;
+    }
+    .allProject {
+        /* width: 90%; */
+        /* margin: 0 auto; */
         display: flex;
         flex-wrap: wrap;
         justify-content: start;
         margin-bottom: 100px;
     }
+
     .project {
         /* width: 90%; */
+        position: relative;
         display: flex;
         flex-direction: column;
         /* justify-content: space-evenly; */
         margin: 0 auto;
-        margin-top: 100px;
     }
-    .project:hover {
-        transform: scale(1.02);
-    }
+
     /* .project:not(:last-child){
         margin-right: 25px;
     } */
+     .pro1 {
+        margin-top: 130px;
+        z-index: 1;
+     }
+     .pro2 {
+        margin-left: -50px;
+        z-index: 0;
+     }
     .projectHead {
-        width: 280px;
+        width: 200px;
         background: rgba(0, 0, 0, 0.03);
         padding: 20px;
         /* border-top-left-radius: 20px;
         border-top-right-radius: 20px; */
         cursor: pointer;
     }
+    .num2 {
+        background-color: #EBEEF3;
+    }
+
     .thumbnail {
-        width: 320px;
-        background: rgba(0, 0, 0, 0.15);
+        width: 240px;
+        /* background: rgba(0, 0, 0, 0.15); */
+    }
+    .nail1 {
+        border: 3px solid rgba(0, 0, 0, 0.03);
     }
     .cRight {
         display: flex;
@@ -934,21 +1158,36 @@
         /* margin-left: 10px; */
         /* padding-left: 20px; */
     }
+
     .radio {
         width: 14px;
         height: 14px;
         margin-top: 1px;
         /* margin-left: 10px; */
     }
-    .copyright {
+    .footer {
+        background-color: #111111;
+        color: #fff;
+        padding: 50px;
         font-size: 14px;
         font-weight: 300;
-        width: 90%;
-        margin: 0 auto;
-        margin-bottom: 50px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+    }
+    .links p, .jects p {
+        cursor: pointer;
+    }
+    .links p:hover, .jects p:hover {
+        opacity: 0.8;
+    }
+
+    .copyright {
+        /* margin-bottom: 50px; */
         letter-spacing: 0.5px;
     }
-      
+
 }
 
 /* large screen */
