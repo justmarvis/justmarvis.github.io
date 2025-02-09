@@ -67,16 +67,16 @@ function cert() {
 }
 
 
-//jump to section through links
-// function services() {
-//   document.getElementById('serviceTarget').scrollIntoView({ behavior: 'smooth' });
-// }
-// function reviews() {
-//   document.getElementById('reviewsTarget').scrollIntoView({ behavior: 'smooth' });
-// }
-// function projects() {
-//   document.getElementById('projectTarget').scrollIntoView({ behavior: 'smooth' });
-// }
+// jump to section through links
+function faq() {
+  document.getElementById('faqTarget').scrollIntoView({ behavior: 'smooth' });
+}
+function reviews() {
+  document.getElementById('reviewsTarget').scrollIntoView({ behavior: 'smooth' });
+}
+function projects() {
+  document.getElementById('projectTarget').scrollIntoView({ behavior: 'smooth' });
+}
 
 //show popup
 function showPopup() {

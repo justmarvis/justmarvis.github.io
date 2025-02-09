@@ -203,10 +203,9 @@
                 
                 <nav class="navigation">
                     <li class="nav">Pricing</li>
-                    <li class="nav">Tools <i class="fa-solid fa-caret-down"></i></li>
-                    <li class="nav">Frequently asked questions</li>
+                    <li class="nav">Tools <i class="fa-solid fa-caret-down"> </i></li>
+                    <li class="nav" onclick="faq()">Frequently asked questions</li>
                     <li class="nav">About me</li>
-                    <li class="nav">Pricing</li>
                 </nav>
             </div>
             <div class="main">
@@ -221,8 +220,8 @@
     
                 <div class="socials">
                     <p>Socials: </p>
-                    <i class="fa-brands fa-threads socialIcon"></i>
-                    <i class="fa-brands fa-behance socialIcon"></i>
+                    <i class="fa-brands fa-threads socialIcon" onclick="threads()"></i>
+                    <i class="fa-brands fa-behance socialIcon" onclick="behance()"></i>
                     <div class="follow" id="cta"><a class="libutton" href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=marvis-igbineweka" target="_blank">Follow on LinkedIn</a></div>
                 </div>
     
@@ -240,7 +239,7 @@
                         <div class="mark">"</div>
                         <div class="sean"></div>
                     </div>
-                    <p class="subtext">I was impressed with Marvis’ ability to deliver in his promise to deliver impressive designs for my virtual machine.</p>
+                    <p class="subtext"><span class="client">Sean Murdock</span><br> I was impressed with Marvis’ ability to deliver in his promise with impressive designs for my virtual machine.</p>
                 </div>
             </div>
             
@@ -250,7 +249,7 @@
                         <div class="mark">"</div>
                         <div class="ben"></div>
                     </div>
-                    <p class="subtext">Adding Marvis as a freelance designer to my team was the best decision I made. He was able to work effortlessly with ny team from the start.</p>
+                    <p class="subtext"><span class="client">Ben</span><br> Adding Marvis as a freelance designer to my team was the best decision I made. He was able to work effortlessly with my team from the start.</p>
                 </div>
             </div>
         </div>
@@ -280,7 +279,7 @@
         </section>
 
 
-        <section class="sectionOTwo">
+        <section class="sectionOTwo" id="faqTarget">
            <h1 class="heading1">FAQ</h1>
            <p class="ntro">My capabilities as a designer and developer relies greatly on the amount of information I am provided with.
             <br>Here are some common questions asked by clients.
@@ -324,7 +323,13 @@
                 <p>Tools</p>
                 <p>Pricing</p>
                 <p>About me</p>
-                <p>Frequently asked questions</p>
+                <p onclick="faq()">Frequently asked questions</p>
+            </div>
+
+            <div class="network">
+                <p>Behance</p>
+                <p>Facebook</p>
+                <p>Instagram</p>
             </div>
 
             <div class="jects">
