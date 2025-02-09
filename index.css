@@ -893,6 +893,11 @@
         background: rgba(0, 0, 0, 0.2);
         z-index: -1;
     }
+    .headTop {
+        display: flex;
+        justify-content: space-between;
+    }
+    .navigation
 
     .libutton {
         display: flex;
@@ -1124,6 +1129,7 @@
         width: 90%;
         margin: 0 auto;
         margin-top: 150px;
+        margin-bottom: 100px;
     }
     .allProject {
         /* width: 90%; */
@@ -1187,6 +1193,37 @@
     }
     .CTA p {
         font-weight: 300;
+    }
+    .heading1 {
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 48px;
+    }.ntro {
+        font-weight: 300;
+        font-size: 14px;
+        text-align: center;
+        line-height: 2em;
+        margin-bottom: 50px;
+    }
+    .questions {
+        width: 60%;
+        margin: 0 auto;
+        margin-bottom: 150px;
+    }
+    .quest1, .quest2, .quest3, .quest4, .quest5, .quest6, .quest7 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        padding: 10px 20px;
+        background-color: #f5f5f5;
+        margin-bottom: 20px;
+    }
+    .drop {
+        font-size: 20px;
+        padding: 12px 15px;
+        background-color: rgba(0, 0, 0, 0.05);
+        border-radius: 100px;
     }
     .cRight {
         display: flex;
