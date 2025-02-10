@@ -203,9 +203,17 @@
                 
                 <nav class="navigation">
                     <li class="nav">Pricing</li>
-                    <li class="nav">Tools <i class="fa-solid fa-caret-down"> </i></li>
-                    <li class="nav" onclick="faq()">Frequently asked questions</li>
-                    <li class="nav">About me</li>
+                    <li class="nav">Tools <i class="fa-solid fa-caret-down">
+                        <ul class="dropdown">
+                            <li onclick="">Item 1 <i class="fa-solid fa-arrow-up-right-from-square exLinkIcon"></i></li>
+                            <li onclick="">Item 2 <i class="fa-solid fa-arrow-up-right-from-square exLinkIcon"></i></li>
+                            <li onclick="">Item 3 <i class="fa-solid fa-arrow-up-right-from-square exLinkIcon"></i></li>
+                            <li onclick="">Item 4 <i class="fa-solid fa-arrow-up-right-from-square exLinkIcon"></i></li>
+                            <li onclick="">Item 5 <i class="fa-solid fa-arrow-up-right-from-square exLinkIcon"></i></li>
+                        </ul>
+                    </i></li>
+                    <li class="nav" onclick="faq()" title="FAQ">Frequently asked questions</li>
+                    <li class="nav" title="Marvis Igbineweka">About me</li>
                 </nav>
             </div>
             <div class="main">
@@ -254,66 +262,85 @@
             </div>
         </div>
         <section class="sectionOne">
-            <div class="allProject">
-                <div class="project pro1">
-                    <img src="https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/Group%20149.png?v=1738993627872" alt="" class="projectHead num1">
-                    <img src="https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/podcast%20(22)%20(1).png?v=1738629680858" alt="" class="thumbnail nail1">
-                </div>
-    
-                <div class="project pro2">
-                    <img src="https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/Group%20150.png?v=1738993622282" alt="" class="projectHead num2">
-                    <img src="https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/podcast%20(23)%20(1).png?v=1738640677839" alt="" class="thumbnail nail2">
-                </div>
-
-                <div class="project pro3">
-                    <img src="https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/Group%20148.png?v=1738993640694" alt="" class="projectHead num3">
-                    <img src="https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/website.png?v=1738994347672" alt="" class="thumbnail nail3">
-                </div>
-            </div>
 
             <div class="CTA">
                 <!-- <button class="cta">button</button> -->
-                 <h2>Transforming Ideas into Stunning Digital Experiences</h2>
+                 <h2>Transforming Ideas into Stunning Digital Experiences.</h2>
                  <p>Elevate your brand with expert UX/UI design and front-end development that captivates and converts. Let’s build something extraordinary—together!</p>
             </div>
+            
+            <div class="allProject">
+                <div class="project pro1">
+                    <div class="nail1 thumbnail"></div>
+                    <img src="https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/Group%20149.png?v=1738993627872" alt="" class="projectHead num1">
+                </div>
+    
+                <div class="project pro2">
+                    <div class="thumbnail nail2"></div>
+                    <img src="https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/Group%20150.png?v=1738993622282" alt="" class="projectHead num2">
+                </div>
+
+                <div class="project pro3">
+                    <div class="thumbnail nail3"></div>
+                    <img src="https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/Group%20148.png?v=1738993640694" alt="" class="projectHead num3">
+                </div>
+            </div>
+
         </section>
 
 
-        <section class="sectionOTwo" id="faqTarget">
+        <section class="sectionTwo" id="faqTarget">
            <h1 class="heading1">FAQ</h1>
            <p class="ntro">My capabilities as a designer and developer relies greatly on the amount of information I am provided with.
             <br>Here are some common questions asked by clients.
            </p>
 
            <div class="questions">
-            <div class="quest1">
-                <li>What is the estimated timeline for the project?</li>
-                <i class="fa-solid fa-caret-down drop"></i>
-            </div>
-            <div class="quest2">
-                <li>What will the cost be, and what is included in your pricing?
+            <div class="quest">
+                <li>What is the typical estimated timeline for a project?
+                    <i class="fa-solid fa-caret-down drop"></i>
+                    <div class="dropdown faqdrop">
+                        <p>Answer</p>
+                    </div>
                 </li>
-                <i class="fa-solid fa-caret-down drop"></i>
             </div>
-            <div class="quest3">
-                <li>Do you offer ongoing maintenance and support after the website is launched?</li>
-                <i class="fa-solid fa-caret-down drop"></i>
+            <div class="quest">
+                <li>What will the cost be, and what is included in your pricing?
+                    <i class="fa-solid fa-caret-down drop"></i>
+                    <div class="dropdown faqdrop">
+                        <p>Answer</p>
+                    </div>
+                </li>
             </div>
-            <div class="quest4">
-                <li>How will you handle SEO for the website?</li>
-                <i class="fa-solid fa-caret-down drop"></i>
+            <div class="quest">
+                <li>Do you offer ongoing maintenance and support after a product is launched?
+                    <i class="fa-solid fa-caret-down drop"></i>
+                </li>
+                
             </div>
-            <div class="quest5">
-                <li>Can you integrate specific features or third-party services?</li>
-                <i class="fa-solid fa-caret-down drop"></i>
+            <div class="quest">
+                <li>How will you handle SEO for a website?
+                    <i class="fa-solid fa-caret-down drop"></i>
+                </li>
+                
             </div>
-            <div class="quest6">
-                <li>What is your process for gathering and implementing feedback?</li>
-                <i class="fa-solid fa-caret-down drop"></i>
+            <div class="quest">
+                <li>Can you integrate specific features or third-party services?
+                    <i class="fa-solid fa-caret-down drop"></i>
+                </li>
+                
             </div>
-            <div class="quest7">
-                <li>How do you ensure the website is secure and protects user data?</li>
-                <i class="fa-solid fa-caret-down drop"></i>
+            <div class="quest">
+                <li>What is your process for gathering and implementing feedback?
+                    <i class="fa-solid fa-caret-down drop"></i>
+                </li>
+                
+            </div>
+            <div class="quest">
+                <li>How do you ensure a website is secure and protects user data?
+                    <i class="fa-solid fa-caret-down drop"></i>
+                </li>
+                
             </div>
            </div>
         </section>

@@ -148,3 +148,28 @@ const textElement = document.getElementById('textSwitcher');
         }, 900); // Match the fade-out duration (0.9s)
     }, 5000); // Switch every 5 seconds
 
+
+    // faq dropdown
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".quest").forEach((question) => {
+          question.addEventListener("click", function () {
+              const dropdown = this.querySelector(".faqdrop");
+              const icon = this.querySelector(".drop"); // Select the drop icon
+  
+              if (dropdown) {
+                  dropdown.classList.toggle("active");
+                  
+                  // Toggle the opacity of the drop icon
+                  if (dropdown.classList.contains("active")) {
+                      icon.style.opacity = "0"; // Hide icon
+                  } else {
+                      icon.style.opacity = "1"; // Show icon
+                  }
+              }
+          });
+      });
+  });
+  
+  
+  
+
