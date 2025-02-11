@@ -909,6 +909,19 @@
         font-weight: 300;
         cursor: pointer;
     }
+    .nav li {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        cursor: default;
+    }
+    .nav li svg {
+        margin-right: 5px;
+    }
+    .linkDesc {
+        font-size: 12px;
+        margin-left: 5px;
+    }
     .nav:not(:last-child) {
         margin-right: 20px;
     }
@@ -917,6 +930,10 @@
     }
     .nav:hover {
         text-decoration: underline;
+    }
+    .nav:nth-child(1) {
+        opacity: 0.8;
+        cursor: not-allowed;
     }
     .nav:nth-child(2) {
         text-decoration: none;
@@ -949,7 +966,6 @@
         padding: 10px;
         font-size: 14px;
         font-weight: 400;
-        cursor: pointer;
         white-space: nowrap;
     }
     
@@ -1190,11 +1206,36 @@
     }
     .sectionOne {
         display: flex;
+        justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
         width: 90%;
         margin: 0 auto;
-        margin-top: 200px;
+        margin-top: 100px;
         margin-bottom: 100px;
+    }
+    .sectionThree {
+        margin-bottom: 150px;
+        background-color: rgba(0, 0, 0, 0.03);
+        padding: 50px 100px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .ad {
+        width: 500px;
+        padding: 20px;
+    }
+    .sectionThree p {
+        width: 500px;
+        text-align: center;
+        margin: 0 auto;
+        font-weight: 300;
+        margin-top: 10px;
+        line-height: 1.5em;
+        padding: 20px;
     }
     .allProject {
         /* width: 90%; */
@@ -1202,7 +1243,9 @@
         display: flex;
         /* flex-wrap: wrap; */
         justify-content: start;
-        margin-bottom: 100px;
+        /* margin-bottom: 100px; */
+        padding: 20px;
+        padding-bottom: 0;
     }
 
     .project {
@@ -1219,15 +1262,16 @@
     } */
      .pro1 {
         margin-top: 130px;
-        z-index: 1;
+        z-index: 2;
      }
      .pro2 {
         margin-left: -50px;
-        z-index: 0;
+        z-index: 1;
      }
      .pro3 {
         margin-left: -50px;
         margin-top: 100px;
+        z-index: 0;
      }
     .projectHead {
         width: 200px;
@@ -1236,6 +1280,7 @@
         /* border-top-left-radius: 20px;
         border-top-right-radius: 20px; */
         cursor: pointer;
+        /* backdrop-filter: blur(5px); */
     }
     
 
@@ -1270,14 +1315,16 @@
         cursor: pointer;
     }
     .CTA {
-        width: 35%;
+        width: 90%;
         margin: 0 auto;
+        padding: 20px;
+        padding-top: 0;
     }
-    .CTA h2 {
-        font-size: 40px;
+    .CTA h1 {
+        text-align: left;
         font-weight: 800;
         margin-bottom: 10px;
-        MARGIN-TOP: 100px;
+        margin-top: 100px;
     }
     .CTA p {
         font-size: 18px;
@@ -1287,7 +1334,11 @@
         text-align: center;
         margin-bottom: 10px;
         font-size: 48px;
-    }.ntro {
+    }
+    .heading3 {
+        text-align: center;
+    }
+    .ntro {
         font-weight: 300;
         font-size: 14px;
         text-align: center;
