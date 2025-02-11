@@ -165,6 +165,10 @@ const textElement = document.getElementById('textSwitcher');
                   } else {
                       icon.style.opacity = "1"; // Show icon
                   }
+                  
+                  // Smoothly fade out or fade in the icon
+                icon.style.transition = "opacity 0.3s ease";
+                icon.style.opacity = dropdown.classList.contains("active") ? "0" : "1";
               }
           });
       });
