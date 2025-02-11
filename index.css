@@ -1018,33 +1018,22 @@
     }
 
     .position {
-        /* width: 90%; */
-        /* margin: 0 auto; */
         margin-left: 50px;
         margin-bottom: 10px;
-        /* color:rgb(42, 132, 223); */
-
         font-size: 28px;
         font-weight: 800;
-        /* mask-composite: exclude; */
-        animation: textSwitch 20s infinite;
-        transition: opacity 2s ease-in-out;
-        opacity: 1;
-        /* position: absolute; */
+        white-space: nowrap; /* Prevents text from wrapping */
+    overflow: hidden; /* Hides overflow text */
+    border-right: 3px solid black; /* Simulates a cursor */
+    width: max-content;
+    display: inline-block;
+    animation: blinkCursor 0.8s infinite;
     }
 
-    @keyframes textSwitch {
-
-        0%,
-        50% {
-            content: "UX/UI DESIGNER";
-        }
-
-        51%,
-        100% {
-            content: "FRONT-END";
-        }
-    }
+    /* Blinking Cursor Animation */
+@keyframes blinkCursor {
+    50% { border-right-color: transparent; }
+}
 
     .mission {
         /* text-align: center; */

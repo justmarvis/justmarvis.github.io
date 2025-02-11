@@ -71,12 +71,6 @@ function cert() {
 function faq() {
   document.getElementById('faqTarget').scrollIntoView({ behavior: 'smooth' });
 }
-function reviews() {
-  document.getElementById('reviewsTarget').scrollIntoView({ behavior: 'smooth' });
-}
-function projects() {
-  document.getElementById('projectTarget').scrollIntoView({ behavior: 'smooth' });
-}
 
 //show popup
 function showPopup() {
@@ -88,47 +82,6 @@ function closePopup() {
   document.querySelector('.popup').style.display = 'none';
 }
 
-
-//carousel
-// const slidesContainer = document.querySelector('.slides');
-// const slides = document.querySelectorAll('.slide');
-// let currentPosition = 0;
-// let autoSlideInterval;
-
-// function slideCarousel(direction) {
-//   const slideWidth = slides[0].clientWidth;
-
-//   if (direction === 'next') {
-//     currentPosition -= slideWidth;
-//     if (currentPosition <= -slideWidth * slides.length) {
-//       currentPosition = 0; // Loop back to the first slide
-//     }
-//   } else if (direction === 'prev') {
-//     currentPosition += slideWidth;
-//     if (currentPosition > 0) {
-//       currentPosition = -slideWidth * (slides.length - 1); // Loop back to the last slide
-//     }
-//   }
-
-//   slidesContainer.style.transform = `translateX(${currentPosition}px)`;
-// }
-
-// function startAutoSlide() {
-//   autoSlideInterval = setInterval(() => {
-//     slideCarousel('next');
-//   }, 3000); // Change slide every 3 seconds
-// }
-
-// function stopAutoSlide() {
-//   clearInterval(autoSlideInterval);
-// }
-
-// // Start the auto-slide when the page loads
-// startAutoSlide();
-
-// // Stop auto-slide on hover and resume on mouse leave
-// document.querySelector('.carousel').addEventListener('mouseover', stopAutoSlide);
-// document.querySelector('.carousel').addEventListener('mouseleave', startAutoSlide);
 
 //Position title animation
 const textElement = document.getElementById('textSwitcher');
@@ -165,7 +118,7 @@ const textElement = document.getElementById('textSwitcher');
                   } else {
                       icon.style.opacity = "1"; // Show icon
                   }
-                  
+
                   // Smoothly fade out or fade in the icon
                 icon.style.transition = "opacity 0.3s ease";
                 icon.style.opacity = dropdown.classList.contains("active") ? "0" : "1";
@@ -173,6 +126,25 @@ const textElement = document.getElementById('textSwitcher');
           });
       });
   });
+
+  //position animation
+  document.addEventListener("DOMContentLoaded", function () {
+    const text = "UI Designer and Developer"; // Text to be typed
+    const speed = 100; // Typing speed (ms)
+    let i = 0;
+    const typeElement = document.getElementById("type");
+
+    function typeWriter() {
+        if (i < text.length) {
+            typeElement.innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        } else {}
+    }
+
+    typeWriter(); // Start animation
+});
+
   
   
   
