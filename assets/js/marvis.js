@@ -143,6 +143,26 @@ const textElement = document.getElementById('textSwitcher');
     }
 
     typeWriter(); // Start animation
+    
+});
+
+//position animation
+document.addEventListener("DOMContentLoaded", function () {
+  const text = "UI Designer and Developer"; // Text to be typed
+  const speed = 100; // Typing speed (ms)
+  let i = 0;
+  const typeElement = document.getElementById("typeSmall");
+
+  function typeWriter() {
+      if (i < text.length) {
+          typeElement.innerHTML += text.charAt(i);
+          i++;
+          setTimeout(typeWriter, speed);
+      } else {}
+  }
+
+  typeWriter(); // Start animation
+  
 });
 
   
