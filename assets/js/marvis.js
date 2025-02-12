@@ -72,15 +72,17 @@ function faq() {
   document.getElementById('faqTarget').scrollIntoView({ behavior: 'smooth' });
 }
 
-//show popup
+//popups
 function showPopup() {
-  document.querySelector('.popup').style.display = 'block';
+  const popup = document.querySelector('.popup');
+  popup.style.display = 'block';
 }
 
-//close popup
 function closePopup() {
-  document.querySelector('.popup').style.display = 'none';
+  const popup = document.querySelector('.popup');
+  popup.style.display = 'none';
 }
+
 
 
 //Position title animation

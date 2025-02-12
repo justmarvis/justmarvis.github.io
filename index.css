@@ -20,98 +20,8 @@
     font-family: "Roboto", serif;
 }
 
-.heading {
-    display: flex;
-    align-items: end;
-    margin-bottom: 100px;
-    z-index: 10;
-}
-
-.resume {
-    background-color: #FF0000;
-    border: none;
+.thumbnail {
     color: #fff;
-    padding: 5px 10px;
-    font-size: 18px;
-    margin-right: 20px;
-    margin-left: 5px;
-}
-
-.byline {
-    font-size: 14px;
-}
-
-/* .position {
-    font-size: 22px;
-    color: #6AB3E8;
-    font-weight: 600;
-} */
-
-
-.icon {
-    width: 32px;
-}
-
-.step {
-    width: 100%;
-    height: 180px;
-    background-color: #111111;
-}
-
-.iconLink:not(:last-child) {
-    margin-right: 15px;
-}
-
-.projects {
-    /* width: 100%; */
-    padding: 50px 100px;
-    margin: 0 auto;
-}
-
-.projH {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin: 0 auto;
-    align-items: end;
-    /* margin-bottom: 20px; */
-}
-
-.subHeadL {
-    display: flex;
-    align-items: end;
-    /* margin-bottom: 100px; */
-}
-
-.subHead {
-    margin-right: 20px;
-}
-
-.subLine {
-    margin-bottom: 5px;
-}
-
-.subHeadR {
-    color: #6AB3E8;
-}
-
-.proj {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.pro {
-    width: 48%;
-    margin-bottom: 10px;
-    cursor: pointer;
-}
-
-/* .pro:first-child {
-    border: 1.5px solid #000;
-} */
-.pro:not(:last-child) {
-    /* margin-right: 20px; */
 }
 
 /* small screen */
@@ -784,7 +694,37 @@
         position: relative; /* Ensures pseudo-element is positioned correctly */
         overflow: hidden; /* Prevents the overlay from spilling out */
     }
+
+    .thumbnail .thumbnailAct {
+        opacity: 0; /* Hide the content by default */
+        visibility: hidden; /* Ensure it's inaccessible */
+        transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */
+    }
     
+    .thumbnail:hover .thumbnailAct {
+        opacity: 1; /* Make the content visible */
+        visibility: visible; /* Ensure it becomes accessible */
+    }
+    .thumbnailAct {
+        width: 80%;
+        margin: 0 auto;
+        position: absolute;
+        bottom: 0;
+        padding: 30px;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .topic {
+        font-size: 32px;
+        font-weight: 600;
+        margin-bottom: 0px;
+    }
+    .explain {
+        font-size: 18px;
+        font-weight: 300;
+    }
     .thumbnail:hover::before {
         content: "";
         position: absolute;
@@ -805,24 +745,79 @@
         background-size: cover;
         cursor: pointer;
     }
-    .nail1:hover {
+    /* .nail1:hover {
         background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/podcast%20(27).png?v=1739118731378');
         background-position: center;
         background-size: cover;
         transition: 0.8s ease-in-out;
-    }
+    } */
     .nail2 {
         background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/podcast%20(23)%20(1).png?v=1738640677839');
         background-position: center;
         background-size: cover;
-        cursor: pointer;
+        /* cursor: pointer; */
     }
     .nail3 {
         background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/website.png?v=1738994347672');
         background-position: center;
         background-size: cover;
-        cursor: pointer;
+        /* cursor: pointer; */
     }
+    /* Style for the popup */
+    .popup {
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed position to appear in the center of the screen */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #fff;
+        border: 1px solid #ccc;
+        box-shadow: 0 0px 0px 500px rgba(0, 0, 0, 0.8);
+        padding: 10px;
+        z-index: 1000; /* Ensure it's above all other content */
+        /* border-radius: 8px; */
+        width: 80%;
+        height: 100vh;
+        overflow: auto;
+        scroll-behavior: smooth;
+        text-align: center;
+        /* transition: 2s ease-in-out; */
+    }
+    
+    .popup .close {
+        background: #000;
+        color: white;
+        border: none;
+        /* border-radius: 4px; */
+        padding: 8px 12px;
+        cursor: pointer;
+        font-size: 14px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        /* transition: 2s ease-in-out; */
+    }
+    .close {
+        margin-top: 10px;
+    }
+    
+    .popup .close:hover {
+        background: rgba(0, 0, 0, 0.8);
+    }
+    
+    .popup-content {
+        margin: 20px 0 0 0;
+    }
+    .popImg {
+        width: 100%;
+    }
+    
+
+    
+    .nail1 {
+        position: relative; /* Ensure .popup is positioned relative to this container */
+    }
+    
     .heading1 {
         text-align: center;
         margin-bottom: 10px;
@@ -847,6 +842,7 @@
         display: flex;
         flex-wrap: wrap;
         align-items: flex-start;
+        justify-content: center;
     }
     .quest {
         list-style: none;
