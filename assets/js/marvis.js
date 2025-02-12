@@ -83,6 +83,16 @@ function closePopup() {
   popup.style.display = 'none';
 }
 
+function showPopup1() {
+  const popup = document.querySelector('.popup1');
+  popup.style.display = 'block';
+}
+
+function closePopup1() {
+  const popup = document.querySelector('.popup1');
+  popup.style.display = 'none';
+}
+
 
 
 //Position title animation
