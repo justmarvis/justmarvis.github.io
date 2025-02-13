@@ -201,7 +201,7 @@
         bottom: 0;
         left: 0;
         width: 100%;
-        height: 40%;
+        height: 20%;
         background: rgba(27, 27, 27, 0.95);
         transition: 0.3s ease-in-out;
     }
@@ -224,6 +224,12 @@
         background-position: center;
         background-size: cover;
         cursor: pointer;
+    }
+    .nail4 {
+        background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/podcast%20(65)%20(1).png?v=1739424418907');
+        background-position: center;
+        background-size: cover;
+        /* cursor: pointer; */
     }
     .heading1 {
         text-align: center;
@@ -360,7 +366,6 @@
         background-color: #1b1b1b;
         padding: 15px 0;
         padding-bottom: 10px;
-        /* height: 10vh; */
     }
     .studiio {
         width: 80px;
@@ -764,7 +769,7 @@
         /* cursor: pointer; */
     }
     .nail4 {
-        background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/podcast%20(61)%20(1).png?v=1739406950641');
+        background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/podcast%20(65)%20(1).png?v=1739424418907');
         background-position: center;
         background-size: cover;
         /* cursor: pointer; */

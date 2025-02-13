@@ -176,8 +176,3 @@ document.addEventListener("DOMContentLoaded", function () {
   typeWriter(); // Start animation
   
 });
-
-  
-  
-  
-
