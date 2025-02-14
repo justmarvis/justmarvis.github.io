@@ -72,9 +72,17 @@ function faq() {
   document.getElementById('faqTarget').scrollIntoView({ behavior: 'smooth' });
 }
 
+function reviews() {
+  document.getElementById('reviewsTarget').scrollIntoView({ behavior: 'smooth' });
+}
+
 //popups
 function showPopup() {
   const popup = document.querySelector('.popup');
+  popup.style.display = 'block';
+}
+function showPopupMobile() {
+  const popup = document.querySelector('.popupMobile');
   popup.style.display = 'block';
 }
 
@@ -82,14 +90,26 @@ function closePopup() {
   const popup = document.querySelector('.popup');
   popup.style.display = 'none';
 }
+function closePopupMobile() {
+  const popup = document.querySelector('.popupMobile');
+  popup.style.display = 'none';
+}
 
 function showPopup1() {
   const popup = document.querySelector('.popup1');
   popup.style.display = 'block';
 }
+function showPopupMobile1() {
+  const popup = document.querySelector('.popupMobile1');
+  popup.style.display = 'block';
+}
 
 function closePopup1() {
   const popup = document.querySelector('.popup1');
+  popup.style.display = 'none';
+}
+function closePopupMobile1() {
+  const popup = document.querySelector('.popupMobile1');
   popup.style.display = 'none';
 }
 

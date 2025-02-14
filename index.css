@@ -24,6 +24,70 @@
     color: #fff;
 }
 
+.fullName {
+    width: 80px;
+    height: 80px;
+    background: #1b1b1b;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-image: url('https://media.licdn.com/dms/image/v2/D4E03AQFRxkkyQaB6xQ/profile-displayphoto-shrink_200_200/B4EZOX4X01HkAc-/0/1733419959534?e=1744848000&v=beta&t=uUj49gIy_L3Zdmg-6UU_e39rzst4qZkk93tfU_07DOM');
+    background-position: center;
+    background-size: cover;
+}
+.sectionTwo {
+    padding: 100px 100px;
+    padding-bottom: 110px;
+
+    display: flex;
+    justify-content: space-evenly;
+    overflow-x: auto;
+    gap: 10px;
+}
+/* .review {
+    margin-right: 10px;
+} */
+.subtext {
+    width: 200px;
+    background-color: #f5f5f5;
+    backdrop-filter: blur(10px);
+    padding: 20px 20px;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+.client {
+    font-weight: 600;
+}
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.ben {
+    background-image: url('https://media.licdn.com/dms/image/v2/C4D03AQEfKbrCZTsHAA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1619005242009?e=1744243200&v=beta&t=95o9Bft5aaTyZRjACnjJv4XWfJ74W_aKU_Ug1oC20eo');
+    background-position: center;
+    background-size: cover;
+}
+
+.sean {
+    background-image: url('https://brightspotcdn.byui.edu/dims4/default/1447ad6/2147483647/strip/true/crop/640x640+0+0/resize/480x480!/format/webp/quality/90/?url=http%3A%2F%2Fbyu-idaho-brightspot-production-us-east-2.s3.us-east-2.amazonaws.com%2F8f%2Fff%2Ff6bd472e431eb6497b6e34872cca%2Fmurdock-sean-murdockse-456752930.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.rueblur {
+    background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/0_2%20(1)%20(1).jpeg?v=1739511163856');
+    background-position: center;
+    background-size: cover;
+}
+.rate {
+    margin-top: 10px;
+}
+
 /* small screen */
 @media (max-width: 600px) {
     .body_desktop {
@@ -134,7 +198,7 @@
     }
     .socials {
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: end;
         flex-wrap: wrap;
         margin-bottom: 30px;
@@ -146,6 +210,7 @@
         font-size: 24px;
         margin-left: 30px;
         cursor: pointer;
+        /* text-align: center; */
     }
     .socialIcon:hover {
         opacity: 0.8;
@@ -326,6 +391,68 @@
         /* margin-bottom: 50px; */
         letter-spacing: 0.5px;
     }
+    .sectionTwo {
+        padding: 100px 50px;
+        overflow-x: auto;
+    }
+    .thumbnailAct {
+        width: 80%;
+        margin: 0 auto;
+        position: absolute;
+        bottom: 0;
+        padding: 10px;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .popupMobile, .popupMobile1 {
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed position to appear in the center of the screen */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #fff;
+        border: 1px solid #ccc;
+        box-shadow: 0 0px 0px 500px rgba(0, 0, 0, 0.8);
+        padding: 10px;
+        z-index: 1000; /* Ensure it's above all other content */
+        /* border-radius: 8px; */
+        width: 80%;
+        height: 100vh;
+        overflow: auto;
+        scroll-behavior: smooth;
+        text-align: center;
+        /* transition: 2s ease-in-out; */
+    }
+    
+    .popupMobile .close, .popupMobile1 .close {
+        background: #000;
+        color: white;
+        border: none;
+        /* border-radius: 4px; */
+        padding: 8px 12px;
+        cursor: pointer;
+        font-size: 14px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        /* transition: 2s ease-in-out; */
+    }
+    .close {
+        margin-top: 10px;
+    }
+    
+    .popupMobile .close:hover {
+        background: rgba(0, 0, 0, 0.8);
+    }
+    
+    .popup-content {
+        margin: 20px 0 0 0;
+    }
+    .popImg {
+        width: 100%;
+    }
     
 }
 
@@ -404,12 +531,6 @@
     }
     .nav:hover {
         text-decoration: underline;
-    }
-    .nav:nth-child(1) {
-        opacity: 0.5;
-        /* cursor: not-allowed; */
-        text-decoration: none;
-        cursor: default;
     }
     .nav:nth-child(2) {
         text-decoration: none;
@@ -538,124 +659,6 @@
     }
     .socialIcon:hover {
         opacity: 0.8;
-    }
-
-    .proof {
-        position: absolute;
-        /* Changed from relative to absolute */
-        width: 100%;
-        display: flex;
-        justify-content: end;
-        margin-top: -80px;
-        z-index: 2;
-        /* Ensures it is above .head */
-    }
-    .card1, .card2 {
-        opacity: 0; /* Make them invisible initially */
-    }
-    
-    .card1 {
-        animation: slideIn 2s ease-in-out 2.3s forwards;
-    }
-    
-    .card2 {
-        animation: slideIn 2s ease-in-out 2s forwards;
-    }
-    
-    @keyframes slideIn {
-        0% {
-            transform: translateX(100px);
-            opacity: 0;
-        }
-        100% {
-            transform: translateX(0);
-            opacity: 1;
-        }
-    }
-    
-    
-    .review {
-        width: 20%;
-        padding: 10px 10px;
-        /* z-index: 100; */
-    }
-
-    .review:last-child {
-        margin-right: 100px;
-    }
-
-    .quote {
-        display: flex;
-        align-items: center;
-        margin-bottom: 1px;
-        margin-left: 5px;
-        float: right;
-    }
-
-    .ben,
-    .sean {
-        width: 32px;
-        height: 32px;
-        border-radius: 50%;
-        border: 3px solid #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .subtext {
-        /* width: 100%; */
-        font-size: 16px;
-        /* margin-bottom: 20px; */
-        font-weight: 300;
-        /* letter-spacing: 1px; */
-    }
-
-    .mark {
-        width: 20px;
-        font-size: 46px;
-        /* background-color: #f8f8f8; */
-        color: rgba(17, 17, 17, 0.8);
-        /* line-height: 0px; */
-    }
-
-    .ben,
-    .sean {
-        font-size: 16px;
-        /* background-color: #111111; */
-        color: #fff;
-        margin-left: -10px;
-    }
-    .client {
-        font-weight: 600;
-    }
-
-    .test {
-        background-color: rgba(255, 255, 255, 1);
-        /* Reduces opacity to 50% */
-        backdrop-filter: blur(10px);
-        /* Applies background blur */
-        /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15); */
-        border: 3px solid #111111;
-        border-radius: 10px;
-        padding: 20px 20px;
-    }
-
-    .test p {
-        margin: 0;
-        font-size: 14px;
-    }
-
-    .ben {
-        background-image: url('https://media.licdn.com/dms/image/v2/C4D03AQEfKbrCZTsHAA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1619005242009?e=1744243200&v=beta&t=95o9Bft5aaTyZRjACnjJv4XWfJ74W_aKU_Ug1oC20eo');
-        background-position: center;
-        background-size: cover;
-    }
-
-    .sean {
-        background-image: url('https://brightspotcdn.byui.edu/dims4/default/1447ad6/2147483647/strip/true/crop/640x640+0+0/resize/480x480!/format/webp/quality/90/?url=http%3A%2F%2Fbyu-idaho-brightspot-production-us-east-2.s3.us-east-2.amazonaws.com%2F8f%2Fff%2Ff6bd472e431eb6497b6e34872cca%2Fmurdock-sean-murdockse-456752930.jpg');
-        background-position: center;
-        background-size: cover;
     }
     .sectionOne {
         align-items: center;
