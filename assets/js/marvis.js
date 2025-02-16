@@ -196,3 +196,23 @@ document.addEventListener("DOMContentLoaded", function () {
   typeWriter(); // Start animation
   
 });
+
+// In view animation
+// Select all elements with the class 'opt'
+const elements = document.querySelectorAll('.opt');
+
+// Set up the Intersection Observer
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            // Add the 'in-view' class when the element is in the viewport
+            entry.target.classList.add('in-view');
+        }
+    });
+}, {
+    threshold: 0.5, // Trigger when 10% of the element is visible
+});
+
+// Observe each element
+elements.forEach((el) => observer.observe(el));
+
