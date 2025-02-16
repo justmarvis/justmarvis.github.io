@@ -128,6 +128,11 @@
 .opt.in-view {
     opacity: 1;
 }
+.icon {
+    font-size: 24px;
+    margin-left: 10px;
+    opacity: 0.25;
+}
 
 /* small screen */
 @media (max-width: 600px) {
@@ -206,7 +211,7 @@
     }
 
     .position {
-        margin-bottom: 20px;
+        /* margin-bottom: 10px; */
         font-size: 24px;
         font-weight: 800;
         white-space: nowrap; /* Prevents text from wrapping */
@@ -288,8 +293,8 @@
     }
     .allProject {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
         grid-gap: 10px;
     }
     .thumbnail {
@@ -411,11 +416,12 @@
         overflow-x: auto;
     }
     .thumbnailAct {
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
         position: absolute;
         bottom: 0;
         padding: 10px;
+        padding-bottom: 8px;
     
         display: flex;
         flex-direction: column;
@@ -433,8 +439,8 @@
         padding: 10px;
         z-index: 1000; /* Ensure it's above all other content */
         /* border-radius: 8px; */
-        width: 80%;
-        height: 100vh;
+        width: 90%;
+        height: 80vh;
         overflow: auto;
         scroll-behavior: smooth;
         text-align: center;
@@ -467,6 +473,10 @@
     }
     .popImg {
         width: 100%;
+    }
+    .explain {
+        font-size: 16px;
+        font-weight: 300;
     }
     
 }
@@ -626,7 +636,7 @@
     }
 
     .position {
-        margin-bottom: 10px;
+        /* margin-bottom: 10px; */
         font-size: 28px;
         font-weight: 800;
         white-space: nowrap; /* Prevents text from wrapping */
@@ -645,12 +655,12 @@
     .mission {
         font-size: 18px;
         font-weight: 300;
-        line-height: 50px;
+        /* line-height: 50px; */
         margin-bottom: 35px;
         /* letter-spacing: 1px; */
     }
     .mission p {
-        line-height: 1.8em;
+        line-height: 1.5em;
     }
 
     .highlight {
@@ -713,7 +723,7 @@
     }
     .thumbnail {
         /* width: 500px; */
-        height: 500px;
+        height: 300px;
         position: relative; /* Ensures pseudo-element is positioned correctly */
         overflow: hidden; /* Prevents the overlay from spilling out */
     }
