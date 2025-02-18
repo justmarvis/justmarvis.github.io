@@ -113,6 +113,24 @@ function closePopupMobile1() {
   popup.style.display = 'none';
 }
 
+function showPopup3() {
+  const popup = document.querySelector('.popup3');
+  popup.style.display = 'block';
+}
+function showPopupMobile3() {
+  const popup = document.querySelector('.popupMobile3');
+  popup.style.display = 'block';
+}
+
+function closePopup3() {
+  const popup = document.querySelector('.popup3');
+  popup.style.display = 'none';
+}
+function closePopupMobile3() {
+  const popup = document.querySelector('.popupMobile3');
+  popup.style.display = 'none';
+}
+
 
 
 //Position title animation

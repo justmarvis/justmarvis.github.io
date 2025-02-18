@@ -17,7 +17,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Roboto", serif;
+    font-family: "inter", serif;
 }
 
 .thumbnail {
@@ -34,6 +34,7 @@
     background-image: url('https://media.licdn.com/dms/image/v2/D4E03AQFRxkkyQaB6xQ/profile-displayphoto-shrink_200_200/B4EZOX4X01HkAc-/0/1733419959534?e=1744848000&v=beta&t=uUj49gIy_L3Zdmg-6UU_e39rzst4qZkk93tfU_07DOM');
     background-position: center;
     background-size: cover;
+    margin-bottom: 20px;
 }
 .sectionTwo {
     padding: 100px 100px;
@@ -44,9 +45,6 @@
     overflow-x: auto;
     gap: 10px;
 }
-/* .review {
-    margin-right: 10px;
-} */
 .subtext {
     width: 200px;
     background-color: #f5f5f5;
@@ -111,7 +109,7 @@
     background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/Frame%20(7)%20(1).png?v=1739726231454');
     background-position: center;
     background-size: cover;
-    /* cursor: pointer; */
+    cursor: pointer;
 }
 .opt {
     opacity: 0;
@@ -132,6 +130,48 @@
     font-size: 24px;
     margin-left: 10px;
     opacity: 0.25;
+}
+.mission {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 50px;
+    margin-bottom: 35px;
+    /* letter-spacing: 1px; */
+}
+.mission p {
+    line-height: 1.5em;
+}
+.position {
+    font-weight: 800;
+    margin-bottom: 8px;
+    white-space: nowrap; /* Prevents text from wrapping */
+    overflow: hidden; /* Hides overflow text */
+    border-right: 2px solid #fff; /* Simulates a cursor */
+    width: max-content;
+    display: inline-block;
+    animation: blinkCursor 0.8s infinite;
+}
+.libutton {
+    letter-spacing: 0;
+    line-height: 0;
+    font-weight: 500;
+}
+.heading1, .heading2 {
+    letter-spacing: -5px;
+}
+nav li {
+    letter-spacing: -1px;
+}
+.thumbnailAct {
+    width: 100%;
+    padding: 10px;
+    padding-top: 20px;
+    padding-right: 50px;
+    background: rgba(27, 27, 27, 0.95);
+        transition: 0.3s ease-in-out;
+}
+.explain {
+    width: 80%;
 }
 
 /* small screen */
@@ -193,7 +233,7 @@
         /* margin-bottom: 50px; */
         margin-top: 25px;
         font-size: 16px;
-        font-weight: 500;
+        /* font-weight: 500; */
         /* position: absolute; */
         z-index: 10;
 
@@ -204,22 +244,10 @@
         transition: 0.2s;
     }
 
-    .fullName {
-        font-size: 18px;
-        font-weight: 300;
-        margin-bottom: 20px;
-    }
-
     .position {
         /* margin-bottom: 10px; */
         font-size: 24px;
-        font-weight: 800;
-        white-space: nowrap; /* Prevents text from wrapping */
-    overflow: hidden; /* Hides overflow text */
-    border-right: 2px solid #fff; /* Simulates a cursor */
-    width: max-content;
-    display: inline-block;
-    animation: blinkCursor 0.8s infinite;
+        animation: blinkCursor 0.8s infinite;
     }
 
     /* Blinking Cursor Animation */
@@ -227,16 +255,7 @@
     50% { border-right-color: transparent; }
 }
 
-    .mission {
-        font-size: 18px;
-        font-weight: 300;
-        line-height: 50px;
-        margin-bottom: 35px;
-        /* letter-spacing: 1px; */
-    }
-    .mission p {
-        line-height: 1.8em;
-    }
+    
 
     .highlight {
         font-size: 20px;
@@ -304,7 +323,7 @@
         overflow: hidden; /* Prevents the overlay from spilling out */
     }
     
-    .thumbnail::before {
+    /* .thumbnail::before {
         content: "";
         position: absolute;
         padding: 10px;
@@ -315,7 +334,7 @@
         height: 20%;
         background: rgba(27, 27, 27, 0.95);
         transition: 0.3s ease-in-out;
-    }
+    } */
     .heading1 {
         text-align: center;
         margin-bottom: 10px;
@@ -416,18 +435,16 @@
         overflow-x: auto;
     }
     .thumbnailAct {
-        width: 90%;
+        /* width: 90%; */
         margin: 0 auto;
         position: absolute;
         bottom: 0;
-        padding: 10px;
-        padding-bottom: 8px;
     
         display: flex;
         flex-direction: column;
         align-items: start;
     }
-    .popupMobile, .popupMobile1 {
+    .popupMobile, .popupMobile1, .popupMobile3 {
         display: none; /* Hidden by default */
         position: fixed; /* Fixed position to appear in the center of the screen */
         top: 50%;
@@ -447,7 +464,7 @@
         /* transition: 2s ease-in-out; */
     }
     
-    .popupMobile .close, .popupMobile1 .close {
+    .popupMobile .close, .popupMobile1 .close, .popupMobile3 .close {
         background: #000;
         color: white;
         border: none;
@@ -616,7 +633,7 @@
         margin-left: 30px;
         /* margin-bottom: 50px; */
         font-size: 16px;
-        font-weight: 500;
+        /* font-weight: 500; */
         /* position: absolute; */
         z-index: 10;
 
@@ -628,23 +645,12 @@
     }
 
     .fullName {
-        font-size: 18px;
-        font-weight: 300;
-        /* line-height: 40px; */
         margin-top: 60px;
-        margin-bottom: 10px;
     }
 
     .position {
-        /* margin-bottom: 10px; */
         font-size: 28px;
-        font-weight: 800;
-        white-space: nowrap; /* Prevents text from wrapping */
-    overflow: hidden; /* Hides overflow text */
-    border-right: 2px solid #fff; /* Simulates a cursor */
-    width: max-content;
-    display: inline-block;
-    animation: blinkCursor 0.8s infinite;
+        animation: blinkCursor 0.8s infinite;
     }
 
     /* Blinking Cursor Animation */
@@ -652,16 +658,6 @@
     50% { border-right-color: transparent; }
 }
 
-    .mission {
-        font-size: 18px;
-        font-weight: 300;
-        /* line-height: 50px; */
-        margin-bottom: 35px;
-        /* letter-spacing: 1px; */
-    }
-    .mission p {
-        line-height: 1.5em;
-    }
 
     .highlight {
         font-size: 20px;
@@ -739,11 +735,10 @@
         visibility: visible; /* Ensure it becomes accessible */
     }
     .thumbnailAct {
-        width: 80%;
+        /* width: 80%; */
         margin: 0 auto;
         position: absolute;
         bottom: 0;
-        padding: 30px;
     
         display: flex;
         flex-direction: column;
@@ -758,20 +753,20 @@
         font-size: 18px;
         font-weight: 300;
     }
-    .thumbnail:hover::before {
+    /* .thumbnail:hover::before {
         content: "";
         position: absolute;
         padding: 10px;
         color: #fff;
         bottom: 0;
         left: 0;
-        width: 100%; /* Ensure full coverage */
+        width: 100%;
         height: 40%;
         background: rgba(27, 27, 27, 0.95);
-        transition: 0.3s ease-in-out; /* Smooth transition */
-    }
+        transition: 0.3s ease-in-out;
+    } */
     /* Style for the popup */
-    .popup, .popup1 {
+    .popup, .popup1, .popup3 {
         display: none; /* Hidden by default */
         position: fixed; /* Fixed position to appear in the center of the screen */
         top: 50%;
@@ -791,7 +786,7 @@
         /* transition: 2s ease-in-out; */
     }
     
-    .popup .close, .popup1 .close {
+    .popup .close, .popup1 .close, .popup3 .close {
         background: #000;
         color: white;
         border: none;
@@ -817,12 +812,6 @@
     }
     .popImg {
         width: 100%;
-    }
-    
-
-    
-    .nail1 {
-        position: relative; /* Ensure .popup is positioned relative to this container */
     }
     
     .heading1 {
