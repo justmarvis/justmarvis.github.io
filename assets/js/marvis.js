@@ -113,8 +113,8 @@ function closePopupMobile1() {
   popup.style.display = 'none';
 }
 
-function showPopup3() {
-  const popup = document.querySelector('.popup3');
+function showPopup4() {
+  const popup = document.querySelector('.popup4');
   popup.style.display = 'block';
 }
 function showPopupMobile3() {
@@ -122,8 +122,8 @@ function showPopupMobile3() {
   popup.style.display = 'block';
 }
 
-function closePopup3() {
-  const popup = document.querySelector('.popup3');
+function closePopup4() {
+  const popup = document.querySelector('.popup4');
   popup.style.display = 'none';
 }
 function closePopupMobile3() {
@@ -179,7 +179,7 @@ const textElement = document.getElementById('textSwitcher');
 
   //position animation
   document.addEventListener("DOMContentLoaded", function () {
-    const text = "UI Designer and Developer"; // Text to be typed
+    const text = "UI/UX and Product Designer"; // Text to be typed
     const speed = 100; // Typing speed (ms)
     let i = 0;
     const typeElement = document.getElementById("type");
@@ -198,7 +198,7 @@ const textElement = document.getElementById('textSwitcher');
 
 //position animation
 document.addEventListener("DOMContentLoaded", function () {
-  const text = "UI Designer and Developer"; // Text to be typed
+  const text = "UI/UX and Product Designer"; // Text to be typed
   const speed = 100; // Typing speed (ms)
   let i = 0;
   const typeElement = document.getElementById("typeSmall");
