@@ -199,8 +199,11 @@
     letter-spacing: 0;
     line-height: 0;
     font-weight: 500;
-    background-color: #6A72FF;
+    background-color: #0A66C2;
     padding: 25px 20px;
+    /* width: 200px;
+          height: 32px; */
+
 }
 .heading1, .heading2 {
     letter-spacing: -5px;
