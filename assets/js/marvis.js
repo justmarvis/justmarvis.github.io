@@ -234,3 +234,29 @@ const observer = new IntersectionObserver((entries) => {
 // Observe each element
 elements.forEach((el) => observer.observe(el));
 
+// Cursor follow circle
+const circle = document.getElementById("cursorCircle");
+let mouseX = 0, mouseY = 0;
+let circleX = 0, circleY = 0;
+const delay = 0.1;
+const circleSize = 15; // Adjust this based on the actual width and height of the circle
+
+document.addEventListener("mousemove", (e) => {
+    mouseX = e.clientX + window.scrollX;
+    mouseY = e.clientY + window.scrollY;
+});
+
+function animate() {
+    circleX += (mouseX - circleX) * delay;
+    circleY += (mouseY - circleY) * delay;
+    
+    circle.style.left = `${circleX - circleSize / 2}px`;
+    circle.style.top = `${circleY - circleSize / 2}px`;
+    
+    requestAnimationFrame(animate);
+}
+
+animate();
+
+
+
