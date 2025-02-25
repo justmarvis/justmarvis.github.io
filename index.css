@@ -269,6 +269,20 @@ nav li {
 .quest {
     border-radius: 15px;
 }
+.tooltip {
+    position: absolute;
+    background-color: #fff;
+    color: #1b1b1b;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out;
+}
+
 
 /* small screen */
 @media (max-width: 600px) {
@@ -342,7 +356,7 @@ nav li {
 
     .position {
         /* margin-bottom: 10px; */
-        font-size: 24px;
+        font-size: 28px;
         animation: blinkCursor 0.8s infinite;
     }
 
@@ -549,8 +563,8 @@ nav li {
     }
     
     .popupMobile .close, .popupMobile1 .close, .popupMobile3 .close {
-        background: #000;
-        color: white;
+        background: #fff;
+        color: #1b1b1b;
         border: none;
         /* border-radius: 4px; */
         padding: 8px 12px;
@@ -560,15 +574,16 @@ nav li {
         top: 10px;
         right: 10px;
         border-radius: 8px;
+        font-weight: 600;
         /* transition: 2s ease-in-out; */
     }
     .close {
         margin-top: 10px;
     }
     
-    .popupMobile .close:hover {
+    /* .popupMobile .close:hover {
         background: rgba(0, 0, 0, 0.8);
-    }
+    } */
     
     .popup-content {
         margin: 20px 0 0 0;
@@ -647,12 +662,13 @@ nav li {
         background-size: none;
         background-color: #2c2c2c;
         border: none;
+        cursor: pointer;
 
         display: flex;
         justify-content: center;
         align-items: center;
         color: rgba(255, 255, 255, 0.5);
-        font-size: 18px;
+        font-size: 16px;
         animation: expand 0.5s forwards;
     }
     .fullName:last-child {
@@ -922,8 +938,8 @@ nav li {
     }
     
     .popup .close, .popup1 .close, .popup4 .close {
-        background: #000;
-        color: white;
+        background: #fff;
+        color: #1b1b1b;
         border: none;
         /* border-radius: 4px; */
         padding: 8px 12px;
@@ -933,15 +949,16 @@ nav li {
         top: 10px;
         right: 10px;
         border-radius: 8px;
+        font-weight: 600;
         /* transition: 2s ease-in-out; */
     }
     .close {
         margin-top: 10px;
     }
     
-    .popup .close:hover {
+    /* .popup .close:hover {
         background: rgba(0, 0, 0, 0.8);
-    }
+    } */
     
     .popup-content {
         margin: 20px 0 0 0;

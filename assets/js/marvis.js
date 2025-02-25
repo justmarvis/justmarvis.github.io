@@ -258,5 +258,138 @@ function animate() {
 
 animate();
 
+// Copy text
+document.addEventListener("DOMContentLoaded", function() {
+  const container = document.querySelector('.fullName.opt.email');
+  const tooltip = document.createElement('div');
+  
+  // Set tooltip text and class
+  tooltip.innerText = "Send Email";
+  tooltip.classList.add('tooltip');
+
+  // Append tooltip to body
+  document.body.appendChild(tooltip);
+
+  // Show tooltip on hover
+  container.addEventListener('mouseenter', function(event) {
+      tooltip.style.visibility = 'visible';
+      tooltip.style.opacity = '1';
+      tooltip.style.top = `${event.clientY + 10}px`;
+      tooltip.style.left = `${event.clientX + 10}px`;
+  });
+
+  // Move tooltip with mouse
+  container.addEventListener('mousemove', function(event) {
+      tooltip.style.top = `${event.clientY + 10}px`;
+      tooltip.style.left = `${event.clientX + 10}px`;
+  });
+
+  // Hide tooltip on mouse leave
+  container.addEventListener('mouseleave', function() {
+      tooltip.style.visibility = 'hidden';
+      tooltip.style.opacity = '0';
+  });
+
+  // Copy email on click
+  container.addEventListener('click', function() {
+      const email = 'marvisdev98@gmail.com';
+      
+      navigator.clipboard.writeText(email).then(() => {
+          alert('Email copied to clipboard!');
+      }).catch(err => {
+          console.error('Failed to copy: ', err);
+      });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  const container = document.querySelector('.fullName.opt.github');
+  const tooltip = document.createElement('div');
+  
+  // Set tooltip text and class
+  tooltip.innerText = "Invite User";
+  tooltip.classList.add('tooltip');
+
+  // Append tooltip to body
+  document.body.appendChild(tooltip);
+
+  // Show tooltip on hover
+  container.addEventListener('mouseenter', function(event) {
+      tooltip.style.visibility = 'visible';
+      tooltip.style.opacity = '1';
+      tooltip.style.top = `${event.clientY + 10}px`;
+      tooltip.style.left = `${event.clientX + 10}px`;
+  });
+
+  // Move tooltip with mouse
+  container.addEventListener('mousemove', function(event) {
+      tooltip.style.top = `${event.clientY + 10}px`;
+      tooltip.style.left = `${event.clientX + 10}px`;
+  });
+
+  // Hide tooltip on mouse leave
+  container.addEventListener('mouseleave', function() {
+      tooltip.style.visibility = 'hidden';
+      tooltip.style.opacity = '0';
+  });
+
+  // Copy email on click
+  container.addEventListener('click', function() {
+      const email = 'justmarvis';
+      
+      navigator.clipboard.writeText(email).then(() => {
+          alert('Email copied to clipboard!');
+      }).catch(err => {
+          console.error('Failed to copy: ', err);
+      });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  const container = document.querySelector('.fullName.opt.figma');
+  const tooltip = document.createElement('div');
+  
+  // Set tooltip text and class
+  tooltip.innerText = "Invite User";
+  tooltip.classList.add('tooltip');
+
+  // Append tooltip to body
+  document.body.appendChild(tooltip);
+
+  // Show tooltip on hover
+  container.addEventListener('mouseenter', function(event) {
+      tooltip.style.visibility = 'visible';
+      tooltip.style.opacity = '1';
+      tooltip.style.top = `${event.clientY + 10}px`;
+      tooltip.style.left = `${event.clientX + 10}px`;
+  });
+
+  // Move tooltip with mouse
+  container.addEventListener('mousemove', function(event) {
+      tooltip.style.top = `${event.clientY + 10}px`;
+      tooltip.style.left = `${event.clientX + 10}px`;
+  });
+
+  // Hide tooltip on mouse leave
+  container.addEventListener('mouseleave', function() {
+      tooltip.style.visibility = 'hidden';
+      tooltip.style.opacity = '0';
+  });
+
+  // Copy email on click
+  container.addEventListener('click', function() {
+      const email = 'marvinomeccozi@gmail.com';
+      
+      navigator.clipboard.writeText(email).then(() => {
+          alert('Email copied to clipboard!');
+      }).catch(err => {
+          console.error('Failed to copy: ', err);
+      });
+  });
+});
+
+
+
+
 
 
