@@ -603,8 +603,7 @@ nav li {
         padding-bottom: 50px;
     }
     .action {
-        width: 80px;
-    height: 80px;
+        padding: 20px;
     background: #1b1b1b;
     border: 5px solid #2c2c2c;
     border-radius: 50%;
@@ -628,7 +627,7 @@ nav li {
     }
     .action:last-child {
         margin-right: 100px;
-        /* display: none; */
+        display: none;
     }
     @keyframes expand {
         from {
