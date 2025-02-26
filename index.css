@@ -602,16 +602,20 @@ nav li {
         align-items: center;
         padding-bottom: 50px;
     }
-    .fullName {
-        width: 50px;
-        height: 50px;
-        margin: 0;
+    .action {
+        width: 80px;
+    height: 80px;
+    background: #1b1b1b;
+    border: 5px solid #2c2c2c;
+    border-radius: 50%;
+    margin: 0 auto;
     }
-    .fullName:not(:last-child) {
+    .action:not(:last-child) {
         background: none;
         background-position: none;
         background-size: none;
         background-color: #fff;
+        border-radius: 50px;
         border: none;
         cursor: pointer;
 
@@ -622,9 +626,9 @@ nav li {
         font-size: 24px;
         animation: expand 0.5s forwards;
     }
-    .fullName:last-child {
+    .action:last-child {
         margin-right: 100px;
-        display: none;
+        /* display: none; */
     }
     @keyframes expand {
         from {
