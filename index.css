@@ -263,9 +263,6 @@ nav li {
     z-index: 1000;
 
 }
-.footer {
-    padding-top: 100px;
-}
 .quest {
     border-radius: 15px;
 }
@@ -595,6 +592,48 @@ nav li {
         font-size: 16px;
         font-weight: 300;
     }
+    .profiles {
+        display: flex;
+        align-items: center;
+        /* gap: 10px; */
+        margin: 0 auto;
+        width: 60%;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+    .fullName {
+        width: 50px;
+        height: 50px;
+        margin: 0;
+    }
+    .fullName:not(:last-child) {
+        background: none;
+        background-position: none;
+        background-size: none;
+        background-color: #fff;
+        border: none;
+        cursor: pointer;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #1b1b1b;
+        font-size: 24px;
+        animation: expand 0.5s forwards;
+    }
+    .fullName:last-child {
+        margin-right: 100px;
+        display: none;
+    }
+    @keyframes expand {
+        from {
+            transform: scale(0);
+        }
+        to {
+            transform: scale(1);
+        }
+    } 
     
 }
 
