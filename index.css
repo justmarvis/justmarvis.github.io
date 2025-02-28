@@ -22,7 +22,7 @@
 
 .thumbnail {
     color: #fff;
-    border-radius: 15px;
+    /* border-radius: 15px; */
 }
 
 .fullName {
@@ -133,32 +133,6 @@
 .rate {
     margin-top: 10px;
 }
-
-.nail1 {
-    /* border: 3px solid rgba(0, 0, 0, 0.03); */
-    background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/podcast%20(42).png?v=1739331210168');
-    background-position: center;
-    background-size: cover;
-    cursor: pointer;
-}
-.nail2 {
-    background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/podcast%20(60).png?v=1739406206611');
-    background-position: center;
-    background-size: cover;
-    cursor: pointer;
-}
-.nail3 {
-    background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/website%20(7)%20(1).png?v=1739722715995');
-    background-position: center;
-    background-size: cover;
-    /* cursor: pointer; */
-}
-.nail4 {
-    background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/Frame%20(7)%20(1).png?v=1739726231454');
-    background-position: center;
-    background-size: cover;
-    cursor: pointer;
-}
 .opt {
     opacity: 0;
     animation: opt 2s forwards;
@@ -196,15 +170,16 @@
 .libutton {
     letter-spacing: 0;
     line-height: 0;
-    font-weight: 500;
-    background-color: #0A66C2;
+    font-weight: 600;
+    background-color: #fff;
     padding: 20px 20px;
+    color: #1b1b1b;
     /* width: 200px;
           height: 32px; */
 }
 .heading1 {
     letter-spacing: -5px;
-        background: linear-gradient(to right, rgba(27, 27, 27, 1), rgba(27, 27, 27, 0.7));
+        background: linear-gradient(to right, #1b1b1b, #413fcf);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         text-align: center;
@@ -218,11 +193,25 @@
 }
 .heading2 {
     letter-spacing: -5px;
-        background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.6));
+        background: linear-gradient(to right, #ffffff, #413fcf);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-weight: 500;
         font-size: 42px;
+    
+}
+.heading3 {
+    letter-spacing: -5px;
+        background: linear-gradient(to right, #ffffff, #413fcf);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+        font-size: 38px;
+        font-weight: 800;
+        width:fit-content;
+        margin: 0 auto;
+        /* width: 305px;
+        margin: 0 auto; */
     
 }
 .position {
@@ -242,14 +231,12 @@ nav li {
 }
 .thumbnailAct {
     width: 100%;
-    padding: 10px;
-    padding-top: 20px;
-    padding-right: 50px;
-    background: rgba(27, 27, 27, 0.98);
+    /* padding: 10px; */
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+    background: rgba(27, 27, 27, 1);
         transition: 0.3s ease-in-out;
-}
-.explain {
-    width: 80%;
 }
 .circle {
     width: 14px;
@@ -279,12 +266,62 @@ nav li {
     opacity: 0;
     transition: opacity 0.1s ease-in-out;
 }
+.brand, .ui {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 70vh;
+    background-color: #f5f5f5;
+    position: relative; /* Ensures pseudo-elements position correctly */
+    overflow: hidden; /* Prevents the overlay from extending outside */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.brand:hover .desc, .ui:hover .desc {
+    opacity: 1; /* Show on hover */
+}
+.brand {
+    background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/01%20Free%20Apple%20Watch%20Series%2010%20Mockup%20(1)%20(2).png?v=1740678710542');
+}
+.ui {
+    background-color: #f5f5f5;
+    background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/podcast%20(89)%20(1).png?v=1740684223406');
+}
+.desc {
+    opacity: 0;  /* Initially hidden */
+    transition: opacity 0.3s ease-in-out;
+    z-index: 1000;
+}
+.brand::before, .ui::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0; /* Initially hidden */
+    background: rgba(0, 0, 0, 0.90);
+    transition: height 0.3s ease-in-out;
+}
+
+.brand:hover::before, .ui:hover::before {
+    height: 100%; /* Expands on hover */
+}
+
 
 
 /* small screen */
 @media (max-width: 600px) {
     .body_desktop {
         display: none;
+    }
+    .body_mobile {
+        background-color: #f5f5f5;
     }
     .announce {
         background-color: #2c2c2c;
@@ -330,7 +367,6 @@ nav li {
         text-align: center;
         outline: none;
         text-decoration: none !important;
-        color: #ffffff !important;
         /* width: 180px;
         height: 32px; */
         border-radius: 100px;
@@ -390,12 +426,31 @@ nav li {
     .sectionOne {
         align-items: center;
         flex-wrap: wrap;
-        padding: 10px;
+        background-color: #f5f5f5;
+        /* padding: 10px; */
     }
     .sectionThree {
         background-color: #f5f5f5;
         padding-top: 100px;
         padding-bottom: 100px;
+    }
+    .choose {
+        opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+    .choose.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .why {
+        opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+    .why.show {
+        opacity: 1;
+        transform: translateX(0);
     }
     .sectionFour {
         background-color: #f5f5f5;
@@ -414,19 +469,40 @@ nav li {
         line-height: 1.5em;
         padding: 20px;
     }
-    .allProject {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-gap: 10px;
-    }
     .thumbnail {
-        /* width: 500px; */
-        height: 180px;
+        width: 100%;
+        height: 30vh;
         position: relative; /* Ensures pseudo-element is positioned correctly */
         overflow: hidden; /* Prevents the overlay from spilling out */
+        margin-bottom: 20px;
     }
-    
+    .explain {
+        font-size: 28px;
+        font-weight: 800;
+        text-align: center;
+    }
+    .mobileBrand {
+        background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/01%20Free%20Apple%20Watch%20Series%2010%20Mockup%20(1)%20(2).png?v=1740678710542');
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    }
+    .mobileUi {
+        /* border: 3px solid rgba(0, 0, 0, 0.03); */
+        background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/Group%20306%20(1).png?v=1740678704376');
+        background-position: center;
+        background-size: cover;
+        cursor: pointer;
+    }
+    .bigSean, .bigBen, .bigD, .bigRue {
+        opacity: 0;
+    transform: translateX(15px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+    .bigSean.show, .bigBen.show, .bigD.show, .bigRue.show {
+        transform: translateX(0);
+        opacity: 1;
+    }
     /* .thumbnail::before {
         content: "";
         position: absolute;
@@ -534,9 +610,6 @@ nav li {
         position: absolute;
         bottom: 0;
     
-        display: flex;
-        flex-direction: column;
-        align-items: start;
     }
     .popupMobile, .popupMobile1, .popupMobile3 {
         display: none; /* Hidden by default */
@@ -573,24 +646,20 @@ nav li {
         border-radius: 8px;
         font-weight: 600;
         /* transition: 2s ease-in-out; */
+        position: fixed;
     }
     .close {
         margin-top: 10px;
+        position: fixed;
     }
     
     /* .popupMobile .close:hover {
         background: rgba(0, 0, 0, 0.8);
     } */
     
-    .popup-content {
-        margin: 20px 0 0 0;
-    }
     .popImg {
         width: 100%;
-    }
-    .explain {
-        font-size: 16px;
-        font-weight: 300;
+        margin: 0;
     }
     .profiles {
         display: flex;
@@ -648,6 +717,7 @@ nav li {
     .body_desktop {
         cursor: default;
         color: #1b1b1b;
+        background-color: #f5f5f5;
     }
     .headTop {
         /* background: #1b1b1b; */
@@ -820,7 +890,6 @@ nav li {
         text-align: center;
         outline: none;
         text-decoration: none !important;
-        color: #ffffff !important;
         /* width: 180px;
         height: 32px; */
         border-radius: 100px;
@@ -1002,11 +1071,9 @@ nav li {
         background: rgba(0, 0, 0, 0.8);
     } */
     
-    .popup-content {
-        margin: 20px 0 0 0;
-    }
     .popImg {
         width: 100%;
+        margin: 0;
     }
     
     .heading1 {

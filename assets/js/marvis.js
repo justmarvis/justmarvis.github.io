@@ -518,6 +518,94 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+// Scroll animation
+// Section three
+document.addEventListener("DOMContentLoaded", function () {
+  const section = document.querySelector(".choose");
+
+  const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              section.classList.add("show");
+          }
+      });
+  }, { threshold: 0.3 });
+
+  observer.observe(section);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const section = document.querySelector(".why");
+
+  const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              section.classList.add("show");
+          }
+      });
+  }, { threshold: 0.3 });
+
+  observer.observe(section);
+});
+
+// Section Two
+document.addEventListener("DOMContentLoaded", function () {
+  const section = document.querySelector(".bigSean");
+
+  const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              section.classList.add("show");
+          }
+      });
+  }, { threshold: 0.3 });
+
+  observer.observe(section);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const section = document.querySelector(".bigBen");
+
+  const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              section.classList.add("show");
+          }
+      });
+  }, { threshold: 0.3 });
+
+  observer.observe(section);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const section = document.querySelector(".bigD");
+
+  const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              section.classList.add("show");
+          }
+      });
+  }, { threshold: 0.3 });
+
+  observer.observe(section);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const section = document.querySelector(".bigRue");
+
+  const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              section.classList.add("show");
+          }
+      });
+  }, { threshold: 0.3 });
+
+  observer.observe(section);
+});
+
+
 
 
 
