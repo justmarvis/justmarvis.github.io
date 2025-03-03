@@ -235,42 +235,41 @@ const observer = new IntersectionObserver((entries) => {
 elements.forEach((el) => observer.observe(el));
 
 // Cursor follow circle
-const circle = document.getElementById("cursorCircle");
-let mouseX = 0, mouseY = 0;
-let circleX = 0, circleY = 0;
-const delay = 0.1;
-const circleSize = 15; // Adjust this based on the actual width and height of the circle
+// const circle = document.getElementById("cursorCircle");
+// let mouseX = 0, mouseY = 0;
+// let circleX = 0, circleY = 0;
+// const delay = 0.1;
+// const circleSize = 15;
 
-document.addEventListener("mousemove", (e) => {
-    mouseX = e.clientX + window.scrollX;
-    mouseY = e.clientY + window.scrollY;
-});
+// document.addEventListener("mousemove", (e) => {
+//     mouseX = e.clientX + window.scrollX;
+//     mouseY = e.clientY + window.scrollY;
+// });
 
-function animate() {
-    circleX += (mouseX - circleX) * delay;
-    circleY += (mouseY - circleY) * delay;
+// function animate() {
+//     circleX += (mouseX - circleX) * delay;
+//     circleY += (mouseY - circleY) * delay;
     
-    circle.style.left = `${circleX - circleSize / 2}px`;
-    circle.style.top = `${circleY - circleSize / 2}px`;
+//     circle.style.left = `${circleX - circleSize / 2}px`;
+//     circle.style.top = `${circleY - circleSize / 2}px`;
     
-    requestAnimationFrame(animate);
-}
+//     requestAnimationFrame(animate);
+// }
 
-animate();
+// animate();
 
 // Copy text
 document.addEventListener("DOMContentLoaded", function() {
-  const container = document.querySelector('.fullName.opt.email');
+  const container = document.querySelector('.follow.email');
   const tooltip = document.createElement('div');
-  
-  // Set tooltip text and class
+
   tooltip.innerText = "Send Email";
   tooltip.classList.add('tooltip');
 
-  // Append tooltip to body
-  document.body.appendChild(tooltip);
+  document.body.appendChild(tooltip); // Ensure it's added to the DOM
 
-  // Show tooltip on hover
+  console.log("Tooltip added:", tooltip); // Debugging step
+
   container.addEventListener('mouseenter', function(event) {
       tooltip.style.visibility = 'visible';
       tooltip.style.opacity = '1';
@@ -278,18 +277,10 @@ document.addEventListener("DOMContentLoaded", function() {
       tooltip.style.left = `${event.clientX + 10}px`;
   });
 
-  // Move tooltip with mouse
-  container.addEventListener('mousemove', function(event) {
-      tooltip.style.top = `${event.clientY + 10}px`;
-      tooltip.style.left = `${event.clientX + 10}px`;
-  });
-
-  // Hide tooltip on mouse leave
   container.addEventListener('mouseleave', function() {
       tooltip.style.visibility = 'hidden';
       tooltip.style.opacity = '0';
   });
-
   // Copy email on click
   container.addEventListener('click', function() {
       const email = 'marvisdev98@gmail.com';
