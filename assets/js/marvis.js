@@ -6,14 +6,15 @@ function about() {
 
 //socials
 function threads() {
-  window.open('https://www.threads.net/@uxstudiio', '_blank');
+  window.open('https://www.threads.net/@uxdesiign', '_blank');
 }
 function behance() {
   window.open('https://www.behance.net/marvisigbinew1', '_blank');
 }
 function linkedin() {
-  window.open('https://www.linkedin.com/in/marvis-igbineweka/', '_blank');
+  window.open('https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=marvis-igbineweka', '_blank');
 }
+
 function inst() {
   window.open('https://www.instagram.com/marvis.ig/', '');
 }
@@ -76,6 +77,13 @@ function reviews() {
   document.getElementById('reviewsTarget').scrollIntoView({ behavior: 'smooth' });
 }
 
+function homeMobile() {
+  document.getElementById('homeTargetMobile').scrollIntoView({ behavior: 'smooth' });
+}
+function home() {
+  document.getElementById('homeTarget').scrollIntoView({ behavior: 'smooth' });
+}
+
 //popups
 function showPopup() {
   const popup = document.querySelector('.popup');
@@ -132,26 +140,6 @@ function closePopupMobile3() {
 }
 
 
-
-//Position title animation
-const textElement = document.getElementById('textSwitcher');
-    let toggle = true;
-
-    setInterval(() => {
-        // Start fade-out effect
-        textElement.style.opacity = '0';
-
-        setTimeout(() => {
-            // Switch text after fade-out
-            textElement.textContent = toggle ? "FRONT-END" : "UX/UI DESIGNER";
-            toggle = !toggle;
-
-            // Start fade-in effect
-            textElement.style.opacity = '1';
-        }, 900); // Match the fade-out duration (0.9s)
-    }, 5000); // Switch every 5 seconds
-
-
     // faq dropdown
     document.addEventListener("DOMContentLoaded", function () {
       document.querySelectorAll(".quest").forEach((question) => {
@@ -179,7 +167,7 @@ const textElement = document.getElementById('textSwitcher');
 
   //position animation
   document.addEventListener("DOMContentLoaded", function () {
-    const text = "UI/UX and Product Designer"; // Text to be typed
+    const text = "UI/UX and Product Designer."; // Text to be typed
     const speed = 100; // Typing speed (ms)
     let i = 0;
     const typeElement = document.getElementById("type");
@@ -198,7 +186,7 @@ const textElement = document.getElementById('textSwitcher');
 
 //position animation
 document.addEventListener("DOMContentLoaded", function () {
-  const text = "UI/UX and Product Designer"; // Text to be typed
+  const text = "UI/UX and Product Designer."; // Text to be typed
   const speed = 100; // Typing speed (ms)
   let i = 0;
   const typeElement = document.getElementById("typeSmall");
@@ -258,255 +246,25 @@ elements.forEach((el) => observer.observe(el));
 
 // animate();
 
-// Copy text
-document.addEventListener("DOMContentLoaded", function() {
-  const container = document.querySelector('.follow.email');
-  const tooltip = document.createElement('div');
+// Send email
+document.getElementById("sendEmailMobile").addEventListener("click", function() {
+  const email = "marvisdev98@gmail.com";
+  const subject = "Inquiry About Your Services";
+  const body = "Hello Marvis,\n\nI am interested in your UX/UI design services. Let's discuss further.";
 
-  tooltip.innerText = "Send Email";
-  tooltip.classList.add('tooltip');
-
-  document.body.appendChild(tooltip); // Ensure it's added to the DOM
-
-  console.log("Tooltip added:", tooltip); // Debugging step
-
-  container.addEventListener('mouseenter', function(event) {
-      tooltip.style.visibility = 'visible';
-      tooltip.style.opacity = '1';
-      tooltip.style.top = `${event.clientY + 10}px`;
-      tooltip.style.left = `${event.clientX + 10}px`;
-  });
-
-  container.addEventListener('mouseleave', function() {
-      tooltip.style.visibility = 'hidden';
-      tooltip.style.opacity = '0';
-  });
-  // Copy email on click
-  container.addEventListener('click', function() {
-      const email = 'marvisdev98@gmail.com';
-      
-      navigator.clipboard.writeText(email).then(() => {
-          alert('Email copied to clipboard!');
-      }).catch(err => {
-          console.error('Failed to copy: ', err);
-      });
-  });
+  const gmailURL = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  
+  window.open(gmailURL, "_blank"); // Opens Gmail in a new tab
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-  const container = document.querySelector('.fullName.opt.github');
-  const tooltip = document.createElement('div');
+document.getElementById("sendEmail").addEventListener("click", function() {
+  const email = "marvisdev98@gmail.com";
+  const subject = "Inquiry About Your Services";
+  const body = "Hello Marvis,\n\nI am interested in your UX/UI design services. Let's discuss further.";
+
+  const gmailURL = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   
-  // Set tooltip text and class
-  tooltip.innerText = "Invite User";
-  tooltip.classList.add('tooltip');
-
-  // Append tooltip to body
-  document.body.appendChild(tooltip);
-
-  // Show tooltip on hover
-  container.addEventListener('mouseenter', function(event) {
-      tooltip.style.visibility = 'visible';
-      tooltip.style.opacity = '1';
-      tooltip.style.top = `${event.clientY + 10}px`;
-      tooltip.style.left = `${event.clientX + 10}px`;
-  });
-
-  // Move tooltip with mouse
-  container.addEventListener('mousemove', function(event) {
-      tooltip.style.top = `${event.clientY + 10}px`;
-      tooltip.style.left = `${event.clientX + 10}px`;
-  });
-
-  // Hide tooltip on mouse leave
-  container.addEventListener('mouseleave', function() {
-      tooltip.style.visibility = 'hidden';
-      tooltip.style.opacity = '0';
-  });
-
-  // Copy email on click
-  container.addEventListener('click', function() {
-      const email = 'justmarvis';
-      
-      navigator.clipboard.writeText(email).then(() => {
-          alert('Email copied to clipboard!');
-      }).catch(err => {
-          console.error('Failed to copy: ', err);
-      });
-  });
-});
-
-document.addEventListener("DOMContentLoaded", function() {
-  const container = document.querySelector('.fullName.opt.figma');
-  const tooltip = document.createElement('div');
-  
-  // Set tooltip text and class
-  tooltip.innerText = "Invite User";
-  tooltip.classList.add('tooltip');
-
-  // Append tooltip to body
-  document.body.appendChild(tooltip);
-
-  // Show tooltip on hover
-  container.addEventListener('mouseenter', function(event) {
-      tooltip.style.visibility = 'visible';
-      tooltip.style.opacity = '1';
-      tooltip.style.top = `${event.clientY + 10}px`;
-      tooltip.style.left = `${event.clientX + 10}px`;
-  });
-
-  // Move tooltip with mouse
-  container.addEventListener('mousemove', function(event) {
-      tooltip.style.top = `${event.clientY + 10}px`;
-      tooltip.style.left = `${event.clientX + 10}px`;
-  });
-
-  // Hide tooltip on mouse leave
-  container.addEventListener('mouseleave', function() {
-      tooltip.style.visibility = 'hidden';
-      tooltip.style.opacity = '0';
-  });
-
-  // Copy email on click
-  container.addEventListener('click', function() {
-      const email = 'marvinomeccozi@gmail.com';
-      
-      navigator.clipboard.writeText(email).then(() => {
-          alert('Email copied to clipboard!');
-      }).catch(err => {
-          console.error('Failed to copy: ', err);
-      });
-  });
-});
-
-
-document.addEventListener("DOMContentLoaded", function() {
-  const container = document.querySelector('.action.opt.email');
-  const tooltip = document.createElement('div');
-  
-  // Set tooltip text and class
-  tooltip.innerText = "Send Email";
-  tooltip.classList.add('tooltip');
-
-  // Append tooltip to body
-  document.body.appendChild(tooltip);
-
-  // Show tooltip on hover
-  container.addEventListener('mouseenter', function(event) {
-      tooltip.style.visibility = 'visible';
-      tooltip.style.opacity = '1';
-      tooltip.style.top = `${event.clientY + 10}px`;
-      tooltip.style.left = `${event.clientX + 10}px`;
-  });
-
-  // Move tooltip with mouse
-  container.addEventListener('mousemove', function(event) {
-      tooltip.style.top = `${event.clientY + 10}px`;
-      tooltip.style.left = `${event.clientX + 10}px`;
-  });
-
-  // Hide tooltip on mouse leave
-  container.addEventListener('mouseleave', function() {
-      tooltip.style.visibility = 'hidden';
-      tooltip.style.opacity = '0';
-  });
-
-  // Copy email on click
-  container.addEventListener('click', function() {
-      const email = 'marvisdev98@gmail.com';
-      
-      navigator.clipboard.writeText(email).then(() => {
-          alert('Email copied to clipboard!');
-      }).catch(err => {
-          console.error('Failed to copy: ', err);
-      });
-  });
-});
-
-document.addEventListener("DOMContentLoaded", function() {
-  const container = document.querySelector('.action.opt.github');
-  const tooltip = document.createElement('div');
-  
-  // Set tooltip text and class
-  tooltip.innerText = "Invite User";
-  tooltip.classList.add('tooltip');
-
-  // Append tooltip to body
-  document.body.appendChild(tooltip);
-
-  // Show tooltip on hover
-  container.addEventListener('mouseenter', function(event) {
-      tooltip.style.visibility = 'visible';
-      tooltip.style.opacity = '1';
-      tooltip.style.top = `${event.clientY + 10}px`;
-      tooltip.style.left = `${event.clientX + 10}px`;
-  });
-
-  // Move tooltip with mouse
-  container.addEventListener('mousemove', function(event) {
-      tooltip.style.top = `${event.clientY + 10}px`;
-      tooltip.style.left = `${event.clientX + 10}px`;
-  });
-
-  // Hide tooltip on mouse leave
-  container.addEventListener('mouseleave', function() {
-      tooltip.style.visibility = 'hidden';
-      tooltip.style.opacity = '0';
-  });
-
-  // Copy email on click
-  container.addEventListener('click', function() {
-      const email = 'justmarvis';
-      
-      navigator.clipboard.writeText(email).then(() => {
-          alert('Email copied to clipboard!');
-      }).catch(err => {
-          console.error('Failed to copy: ', err);
-      });
-  });
-});
-
-document.addEventListener("DOMContentLoaded", function() {
-  const container = document.querySelector('.action.opt.figma');
-  const tooltip = document.createElement('div');
-  
-  // Set tooltip text and class
-  tooltip.innerText = "Invite User";
-  tooltip.classList.add('tooltip');
-
-  // Append tooltip to body
-  document.body.appendChild(tooltip);
-
-  // Show tooltip on hover
-  container.addEventListener('mouseenter', function(event) {
-      tooltip.style.visibility = 'visible';
-      tooltip.style.opacity = '1';
-      tooltip.style.top = `${event.clientY + 10}px`;
-      tooltip.style.left = `${event.clientX + 10}px`;
-  });
-
-  // Move tooltip with mouse
-  container.addEventListener('mousemove', function(event) {
-      tooltip.style.top = `${event.clientY + 10}px`;
-      tooltip.style.left = `${event.clientX + 10}px`;
-  });
-
-  // Hide tooltip on mouse leave
-  container.addEventListener('mouseleave', function() {
-      tooltip.style.visibility = 'hidden';
-      tooltip.style.opacity = '0';
-  });
-
-  // Copy email on click
-  container.addEventListener('click', function() {
-      const email = 'marvinomeccozi@gmail.com';
-      
-      navigator.clipboard.writeText(email).then(() => {
-          alert('Email copied to clipboard!');
-      }).catch(err => {
-          console.error('Failed to copy: ', err);
-      });
-  });
+  window.open(gmailURL, "_blank"); // Opens Gmail in a new tab
 });
 
 // Scroll animation
