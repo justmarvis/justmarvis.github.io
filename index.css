@@ -70,7 +70,12 @@
     border-radius: 30px;
 }
 .focus {
-    background: #413fcf;
+    /* background: #f5f5f5;
+    color: #1b1b1b; */
+    border: 2.5px solid rgba(245, 245, 245, 0.5);
+}
+.start {
+    font-size: 12px;
 }
 .left {
     text-align: left;
@@ -78,6 +83,53 @@
 }
 .center {
     text-align: center;
+    width: 100%;
+    height: 60px;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(245, 245, 245, 0.2);
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+}
+
+.center::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Black overlay with 50% opacity */
+    border-radius: 10px;
+    z-index: 0; /* Behind the text */
+}
+.centerTitle {
+    margin-right: 20px;
+}
+
+.center p {
+    position: relative;
+    z-index: 1; /* Above the overlay */
+    color: white; /* Ensures text is visible */
+    font-size: 16px; /* Adjust as needed */
+    font-weight: bold;
+}
+
+
+.firstImg {
+    background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/Group%20306%20(1).png?v=1740678704376');
+    /* height: 100px; */
+}
+.secondImg {
+    background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/0_2.jpeg?v=1730709565415');
+}
+.thirdImg {
+    background-image: url('https://cdn.glitch.global/20f7db08-2c65-491e-87a0-f660f15456ba/01%20Free%20Poster%20Mockup%20With%20Black%20Frame%20Outdoor%20Building%20Wall%20(1)%20(1).png?v=1740678697889');
 }
 .right {
     text-align: right;
@@ -265,9 +317,9 @@
 }
 .heading1 {
     letter-spacing: -5px;
-    background: linear-gradient(to right, #413fcf, #fff);
+    /* background: linear-gradient(to right, #413fcf, #fff);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
     text-align: center;
     font-weight: 800;
     width: fit-content;
@@ -278,9 +330,9 @@
 
 .heading2 {
     letter-spacing: -2px;
-    background: linear-gradient(to right, #413fcf, #fff);
+    /* background: linear-gradient(to right, #413fcf, #fff);
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        -webkit-text-fill-color: transparent; */
     text-align: center;
     font-size: 32px;
     font-weight: 800;
@@ -291,9 +343,10 @@
 
 .heading3 {
     letter-spacing: -2px;
-    background: linear-gradient(to right, #413fcf, #1b1b1b);
+    /* background: linear-gradient(to right, #413fcf, #1b1b1b);
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        -webkit-text-fill-color: transparent; */
+        color: #1b1b1b;
     text-align: center;
     font-size: 32px;
     font-weight: 800;
