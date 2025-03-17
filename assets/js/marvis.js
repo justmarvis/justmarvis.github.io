@@ -11,6 +11,9 @@ function threads() {
 function behance() {
   window.open('https://www.behance.net/marvisigbinew1', '_blank');
 }
+function linkedinProfile() {
+  window.open('https://www.linkedin.com/in/marvis-igbineweka/', '_blank')
+}
 function linkedin() {
   window.open('https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=marvis-igbineweka', '_blank');
 }
