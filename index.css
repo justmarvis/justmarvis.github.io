@@ -55,7 +55,7 @@
 .sectionOne {
     background-color: #1b1b1b;
     color: #fff;
-    padding-top: 100px;
+    padding-top: 150px;
     /* padding-bottom: 100px; */
 }
 .offer {
@@ -272,7 +272,7 @@
 
 .mission {
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 50px;
     margin-bottom: 35px;
     /* letter-spacing: 1px; */
@@ -283,6 +283,7 @@
     /* background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.6)); */
     letter-spacing: -2 px;
     color: #fff;
+    font-size: 18px;
     /* font-weight: 500; */
 }
 
@@ -303,11 +304,7 @@
           height: 32px; */
 }
 .ad {
-    /* width: 100%; */
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
+
 }
 .banner {
     width: 200px;
@@ -517,8 +514,8 @@ nav li {
         background-color: rgba(44, 44, 44, 0.6);
         backdrop-filter: blur(20px);
         color: #fff;
-        padding: 15px 0;
-        padding-bottom: 10px;
+        padding: 30px 0;
+        /* padding-bottom: 10px; */
 
         display: flex;
         justify-content: space-between;
@@ -529,7 +526,7 @@ nav li {
     }
 
     .studiio {
-        width: 80px;
+        width: 100px;
         margin-left: 40px;
     }
 
@@ -574,7 +571,7 @@ nav li {
         /* font-family: "SF Pro Text", Helvetica, sans-serif; */
         /* margin-left: 30px; */
         /* margin-bottom: 50px; */
-        margin-top: 25px;
+        /* margin-top: 25px; */
         font-size: 16px;
         /* font-weight: 500; */
         /* position: absolute; */
@@ -587,8 +584,12 @@ nav li {
         transition: 0.2s;
     } */
 
+    .mission p {
+        font-size: 22px;
+    }
     .position {
         /* margin-bottom: 10px; */
+        text-align: left;
         font-size: 28px;
         animation: blinkCursor 0.8s infinite;
     }
@@ -632,6 +633,11 @@ nav li {
     .socialIcon:hover {
         opacity: 0.5;
     }
+    .ad {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
 
     .sectionOne {
         align-items: center;
@@ -661,6 +667,7 @@ nav li {
     .whyContain {
         /* background-color: #f5f5f5; */
         /* padding: 50px 0; */
+        font-size: 22px;
     }
 
     .sectionThree p {
@@ -731,7 +738,7 @@ nav li {
     } */
     .ntro {
         font-weight: 300;
-        /* font-size: 14px; */
+        font-size: 22px;
         text-align: center;
         line-height: 1.5em;
         margin-bottom: 15px;
@@ -742,6 +749,7 @@ nav li {
         width: 90%;
         margin: 0 auto;
         padding-bottom: 50px;
+        font-size: 22px;
 
         display: flex;
         flex-wrap: wrap;
@@ -783,6 +791,7 @@ nav li {
         /* Adjust as needed */
         margin: 5px 0;
         margin-bottom: 20px;
+        margin-top: 20px;
     }
 
     .sht.active {
@@ -968,7 +977,7 @@ nav li {
     .headTop {
         /* background: #1b1b1b; */
         color: #fff;
-        padding: 15px 0;
+        padding: 30px 0;
         font-size: 14px;
         font-weight: 400;
         /* border-top: 1.5px solid rgba(255, 255, 255, 0.5);
@@ -985,9 +994,10 @@ nav li {
         color: #fff;
         background-position: center;
         background-size: cover;
-        padding: 100px 0px 5px 0px;
+        padding: 150px 0px 5px 0px;
         display: flex;
-        text-align: center;
+        /* text-align: center; */
+        gap: 50px;
         justify-content: center;
         position: relative;
         z-index: 1;
@@ -1004,7 +1014,7 @@ nav li {
     }
 
     .studiio {
-        width: 80px;
+        width: 100px;
         height: auto;
         cursor: pointer;
     }
@@ -1030,7 +1040,7 @@ nav li {
         cursor: pointer;
 
         display: flex;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
         color: rgba(255, 255, 255, 0.5);
         font-size: 16px;
@@ -1064,6 +1074,7 @@ nav li {
     .nav {
         list-style: none;
         cursor: pointer;
+        font-size: 18px;
     }
 
     .nav li {
@@ -1153,10 +1164,16 @@ nav li {
     .exLinkIcon {
         margin-left: 10px;
     }
+    .banner {
+        width: 300px;
+    }
 
     .follow {
         margin-left: 30px;
 
+    }
+    .main {
+        width: 550px;
     }
 
     .position {
@@ -1165,9 +1182,14 @@ nav li {
         margin-top: 60px;
         font-size: 42px;
     }
+    .heading1 {
+        text-align: left;
+    }
 
     .mission {
         margin-bottom: 80px;
+        text-align: left;
+        margin-bottom: 30px;
     }
 
     /* Blinking Cursor Animation */
@@ -1185,10 +1207,13 @@ nav li {
 
     .socials {
         display: flex;
-        justify-content: center;
+        justify-content: start;
         align-items: end;
         flex-wrap: wrap;
         /* margin-bottom: 80px; */
+    }
+    .follow {
+        margin-left: 0;
     }
 
     .socials p {
@@ -1226,9 +1251,10 @@ nav li {
         padding-bottom: 100px;
     }
 
-    .whyContain {
+    .whyContain p{
         /* background-color: #f5f5f5; */
         /* padding: 50px 0; */
+        font-size: 18px;
     }
 
     .sectionThree p {
@@ -1362,7 +1388,7 @@ nav li {
     }
 
     .heading1 {
-        /* text-align: center; */
+        text-align: left;
         margin-bottom: 10px;
 
     }
@@ -1371,6 +1397,7 @@ nav li {
         width: 80%;
         margin: 0 auto;
         font-weight: 300;
+        font-size: 18px;
         text-align: center;
         line-height: 1.5em;
         margin-bottom: 20px;
@@ -1394,6 +1421,7 @@ nav li {
         background-color: #fff;
         margin-bottom: 20px;
         font-weight: 300;
+        font-size: 18px;
         cursor: pointer;
         margin-right: 15px;
         position: relative;
