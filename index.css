@@ -293,7 +293,7 @@
     background-color: #413fcf;
     /* -webkit-background-clip: text;
         -webkit-text-fill-color: transparent; */
-    padding: 20px 20px;
+    padding: 15px 20px;
     color: #fff;
     border-radius: 200px;
     cursor: pointer;
@@ -301,6 +301,17 @@
     animation: cta 1s 5s forwards;
     /* width: 200px;
           height: 32px; */
+}
+.ad {
+    /* width: 100%; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.banner {
+    width: 200px;
+    
 }
 @keyframes cta {
     from {
@@ -495,6 +506,9 @@ nav li {
         display: none;
     }
 
+    .heading2 {
+        font-size: 28px;
+    }
     .body_mobile {
         background-color: #1b1b1b;
     }
@@ -611,6 +625,9 @@ nav li {
         cursor: pointer;
         /* text-align: center; */
     }
+    .socialIcon2 {
+        margin-left: 30px;
+    }
 
     .socialIcon:hover {
         opacity: 0.5;
@@ -644,11 +661,6 @@ nav li {
     .whyContain {
         /* background-color: #f5f5f5; */
         /* padding: 50px 0; */
-    }
-
-    .ad {
-        width: 500px;
-        padding: 20px;
     }
 
     .sectionThree p {
@@ -994,6 +1006,7 @@ nav li {
     .studiio {
         width: 80px;
         height: auto;
+        cursor: pointer;
     }
 
     .profiles {
@@ -1187,6 +1200,9 @@ nav li {
         margin-left: 30px;
         cursor: pointer;
     }
+    .socialIcon2 {
+        margin-left: 10px;
+    }
 
     .socialIcon:hover {
         opacity: 0.8;
@@ -1213,11 +1229,6 @@ nav li {
     .whyContain {
         /* background-color: #f5f5f5; */
         /* padding: 50px 0; */
-    }
-
-    .ad {
-        width: 500px;
-        padding: 20px;
     }
 
     .sectionThree p {
